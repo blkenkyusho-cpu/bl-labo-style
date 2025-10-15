@@ -1,117 +1,48 @@
 /* ==== simple sale banner 202510 vivid + center + mobile ==== */
 .sale-simple-202510{
-  border:2px solid #f6b88f;
-  border-radius:14px;
-  padding:20px 18px;
-  margin:16px 0 24px;
+  border:2px solid #f6b88f;border-radius:14px;padding:20px 18px;margin:16px 0 24px;
   background:linear-gradient(180deg,#fff7f2,#ffe8db);
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family:"Hiragino Kaku Gothic ProN","Helvetica Neue",system-ui,sans-serif;
   box-shadow:0 6px 20px rgba(255,120,40,.12);
   text-align:center !important;
 }
-
 .sale-simple-202510__tag{
-  display:inline-block;
-  margin:0 auto 10px;
-  padding:7px 16px;
-  border-radius:999px;
-  background:linear-gradient(90deg,#ff8243,#ff3e3e);
-  color:#fff;
-  font-weight:700;
-  font-size:1.08rem; /* UP */
-  letter-spacing:.02em;
-  box-shadow:0 3px 10px rgba(255,90,0,.25);
-  text-align:center !important;
+  display:inline-block;margin:0 auto 10px;padding:7px 16px;border-radius:999px;
+  background:linear-gradient(90deg,#ff8243,#ff3e3e);color:#fff;font-weight:700;font-size:1.08rem;letter-spacing:.02em;
+  box-shadow:0 3px 10px rgba(255,90,0,.25);text-align:center !important;
 }
-
 .sale-simple-202510__title{
-  margin:6px auto 12px;
-  font-size:clamp(1.35rem,3.6vw,1.7rem); /* 少し大きめ＋可変 */
-  line-height:1.5;
-  font-weight:800;
-  color:#772e00;
-  text-shadow:0 1px 1px rgba(255,255,255,.4);
-  text-align:center !important;
+  margin:6px auto 12px;font-size:clamp(1.35rem,3.6vw,1.7rem);line-height:1.5;font-weight:800;color:#772e00;
+  text-shadow:0 1px 1px rgba(255,255,255,.4);text-align:center !important;
 }
-.sale-simple-202510__title span{
-  display:inline-block;
-  margin-left:.25em;
-  font-weight:600;
-  color:#b24a00;
-  font-size:.98em;
-}
+.sale-simple-202510__title span{display:inline-block;margin-left:.25em;font-weight:600;color:#b24a00;font-size:.98em;}
 
-.sale-simple-202510__price{
-  margin:4px auto 8px;
-  font-size:clamp(1.2rem,3.4vw,1.35rem); /* UP */
-  text-align:center !important;
-}
-.sale-simple-202510__price s{
-  color:#a78a7a;
-  font-size:.98em;
-  display:inline-block;
-  margin-right:8px;
-}
-.sale-simple-202510__price strong{
-  color:#d41414;
-  font-size:clamp(1.5rem,4vw,1.7rem); /* 価格を更に強調 */
-  font-weight:800;
-}
+.sale-simple-202510__price{margin:4px auto 8px;font-size:clamp(1.2rem,3.4vw,1.35rem);text-align:center !important;}
+.sale-simple-202510__price s{color:#a78a7a;font-size:.98em;display:inline-block;margin-right:8px;}
+.sale-simple-202510__price strong{color:#d41414;font-size:clamp(1.5rem,4vw,1.7rem);font-weight:800;}
 
-.sale-simple-202510__deal{
-  margin:0 auto 12px;
-  font-size:clamp(1.08rem,3.2vw,1.2rem);
-  color:#b23100;
-  font-weight:700;
-  text-align:center !important;
-}
+.sale-simple-202510__deal{margin:0 auto 12px;font-size:clamp(1.08rem,3.2vw,1.2rem);color:#b23100;font-weight:700;text-align:center !important;}
 
 .sale-simple-202510__note{
-  margin:10px auto 4px;
-  font-size:clamp(1rem,3vw,1.08rem);
-  color:#5a4334;
-  line-height:1.9;
-  text-align:center !important;
+  margin:10px auto 4px;font-size:clamp(1rem,3vw,1.08rem);color:#5a4334;line-height:1.9;text-align:center !important;
 }
-
-/* ▼ 新米ではない注意書き（目立たせすぎず確実に伝える） */
 .sale-simple-202510__caution{
-  margin:4px auto 0;
-  font-size:clamp(1rem,3vw,1.08rem);
-  color:#9a2f2f;
-  font-weight:700;
-  text-align:center !important;
+  margin:4px auto 0;font-size:clamp(1rem,3vw,1.08rem);color:#9a2f2f;font-weight:700;text-align:center !important;
 }
 
-/* === モバイル最適化 === */
-@media (max-width: 480px){
-  .sale-simple-202510{
-    padding:18px 14px;
-    margin:14px 0 20px;
-  }
-  .sale-simple-202510__title span{
-    display:block;           /* 日付・在庫限りを改行で見やすく */
-    margin:.25em 0 0 0;
-  }
-  .sale-simple-202510__price s{ margin-right:6px; }
-  /* noteとcautionのフォントを少し小さく */
-  .sale-simple-202510__note,
-  .sale-simple-202510__caution {
-    font-size: 0.92rem;
-    line-height: 1.7;
-  }
+/* === スマホ最適化（左寄せ段落にして2行目の不自然な中央寄せを解消） === */
+@media (max-width:480px){
+  .sale-simple-202510{padding:18px 14px;margin:14px 0 20px;}
+  .sale-simple-202510__title span{display:block;margin:.25em 0 0 0;} /* 日付部は改行で視認性UP */
 
-  /* 改行時に2行目が中央に見えないよう、中央寄せを軽く補正 */
-  .sale-simple-202510__note br,
-  .sale-simple-202510__caution br {
-    display: none; /* 手動改行を非表示（自動改行に任せる） */
-  }
-
+  /* ↓ note / caution を「中央配置された左寄せ段落」に変換 */
   .sale-simple-202510__note,
-  .sale-simple-202510__caution {
-    display: inline-block;   /* 幅に合わせて中央ブロック化 */
-    text-align: left;        /* テキスト自体は左寄せ */
-    max-width: 90%;          /* 中央ブロックで見た目整える */
+  .sale-simple-202510__caution{
+    font-size:.92rem;        /* 少しだけ小さく */
+    line-height:1.8;
+    display:inline-block;    /* ボックス自体は中央に */
+    text-align:left !important; /* 中の文章は左寄せ */
+    max-width:92%;
+    margin-left:auto;margin-right:auto;
   }
 }
-/* ==== /simple sale banner 202510 ==== */
