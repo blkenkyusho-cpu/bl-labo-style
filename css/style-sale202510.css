@@ -94,5 +94,24 @@
     margin:.25em 0 0 0;
   }
   .sale-simple-202510__price s{ margin-right:6px; }
+  /* noteとcautionのフォントを少し小さく */
+  .sale-simple-202510__note,
+  .sale-simple-202510__caution {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  /* 改行時に2行目が中央に見えないよう、中央寄せを軽く補正 */
+  .sale-simple-202510__note br,
+  .sale-simple-202510__caution br {
+    display: none; /* 手動改行を非表示（自動改行に任せる） */
+  }
+
+  .sale-simple-202510__note,
+  .sale-simple-202510__caution {
+    display: inline-block;   /* 幅に合わせて中央ブロック化 */
+    text-align: left;        /* テキスト自体は左寄せ */
+    max-width: 90%;          /* 中央ブロックで見た目整える */
+  }
 }
 /* ==== /simple sale banner 202510 ==== */
