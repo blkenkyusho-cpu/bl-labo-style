@@ -5,7 +5,7 @@
   padding:20px 18px;
   margin:16px 0 24px;
   background:linear-gradient(180deg,#fff7f2,#ffe8db);
-  font-family:"Hiragino Kaku Gothic ProN","Helvetica Neue",system-ui,sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   box-shadow:0 6px 20px rgba(255,120,40,.12);
   text-align:center !important;
 }
