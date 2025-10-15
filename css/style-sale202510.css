@@ -58,11 +58,13 @@
   color:#b8a8a0;
   text-decoration:line-through;
 }
-.sale-simple-202510__price-new{
-  font-size:1.65rem;
-  color:#d41414;
-  font-weight:800;
-  margin:2px 0 0;
+.sale-simple-202510__price-new {
+  font-size: clamp(1.8rem, 4.6vw, 2.1rem); /* ← さらに拡大 */
+  color: #d41414;
+  font-weight: 900;
+  margin: 4px 0 2px;
+  text-shadow: 0 1px 3px rgba(255, 200, 200, 0.5); /* 柔らかい光沢感 */
+  letter-spacing: 0.02em;
 }
 .sale-simple-202510__price-new strong{
   font-weight:800;
@@ -106,7 +108,7 @@
     margin:.25em 0 0 0;
   }
   .sale-simple-202510__price-new{
-    font-size:1.4rem; /* スマホは少し控えめ */
+    font-size:1.6rem; /* スマホは少し控えめ */
   }
 
   /* note / caution の見え方調整（左寄せ段落風） */
