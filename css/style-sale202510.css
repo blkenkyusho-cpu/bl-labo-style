@@ -155,21 +155,25 @@
     margin:0 auto 2px;
   }
 
-  /* SALE価格（スマホ）余白を詰める＋中央整列キープ */
+ /* SALE価格（スマホ）余白を詰める＋中央整列キープ／スペース最小化 */
 .sale-simple-202510__price-new {
   margin: 2px 0 0;
   display: flex;
   justify-content: center;
-  align-items: baseline;     /* ← 数字と税込の縦位置を揃える */
+  align-items: baseline;   /* 数字と税込の縦位置を揃える */
   flex-wrap: nowrap;
-  gap: 0.15em;               /* ← 余計な隙間を最小化 */
+  gap: 0.1em;              /* ← さらに詰める */
   line-height: 1.2;
 }
 
 .sale-simple-202510__price-new .label {
   font-size: 1.1rem;
-  padding: .2em .55em;       /* ← 少し詰めて全体をコンパクトに */
-  border-radius: 12px;
+  padding: .15em .35em;    /* ← パディングを減らす */
+  margin-right: 0.15em;    /* ← マージンをほぼゼロに */
+  border-radius: 10px;
+  background: #fff1ec;
+  color: #b13200;
+  font-weight: 900;
   white-space: nowrap;
 }
 
@@ -182,7 +186,7 @@
   font-size: .9rem;
   white-space: nowrap;
   line-height: 1;
-  margin-left: 0.1em;        /* ← 数字との距離を最小限に */
+  margin-left: 0.05em;     /* ← 数字との距離を最小限に */
 }
 
   /* お得行 */
