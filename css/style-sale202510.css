@@ -1,4 +1,4 @@
-/* ==== simple sale banner 202510 vivid + large-text tuned ==== */
+/* ==== simple sale banner 202510 vivid + strong-font ver ==== */
 .sale-simple-202510{
   border:2px solid #f6b88f;
   border-radius:16px;
@@ -10,7 +10,7 @@
   text-align:center !important;
 }
 
-/* タグ（令和6年産 感謝価格） */
+/* タグ */
 .sale-simple-202510__tag{
   display:inline-block;
   margin:0 auto 14px;
@@ -19,120 +19,113 @@
   background:linear-gradient(90deg,#ff8243,#ff3e3e);
   color:#fff;
   font-weight:800;
-  font-size:1.25rem;          /* ↑ 視認性UP */
+  font-size:1.25rem;
   letter-spacing:.02em;
   box-shadow:0 3px 10px rgba(255,90,0,.25);
-  text-align:center !important;
 }
 
 /* タイトル */
 .sale-simple-202510__title{
-  margin:8px auto 6px;
-  font-size:clamp(1.8rem,4.2vw,2.2rem);  /* ↑ しっかり大きく */
-  line-height:1.35;
+  margin:8px auto 4px;
+  font-size:clamp(1.8rem,4vw,2.1rem);
   font-weight:900;
   color:#6f2a00;
-  text-shadow:0 1px 1px rgba(255,255,255,.4);
-  text-align:center !important;
+  line-height:1.35;
 }
 
-/* セール期間（タイトル下） */
+/* セール期間 */
 .sale-simple-202510__period{
-  font-size:1.1rem;            /* ↑ 読みやすく */
+  font-size:1.05rem;
   color:#b36b33;
   font-weight:700;
-  letter-spacing:.02em;
   margin:6px auto 10px;
-  text-align:center;
 }
 
 /* ===== 価格ライン ===== */
 .sale-simple-202510__pricebox{
-  margin:12px auto 14px;
-  text-align:center;
-  line-height:1.55;
+  margin:12px auto 16px;
+  line-height:1.6;
 }
 
+/* 通常価格 */
 .sale-simple-202510__price-old{
-  font-size:1.15rem;           /* ↑ 通常価格も見やすく */
-  color:#9c8a80;
-  margin:0 auto 6px;
+  font-size:1.25rem;  /* ← 大きく */
+  color:#7b6a60;
+  margin:0 auto 4px;
 }
 .sale-simple-202510__price-old s{
   color:#b8a8a0;
-  text-decoration:line-through;
 }
 .sale-simple-202510__price-old .tax{
-  font-size:.85em;
-  color:#a79b94;
-  margin-left:.35em;
+  font-size:.9em;
+  color:#7d6b63;
+  margin-left:.3em;
+  font-weight:600;
 }
 
-/* SALE価格（ラベル＋金額＋税込） */
+/* SALE価格 */
 .sale-simple-202510__price-new{
-  margin:4px 0 0;
+  margin:6px 0 0;
   color:#d41414;
   font-weight:900;
-  letter-spacing:.02em;
+  letter-spacing:.03em;
 }
 .sale-simple-202510__price-new .label{
   display:inline-block;
-  margin-right:.5em;
-  padding:.28em .8em;
-  border-radius:12px;
+  margin-right:.6em;
+  padding:.3em .8em;
+  border-radius:14px;
   background:#fff1ec;
   color:#b13200;
   font-weight:900;
-  font-size:1.05rem;           /* ↑ ラベルも少し大きく */
-  vertical-align:middle;
+  font-size:1.25rem;  /* ← かなり大きく */
 }
 .sale-simple-202510__price-new strong{
-  font-size:clamp(2.2rem,5.6vw,2.8rem);  /* ↑ 主役サイズ */
+  font-size:clamp(2.4rem,5vw,2.9rem); /* ← 主役拡大 */
   font-weight:900;
-  letter-spacing:.03em;
   text-shadow:0 1px 3px rgba(255,200,200,.5);
 }
 .sale-simple-202510__price-new .tax{
-  font-size:.8em;              /* 税込は控えめ */
+  font-size:1rem;   /* ← 小さすぎたのを修正 */
   color:#a25c5c;
-  margin-left:.35em;
-  vertical-align:baseline;
+  margin-left:.4em;
   font-weight:700;
+  vertical-align:middle;
 }
 
 /* 今だけ〇〇お得！ */
 .sale-simple-202510__deal{
-  margin:8px auto 14px;
-  font-size:1.25rem;           /* ↑ ひと回り大きく */
+  margin:10px auto 14px;
+  font-size:1.25rem;
   color:#b23100;
   font-weight:800;
-  text-align:center !important;
 }
 
-/* 注意文（在庫終了／新米発売日） */
+/* 注意文 */
 .sale-simple-202510__note{
   margin:12px auto 10px;
-  font-size:1.1rem;            /* ↑ 可読性UP */
+  font-size:1.1rem;
   color:#5a4334;
-  line-height:1.95;
-  text-align:center !important;
+  line-height:1.9;
 }
 
-/* 注意枠（令和6年産です） */
+/* 注意枠 */
 .sale-simple-202510__caution{
   margin:10px auto 0;
   padding:12px 14px;
   max-width:92%;
-  font-size:1.12rem;           /* ↑ 少し大きく */
-  line-height:1.95;
+  font-size:1.12rem;
+  line-height:1.9;
   font-weight:800;
   text-align:center !important;
   color:#8a1f1f;
   background:#fff5f2;
   border:2px solid #ffb7a0;
   border-radius:12px;
-  box-shadow:inset 0 0 0 1px rgba(255,150,120,.15);
 }
+
+/* スマホは後で別調整にする */
+
 
 /* === スマホ最適化（中高年向けに最小16px以上を維持） === */
 @media (max-width:480px){
