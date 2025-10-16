@@ -63,35 +63,47 @@
   font-weight:600;
 }
 
-/* SALE価格 */
-.sale-simple-202510__price-new{
-  margin:2px 0 0;         /* ← さらにコンパクト化 */
-  color:#d41414;
-  font-weight:900;
-  letter-spacing:.03em;
+/* SALE価格（PC版：余白を最適化） */
+.sale-simple-202510__price-new {
+  margin: 2px 0 0;
+  color: #d41414;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  align-items: baseline; /* ￥と税込の高さ揃え */
+  gap: 0.2em;            /* ← 空白を制御（自然に詰める） */
+  flex-wrap: nowrap;
 }
-.sale-simple-202510__price-new .label{
-  display:inline-block;
-  margin-right:.5em;
-  padding:.25em .7em;
-  border-radius:14px;
-  background:#fff1ec;
-  color:#b13200;
-  font-weight:900;
-  font-size:1.4rem;
+
+.sale-simple-202510__price-new .label {
+  display: inline-block;
+  margin-right: 0.1em;   /* ← 0.5em → 0.1emに縮小 */
+  padding: 0.2em 0.45em; /* ← コンパクトに */
+  border-radius: 12px;
+  background: #fff1ec;
+  color: #b13200;
+  font-weight: 900;
+  font-size: 1.4rem;
+  white-space: nowrap;   /* 改行防止 */
 }
-.sale-simple-202510__price-new strong{
-  font-size:clamp(2.4rem,5vw,2.9rem);
-  font-weight:900;
-  text-shadow:0 1px 3px rgba(255,200,200,.5);
+
+.sale-simple-202510__price-new strong {
+  font-size: clamp(2.4rem, 5vw, 2.9rem);
+  font-weight: 900;
+  text-shadow: 0 1px 3px rgba(255,200,200,0.5);
+  line-height: 1;
 }
-.sale-simple-202510__price-new .tax{
-  font-size:1rem;
-  color:#a25c5c;
-  margin-left:.35em;
-  font-weight:700;
-  vertical-align:middle;
+
+.sale-simple-202510__price-new .tax {
+  font-size: 1rem;
+  color: #a25c5c;
+  margin-left: 0.15em;   /* ← 0.35em → 0.15em */
+  font-weight: 700;
+  vertical-align: baseline;
+  white-space: nowrap;
 }
+
 
 /* 今だけ〇〇お得！ */
 .sale-simple-202510__deal{
