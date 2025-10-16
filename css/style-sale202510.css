@@ -155,31 +155,35 @@
     margin:0 auto 2px;
   }
 
-  /* ▼ SALE価格（1行中央・改行防止・縦位置揃え） */
-  .sale-simple-202510__price-new{
-    margin:2px 0 0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:nowrap;         /* ← 改行させない */
-    gap:.35em;
-    line-height:1.2;
-  }
-  .sale-simple-202510__price-new .label{
-    font-size:1.1rem;         /* 収まり優先で微調整 */
-    padding:.2em .6em;
-    border-radius:12px;
-    white-space:nowrap;
-  }
-  .sale-simple-202510__price-new strong{
-    font-size:2.05rem;        /* 主役はしっかり大きく */
-    line-height:1;
-  }
-  .sale-simple-202510__price-new .tax{
-    font-size:.95rem;         /* 小さすぎ回避 */
-    white-space:nowrap;
-    line-height:1;
-  }
+  /* SALE価格（スマホ）余白を詰める＋中央整列キープ */
+.sale-simple-202510__price-new {
+  margin: 2px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;     /* ← 数字と税込の縦位置を揃える */
+  flex-wrap: nowrap;
+  gap: 0.15em;               /* ← 余計な隙間を最小化 */
+  line-height: 1.2;
+}
+
+.sale-simple-202510__price-new .label {
+  font-size: 1.1rem;
+  padding: .2em .55em;       /* ← 少し詰めて全体をコンパクトに */
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.sale-simple-202510__price-new strong {
+  font-size: 2.05rem;
+  line-height: 1;
+}
+
+.sale-simple-202510__price-new .tax {
+  font-size: .9rem;
+  white-space: nowrap;
+  line-height: 1;
+  margin-left: 0.1em;        /* ← 数字との距離を最小限に */
+}
 
   /* お得行 */
   .sale-simple-202510__deal{
