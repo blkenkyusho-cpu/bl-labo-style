@@ -5,7 +5,7 @@
   padding:24px 20px;
   margin:18px 0 28px;
   background:linear-gradient(180deg,#fff7f2,#ffe8db);
-  font-family:"Hiragino Kaku Gothic ProN","Helvetica Neue",system-ui,sans-serif;
+  font-family: "Helvetica Neue", sans-serif; /* ← フォントを追加 */
   box-shadow:0 6px 20px rgba(255,120,40,.12);
   text-align:center !important;
 }
@@ -19,7 +19,7 @@
   background:linear-gradient(90deg,#ff8243,#ff3e3e);
   color:#fff;
   font-weight:800;
-  font-size:1.25rem;
+  font-size:1.4rem;
   letter-spacing:.02em;
   box-shadow:0 3px 10px rgba(255,90,0,.25);
 }
@@ -49,7 +49,7 @@
 
 /* 通常価格 */
 .sale-simple-202510__price-old{
-  font-size:1.25rem;  /* ← 大きく */
+  font-size:1.4rem;  /* ← 大きく */
   color:#7b6a60;
   margin:0 auto 4px;
 }
@@ -78,7 +78,7 @@
   background:#fff1ec;
   color:#b13200;
   font-weight:900;
-  font-size:1.25rem;  /* ← かなり大きく */
+  font-size:1.4rem;  /* ← かなり大きく */
 }
 .sale-simple-202510__price-new strong{
   font-size:clamp(2.4rem,5vw,2.9rem); /* ← 主役拡大 */
@@ -96,7 +96,7 @@
 /* 今だけ〇〇お得！ */
 .sale-simple-202510__deal{
   margin:10px auto 14px;
-  font-size:1.25rem;
+  font-size:1.4rem;
   color:#b23100;
   font-weight:800;
 }
