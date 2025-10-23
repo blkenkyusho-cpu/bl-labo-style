@@ -235,3 +235,127 @@
     }
   }
 }
+
+/* ==== New Rice (R7) &#8211; large text + themeable 202511 ==== */
+.newrice-202511{
+  /* デフォルト（green）用の色変数 */
+  --nr-accent: #14a069;      /* タグや強調の主色 */
+  --nr-accent-2:#0a9f5e;
+  --nr-bg1:   #f7fff9;       /* 背景上段 */
+  --nr-bg2:   #ecfbf1;       /* 背景下段 */
+  --nr-text:  #145c3e;       /* 見出し */
+  --nr-sub:   #2f6f57;       /* 説明 */
+  --nr-border:#9bd1b0;       /* 枠線 */
+
+  border:2px solid var(--nr-border);
+  border-radius:16px;
+  padding:24px 20px;
+  margin:18px 0 26px;
+  background:linear-gradient(180deg,var(--nr-bg1),var(--nr-bg2));
+  font-family:"Hiragino Kaku Gothic ProN","Helvetica Neue",system-ui,sans-serif;
+  text-align:center;
+  box-shadow:0 6px 18px color-mix(in srgb, var(--nr-accent) 12%, transparent);
+}
+
+/* テーマ切替（ページごとに .theme-amber / .theme-sky を付けるだけ） */
+.newrice-202511.theme-amber{
+  --nr-accent:#e6a21e; --nr-accent-2:#c9870e;
+  --nr-bg1:#fffaf2; --nr-bg2:#fff3df;
+  --nr-text:#7a4d00; --nr-sub:#8f5e15; --nr-border:#f0cf8a;
+}
+.newrice-202511.theme-sky{
+  --nr-accent:#2a84d2; --nr-accent-2:#1f6fb5;
+  --nr-bg1:#f4faff; --nr-bg2:#e8f3ff;
+  --nr-text:#184a74; --nr-sub:#2c5f8f; --nr-border:#a9c8e6;
+}
+/*（必要なら theme-tea など好きな配色を増やせます）*/
+
+/* タグ */
+.newrice-202511__tag{
+  display:inline-block;
+  margin:0 auto 12px;
+  padding:7px 16px;
+  border-radius:999px;
+  background:linear-gradient(90deg,var(--nr-accent),var(--nr-accent-2));
+  color:#fff; font-weight:800; font-size:1.8rem; letter-spacing:.02em;
+  box-shadow:0 3px 10px color-mix(in srgb, var(--nr-accent) 25%, transparent);
+}
+
+/* 見出し・サブ */
+.newrice-202511__title{
+  margin:8px auto 8px;
+  font-size:clamp(1.9rem,4.2vw,2.3rem); /* ← ひと回りUP */
+  font-weight:900;
+  color:var(--nr-text);
+  line-height:1.35;
+}
+.newrice-202511__sub{
+  margin:0 auto 14px;
+  font-size:clamp(1.1rem,2.8vw,1.2rem); /* ← UP */
+  color:var(--nr-sub);
+}
+
+/* 価格行（大きめ＆中央） */
+.newrice-202511__pricebox {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: .6em;
+  margin: 10px 0 14px;
+}
+
+.newrice-202511__price-label {
+  background: color-mix(in srgb, var(--nr-bg2) 70%, #fff);
+  color: var(--nr-sub);
+  border: 1px solid color-mix(in srgb, var(--nr-border) 70%, #fff);
+  padding: .36em .9em;   
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: .02em;
+}
+
+.newrice-202511__price strong {
+  font-size: clamp(2.6rem, 5.4vw, 3.1rem);  
+  color: var(--nr-accent-2);
+  font-weight: 900;
+  letter-spacing: .03em;
+  line-height: 1.05;     
+}
+
+.newrice-202511__price .tax {
+  font-size: 1.08rem;  
+  color: var(--nr-sub);
+  margin-left: .35em;
+  font-weight: 700;
+  white-space: nowrap;
+  vertical-align: middle;  
+}
+
+
+/* 注意ボックス */
+.newrice-202511__notice{
+  text-align:left; margin:14px auto 10px; max-width:920px;
+  background:#fff; border:1px solid color-mix(in srgb, var(--nr-border) 70%, #ddd);
+  border-radius:12px; padding:14px 16px;
+}
+.newrice-202511__notice h2{
+  margin:0 0 6px; font-size:1.12rem; color:var(--nr-accent-2); font-weight:800;
+}
+.newrice-202511__notice ul{margin:0; padding-left:1.2em}
+.newrice-202511__notice li{margin:.35em 0; line-height:1.9; font-size:1.02rem; color:#3a3f3b}
+
+/* 旧米との識別文 */
+.newrice-202511__diff{margin:8px auto 0; font-size:1rem; color:var(--nr-sub)}
+
+/* スマホ最適化 */
+@media (max-width:480px){
+  .newrice-202511{padding:20px 14px; margin:16px 0 22px}
+  .newrice-202511__tag{font-size:1.05rem; padding:6px 12px}
+  .newrice-202511__title{font-size:1.7rem}
+  .newrice-202511__sub{font-size:1.05rem}
+  .newrice-202511__price strong{font-size:2.2rem}
+  .newrice-202511__price .tax{font-size:1rem}
+  .newrice-202511__notice{padding:12px 14px}
+  .newrice-202511__notice li{font-size:.98rem}
+}
