@@ -359,3 +359,29 @@
   .newrice-202511__notice{padding:12px 14px}
   .newrice-202511__notice li{font-size:.98rem}
 }
+
+.newrice-202511__early {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  background: #fff9e6; border-radius: 8px; padding: 6px 10px;
+  border: 1px solid #f0d97a;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 10px auto 14px;
+  max-width: 780px;
+  font-size: 1rem;
+  color: #7a4d00;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(240,210,80,0.15);
+}
+
+/* === スマホ最適化（480px以下）=== */
+@media (max-width: 480px) {
+  .newrice-202511__early {
+    font-size: 0.9rem;       /* 少し小さくしてバランス調整 */
+    padding: 8px 10px;       /* 内側余白を詰めてスッキリ */
+    margin: 8px auto 12px;   /* 上下の余白も控えめに */
+    max-width: 92%;          /* 横幅を画面にフィットさせる */
+    line-height: 1.6;        /* 読みやすく */
+  }
+}
