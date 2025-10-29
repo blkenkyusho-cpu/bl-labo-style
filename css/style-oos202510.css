@@ -1,0 +1,91 @@
+/* ===== 欠品お知らせブロック v202510（最終バランス調整） ===== */
+.oos-box-202510 {
+  background: #fff8e8;
+  border: 2px solid #f3d49a;
+  border-radius: 12px;
+  padding: 48px 16px 18px;   /* ← 上方向をさらに広く */
+  margin: 20px auto;
+  max-width: 760px;
+  box-shadow: 0 4px 10px rgba(200,150,50,0.1);
+  font-family: "Hiragino Kaku Gothic ProN","Helvetica Neue",sans-serif;
+  color: #46320e;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* バッジ（欠品中） */
+.oos-badge-202510 {
+  position: absolute;
+  top: 12px;        /* ← ほんの少し下げて、文字との距離を取る */
+  left: 16px;
+  background: #e85d75;
+  color: #fff;
+  font-weight: bold;
+  font-size: .9rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+/* タイトル */
+.oos-title-202510 {
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  color: #b96a00;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+/* 通常テキスト */
+.oos-msg-202510 {
+  margin: 0.5em 0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* 再入荷予定行 */
+.oos-eta-202510 {
+  margin: 0.7em 0;
+  line-height: 1.8;
+  font-size: 1.2rem;   /* ← 他より少し大きく */
+  font-weight: 600;
+  color: #744800;       /* ← 強すぎない落ち着いたブラウン */
+}
+.oos-eta-202510 strong {
+  color: #b96a00;       /* ラベル部分はオレンジでアクセント */
+  font-weight: 700;
+}
+
+/* 強調ハイライト */
+.oos-highlight-202510 {
+  font-weight: bold;
+  color: #b96a00;
+  background: linear-gradient(transparent 70%, #fff0b5 70%);
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+/* 注釈 */
+.oos-note-202510 {
+  margin: 0.5em 0;
+  line-height: 1.7;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* モバイル微調整 */
+@media (max-width: 480px) {
+  .oos-box-202510 {
+    padding: 50px 14px 18px;
+  }
+  .oos-title-202510 {
+    font-size: 1.05rem;
+  }
+  .oos-msg-202510,
+  .oos-eta-202510 {
+    font-size: 0.92rem;
+  }
+}
