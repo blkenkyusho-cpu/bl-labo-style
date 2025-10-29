@@ -76,7 +76,6 @@
   opacity: 0.9;
 }
 
-/* モバイル微調整 */
 @media (max-width: 480px) {
   .oos-box-202510 {
     padding: 50px 14px 18px;
@@ -84,8 +83,18 @@
   .oos-title-202510 {
     font-size: 1.05rem;
   }
-  .oos-msg-202510,
-  .oos-eta-202510 {
+  .oos-msg-202510 {
     font-size: 0.92rem;
+  }
+
+  /* ← ここを新しく追加！ */
+  .oos-eta-202510 {
+    font-size: 1.1rem;   /* 他より少しだけ大きくして目立たせる */
+    font-weight: 600;
+    color: #744800;
+  }
+  .oos-eta-202510 strong {
+    color: #b96a00;
+    font-weight: 700;
   }
 }
