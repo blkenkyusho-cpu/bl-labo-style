@@ -1,0 +1,388 @@
+.sugata-sale {
+  --bg:#fffefe; --panel:#ffffff; --border:#f1d5da;
+  --ink:#191214; --muted:#5a4a4d;
+  --accent:#d73a3a; --accent-ink:#6a1616;
+  --price-new:#b81414; --arrow:#c12a2a;
+  --note-bg:#d73a3a; --note-border:#c42f2f;
+
+  font-family: "Hiragino Kaku Gothic ProN","Helvetica Neue",sans-serif;
+  background: var(--bg);
+  border: 5px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 22px 18px;
+  margin: 22px 0;
+  box-shadow: 0 10px 28px rgba(0,0,0,.05);
+  color: var(--ink);
+}
+
+.sugata-sale__content { text-align: center; }
+
+/* ラベル（期間限定）：呼吸＋シャイン併用 */
+.sugata-sale__label {
+  display: block;
+  position: relative;           /* シャイン用 */
+  overflow: hidden;             /* シャインはみ出し防止 */
+
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid #e05f12;
+  border-radius: 999px;
+  padding: 11px 19px;
+  font-weight: 800;
+  font-size: clamp(20px, 2.8vw, 23px);
+  letter-spacing: .03em;
+  box-shadow: 0 3px 8px rgba(0,0,0,.10);
+  margin: 0 0 5px 18px;         /* 左に少し入れる */
+  width: fit-content;
+
+  animation: sugataPulse 3.2s ease-in-out infinite; /* 呼吸 */
+  will-change: transform, box-shadow;
+}
+
+/* シャイン（薄い光がスーッと通る） */
+.sugata-sale__label::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    115deg,
+    rgba(255,255,255,0) 25%,
+    rgba(255,255,255,.40) 50%,
+    rgba(255,255,255,0) 75%
+  );
+  transform: translateX(-120%);
+  animation: sugataShine 2s ease-in-out infinite; /* お好みで 3.5&#12316;4.5s に */
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* 呼吸アニメ（強め） */
+@keyframes sugataPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 3px 8px rgba(0,0,0,.10);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 5px 14px rgba(0,0,0,.14);
+  }
+}
+
+/* シャインの動き */
+@keyframes sugataShine{
+  0%,15%   { transform: translateX(-120%); }
+  45%      { transform: translateX(120%);  }
+  100%     { transform: translateX(120%);  }
+}
+
+/* タイトル／サブタイトル */
+.sugata-sale__title{
+  margin: 2px 0 6px;
+  font-size: clamp(26px, 3.8vw, 34px);
+  line-height: 1.35;
+  font-weight: 850;
+  color: var(--ink);
+}
+.sugata-sale__subtitle{
+  margin: 0 0 6px;
+  font-size: clamp(16px, 2.6vw, 18px);
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* 価格ボックス */
+.sugata-sale__price{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 14px;
+  margin: 8px 0 15px;
+  padding: 12px 16px;
+  background: var(--panel);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.03);
+  text-align: center;
+  flex-wrap: wrap;
+}
+.sugata-sale__old{
+  font-size: clamp(16px, 2.4vw, 18px);
+  color: #7f736a;
+}
+.sugata-sale__arrow{
+  font-size: clamp(18px, 3vw, 20px);
+  color: var(--arrow);
+  font-weight: 900;
+}
+.sugata-sale__new{
+  font-size: clamp(22px, 4.6vw, 30px);
+  font-weight: 900;
+  color: var(--price-new);
+}
+.sugata-sale__tax{ font-size: .9em; color: #6b6b6b; }
+
+/* 「3,300円OFF」バッジ風 */
+.sugata-sale__offnote {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 6px;
+  padding: 3px 11px 4px;
+  font-size: clamp(18px, 2.6vw, 20px);  
+  line-height: 1.2;
+  color: #fff;
+  background:linear-gradient(135deg,#ff5a5a,#d72626);
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  vertical-align: middle;
+  transform: translateY(-1px);
+}
+
+/* ポイント（空でも崩れない） */
+.sugata-sale__points-wrapper {
+  text-align: center;
+  background: #fff0ea;          
+  padding: 0px 0 6px;
+  border-radius: 10px;
+}
+
+.sugata-sale__points:empty { display: none; }
+
+.sugata-sale__points{
+  margin: 0px 0 0;
+  padding: 20px;
+  list-style: none;
+  font-size: clamp(14px, 2.6vw, 17px);
+  line-height: 1.95;
+  display: inline-block;
+  text-align: left;
+}
+.sugata-sale__points li{
+  position: relative; padding-left: 1.6em; margin: 6px 0;
+}
+.sugata-sale__points li::before{
+  content: ""; position: absolute; left: 0; top: 0.35em; width: 1em; height: 1em;
+  background: no-repeat 0 0 / 1em 1em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23d93a00' d='M9 16.2 4.8 12l1.4-1.4L9 13.4l8.8-8.8L19.2 6z'/%3E%3C/svg%3E");
+}
+
+/* セール期間（白文字×赤寄り背景） */
+.sugata-sale__note{
+  text-align: center;
+  margin: 16px 0 10px;
+  padding: 12px 14px;
+  background: var(--note-bg);            /* ★ 赤寄りに */
+  border: 1px solid var(--note-border);
+  border-radius: 10px;
+  font-size: clamp(21px, 2.7vw, 23px);
+  color: #fff;                           /* ★ 白文字 */
+  font-weight: 700;
+  line-height: 1.8;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);/* 可読性補助 */
+}
+.sugata-sale__note p{ margin: 0; }
+
+/* おすすめポイント枠 */
+.sugata-sale__recommend{
+  margin-top: 16px;
+  padding: 14px;
+  background: #fffaf0;
+  border: 1px solid #f3ce86;
+  border-radius: 10px;
+  text-align: left;
+}
+.sugata-sale__recommend-title{
+  font-size: clamp(18px, 2.8vw, 21px);
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: #8a4a12;
+  padding-left: 20px;   /* ← 内側に寄せる */
+}
+
+/* 3列 → 2列 → 1列 レスポンシブグリッド */
+.sugata-sale .sugata-sale__recommend-list{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 28px;                /* 行・列間を少し広げる */
+  margin: 10px auto 0;           /* autoで中央寄せ */
+  padding-left: 10px;            /* 左余白を整える */
+  list-style: none;
+  text-align: left;
+  max-width: 95%;                /* 全体をやや中央寄せに見せる */
+}
+
+.sugata-sale .sugata-sale__recommend-list li{
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: clamp(15px, 2.6vw, 17px);
+  line-height: 1.9;
+  color: var(--ink);
+  border-bottom: 1px solid #f1d5d5; /* &#128071; アンダーライン（柔らかい色） */
+  padding-bottom: 4px;
+}
+
+/* &#10004; マークの調整 */
+.sugata-sale .sugata-sale__recommend-list li > span{
+  flex-shrink: 0;
+  margin-top: .1em;
+}
+
+/*.sugata-sale__recommend-text{
+  font-size: clamp(15px, 2.6vw, 17px);
+  line-height: 1.9;
+  color: var(--ink);
+  margin: 0;
+}*/
+
+/* モーション軽減設定対応 */
+@media (prefers-reduced-motion: reduce){
+  .sugata-sale * { animation: none !important; transition: none !important; }
+  .sugata-sale__label::after{ animation: none !important; }
+}
+
+/* モバイル最適化 */
+@media (max-width: 480px){
+  /* ベース */
+  .sugata-sale{ padding: 18px 14px; border-radius: 14px; }
+  .sugata-sale__label{ font-size: 18px; padding: 9px 14px; }
+  .sugata-sale__new{ font-size: 1.6rem; }
+  .sugata-sale__points{ font-size: 16px; }
+
+  /* ▼ 価格行：ボックスごと“ど真ん中”に */
+  .sugata-sale__price{
+    display: inline-flex;
+    margin: 8px auto 6px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 12px;
+    text-align: center;
+  }
+  .sugata-sale__old,
+  .sugata-sale__arrow{ white-space: nowrap; }
+  .sugata-sale__old{ font-size: 15px; margin-left: 10px; }
+  .sugata-sale__new{ font-size: 1.55rem; }
+  .sugata-sale__offnote{ margin-left: 5px; }
+
+  /* ▼ セール期間（スマホ） */
+  .sugata-sale__note{
+    text-align: center;
+    line-height: 1.9;
+    padding: 10px 8px;
+    /* 見出し行と日付行の余白感は line-height で調整 */
+  }
+  /* 中身は左揃えの箱を中央配置 → 1行目が2行目の先頭に揃う */
+  .sugata-sale__note strong{
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    white-space: normal;           /* pre-lineは外す（妙な空白防止） */
+    line-height: 1.9;
+    font-size: clamp(16px, 3.6vw, 18px);  /* ★ ここでサイズ調整 */
+    font-weight: 800;
+  }
+
+  /* ▼ 改善事例リスト：中央寄せに“見える”内側調整 */
+  .sugata-sale .sugata-sale__recommend-list{
+    grid-template-columns: 1fr;   /* スマホは1列 */
+    text-align: left;
+    list-style: none;             /* ・は消す */
+    margin: 0 auto;
+    padding: 0 18px;              /* 左右を均等に入れて内側へ */
+    max-width: 88%;               /* 全体をもう少し中央へ寄せる */
+  }
+  .sugata-sale .sugata-sale__recommend-list li{
+    justify-content: flex-start;
+    border-bottom: none;
+    padding-bottom: 4px;
+    font-size: 0.97rem;
+  }
+  .sugata-sale .sugata-sale__recommend-list li > span{
+    font-size: 1.15em;
+    margin-right: 8px;
+    color: #f39c12;
+  }
+}
+
+/* モーション軽減設定対応 */
+@media (prefers-reduced-motion: reduce){
+  .sugata-sale * { animation: none !important; transition: none !important; }
+  .sugata-sale__label::after{ animation: none !important; }
+}
+
+/* モバイル最適化 */
+@media (max-width: 480px){
+  /* ベース */
+  .sugata-sale{ padding: 18px 14px; border-radius: 14px; }
+  .sugata-sale__label{ font-size: 18px; padding: 9px 14px; }
+  .sugata-sale__new{ font-size: 1.6rem; }
+  .sugata-sale__points{ font-size: 16px; }
+
+  /* ▼ 価格行：ボックスごと“ど真ん中”に */
+  .sugata-sale__price{
+    display: inline-flex;
+    margin: 8px auto 15px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 12px;
+    text-align: center;
+  }
+  .sugata-sale__old,
+  .sugata-sale__arrow{ white-space: nowrap; }
+  .sugata-sale__old{ font-size: 15px; margin-left: 10px; }
+  .sugata-sale__new{ font-size: 1.55rem; }
+  .sugata-sale__offnote{ margin-left: 5px; }
+
+  /* ▼ セール期間（スマホ） */
+  .sugata-sale__note{
+    text-align: center;
+    line-height: 1.9;
+    padding: 10px 8px;
+    /* 見出し行と日付行の余白感は line-height で調整 */
+  }
+  /* 中身は左揃えの箱を中央配置 → 1行目が2行目の先頭に揃う */
+  .sugata-sale__note strong{
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    white-space: normal;           /* pre-lineは外す（妙な空白防止） */
+    line-height: 1.9;
+    font-size: clamp(16px, 3.6vw, 18px);  /* ★ ここでサイズ調整 */
+    font-weight: 800;
+  }
+  
+  .sugata-sale__points-wrapper{
+    padding: 15px;
+  }
+  
+  .sugata-sale__recommend-title{
+    font-size: clamp(18px, 3.4vw, 20px);
+    margin: 0 0 8px 15px; /* ← 左だけ10px入れて内側へ */
+    color: #8a4a12;
+    font-weight: 800;
+  }
+
+  /* ▼ 改善事例リスト：中央寄せに“見える”内側調整 */
+  .sugata-sale .sugata-sale__recommend-list{
+    grid-template-columns: 1fr;   /* スマホは1列 */
+    text-align: left;
+    list-style: none;             /* ・は消す */
+    margin: 0 auto;
+    padding: 0 18px;              /* 左右を均等に入れて内側へ */
+    max-width: 75%;               /* 全体をもう少し中央へ寄せる */
+  }
+  .sugata-sale .sugata-sale__recommend-list li{
+    justify-content: flex-start;
+    border-bottom: none;
+    padding-bottom: 4px;
+    font-size: 0.97rem;
+  }
+  .sugata-sale .sugata-sale__recommend-list li > span{
+    font-size: 1.15em;
+    margin-right: 8px;
+    color: #f39c12;
+  }
+}
