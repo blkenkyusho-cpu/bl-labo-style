@@ -370,6 +370,7 @@
     grid-template-columns: 1fr;   /* スマホは1列 */
     text-align: left;
     list-style: none;             /* ・は消す */
+    gap: 4px 0;
     margin: 0 auto;
     padding: 0 18px;              /* 左右を均等に入れて内側へ */
     max-width: 75%;               /* 全体をもう少し中央へ寄せる */
@@ -377,8 +378,8 @@
   .sugata-sale .sugata-sale__recommend-list li{
     display: flex;
     justify-content: flex-start;
-    margin: 0;
-    padding: 2px 0;
+    margin: 0;                  /* 余白リセット */
+    padding: 0;                 /* 余白リセット（必要なら 2px 0 程度でも可） */
     border-bottom: none;
     padding-bottom: 4px;
     font-size: 0.97rem;
