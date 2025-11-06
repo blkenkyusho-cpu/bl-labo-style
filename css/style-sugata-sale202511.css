@@ -375,8 +375,10 @@
     max-width: 75%;               /* 全体をもう少し中央へ寄せる */
   }
   .sugata-sale .sugata-sale__recommend-list li{
-    display: block;
+    display: flex;
     justify-content: flex-start;
+    margin: 0;
+    padding: 2px 0;
     border-bottom: none;
     padding-bottom: 4px;
     font-size: 0.97rem;
