@@ -355,7 +355,7 @@
   }
   
   .sugata-sale__points-wrapper{
-    padding: 10px;
+    padding: 5px;
   }
   
   .sugata-sale__recommend-title{
@@ -375,12 +375,14 @@
     max-width: 75%;               /* 全体をもう少し中央へ寄せる */
   }
   .sugata-sale .sugata-sale__recommend-list li{
+    display: block;
     justify-content: flex-start;
     border-bottom: none;
     padding-bottom: 4px;
     font-size: 0.97rem;
   }
   .sugata-sale .sugata-sale__recommend-list li > span{
+    display: inline;
     font-size: 1.15em;
     margin-right: 8px;
     color: #f39c12;
