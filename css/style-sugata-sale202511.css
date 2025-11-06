@@ -380,8 +380,9 @@
     justify-content: flex-start;
     margin: 0;                  /* 余白リセット */
     padding: 0;                 /* 余白リセット（必要なら 2px 0 程度でも可） */
+    line-height: 1.55;  
     border-bottom: none;
-    padding-bottom: 4px;
+    /*padding-bottom: 4px;*/
     font-size: 0.97rem;
   }
   .sugata-sale .sugata-sale__recommend-list li > span{
