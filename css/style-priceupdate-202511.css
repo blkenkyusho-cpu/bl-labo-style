@@ -1,0 +1,181 @@
+/* ── PriceUpdate 2025-11：Neutral Gray（余白自動調整対応）── */
+.priceupdate-202511{
+  font-family: "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
+
+  --ink:#222;
+  --muted:#666;
+  --block-bg:#f7f7f8;
+  --block-stroke:#d9d9de;
+  --table-bg:#eceef2;
+  --table-stroke:#bfc3cc;
+  --old:#8c8c8c;
+  --new:#0b53b7;
+
+  color:var(--ink);
+  font-size:16px;
+  line-height:1.7;
+}
+
+/* 外カード */
+.priceupdate-202511__block{
+  background:var(--block-bg);
+  border:1px solid var(--block-stroke);
+  border-radius:12px;
+  padding:18px 18px 14px;
+}
+
+/* ピル見出し */
+.priceupdate-202511__eyecatch{
+  display:inline-block;
+  font-size:.88em;
+  letter-spacing:.02em;
+  padding:4px 10px;
+  border-radius:999px;
+  border:1px solid #bfc3cb;
+  color:#444;
+  background:#fff;
+}
+
+/* タイトル・本文（有無に応じて余白を調整） */
+.priceupdate-202511__title{
+  margin:.6em 0 .2em;
+  font-size:1.08em;
+  font-weight:700;
+}
+.priceupdate-202511__text{ margin:.4em 0 .6em; }
+
+/* 要素が存在しない場合、次要素との間隔を詰める */
+.priceupdate-202511__title:empty,
+.priceupdate-202511__text:empty,
+.priceupdate-202511__note:empty{
+  display:none; /* 空タグが残っても非表示に */
+}
+
+/* テーブル */
+.priceupdate-202511__table{
+  margin:.9em 0 .6em;
+  background:var(--table-bg);
+  border:1px solid var(--table-stroke);
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 1px 0 rgba(0,0,0,.02),
+             0 1px 3px rgba(0,0,0,.03);
+}
+.priceupdate-202511__row{
+  display:grid;
+  grid-template-columns:1.1fr .9fr .9fr;
+  border-top:1px dashed var(--table-stroke);
+}
+.priceupdate-202511__row:first-child{ border-top:none; }
+
+.priceupdate-202511__cell{
+  padding:12px 14px;
+  font-size:.95em;
+  display:flex;
+  align-items:center;
+}
+
+/* 縦区切り線 */
+.priceupdate-202511__cell:nth-child(2),
+.priceupdate-202511__cell:nth-child(3){
+  border-left:1px dashed var(--table-stroke);
+}
+
+/* 価格 */
+.priceupdate-202511__cell--old{
+  color:var(--old);
+  text-decoration:line-through;
+  text-decoration-thickness:2px;
+}
+.priceupdate-202511__cell--new{
+  color:var(--new);
+  font-weight:700;
+  font-size:1.05em;
+  justify-content:flex-end;
+}
+
+/* 備考文 */
+.priceupdate-202511__note{
+  margin:.6em 0 0;
+  color:var(--muted);
+  font-size:.92em;
+}
+
+/* 要素の有無で余白を自動制御（タイトルなし＋テキストなし時） */
+.priceupdate-202511__eyecatch + .priceupdate-202511__table {
+  margin-top:.6em; /* 見出しのみの時に自然な間隔 */
+}
+.priceupdate-202511__eyecatch + .priceupdate-202511__note {
+  margin-top:.4em;
+}
+
+/* モバイル */
+@media (max-width:480px){
+  /* 全体を少しコンパクトに */
+  .priceupdate-202511 { font-size:14.5px; }
+  .priceupdate-202511__block { padding:14px 12px 10px; }
+
+  .priceupdate-202511__eyecatch { font-size:1.0em; padding:3px 8px; }
+  .priceupdate-202511__title { font-size:1.2em; }
+  .priceupdate-202511__text { font-size:1.05em; line-height:1.7; }
+
+  /* === テーブル：上段=商品名(全幅) / 下段=旧(左列)・新(右列) === */
+  .priceupdate-202511__row{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name name"
+      "old  new";
+    border-top:1px dashed var(--table-stroke);
+  }
+  .priceupdate-202511__row:first-child{ border-top:none; }
+
+  .priceupdate-202511__cell{
+    padding:10px 12px;
+    font-size:1.1em;
+    border:0;                 /* いったんリセット */
+    display:flex;
+    align-items:center;
+    justify-content:center;   /* ← 基本は中央揃え */
+    text-align:center;
+  }
+
+  /* 商品名：上段中央 */
+  .priceupdate-202511__cell:nth-child(1){
+    grid-area:name;
+    border-bottom:1px dashed var(--table-stroke);
+    padding:12px 12px 10px;
+    font-size:1.1em;
+    font-weight:600;
+  }
+
+  /* 旧価格：左列・中央揃え（淡色＆取り消し線） */
+  .priceupdate-202511__cell:nth-child(2){
+    grid-area:old;
+    border-right:1px dashed var(--table-stroke); /* 旧/新の縦区切り */
+    padding:10px 10px;
+  }
+  .priceupdate-202511__cell--old{
+    color:#8c8c8c;
+    text-decoration:line-through;
+    text-decoration-thickness:1px;
+    font-size:1.05em;
+  }
+
+  /* 新価格：右列・中央揃え（強調） */
+  .priceupdate-202511__cell:nth-child(3){
+    grid-area:new;
+    padding:10px 10px;
+  }
+  .priceupdate-202511__cell--new{
+    color:var(--new);
+    font-weight:700;
+    font-size:1.2em;
+  }
+
+  /* 備考 */
+  .priceupdate-202511__note{
+    font-size:0.95em;
+    line-height:1.6;
+  }
+}
