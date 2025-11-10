@@ -73,6 +73,8 @@
   font-size:1.1em;
   display:flex;
   align-items:center;
+  justify-content:center; /* ← 中央揃えを統一 */
+  text-align:center;      /* ← テキストも中央 */
 }
 
 /* 縦区切り線 */
@@ -87,12 +89,15 @@
   font-size:1.05em;
   text-decoration:line-through;
   text-decoration-thickness:2px;
+  justify-content:center; /* ← 左寄せ解除して中央 */
+  text-align:center;
 }
 .priceupdate-202511__cell--new{
   color:var(--new);
   font-weight:700;
   font-size:1.2em;
-  justify-content:flex-end;
+  justify-content:center; /* ← 右寄せ解除して中央 */
+  text-align:center;
 }
 
 /* 備考文 */
