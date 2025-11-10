@@ -70,7 +70,7 @@
 
 .priceupdate-202511__cell{
   padding:12px 14px;
-  font-size:.95em;
+  font-size:1.1em;
   display:flex;
   align-items:center;
 }
@@ -84,13 +84,14 @@
 /* 価格 */
 .priceupdate-202511__cell--old{
   color:var(--old);
+  font-size:1.05em;
   text-decoration:line-through;
   text-decoration-thickness:2px;
 }
 .priceupdate-202511__cell--new{
   color:var(--new);
   font-weight:700;
-  font-size:1.05em;
+  font-size:1.2em;
   justify-content:flex-end;
 }
 
