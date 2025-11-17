@@ -280,7 +280,7 @@
     margin: 0 auto;
     white-space: normal;           /* pre-lineは外す（妙な空白防止） */
     line-height: 1.9;
-    font-size: clamp(16px, 3.6vw, 18px);  /* ★ ここでサイズ調整 */
+    font-size: clamp(13px, 3.2vw, 15px);  /* ★ ここでサイズ調整 */
     font-weight: 800;
   }
 
