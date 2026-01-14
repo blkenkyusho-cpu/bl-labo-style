@@ -163,6 +163,33 @@
   margin: 10px 0 0;
 }
 
+/* 補足説明 */
+.rank-guide-2025__note{
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* マイアカウント・FAQ 用リンク */
+.rank-guide-2025__account-link {
+  color: #6a4f33;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.15s ease;
+}
+
+.rank-guide-2025__account-link:hover {
+  color: #4f3a24;
+}
+
+.rank-guide-2025__account-link:visited {
+  color: #6a4f33;
+}
+
+.rank-guide-2025__account-link:active {
+  color: #3a2a1a;
+}
+
 /* FAQリンク */
 .rank-guide-2025__faq-link{
   font-weight: bold;
