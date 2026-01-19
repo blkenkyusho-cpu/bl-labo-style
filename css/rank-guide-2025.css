@@ -287,8 +287,8 @@
 
   /* 列幅（スマホ） */
   .rank-guide-2025__row > div:nth-child(1){ flex: 0 0 28%; } /* ランク */
-  .rank-guide-2025__row > div:nth-child(2){ flex: 0 0 36%; } /* 判定基準 */
-  .rank-guide-2025__row > div:nth-child(3){ flex: 0 0 36%; } /* 特典 */
+  .rank-guide-2025__row > div:nth-child(2){ flex: 0 0 34%; } /* 判定基準 */
+  .rank-guide-2025__row > div:nth-child(3){ flex: 0 0 38%; } /* 特典 */
 
   /* ヘッダー行：常に中央（これで「ランクが左寄り」問題を潰す） */
   .rank-guide-2025__row--head > div{
@@ -333,9 +333,11 @@
 
   /* 特典内容：少し小さくして切れ防止 */
   .rank-guide-2025__row > div:nth-child(3){
-    font-size: 0.78rem;
-    line-height: 1.25;
+    font-size: 0.76rem;     /* 0.78 → 0.76 */
+    line-height: 1.22;
     font-weight: 600;
+    word-break: keep-all;
+    padding-right: 2px;     /* 右端の保険 */
   }
 
   .rank-guide-2025__row--gold > div:nth-child(3),
