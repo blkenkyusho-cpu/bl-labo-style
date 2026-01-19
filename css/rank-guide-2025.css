@@ -337,7 +337,7 @@
     line-height: 1.22;
     font-weight: 600;
     word-break: keep-all;
-    padding-right: 2px;     /* 右端の保険 */
+    padding-right: 6px;     /* 右端の保険 */
   }
 
   .rank-guide-2025__row--gold > div:nth-child(3),
