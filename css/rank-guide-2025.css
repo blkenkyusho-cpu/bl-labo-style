@@ -248,8 +248,17 @@
   background: #fff6e3;           /* ほんのり明るく */
 }
 
-@media screen and (max-width: 768px) {
-    /* リード文：スマホは左寄せ＋読みやすい幅 */
+@media screen and (max-width: 768px){
+
+  /* ============================
+     タイトル・リード（スマホ最適化）
+     ============================ */
+
+  .rank-guide-2025__title{
+    font-size: 1.55rem;
+    line-height: 1.35;
+  }
+
   .rank-guide-2025__lead{
     text-align: left;
     font-size: 0.95rem;
@@ -257,111 +266,88 @@
     margin: 0 0 18px;
   }
 
-  /* タイトル：少しだけ詰めて見切れ防止 */
-  .rank-guide-2025__title{
-    font-size: 1.55rem;
-    line-height: 1.35;
-  }
+  /* ============================
+     ランク表（スマホ最適化）
+     ============================ */
 
-     /* 表全体：余白を少しだけ詰める */
   .rank-guide-2025__table{
     border-radius: 10px;
   }
 
-  /* 行：左右パディングを詰める */
   .rank-guide-2025__row{
     padding: 10px 6px;
-    gap: 6px;               /* div同士の間隔 */
+    gap: 6px;
   }
 
-  /* セル：文字サイズを少し下げる＋折り返し制御 */
   .rank-guide-2025__row > div{
     font-size: 0.82rem;
     line-height: 1.35;
-    word-break: keep-all;   /* 日本語の変な分割を抑える */
+    word-break: keep-all;
   }
 
-  /* 列幅を固定（ここが重要） */
-.rank-guide-2025__row > div:nth-child(1){ flex: 0 0 30%; } /* ランク */
-.rank-guide-2025__row > div:nth-child(2){ flex: 0 0 35%; } /* 判定基準 */
-.rank-guide-2025__row > div:nth-child(3){ flex: 0 0 35%; } /* 特典 */
+  /* 列幅（スマホ） */
+  .rank-guide-2025__row > div:nth-child(1){ flex: 0 0 30%; } /* ランク */
+  .rank-guide-2025__row > div:nth-child(2){ flex: 0 0 35%; } /* 判定基準 */
+  .rank-guide-2025__row > div:nth-child(3){ flex: 0 0 35%; } /* 特典 */
 
-  /* ランク列：縦詰まり対策 */
-  .rank-guide-2025__cell-rank{
-    gap: 6px;
-  }
-  .rank-guide-2025__medal{
-    width: 28px;
-    height: 28px;
-  }
-  .rank-guide-2025__cell-rank span{
-    display: inline-block;
-    font-size: 0.82rem;
-  }
-
-   /* ランク列は左寄せ＋軽量化 */
-.rank-guide-2025__row > div:nth-child(1){
-  text-align: left;
-}
-   /* ヘッダー行は中央揃えに戻す */
-.rank-guide-2025__row--head > div{
-  text-align: center;
-}
-
-
-/* メダルをさらに小さく */
-.rank-guide-2025__medal{
-  width: 22px;
-  height: 22px;
-}
-
-/* ランク名を一段軽く */
-.rank-guide-2025__cell-rank span{
-  font-size: 0.75rem;
-  letter-spacing: 0.02em;
-}
-
-  /* 判定基準：数字を崩さず折る（「～49,999円」などを守る） */
-  .rank-guide-2025__row > div:nth-child(2){
-  white-space: normal; /* ← ここが超重要 */
-  font-variant-numeric: tabular-nums;
-  line-height: 1.25;
-  }
-
-  /* ただしヘッダーだけは折ってOK（「判定基準（過去12ヶ月）」が長いので） */
-  .rank-guide-2025__row--head > div:nth-child(2){
+  /* ヘッダー行：常に中央（これで「ランクが左寄り」問題を潰す） */
+  .rank-guide-2025__row--head > div{
+    text-align: center !important;
     white-space: normal;
   }
 
-  /* 特典列：見やすく（数値を目立たせる） */
+  /* 通常行：2列目・3列目は左寄せで読みやすく */
+  .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(2),
+  .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(3){
+    text-align: left;
+    padding-left: 6px;
+  }
+
+  /* ランク列（通常行）：左寄せ＋詰める */
+  .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(1){
+    text-align: left;
+  }
+
+  /* ランク列：メダルと文字を小さく */
+  .rank-guide-2025__cell-rank{
+    gap: 6px;
+  }
+
+  .rank-guide-2025__medal{
+    width: 22px;
+    height: 22px;
+  }
+
+  .rank-guide-2025__cell-rank span{
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* 判定基準：折り返しOK（brと相性◎） */
+  .rank-guide-2025__row > div:nth-child(2){
+    white-space: normal;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.25;
+  }
+
+  /* 特典内容：少し小さくして切れ防止 */
   .rank-guide-2025__row > div:nth-child(3){
-    font-size: 0.78rem;   /* 0.82 → 0.78 */
+    font-size: 0.78rem;
     line-height: 1.25;
     font-weight: 600;
   }
-  .rank-guide-2025__row--platinum > div:nth-child(3),
-  .rank-guide-2025__row--gold > div:nth-child(3){
+
+  .rank-guide-2025__row--gold > div:nth-child(3),
+  .rank-guide-2025__row--platinum > div:nth-child(3){
     font-size: 0.8rem;
     font-weight: 700;
   }
 
-  /* プラチナ特典の2行目（送料無料クーポン）を少し小さくして圧迫を減らす */
-  .rank-guide-2025__row--platinum > div:nth-child(3) br{
-    content: "";
-  }
-  .rank-guide-2025__row--platinum > div:nth-child(3){
-    line-height: 1.25;
-  }
-  .rank-guide-2025__row--platinum > div:nth-child(3) .rank-guide-2025__perk-sub{
-    font-size: 0.78rem;
-    font-weight: 700;
-    display: block;
-    margin-top: 2px;
-  }
-   .rank-guide-2025__sp-br{
+  /* スマホではsp改行を表示 */
+  .rank-guide-2025__sp-br{
     display: inline;
   }
-
 }
 
 
