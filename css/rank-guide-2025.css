@@ -338,6 +338,7 @@
     font-weight: 600;
     word-break: keep-all;
     padding-right: 6px;     /* 右端の保険 */
+    letter-spacing: -0.02em;
   }
 
   .rank-guide-2025__row--gold > div:nth-child(3),
