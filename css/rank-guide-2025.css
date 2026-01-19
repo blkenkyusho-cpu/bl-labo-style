@@ -282,9 +282,9 @@
   }
 
   /* 列幅を固定（ここが重要） */
-  .rank-guide-2025__row > div:nth-child(1){ flex: 0 0 36%; } /* ランク */
-  .rank-guide-2025__row > div:nth-child(2){ flex: 0 0 34%; } /* 判定基準 */
-  .rank-guide-2025__row > div:nth-child(3){ flex: 0 0 30%; } /* 特典 */
+.rank-guide-2025__row > div:nth-child(1){ flex: 0 0 30%; } /* ランク */
+.rank-guide-2025__row > div:nth-child(2){ flex: 0 0 35%; } /* 判定基準 */
+.rank-guide-2025__row > div:nth-child(3){ flex: 0 0 35%; } /* 特典 */
 
   /* ランク列：縦詰まり対策 */
   .rank-guide-2025__cell-rank{
@@ -298,6 +298,23 @@
     display: inline-block;
     font-size: 0.82rem;
   }
+
+   /* ランク列は左寄せ＋軽量化 */
+.rank-guide-2025__row > div:nth-child(1){
+  text-align: left;
+}
+
+/* メダルをさらに小さく */
+.rank-guide-2025__medal{
+  width: 24px;
+  height: 24px;
+}
+
+/* ランク名を一段軽く */
+.rank-guide-2025__cell-rank span{
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
 
   /* 判定基準：数字を崩さず折る（「～49,999円」などを守る） */
   .rank-guide-2025__row > div:nth-child(2){
