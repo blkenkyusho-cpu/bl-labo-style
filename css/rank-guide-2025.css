@@ -286,9 +286,9 @@
   }
 
   /* 列幅（スマホ） */
-  .rank-guide-2025__row > div:nth-child(1){ flex: 0 0 30%; } /* ランク */
-  .rank-guide-2025__row > div:nth-child(2){ flex: 0 0 35%; } /* 判定基準 */
-  .rank-guide-2025__row > div:nth-child(3){ flex: 0 0 35%; } /* 特典 */
+  .rank-guide-2025__row > div:nth-child(1){ flex: 0 0 28%; } /* ランク */
+  .rank-guide-2025__row > div:nth-child(2){ flex: 0 0 36%; } /* 判定基準 */
+  .rank-guide-2025__row > div:nth-child(3){ flex: 0 0 36%; } /* 特典 */
 
   /* ヘッダー行：常に中央（これで「ランクが左寄り」問題を潰す） */
   .rank-guide-2025__row--head > div{
@@ -299,7 +299,7 @@
   /* 通常行：2列目・3列目は左寄せで読みやすく */
   .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(2),
   .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(3){
-    text-align: left;
+    text-align: center !important;
     padding-left: 6px;
   }
 
@@ -348,6 +348,10 @@
   .rank-guide-2025__sp-br{
     display: inline;
   }
+   /* 特典列：変な分割を抑える */
+.rank-guide-2025__row > div:nth-child(3){
+  word-break: keep-all;
+}
 }
 
 
