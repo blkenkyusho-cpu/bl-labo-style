@@ -156,6 +156,11 @@
   margin: 0;
 }
 
+/* PCでは改行させない（brを消す） */
+.rank-guide-2025__sp-br{
+  display: none;
+}
+
 /* 注意書き */
 .rank-guide-2025__note{
   font-size: 0.9rem;
@@ -296,8 +301,9 @@
 
   /* 判定基準：数字を崩さず折る（「～49,999円」などを守る） */
   .rank-guide-2025__row > div:nth-child(2){
-    white-space: nowrap;    /* まずは折らない */
-    font-variant-numeric: tabular-nums;
+  white-space: normal; /* ← ここが超重要 */
+  font-variant-numeric: tabular-nums;
+  line-height: 1.25;
   }
 
   /* ただしヘッダーだけは折ってOK（「判定基準（過去12ヶ月）」が長いので） */
@@ -327,6 +333,10 @@
     display: block;
     margin-top: 2px;
   }
+   .rank-guide-2025__sp-br{
+    display: inline;
+  }
+
 }
 
 
