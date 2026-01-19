@@ -287,8 +287,8 @@
 
   /* 列幅（スマホ） */
   .rank-guide-2025__row > div:nth-child(1){ flex: 0 0 28%; } /* ランク */
-  .rank-guide-2025__row > div:nth-child(2){ flex: 0 0 34%; } /* 判定基準 */
-  .rank-guide-2025__row > div:nth-child(3){ flex: 0 0 38%; } /* 特典 */
+  .rank-guide-2025__row > div:nth-child(2){ flex: 0 0 33%; } /* 判定基準 */
+  .rank-guide-2025__row > div:nth-child(3){ flex: 0 0 39%; } /* 特典 */
 
   /* ヘッダー行：常に中央（これで「ランクが左寄り」問題を潰す） */
   .rank-guide-2025__row--head > div{
