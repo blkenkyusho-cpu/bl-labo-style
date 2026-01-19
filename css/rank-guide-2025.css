@@ -158,16 +158,10 @@
 
 /* 注意書き */
 .rank-guide-2025__note{
-  font-size: 0.95rem;
-  color: #777;
-  margin: 10px 0 0;
-}
-
-/* 補足説明 */
-.rank-guide-2025__note{
   font-size: 0.9rem;
   color: #777;
   line-height: 1.6;
+  margin: 10px 0 0;
 }
 
 /* マイアカウント・FAQ 用リンク */
@@ -248,4 +242,9 @@
 .rank-guide-2025__btn--contact:hover {
   background: #fff6e3;           /* ほんのり明るく */
 }
+
+@media screen and (max-width: 768px) {
+  /* スマホ調整 */
+}
+
 
