@@ -190,9 +190,62 @@
   color: #3a2a1a;
 }
 
-/* FAQリンク */
-.rank-guide-2025__faq-link{
-  font-weight: bold;
-  color: #6a4f33;
-  text-decoration: underline;
+/* ============================
+   よくあるご質問セクション
+   ============================ */
+
+.rank-guide-2025__faq-box {
+  background: #fffaf0;
+  border: 1px solid #e6dfd2;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-top: 12px;
+  text-align: center;
 }
+
+.rank-guide-2025__faq-lead {
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.rank-guide-2025__faq-note {
+  font-size: 0.85rem;
+  color: #777;
+  margin: 12px 0 10px;
+}
+
+/* 共通ボタン */
+.rank-guide-2025__btn {
+  display: block;
+  max-width: 320px;
+  margin: 0 auto 10px;
+  padding: 12px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* FAQボタン（メイン） */
+.rank-guide-2025__btn--faq {
+  background: #f6e6b8;
+  color: #5a4a2a;
+  border: 1px solid #e2c97a;
+}
+
+.rank-guide-2025__btn--faq:hover {
+  background: #f0d98a;
+}
+
+/* 問い合わせボタン（サブ・逃げ道） */
+.rank-guide-2025__btn--contact {
+  background: #f9f5ee;
+  color: #6a4f33;
+  border: 1px solid #e0d6c6;
+}
+
+.rank-guide-2025__btn--contact:hover {
+  background: #f2eadf;
+}
+
