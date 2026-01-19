@@ -303,11 +303,16 @@
 .rank-guide-2025__row > div:nth-child(1){
   text-align: left;
 }
+   /* ヘッダー行は中央揃えに戻す */
+.rank-guide-2025__row--head > div{
+  text-align: center;
+}
+
 
 /* メダルをさらに小さく */
 .rank-guide-2025__medal{
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 
 /* ランク名を一段軽く */
@@ -330,11 +335,14 @@
 
   /* 特典列：見やすく（数値を目立たせる） */
   .rank-guide-2025__row > div:nth-child(3){
-    font-weight: 700;
+    font-size: 0.78rem;   /* 0.82 → 0.78 */
+    line-height: 1.25;
+    font-weight: 600;
   }
   .rank-guide-2025__row--platinum > div:nth-child(3),
   .rank-guide-2025__row--gold > div:nth-child(3){
-    font-weight: 800;
+    font-size: 0.8rem;
+    font-weight: 700;
   }
 
   /* プラチナ特典の2行目（送料無料クーポン）を少し小さくして圧迫を減らす */
