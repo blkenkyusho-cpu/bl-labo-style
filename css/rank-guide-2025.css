@@ -380,6 +380,10 @@
 .rank-guide-2025__platinum-box{
   padding: 16px 20px 16px 20px; /* 左だけ 32 → 24 */
 }
+.rank-guide-2025__perk-text{
+  margin-top: 6px;     /* ロゴとの余白（←ここが効く） */
+  line-height: 1.55;  /* 文章ブロックを少し締める */
+}
 
    
 }
