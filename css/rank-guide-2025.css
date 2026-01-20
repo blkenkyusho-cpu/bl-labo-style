@@ -381,7 +381,7 @@
   padding: 16px 20px 16px 20px; /* 左だけ 32 → 24 */
 }
 .rank-guide-2025__perk-text{
-  margin-top: -12px;     /* ロゴとの余白（←ここが効く） */
+  margin-left: 10px;     /* ロゴとの余白（←ここが効く） */
   line-height: 1.55;  /* 文章ブロックを少し締める */
 }
 
