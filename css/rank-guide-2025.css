@@ -260,9 +260,9 @@
   display: table;
   font-size: 1.55rem;
   line-height: 1.35;
-  margin: 28px auto 14px;
+  margin: 30px auto 20px;
   padding: 0 6px 6px;   /* ← 左右に少し余白 */
-  border-bottom: 2px solid #e6dfd2;
+  border-bottom: 2px solid #f5ddb0;
   }
 
   .rank-guide-2025__lead{
