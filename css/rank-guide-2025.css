@@ -257,9 +257,11 @@
      ============================ */
 
   .rank-guide-2025__title{
-    font-size: 1.55rem;
-    line-height: 1.35;
-    margin: 24px 0 10px;   /* ← 上に余裕を作る */
+  font-size: 1.55rem;
+  line-height: 1.35;
+  margin: 28px 0 12px;
+  padding-left: 10px;
+  border-left: 4px solid #c89a3c; /* h2と同系色 */
   }
 
   .rank-guide-2025__lead{
