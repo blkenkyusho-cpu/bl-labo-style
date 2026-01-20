@@ -372,6 +372,14 @@
   height: 80px;
   opacity: 0.9;
 }
+.rank-guide-2025__perk-line{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;   /* ← 14px → 10px */
+}
+.rank-guide-2025__platinum-box{
+  padding: 16px 20px 16px 24px; /* 左だけ 32 → 24 */
+}
 
    
 }
