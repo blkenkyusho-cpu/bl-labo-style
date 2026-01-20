@@ -357,6 +357,16 @@
 .rank-guide-2025__row > div:nth-child(3){
   word-break: keep-all;
 }
+/* ランク判定の箇条書き：右に寄りすぎ対策 */
+  .rank-guide-2025__list{
+    margin: 0 0 10px;       /* ← 左のmarginを消す */
+    padding-left: 1.15em;   /* ← ここでインデント量を管理（好みで1.05〜1.25em） */
+  }
+
+  .rank-guide-2025__list li{
+    margin: 8px 0;
+  }   
+
 }
 
 
