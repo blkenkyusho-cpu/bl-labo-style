@@ -259,9 +259,9 @@
   .rank-guide-2025__title{
   font-size: 1.55rem;
   line-height: 1.35;
-  margin: 28px 0 12px;
-  padding-left: 10px;
-  border-left: 4px solid #c89a3c; /* h2と同系色 */
+  margin: 28px 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e6dfd2;
   }
 
   .rank-guide-2025__lead{
