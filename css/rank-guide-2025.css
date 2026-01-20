@@ -259,6 +259,7 @@
   .rank-guide-2025__title{
     font-size: 1.55rem;
     line-height: 1.35;
+    margin: 24px 0 10px;   /* ← 上に余裕を作る */
   }
 
   .rank-guide-2025__lead{
