@@ -197,7 +197,8 @@
   max-width: 180px;    /* ← 実寸見て微調整 */
   height: auto;
   display: block;
-  margin-left: auto;
+  margin-left: 24px;
+  /*margin-left: auto;*/ 
 }
 
 /* マイアカウント・FAQ 用リンク */
