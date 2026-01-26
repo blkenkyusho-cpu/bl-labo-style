@@ -190,7 +190,7 @@
 /* 右側イラスト（PCのみ） */
 .rank-guide-2025__perk-illust{
   flex: 0 0 200px;
-  text-align: center;   /* right → center */
+  margin-right: 24px;   /* ← 追加：右端から離す（16〜40で調整） */
 }
 
 .rank-guide-2025__perk-illust img{
