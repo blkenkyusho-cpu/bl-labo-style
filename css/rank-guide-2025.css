@@ -220,6 +220,32 @@
   color: #3a2a1a;
 }
 
+.rank-guide-2025__notice-box{
+  background: #fffaf0;
+  border: 1px dashed #e6dfd2;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin: 14px 0 6px;
+}
+
+.rank-guide-2025__notice-text{
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.rank-guide-2025__notice-link{
+  color: #6a4f33;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.rank-guide-2025__notice-link:hover{
+  text-decoration: none;
+}
+
+
 /* ============================
    よくあるご質問セクション
    ============================ */
