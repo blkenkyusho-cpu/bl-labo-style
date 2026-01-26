@@ -400,6 +400,16 @@
     margin: 8px 0;
     line-height: 1.7;
   }   
+
+.rank-guide-2025__perk-wrap{
+    display: block;   /* これで横並び前提を外す */
+    padding: 0;       /* 0 24px を殺す */
+}
+.rank-guide-2025__perk-line{
+    align-items: flex-start; /* centerだと縦が詰まって見えることがある */
+    gap: 10px;
+}
+   
 .rank-guide-2025__perk-icon{
   width: 80px;
   height: 80px;
