@@ -433,7 +433,11 @@
 .rank-guide-2025__perk-text{
   line-height: 1.55;  /* 文章ブロックを少し締める */
 }
-
+  .rank-guide-2025__faq-lead,
+  .rank-guide-2025__faq-note{
+    text-align: left;
+    line-height: 1.7;
+  }
    
 }
 
