@@ -312,12 +312,12 @@
      ============================ */
 
   .rank-guide-2025__title{
-  display: table;
-  font-size: 1.55rem;
-  line-height: 1.35;
-  margin: 30px auto 20px;
-  padding: 0 6px 6px;   /* ← 左右に少し余白 */
-  border-bottom: 2px solid #f5ddb0;
+    display: table;
+    font-size: 1.55rem;
+    line-height: 1.35;
+    margin: 30px auto 20px;
+    padding: 0 6px 6px;
+    border-bottom: 2px solid #f5ddb0;
   }
 
   .rank-guide-2025__lead{
@@ -351,25 +351,25 @@
   .rank-guide-2025__row > div:nth-child(2){ flex: 0 0 33%; } /* 判定基準 */
   .rank-guide-2025__row > div:nth-child(3){ flex: 0 0 39%; } /* 特典 */
 
-  /* ヘッダー行：常に中央（これで「ランクが左寄り」問題を潰す） */
+  /* ヘッダー行：常に中央 */
   .rank-guide-2025__row--head > div{
     text-align: center !important;
     white-space: normal;
   }
 
-  /* 通常行：2列目・3列目は左寄せで読みやすく */
+  /* 通常行：2列目・3列目 */
   .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(2),
   .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(3){
     text-align: center !important;
     padding-left: 6px;
   }
 
-  /* ランク列（通常行）：左寄せ＋詰める */
+  /* ランク列（通常行） */
   .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(1){
     text-align: left;
   }
 
-  /* ランク列：メダルと文字を小さく */
+  /* ランク列：メダルと文字 */
   .rank-guide-2025__cell-rank{
     gap: 6px;
   }
@@ -385,20 +385,20 @@
     letter-spacing: 0.02em;
   }
 
-  /* 判定基準：折り返しOK（brと相性◎） */
+  /* 判定基準 */
   .rank-guide-2025__row > div:nth-child(2){
     white-space: normal;
     font-variant-numeric: tabular-nums;
     line-height: 1.25;
   }
 
-  /* 特典内容：少し小さくして切れ防止 */
+  /* 特典内容：切れ防止 */
   .rank-guide-2025__row > div:nth-child(3){
-    font-size: 0.76rem;     /* 0.78 → 0.76 */
+    font-size: 0.76rem;
     line-height: 1.22;
     font-weight: 600;
     word-break: keep-all;
-    padding-right: 6px;     /* 右端の保険 */
+    padding-right: 6px;
     letter-spacing: -0.02em;
   }
 
@@ -412,79 +412,73 @@
   .rank-guide-2025__sp-br{
     display: inline;
   }
-   /* 特典列：変な分割を抑える */
-.rank-guide-2025__row > div:nth-child(3){
-  word-break: keep-all;
-}
-/* ランク判定の箇条書き：右に寄りすぎ対策 */
+
+  /* ============================
+     ランク判定（箇条書き）
+     ============================ */
+
   .rank-guide-2025__list{
-    margin: 10px 0 12px;    /* ← 上だけ余白を戻す（8〜12pxで好み調整） */
-    padding-left: 1.6em;   /* ← ここでインデント量を管理（好みで1.05〜1.25em） */
+    margin: 10px 0 12px;
+    padding-left: 1.6em;
   }
 
   .rank-guide-2025__list li{
     margin: 8px 0;
     line-height: 1.7;
-  }   
+  }
 
-.rank-guide-2025__perk-wrap{
-    display: block;   /* これで横並び前提を外す */
-    padding: 0;       /* 0 24px を殺す */
-}
-.rank-guide-2025__perk-line{
-    align-items: flex-start; /* centerだと縦が詰まって見えることがある */
-    gap: 10px;
-}
-   
-.rank-guide-2025__perk-icon{
-  width: 80px;
-  height: 80px;
-  opacity: 0.9;
-  flex-shrink: 0;
-  margin-right: 15px;     /* ← 横の余白はここで作る */ 
-}
-.rank-guide-2025__perk-line{
-  display: flex;
-  align-items: center;
-  gap: 10px;   /* ← 14px → 10px */
-  justify-content: flex-start;
-}
-.rank-guide-2025__perk-illust{
-  display: none;
-}
-   
-.rank-guide-2025__platinum-box{
-  padding: 16px 20px 16px 20px; /* 左だけ 32 → 24 */
-}
-.rank-guide-2025__perk-text{
-  line-height: 1.55;  /* 文章ブロックを少し締める */
-}
+  /* ============================
+     プラチナ特典（スマホ最適化）
+     ============================ */
+
+  .rank-guide-2025__perk-wrap{
+    display: block;
+    padding: 0;
+  }
+
+  .rank-guide-2025__perk-illust{
+    display: none;
+  }
+
+  .rank-guide-2025__platinum-box{
+    padding: 16px 20px;
+  }
+
+  /* ロゴ＋文章：余白は gap で管理（実機差に強い） */
+  .rank-guide-2025__perk-line{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;              /* ← “詰まり”解消。必要なら 10〜14 で微調整 */
+  }
+
+  .rank-guide-2025__perk-icon{
+    width: 72px;
+    height: 72px;
+    opacity: 0.9;
+    flex-shrink: 0;
+    margin-right: 0;        /* ← marginは使わない */
+  }
+
+  .rank-guide-2025__perk-text{
+    margin-left: 0;         /* ← PC側(10px)を打ち消す */
+    min-width: 0;
+    line-height: 1.55;
+  }
+
+  /* 端末差（LINE内など）で割れやすい行を保護 */
+  .rank-guide-2025__perk-text strong{
+    white-space: nowrap;
+  }
+
+  /* ============================
+     FAQテキスト（折り返し対策）
+     ============================ */
+
   .rank-guide-2025__faq-lead,
   .rank-guide-2025__faq-note{
     text-align: left;
     line-height: 1.7;
   }
-/* ロゴ周りの横幅を確保（余白の二重取りをやめる） */
-  .rank-guide-2025__perk-icon{
-    width: 72px;
-    height: 72px;
-    margin-right: 0;   /* ← 15px を消す */
-  }
 
-  .rank-guide-2025__perk-text{
-    margin-left: 0;    /* ← PC側の 10px をスマホで消す */
-    min-width: 0;
-  }
-
-  .rank-guide-2025__perk-line{
-    gap: 8px;          /* ← 10px→8px（少しだけ幅を取り戻す） */
-    align-items: flex-start;
-  }
-
-  /* それでも割れる端末対策（保険）：この1行だけ改行禁止 */
-  .rank-guide-2025__perk-text strong{
-    white-space: nowrap;
-  }   
 }
-
-
