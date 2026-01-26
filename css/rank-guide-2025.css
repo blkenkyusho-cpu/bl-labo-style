@@ -464,7 +464,27 @@
     text-align: left;
     line-height: 1.7;
   }
-   
+/* ロゴ周りの横幅を確保（余白の二重取りをやめる） */
+  .rank-guide-2025__perk-icon{
+    width: 72px;
+    height: 72px;
+    margin-right: 0;   /* ← 15px を消す */
+  }
+
+  .rank-guide-2025__perk-text{
+    margin-left: 0;    /* ← PC側の 10px をスマホで消す */
+    min-width: 0;
+  }
+
+  .rank-guide-2025__perk-line{
+    gap: 8px;          /* ← 10px→8px（少しだけ幅を取り戻す） */
+    align-items: flex-start;
+  }
+
+  /* それでも割れる端末対策（保険）：この1行だけ改行禁止 */
+  .rank-guide-2025__perk-text strong{
+    white-space: nowrap;
+  }   
 }
 
 
