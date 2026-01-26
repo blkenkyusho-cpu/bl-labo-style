@@ -411,7 +411,12 @@
   display: flex;
   align-items: center;
   gap: 10px;   /* ← 14px → 10px */
+  justify-content: flex-start;
 }
+.rank-guide-2025__perk-illust{
+  display: none;
+}
+   
 .rank-guide-2025__platinum-box{
   padding: 16px 20px 16px 20px; /* 左だけ 32 → 24 */
 }
