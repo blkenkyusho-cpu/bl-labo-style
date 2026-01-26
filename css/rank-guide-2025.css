@@ -189,16 +189,15 @@
 
 /* 右側イラスト（PCのみ） */
 .rank-guide-2025__perk-illust{
-  flex: 0 0 200px;      /* ← 後でサイズ調整する前提 */
-  text-align: right;
+  flex: 0 0 200px;
+  text-align: center;   /* right → center */
 }
 
 .rank-guide-2025__perk-illust img{
-  max-width: 180px;    /* ← 実寸見て微調整 */
+  max-width: 180px;
   height: auto;
   display: block;
-  margin-left: 24px;
-  /*margin-left: auto;*/ 
+  margin: 0 auto;       /* 左右中央 */
 }
 
 /* マイアカウント・FAQ 用リンク */
