@@ -20,17 +20,17 @@
 /* タイトル */
 .rank-guide-2025__title{
   display: table;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   /*text-align: center;*/
   line-height: 1.35;
-  margin: 30px auto 20px;
+  margin: 30px auto 30px;
   padding: 0 6px 6px;
   border-bottom: 2px solid #f5ddb0;
 }
 
 .rank-guide-2025__lead{
   text-align: left;          /* ← ここ重要 */
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   margin: 0 auto 25px;
   max-width: 640px;          /* 行幅を制限 */
   line-height: 1.8;
