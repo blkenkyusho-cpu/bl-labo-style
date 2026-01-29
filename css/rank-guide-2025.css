@@ -24,10 +24,13 @@
   margin: 0 0 10px;
 }
 .rank-guide-2025__lead{
-  text-align: center;
+  text-align: left;          /* ← ここ重要 */
   font-size: 0.95rem;
-  margin: 0 0 25px;
+  margin: 0 auto 25px;
+  max-width: 640px;          /* 行幅を制限 */
+  line-height: 1.8;
 }
+
 
 /* 見出し */
 .rank-guide-2025__h2{
