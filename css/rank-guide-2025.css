@@ -365,6 +365,12 @@
     white-space: normal;
   }
 
+   /* ヘッダー：特典内容を強調（スマホのみ） */
+.rank-guide-2025__row--head > div:nth-child(3){
+  font-weight: 700;     /* 太字で主役に */
+  font-size: 0.86rem;   /* ほんの少しだけアップ（元0.82想定） */
+}
+
   /* 通常行：2列目・3列目 */
   .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(2),
   .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(3){
