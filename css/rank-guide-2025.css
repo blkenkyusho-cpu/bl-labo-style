@@ -407,7 +407,7 @@
   }
 
   /* 特典内容：切れ防止 */
-  .rank-guide-2025__row > div:nth-child(3){
+  .rank-guide-2025__row:not(.rank-guide-2025__row--head) > div:nth-child(3){
     font-size: 0.76rem;
     line-height: 1.22;
     font-weight: 600;
