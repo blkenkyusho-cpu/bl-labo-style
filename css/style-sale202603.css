@@ -108,6 +108,7 @@
   font-size: 12px !important;
   font-weight: 900 !important;
   letter-spacing: .08em !important;
+  white-space: nowrap !important;   /* ← 追加 */
 }
 
 /* 左右の三角・切り欠きは無効化 */
@@ -118,7 +119,7 @@
 /* テキスト構造用 */
 .genmai202603 .genmai202603__ribbonText{
   display: inline-flex !important;
-  align-items: baseline !important;
+  align-items: center !important;
   white-space: nowrap !important;
 }
 
