@@ -1,4 +1,4 @@
-/* ===== 玄米デビュー応援 202603 ===== */
+/* ===== 玄米デビュー応援 202603 完全版 ===== */
 
 .genmai202603{
   font-family: "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
@@ -13,7 +13,8 @@
   box-shadow: 0 10px 26px rgba(0,0,0,.07);
 }
 
-/* ★ gridは捨てる。flexで強制2カラム（カラーミーに勝ちやすい） */
+/* ===== 2カラム ===== */
+
 .genmai202603 .genmai202603__inner{
   display: flex !important;
   flex-direction: row !important;
@@ -27,29 +28,26 @@
   max-width: 38% !important;
 }
 
+.genmai202603 .genmai202603__img{
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  filter: drop-shadow(0 14px 20px rgba(0,0,0,.15));
+}
+
 /* 右：本文 */
 .genmai202603 .genmai202603__body{
   flex: 1 1 auto !important;
   min-width: 0 !important;
 }
 
-.genmai202603 .genmai202603__img{
-  width: 100% !important;
-  height: auto !important;
-  display: block !important;
-  /*border-radius: 14px !important;*/
-  /*background: #fff !important;*/
-  /*box-shadow: 0 12px 26px rgba(0,0,0,.12) !important;*/
-  filter: drop-shadow(0 14px 20px rgba(0,0,0,.15));
-}
+/* ===== テキスト ===== */
 
-/* テキスト */
 .genmai202603 .genmai202603__kicker{
   margin: 0 0 10px !important;
   font-size: 20px !important;
   font-weight: 800 !important;
   color: #2f5c3b !important;
-  letter-spacing: .02em !important;
 }
 
 .genmai202603 .genmai202603__headline{
@@ -58,9 +56,6 @@
   line-height: 1.2 !important;
   font-weight: 800 !important;
   color: #3b2a1c !important;
-  /* 変な改行を抑える */
-  word-break: keep-all !important;
-  overflow-wrap: anywhere !important;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif !important;
   letter-spacing: 0.04em !important;
 }
@@ -74,178 +69,114 @@
 }
 
 .genmai202603 .genmai202603__product{
-  margin: 0 0 12px !important;
+  margin: 0 0 20px !important;
   font-size: 28px !important;
   font-weight: 900 !important;
   color: #2f5c3b !important;
 }
 
-/* ===== 特典タグ（リボン廃止版） ===== */
+/* ===== 特典バッジ（主役） ===== */
+
 .genmai202603 .genmai202603__ribbon{
-  position: relative !important;
   display: inline-flex !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 12px !important;
 
-  margin: 0 0 12px !important;
-  padding: 14px 26px !important;
+  padding: 16px 34px !important;
   border-radius: 999px !important;
 
   background: linear-gradient(180deg, #f7b25a 0%, #e28a1f 100%) !important;
-  box-shadow: 0 10px 18px rgba(0,0,0,.12) !important;
+  box-shadow: 0 14px 24px rgba(0,0,0,.18) !important;
 
-  color: rgba(255,255,255,.97) !important;
+  color: #fff !important;
 }
 
+/* 特典ラベル */
 .genmai202603 .genmai202603__ribbon::before{
-  content: "特典" !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 4px 10px !important;
-  border-radius: 999px !important;
-  background: rgba(255,255,255,.18) !important;
-  font-size: 12px !important;
-  font-weight: 900 !important;
-  letter-spacing: .08em !important;
-  white-space: nowrap !important;   /* ← 追加 */
+  content: "特典";
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.18);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  white-space: nowrap;
 }
 
-/* 左右の三角・切り欠きは無効化 */
-.genmai202603 .genmai202603__ribbon:after{
-  content: none !important;
-}
-
-/* テキスト構造用 */
 .genmai202603 .genmai202603__ribbonText{
   display: inline-flex !important;
-  align-items: center !important;
+  align-items: baseline !important;
   white-space: nowrap !important;
 }
 
-/* 500 */
 .genmai202603 .genmai202603__yen{
-  font-size: 30px !important;
+  font-size: 34px !important;
   font-weight: 900 !important;
-  letter-spacing: .02em !important;
-  text-shadow: 0 1px 0 rgba(0,0,0,.15) !important;
 }
 
-/* 円OFF */
 .genmai202603 .genmai202603__unit{
   font-size: 20px !important;
   font-weight: 900 !important;
-  margin-left: 3px !important;
+  margin-left: 4px !important;
 }
 
-/* クーポンプレゼント */
 .genmai202603 .genmai202603__rest{
   font-size: 20px !important;
   font-weight: 800 !important;
-  margin-left: 12px !important;
-  opacity: .96 !important;
+  margin-left: 14px !important;
 }
 
+/* ===== 期間 ===== */
+
 .genmai202603 .genmai202603__period{
-  margin: 0 0 16px !important;
-  font-size: 20px !important;
+  margin: 18px 0 20px !important;
+  font-size: 22px !important;
   font-weight: 900 !important;
   color: #3b2a1c !important;
 }
 
-/* LINEボタン */
+/* ===== LINEボタン ===== */
+
 .genmai202603 .genmai202603__btn{
   display: inline-flex !important;
   align-items: center !important;
-  gap: 10px !important;
-  padding: 14px 16px !important;
-  border-radius: 12px !important;
+  justify-content: center !important;
+  padding: 16px 28px !important;
+  border-radius: 14px !important;
   text-decoration: none !important;
+
   background: linear-gradient(180deg, #12d464, #07b953) !important;
   box-shadow:
-    0 12px 20px rgba(0,0,0,.16),
+    0 14px 24px rgba(0,0,0,.18),
     inset 0 2px 0 rgba(255,255,255,.35) !important;
+
   color: #fff !important;
-  font-weight: 900 !important;
-}
-
-.genmai202603 .genmai202603__btn:hover{ opacity: .94 !important; }
-
-/*.genmai202603 .genmai202603__btnBadge{
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 46px !important;
-  height: 30px !important;
-  border-radius: 999px !important;
-  background: rgba(255,255,255,.18) !important;
-  font-size: 13px !important;
-  font-weight: 900 !important;
-  letter-spacing: .04em !important;
-}*/
-/* バッジの文字を消す（視覚的に） */
-.genmai202603 .genmai202603__btnBadge{
-  font-size: 0 !important;            /* 文字を消す */
-  width: 44px !important;
-  height: 34px !important;
-  background: rgba(255,255,255,.18) !important;
-  position: relative !important;
-}
-
-/* LINEっぽい吹き出しアイコンをCSSで描く */
-.genmai202603 .genmai202603__btnBadge::before{
-  content: "" !important;
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%,-55%) !important;
-
-  width: 18px !important;
-  height: 14px !important;
-  border-radius: 6px !important;
-  border: 2px solid rgba(255,255,255,.95) !important;
-}
-
-.genmai202603 .genmai202603__btnBadge::after{
-  content: "" !important;
-  position: absolute !important;
-  left: 50% !important;
-  top: 58% !important;
-  transform: translate(-10%, 6px) rotate(45deg) !important;
-
-  width: 6px !important;
-  height: 6px !important;
-  border-left: 2px solid rgba(255,255,255,.95) !important;
-  border-bottom: 2px solid rgba(255,255,255,.95) !important;
-  background: transparent !important;
-}
-
-
-.genmai202603 .genmai202603__btnText{
   font-weight: 900 !important;
   font-size: 18px !important;
   letter-spacing: .02em !important;
 }
 
-.genmai202603 .genmai202603__btnArrow{
-  font-size: 22px !important;
-  line-height: 1 !important;
-  opacity: .92 !important;
+.genmai202603 .genmai202603__btn:hover{
+  opacity: .95 !important;
 }
+
+/* ===== 注意書き ===== */
 
 .genmai202603 .genmai202603__note{
-  margin: 10px 0 0 !important;
+  margin-top: 14px !important;
   font-size: 12px !important;
   color: rgba(59,42,28,.78) !important;
-  line-height: 1.5 !important;
+  line-height: 1.6 !important;
 }
 
-/* 特典ブロックを中央化 */
+/* ===== 特典ブロック中央化（確実版） ===== */
+
 .genmai202603 .genmai202603__ribbon,
 .genmai202603 .genmai202603__period,
 .genmai202603 .genmai202603__btn,
 .genmai202603 .genmai202603__note{
-  text-align: center !important;
+  display: table !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  text-align: center !important;
 }
