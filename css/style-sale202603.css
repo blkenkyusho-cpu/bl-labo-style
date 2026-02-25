@@ -179,6 +179,8 @@
   font-size: 12px !important;
   color: rgba(59,42,28,.78) !important;
   line-height: 1.6 !important;
+  text-align: left !important;     /* ← これ追加 */
+  display: block !important;       /* 念のため */
 }
 
 /* ===== 特典ブロック中央化（確実版） ===== */
