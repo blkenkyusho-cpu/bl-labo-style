@@ -1,6 +1,7 @@
 /* ===== 玄米デビュー応援 202603 ===== */
 
 .genmai202603{
+  font-family: "Hiragino Kaku Gothic ProN","Helvetica Neue",system-ui,sans-serif;
   margin: 18px 0 28px;
   padding: 18px 26px;
   border-radius: 16px;
@@ -54,15 +55,14 @@
 .genmai202603 .genmai202603__headline{
   margin: 0 0 10px !important;
   font-size: 40px !important;
-  line-height: 1.15 !important;
-  font-weight: 900 !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
   color: #3b2a1c !important;
   /* 変な改行を抑える */
   word-break: keep-all !important;
   overflow-wrap: anywhere !important;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.02em !important;
+  letter-spacing: 0.04em !important;
 }
 
 .genmai202603 .genmai202603__hr{
