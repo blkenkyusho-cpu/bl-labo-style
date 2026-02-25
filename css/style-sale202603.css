@@ -196,17 +196,25 @@
 
 /* ===== 1カラム説明（genmai202603__message） ===== */
 .genmai202603 .genmai202603__message{
-  margin-top: 26px !important;
-  padding-top: 18px !important;
-  border-top: 1px solid rgba(59,42,28,.12) !important;
+  margin-top: 30px !important;
+  padding: 28px 32px !important;
+
+  background: #ffffff !important;
+  border-radius: 16px !important;
+
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.06),
+    0 2px 6px rgba(0,0,0,.04) !important;
 
   max-width: 760px !important;
   margin-left: auto !important;
   margin-right: auto !important;
 
   font-size: 16px !important;
-  line-height: 1.95 !important;
-  color: rgba(59,42,28,.92) !important;
+  line-height: 2.0 !important;
+  color: #3b2a1c !important;
+
+  border-top: none !important; /* さっきの線は消す */
 }
 
 .genmai202603 .genmai202603__message p{
