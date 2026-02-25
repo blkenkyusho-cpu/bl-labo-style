@@ -1,0 +1,163 @@
+/* ===== 玄米デビュー応援 202603 ===== */
+
+.genmai202603{
+  margin: 18px 0 28px;
+  padding: 18px 26px;
+  border-radius: 16px;
+  border: 1px solid #e8decd;
+  background:
+    radial-gradient(1200px 520px at 18% 0%, rgba(255,255,255,.85), rgba(255,255,255,0)),
+    radial-gradient(900px 650px at 92% 92%, rgba(255,255,255,.7), rgba(255,255,255,0)),
+    linear-gradient(180deg, #f7f2e8, #f1e8d8);
+  box-shadow: 0 10px 26px rgba(0,0,0,.07);
+}
+
+/* ★ gridは捨てる。flexで強制2カラム（カラーミーに勝ちやすい） */
+.genmai202603 .genmai202603__inner{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 26px !important;
+}
+
+/* 左：画像 */
+.genmai202603 .genmai202603__media{
+  flex: 0 0 38% !important;
+  max-width: 38% !important;
+}
+
+/* 右：本文 */
+.genmai202603 .genmai202603__body{
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+.genmai202603 .genmai202603__img{
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  /*border-radius: 14px !important;*/
+  /*background: #fff !important;*/
+  /*box-shadow: 0 12px 26px rgba(0,0,0,.12) !important;*/
+  filter: drop-shadow(0 14px 20px rgba(0,0,0,.15));
+}
+
+/* テキスト */
+.genmai202603 .genmai202603__kicker{
+  margin: 0 0 10px !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #2f5c3b !important;
+  letter-spacing: .02em !important;
+}
+
+.genmai202603 .genmai202603__headline{
+  margin: 0 0 10px !important;
+  font-size: 40px !important;
+  line-height: 1.15 !important;
+  font-weight: 900 !important;
+  color: #3b2a1c !important;
+  /* 変な改行を抑える */
+  word-break: keep-all !important;
+  overflow-wrap: anywhere !important;
+}
+
+.genmai202603 .genmai202603__hr{
+  height: 2px !important;
+  max-width: 360px !important;
+  border-radius: 2px !important;
+  background: rgba(59,42,28,.24) !important;
+  margin: 10px 0 14px !important;
+}
+
+.genmai202603 .genmai202603__product{
+  margin: 0 0 12px !important;
+  font-size: 28px !important;
+  font-weight: 900 !important;
+  color: #2f5c3b !important;
+}
+
+/* リボン */
+.genmai202603 .genmai202603__ribbon{
+  position: relative !important;
+  display: inline-block !important;
+  margin: 0 0 12px !important;
+  padding: 10px 14px !important;
+  border-radius: 10px !important;
+  background: linear-gradient(180deg, #f3a343, #e38b1e) !important;
+  box-shadow: 0 10px 18px rgba(0,0,0,.14) !important;
+  color: #fff !important;
+  font-weight: 900 !important;
+}
+
+.genmai202603 .genmai202603__ribbon:after{
+  content: "" !important;
+  position: absolute !important;
+  right: -12px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  border-left: 12px solid #d67f14 !important;
+  border-top: 16px solid transparent !important;
+  border-bottom: 16px solid transparent !important;
+}
+
+.genmai202603 .genmai202603__ribbonText{
+  font-size: 22px !important;
+  white-space: nowrap !important;
+}
+
+.genmai202603 .genmai202603__period{
+  margin: 0 0 16px !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  color: #3b2a1c !important;
+}
+
+/* LINEボタン */
+.genmai202603 .genmai202603__btn{
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 14px 16px !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  background: linear-gradient(180deg, #12d464, #07b953) !important;
+  box-shadow:
+    0 12px 20px rgba(0,0,0,.16),
+    inset 0 2px 0 rgba(255,255,255,.35) !important;
+  color: #fff !important;
+  font-weight: 900 !important;
+}
+
+.genmai202603 .genmai202603__btn:hover{ opacity: .94 !important; }
+
+.genmai202603 .genmai202603__btnBadge{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 46px !important;
+  height: 30px !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,.18) !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  letter-spacing: .04em !important;
+}
+
+.genmai202603 .genmai202603__btnText{
+  font-size: 18px !important;
+  letter-spacing: .02em !important;
+}
+
+.genmai202603 .genmai202603__btnArrow{
+  font-size: 22px !important;
+  line-height: 1 !important;
+  opacity: .92 !important;
+}
+
+.genmai202603 .genmai202603__note{
+  margin: 10px 0 0 !important;
+  font-size: 12px !important;
+  color: rgba(59,42,28,.78) !important;
+  line-height: 1.5 !important;
+}
