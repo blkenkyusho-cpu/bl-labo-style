@@ -193,3 +193,34 @@
   margin-right: auto !important;
   text-align: center !important;
 }
+
+/* ===== 1カラム説明（genmai202603__message） ===== */
+.genmai202603 .genmai202603__message{
+  margin-top: 26px !important;
+  padding-top: 18px !important;
+  border-top: 1px solid rgba(59,42,28,.12) !important;
+
+  max-width: 760px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  font-size: 16px !important;
+  line-height: 1.95 !important;
+  color: rgba(59,42,28,.92) !important;
+}
+
+.genmai202603 .genmai202603__message p{
+  margin: 0 0 14px !important;
+}
+
+.genmai202603 .genmai202603__message-strong{
+  margin: 10px 0 14px !important;
+  font-weight: 800 !important;
+  letter-spacing: .02em !important;
+}
+
+.genmai202603 .genmai202603__message-howto{
+  margin: 10px 0 0 !important;
+  font-size: 14px !important;
+  color: rgba(59,42,28,.85) !important;
+}
