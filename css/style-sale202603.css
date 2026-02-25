@@ -97,8 +97,20 @@
   color: rgba(255,255,255,.97) !important;
 }
 
+.genmai202603 .genmai202603__ribbon::before{
+  content: "特典" !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,.18) !important;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+  letter-spacing: .08em !important;
+}
+
 /* 左右の三角・切り欠きは無効化 */
-.genmai202603 .genmai202603__ribbon:before,
 .genmai202603 .genmai202603__ribbon:after{
   content: none !important;
 }
