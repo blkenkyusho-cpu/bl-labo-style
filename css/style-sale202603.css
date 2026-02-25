@@ -91,6 +91,7 @@
 
 /* 特典ラベル */
 .genmai202603 .genmai202603__ribbon::before{
+  outline: 3px solid red !important;   /* ← テスト用 */
   content: "特典" !important;
   display: inline-flex !important;
   align-items: center !important;
