@@ -115,13 +115,34 @@
   content: none !important;
 }
 
-/* 中の文字（キツさを抜く） */
+/* テキスト構造用 */
 .genmai202603 .genmai202603__ribbonText{
-  font-size: 20px !important;
-  font-weight: 800 !important;
-  letter-spacing: .02em !important;
-  text-shadow: 0 1px 0 rgba(0,0,0,.12) !important;
+  display: inline-flex !important;
+  align-items: baseline !important;
   white-space: nowrap !important;
+}
+
+/* 500 */
+.genmai202603 .genmai202603__yen{
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  letter-spacing: .02em !important;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15) !important;
+}
+
+/* 円OFF */
+.genmai202603 .genmai202603__unit{
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  margin-left: 3px !important;
+}
+
+/* クーポンプレゼント */
+.genmai202603 .genmai202603__rest{
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  margin-left: 12px !important;
+  opacity: .96 !important;
 }
 
 .genmai202603 .genmai202603__period{
