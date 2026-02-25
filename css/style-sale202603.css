@@ -198,7 +198,6 @@
 .genmai202603 .genmai202603__message{
   margin-top: 30px !important;
   padding: 28px 32px !important;
-
   background: #ffffff !important;
   border-radius: 16px !important;
 
@@ -209,11 +208,9 @@
   max-width: 760px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-
   font-size: 16px !important;
   line-height: 2.0 !important;
-  color: #3b2a1c !important;
-
+  color: #4a4a4a !important;  /* ← グレーに変更 */
   border-top: none !important; /* さっきの線は消す */
 }
 
