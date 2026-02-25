@@ -60,6 +60,9 @@
   /* 変な改行を抑える */
   word-break: keep-all !important;
   overflow-wrap: anywhere !important;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
 }
 
 .genmai202603 .genmai202603__hr{
