@@ -239,3 +239,13 @@
   color: rgba(59,42,28,.78) !important;
   line-height: 1.5 !important;
 }
+
+/* 特典ブロックを中央化 */
+.genmai202603 .genmai202603__ribbon,
+.genmai202603 .genmai202603__period,
+.genmai202603 .genmai202603__btn,
+.genmai202603 .genmai202603__note{
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
