@@ -80,14 +80,12 @@
 .genmai202603 .genmai202603__ribbon{
   display: inline-flex !important;
   align-items: center !important;
+  white-space: nowrap !important;
   gap: 12px !important;
-
   padding: 16px 34px !important;
   border-radius: 999px !important;
-
   background: linear-gradient(180deg, #f7b25a 0%, #e28a1f 100%) !important;
   box-shadow: 0 14px 24px rgba(0,0,0,.18) !important;
-
   color: #fff !important;
 }
 
