@@ -108,9 +108,9 @@
   line-height: 1 !important;
   position: relative !important;
   top: -1px !important;   
+  transform: translateY(-2px) !important;  /* ← -1〜-3で調整 */
 }
 
-/* ★ここが本丸：baselineを捨ててcenterに */
 .genmai202603 .genmai202603__ribbonText{
   display: inline-flex !important;
   align-items: center !important;    /* ← baseline → center */
