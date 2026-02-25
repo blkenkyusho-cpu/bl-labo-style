@@ -171,7 +171,7 @@
 
 .genmai202603 .genmai202603__btn:hover{ opacity: .94 !important; }
 
-.genmai202603 .genmai202603__btnBadge{
+/*.genmai202603 .genmai202603__btnBadge{
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -182,7 +182,44 @@
   font-size: 13px !important;
   font-weight: 900 !important;
   letter-spacing: .04em !important;
+}*/
+/* バッジの文字を消す（視覚的に） */
+.genmai202603 .genmai202603__btnBadge{
+  font-size: 0 !important;            /* 文字を消す */
+  width: 44px !important;
+  height: 34px !important;
+  background: rgba(255,255,255,.18) !important;
+  position: relative !important;
 }
+
+/* LINEっぽい吹き出しアイコンをCSSで描く */
+.genmai202603 .genmai202603__btnBadge::before{
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%,-55%) !important;
+
+  width: 18px !important;
+  height: 14px !important;
+  border-radius: 6px !important;
+  border: 2px solid rgba(255,255,255,.95) !important;
+}
+
+.genmai202603 .genmai202603__btnBadge::after{
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 58% !important;
+  transform: translate(-10%, 6px) rotate(45deg) !important;
+
+  width: 6px !important;
+  height: 6px !important;
+  border-left: 2px solid rgba(255,255,255,.95) !important;
+  border-bottom: 2px solid rgba(255,255,255,.95) !important;
+  background: transparent !important;
+}
+
 
 .genmai202603 .genmai202603__btnText{
   font-size: 18px !important;
