@@ -80,32 +80,68 @@
   color: #2f5c3b !important;
 }
 
-/* リボン */
+/* ===== リボン（改善版） ===== */
 .genmai202603 .genmai202603__ribbon{
   position: relative !important;
   display: inline-block !important;
   margin: 0 0 12px !important;
-  padding: 10px 14px !important;
-  border-radius: 10px !important;
-  background: linear-gradient(180deg, #f3a343, #e38b1e) !important;
-  box-shadow: 0 10px 18px rgba(0,0,0,.14) !important;
-  color: #fff !important;
-  font-weight: 900 !important;
+
+  padding: 12px 18px 12px 18px !important;
+  border-radius: 12px !important;
+
+  /* リボンらしい“布感” */
+  background: linear-gradient(180deg, #f7b25a 0%, #e28a1f 100%) !important;
+
+  /* 立体感（強すぎない） */
+  box-shadow: 0 10px 18px rgba(0,0,0,.12) !important;
+
+  /* 端の処理が見えるように */
+  overflow: visible !important;
 }
 
+/* 右の三角（今のままでもOKだが、少し自然に） */
 .genmai202603 .genmai202603__ribbon:after{
   content: "" !important;
   position: absolute !important;
-  right: -12px !important;
+  right: -14px !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
-  border-left: 12px solid #d67f14 !important;
-  border-top: 16px solid transparent !important;
-  border-bottom: 16px solid transparent !important;
+
+  border-left: 14px solid #d77f14 !important;
+  border-top: 18px solid transparent !important;
+  border-bottom: 18px solid transparent !important;
 }
 
+/* ★ 左の“切り欠き”（これでリボンに見える） */
+.genmai202603 .genmai202603__ribbon:before{
+  content: "" !important;
+  position: absolute !important;
+  left: -10px !important;
+  top: 50% !important;
+  transform: translateY(-50%) rotate(45deg) !important;
+
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 3px !important;
+
+  /* 背景色に近い色で“切れてる”感じを作る */
+  background: rgba(245,239,227,.95) !important;
+
+  /* うっすら影で馴染ませる */
+  box-shadow: 2px 2px 0 rgba(0,0,0,.06) !important;
+}
+
+/* 中の文字（キツさを抜く） */
 .genmai202603 .genmai202603__ribbonText{
-  font-size: 22px !important;
+  display: inline-block !important;
+  font-size: 20px !important;          /* 22→20 */
+  font-weight: 800 !important;         /* 900→800 */
+  letter-spacing: .02em !important;    /* 詰まり緩和 */
+  color: rgba(255,255,255,.96) !important;
+
+  /* 立体文字っぽさを少しだけ */
+  text-shadow: 0 1px 0 rgba(0,0,0,.12) !important;
+
   white-space: nowrap !important;
 }
 
