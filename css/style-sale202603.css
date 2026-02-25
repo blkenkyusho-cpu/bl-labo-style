@@ -91,7 +91,6 @@
 
 /* 特典ラベル */
 .genmai202603 .genmai202603__ribbon::before{
-  outline: 3px solid red !important;   /* ← テスト用 */
   content: "特典" !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -107,6 +106,8 @@
   letter-spacing: .08em !important;
   white-space: nowrap !important;
   line-height: 1 !important;
+  position: relative !important;
+  top: -1px !important;   
 }
 
 /* ★ここが本丸：baselineを捨ててcenterに */
