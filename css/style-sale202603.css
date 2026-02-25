@@ -91,37 +91,48 @@
 
 /* 特典ラベル */
 .genmai202603 .genmai202603__ribbon::before{
-  content: "特典";
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.18);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: .08em;
-  white-space: nowrap;
+  content: "特典" !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  height: 26px !important;          /* ← 高さを固定して中央に見せる */
+  padding: 0 12px !important;        /* ← 上下paddingをやめて高さで管理 */
+
+  border-radius: 999px !important;
+  background: rgba(255,255,255,.18) !important;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+  letter-spacing: .08em !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
 }
 
+/* ★ここが本丸：baselineを捨ててcenterに */
 .genmai202603 .genmai202603__ribbonText{
   display: inline-flex !important;
-  align-items: baseline !important;
+  align-items: center !important;    /* ← baseline → center */
   white-space: nowrap !important;
 }
 
 .genmai202603 .genmai202603__yen{
   font-size: 34px !important;
   font-weight: 900 !important;
+  line-height: 1 !important;         /* ← 数字の上下ブレ防止 */
 }
 
 .genmai202603 .genmai202603__unit{
   font-size: 20px !important;
   font-weight: 900 !important;
   margin-left: 4px !important;
+  line-height: 1 !important;         /* ← 同上 */
 }
 
 .genmai202603 .genmai202603__rest{
   font-size: 20px !important;
   font-weight: 800 !important;
   margin-left: 14px !important;
+  line-height: 1 !important;         /* ← 同上 */
 }
 
 /* ===== 期間 ===== */
