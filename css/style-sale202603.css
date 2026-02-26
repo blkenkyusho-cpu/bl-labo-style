@@ -217,11 +217,11 @@
 .genmai202603 .genmai202603__message-title{
   font-size: 18px !important;
   font-weight: 800 !important;
-  margin: 0 0 22px !important;
+  margin: 0 0 18px !important;
   color: #2f5c3b !important;
   letter-spacing: .05em !important;
-  padding-bottom: 10px !important;
-  border-bottom: 2px solid rgba(47,92,59,.35) !important;
+  padding-bottom: 5px !important;
+  border-bottom: 1.5px solid rgba(47,92,59,.35) !important;
 }
 
 .genmai202603 .genmai202603__message p{
