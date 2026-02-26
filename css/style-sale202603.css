@@ -172,6 +172,22 @@
   opacity: .95 !important;
 }
 
+@keyframes gentlePulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.genmai202603 .genmai202603__btn{
+  animation: gentlePulse 3.2s ease-in-out infinite;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.genmai202603 .genmai202603__btn:hover{
+  opacity: .95 !important;
+  transform: scale(1.03);
+}
+
 /* ===== 注意書き ===== */
 
 .genmai202603 .genmai202603__note{
