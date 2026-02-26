@@ -92,24 +92,6 @@
 /* 特典ラベル */
 .genmai202603 .genmai202603__ribbon::before{
   content: none !important;
-  /*content: "特典" !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  height: 26px !important;          /* ← 高さを固定して中央に見せる */
-  padding: 0 12px !important;        /* ← 上下paddingをやめて高さで管理 */
-
-  border-radius: 999px !important;
-  background: rgba(255,255,255,.18) !important;
-  font-size: 12px !important;
-  font-weight: 900 !important;
-  letter-spacing: .08em !important;
-  white-space: nowrap !important;
-  line-height: 1 !important;
-  position: relative !important;
-  top: -1px !important;   
-  transform: translateY(-2px) !important;  */
 }
 
 .genmai202603 .genmai202603__ribbonText{
@@ -229,7 +211,6 @@
 .genmai202603 .genmai202603__ribbon,
 .genmai202603 .genmai202603__period,
 .genmai202603 .genmai202603__btn{
-  display: table !important;
   margin-left: auto !important;
   margin-right: auto !important;
   text-align: center !important;
