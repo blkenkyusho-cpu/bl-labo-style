@@ -211,6 +211,7 @@
 .genmai202603 .genmai202603__ribbon,
 .genmai202603 .genmai202603__period,
 .genmai202603 .genmai202603__btn{
+  display: table !important;
   margin-left: auto !important;
   margin-right: auto !important;
   text-align: center !important;
