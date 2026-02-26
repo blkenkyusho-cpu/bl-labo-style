@@ -217,23 +217,11 @@
 .genmai202603 .genmai202603__message-title{
   font-size: 18px !important;
   font-weight: 800 !important;
-  margin: 0 0 18px !important;
+  margin: 0 0 22px !important;
   color: #2f5c3b !important;
-  letter-spacing: .04em !important;
-  position: relative !important;
-  padding-left: 14px !important;
-}
-
-.genmai202603 .genmai202603__message-title::before{
-  content: "" !important;
-  position: absolute !important;
-  left: 0 !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  width: 4px !important;
-  height: 18px !important;
-  background: #2f5c3b !important;
-  border-radius: 2px !important;
+  letter-spacing: .05em !important;
+  padding-bottom: 10px !important;
+  border-bottom: 2px solid rgba(47,92,59,.35) !important;
 }
 
 .genmai202603 .genmai202603__message p{
