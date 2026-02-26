@@ -235,19 +235,18 @@
 }
 
 .genmai202603 .genmai202603__message-howto{
-  margin: 16px 0 0 !important;
+  margin: 26px 0 0 !important;   /* 余白を増やす */
+  padding: 14px 16px !important; /* 少し囲む */
   font-size: 14px !important;
-  color: rgba(59,42,28,.90) !important; /* 少しだけ濃く */
+  color: rgba(59,42,28,.90) !important;
   line-height: 1.7 !important;
-  padding-left: 18px !important;
+  background: rgba(0,0,0,.03) !important; /* 超うっすら背景 */
+  border-radius: 8px !important;
   position: relative !important;
 }
 
 .genmai202603 .genmai202603__message-howto::before{
   content: "▶";
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 11px;
+  margin-right: 6px;
   color: #2f5c3b;
 }
