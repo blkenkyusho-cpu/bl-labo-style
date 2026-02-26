@@ -149,40 +149,26 @@
 
 /* ===== LINEボタン ===== */
 
-/* ほんのり光が流れる */
-@keyframes btnShine {
-  0%   { background-position: -140% 0; }
-  100% { background-position: 240% 0; }
-}
-
 .genmai202603 .genmai202603__btn{
-  position: relative !important;
-  overflow: hidden !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 16px 28px !important;
+  border-radius: 14px !important;
+  text-decoration: none !important;
 
-  /* 既存の緑グラデは残しつつ、光の筋を重ねる */
-  background:
-    linear-gradient(180deg, #12d464, #07b953),
-    linear-gradient(120deg,
-      rgba(255,255,255,0) 0%,
-      rgba(255,255,255,.28) 18%,
-      rgba(255,255,255,0) 36%
-    ) !important;
+  background: linear-gradient(180deg, #12d464, #07b953) !important;
+  box-shadow: 0 14px 24px rgba(0,0,0,.18),
+              inset 0 2px 0 rgba(255,255,255,.35) !important;
 
-  background-size: 100% 100%, 200% 100% !important;
-  background-position: 0 0, -140% 0 !important;
-  background-repeat: no-repeat !important;
-
-  animation: btnShine 2.8s ease-in-out infinite !important;
-
-  transition: transform .22s ease, box-shadow .22s ease, filter .22s ease !important;
+  color: #fff !important;
+  font-weight: 900 !important;
+  font-size: 18px !important;
+  letter-spacing: .02em !important;
 }
 
 .genmai202603 .genmai202603__btn:hover{
-  opacity: 1 !important;
-  transform: translateY(-2px) scale(1.02) !important;
-  box-shadow:
-    0 16px 28px rgba(0,0,0,.20),
-    inset 0 2px 0 rgba(255,255,255,.38) !important;
+  opacity: .95 !important;
 }
 
 /* ===== 注意書き ===== */
