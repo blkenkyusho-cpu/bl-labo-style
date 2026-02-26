@@ -214,6 +214,14 @@
   border-top: none !important; /* さっきの線は消す */
 }
 
+.genmai202603 .genmai202603__message-title{
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  margin: 0 0 18px !important;
+  color: #2f5c3b !important;
+  letter-spacing: .04em !important;
+}
+
 .genmai202603 .genmai202603__message p{
   margin: 0 0 14px !important;
 }
