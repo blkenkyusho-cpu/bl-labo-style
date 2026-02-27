@@ -352,15 +352,18 @@
   }
 
   .genmai202603 .genmai202603__btnText{
-    display: block !important;
-    width: 100% !important;
-    max-width: 18em !important;
-    white-space: normal !important; /* ← これが本丸（折り返し許可） */
-    text-align: center !important;
-    line-height: 1.25 !important;
-    font-size: 16px !important;     /* まだキツければ15に */
-    word-break: keep-all !important;
-    overflow-wrap: anywhere !important; /* 念のため */
+   display: inline-block !important;
+  max-width: 100% !important;
+
+  white-space: nowrap !important;      /* ← 1行固定 */
+  font-size: 15px !important;          /* ← 16だと厳しい端末が出やすい */
+  line-height: 1.2 !important;
+
+  text-align: center !important;
+  letter-spacing: 0 !important;
+
+  overflow: hidden !important;         /* ← はみ出し防止 */
+  text-overflow: ellipsis !important;  /* ← 入り切らない時は … にする */
   }
 
   /* 注意書き：左寄せ（既にPCでも左寄せだが念のため） */
