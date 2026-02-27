@@ -339,26 +339,28 @@
   .genmai202603 .genmai202603__unit{ font-size: 16px !important; }
   .genmai202603 .genmai202603__rest{ font-size: 16px !important; margin-left: 10px !important; }
 
-  /* ボタン：フル幅。中身は“純粋な中央寄せ”にする */
-  .genmai202603 .genmai202603__btn{
-    display: block !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-
-    padding: 16px 12px !important;
-    border-radius: 14px !important;
-
-    text-align: center !important;
-    text-decoration: none !important;
+  /* スマホは“錯覚の元”を消す：光エフェクト無効化 */
+  .genmai202603 .genmai202603__btn::before{
+    content: none !important;
   }
 
-  /* テキスト：1行固定で中央。余計な箱を作らない */
-  .genmai202603 .genmai202603__btnText{
-    display: inline !important;          /* ← blockにしない */
-    white-space: nowrap !important;      /* ← 1行固定 */
+  /* 中央を“見た目でも”固定（余計な影響を排除） */
+  .genmai202603 .genmai202603__btn{
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 16px 12px !important;      /* 左右同じ */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     text-align: center !important;
-    font-size: 15px !important;          /* 16だと端末によって苦しい */
-    line-height: 1.2 !important;
+  }
+
+  .genmai202603 .genmai202603__btnText{
+    display: inline-block !important;
+    white-space: nowrap !important;      /* 1行固定 */
+    text-indent: 0 !important;           /* 外部CSS対策 */
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   /* 注意書き：左寄せ（既にPCでも左寄せだが念のため） */
