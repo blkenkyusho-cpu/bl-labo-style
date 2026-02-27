@@ -332,8 +332,10 @@
   }
 
   .genmai202603 .genmai202603__period{
-    font-size: 15px !important;
-    margin: 12px 0 12px !important;
+    display: block !important; 
+    text-align: center !important;
+    font-size: 18px !important;
+    margin: 10px 0 12px !important;
   }
 
   /* 特典ピル：スマホでは少しコンパクトに */
