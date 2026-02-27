@@ -273,3 +273,147 @@
   margin-right: 6px;
   color: #2f5c3b;
 }
+
+/* =========================================
+   スマホCSS
+========================================= */
+
+/* スマホ調整：768px以下（必要なら600/700に変更OK） */
+@media screen and (max-width: 768px){
+
+  /* 全体：呼吸を増やす */
+  .genmai202603{
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  /* 2カラム → 縦積み */
+  .genmai202603__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  /* 画像：横幅いっぱい */
+  .genmai202603__media{
+    width: 100%;
+  }
+  .genmai202603__img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+  }
+
+  /* ボディ：中央寄せで視線誘導 */
+  .genmai202603__body{
+    width: 100%;
+    text-align: center;
+  }
+
+  /* kicker */
+  .genmai202603__kicker{
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 6px;
+  }
+
+  /* 見出し：大きすぎ防止（40→30台へ） */
+  .genmai202603__headline{
+    font-size: 32px;
+    line-height: 1.15;
+    margin: 0 0 8px;
+  }
+
+  .genmai202603__hr{
+    margin: 10px auto 10px;
+  }
+
+  /* 商品名 */
+  .genmai202603__product{
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 10px;
+  }
+
+  /* 特典ピル：折返し事故を抑える */
+  .genmai202603__ribbon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 10px 14px;
+    border-radius: 999px;
+    margin: 0 auto 10px;
+  }
+  .genmai202603__ribbonText{
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  /* 期間 */
+  .genmai202603__period{
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 0 0 12px;
+  }
+
+  /* ボタン：幅100%で押しやすく */
+  .genmai202603__btn{
+    width: 100%;
+    max-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 14px;
+    border-radius: 14px;
+    margin: 0 auto 10px;
+  }
+  .genmai202603__btnText{
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .genmai202603__btnArrow{
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  /* 注意書き：左寄せで可読性 */
+  .genmai202603__note{
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 10px 0 0;
+  }
+
+  /* 下段カード：スマホ向けに余白と文字 */
+  .genmai202603__message{
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 14px;
+  }
+  .genmai202603__message-title{
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+  }
+  .genmai202603__message p{
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 10px;
+  }
+  .genmai202603__message-strong{
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0 12px;
+  }
+  .genmai202603__message-howto{
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 12px;
+    padding: 12px 12px;
+    border-radius: 12px;
+  }
+}
