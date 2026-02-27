@@ -275,145 +275,104 @@
 }
 
 /* =========================================
-   スマホCSS
+   玄米デビュー応援キャンペーン 202603
+   スマホ上書き（PCの!important固定に勝つ版）
+   ※CSS末尾に追加
 ========================================= */
-
-/* スマホ調整：768px以下（必要なら600/700に変更OK） */
 @media screen and (max-width: 768px){
 
-  /* 全体：呼吸を増やす */
-  .genmai202603{
-    border-radius: 16px;
-    padding: 16px;
+  /* 2カラム → 縦積み（最重要） */
+  .genmai202603 .genmai202603__inner{
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
   }
 
-  /* 2カラム → 縦積み */
-  .genmai202603__inner{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+  /* 左画像の「38%固定」を解除してフル幅へ */
+  .genmai202603 .genmai202603__media{
+    flex: 0 0 auto !important;
+    max-width: none !important;
+    width: 100% !important;
   }
 
-  /* 画像：横幅いっぱい */
-  .genmai202603__media{
-    width: 100%;
-  }
-  .genmai202603__img{
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
+  .genmai202603 .genmai202603__img{
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
   }
 
-  /* ボディ：中央寄せで視線誘導 */
-  .genmai202603__body{
-    width: 100%;
-    text-align: center;
+  /* 本文ブロックもフル幅 */
+  .genmai202603 .genmai202603__body{
+    width: 100% !important;
   }
 
-  /* kicker */
-  .genmai202603__kicker{
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0 0 6px;
+  /* テキスト：スマホは中央寄せ基調 */
+  .genmai202603 .genmai202603__body{
+    text-align: center !important;
   }
 
-  /* 見出し：大きすぎ防止（40→30台へ） */
-  .genmai202603__headline{
-    font-size: 32px;
-    line-height: 1.15;
-    margin: 0 0 8px;
+  /* 見出しサイズ調整 */
+  .genmai202603 .genmai202603__kicker{
+    font-size: 14px !important;
+    margin: 0 0 6px !important;
   }
 
-  .genmai202603__hr{
-    margin: 10px auto 10px;
+  .genmai202603 .genmai202603__headline{
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+    margin: 0 0 8px !important;
   }
 
-  /* 商品名 */
-  .genmai202603__product{
-    font-size: 18px;
-    line-height: 1.4;
-    margin: 0 0 10px;
+  .genmai202603 .genmai202603__product{
+    font-size: 18px !important;
+    margin: 0 0 10px !important;
   }
 
-  /* 特典ピル：折返し事故を抑える */
-  .genmai202603__ribbon{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    padding: 10px 14px;
-    border-radius: 999px;
-    margin: 0 auto 10px;
-  }
-  .genmai202603__ribbonText{
-    white-space: nowrap;
-    font-size: 16px;
-    line-height: 1.2;
+  .genmai202603 .genmai202603__period{
+    font-size: 15px !important;
+    margin: 12px 0 12px !important;
   }
 
-  /* 期間 */
-  .genmai202603__period{
-    font-size: 15px;
-    line-height: 1.4;
-    margin: 0 0 12px;
+  /* 特典ピル：スマホでは少しコンパクトに */
+  .genmai202603 .genmai202603__ribbon{
+    padding: 12px 16px !important;
+    box-shadow: 0 10px 18px rgba(0,0,0,.14) !important;
+  }
+  .genmai202603 .genmai202603__yen{ font-size: 28px !important; }
+  .genmai202603 .genmai202603__unit{ font-size: 16px !important; }
+  .genmai202603 .genmai202603__rest{ font-size: 16px !important; margin-left: 10px !important; }
+
+  /* ボタン：フル幅化（※display:table で潰されるので上書き必須） */
+  .genmai202603 .genmai202603__btn{
+    display: flex !important;     /* ← PC側の display:table に勝つ */
+    width: 100% !important;
+    max-width: none !important;
+    padding: 16px 14px !important;
+    border-radius: 14px !important;
   }
 
-  /* ボタン：幅100%で押しやすく */
-  .genmai202603__btn{
-    width: 100%;
-    max-width: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 16px 14px;
-    border-radius: 14px;
-    margin: 0 auto 10px;
-  }
-  .genmai202603__btnText{
-    font-size: 16px;
-    line-height: 1.2;
-  }
-  .genmai202603__btnArrow{
-    font-size: 20px;
-    line-height: 1;
+  /* 注意書き：左寄せ（既にPCでも左寄せだが念のため） */
+  .genmai202603 .genmai202603__note{
+    text-align: left !important;
+    font-size: 13px !important;
   }
 
-  /* 注意書き：左寄せで可読性 */
-  .genmai202603__note{
-    text-align: left;
-    font-size: 13px;
-    line-height: 1.6;
-    margin: 10px 0 0;
+  /* 下段カード：スマホ用に余白と文字を軽く */
+  .genmai202603 .genmai202603__message{
+    padding: 16px !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    margin-top: 16px !important;
   }
 
-  /* 下段カード：スマホ向けに余白と文字 */
-  .genmai202603__message{
-    margin-top: 16px;
-    padding: 16px;
-    border-radius: 14px;
+  .genmai202603 .genmai202603__message-title{
+    font-size: 18px !important;
+    margin: 0 0 10px !important;
   }
-  .genmai202603__message-title{
-    font-size: 18px;
-    line-height: 1.3;
-    margin: 0 0 10px;
-  }
-  .genmai202603__message p{
-    font-size: 15px;
-    line-height: 1.8;
-    margin: 0 0 10px;
-  }
-  .genmai202603__message-strong{
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 10px 0 12px;
-  }
-  .genmai202603__message-howto{
-    font-size: 14px;
-    line-height: 1.7;
-    margin-top: 12px;
-    padding: 12px 12px;
-    border-radius: 12px;
+
+  .genmai202603 .genmai202603__message-howto{
+    margin-top: 12px !important;
+    padding: 12px 12px !important;
+    border-radius: 12px !important;
   }
 }
