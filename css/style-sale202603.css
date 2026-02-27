@@ -369,22 +369,25 @@
     font-size: 13px !important;
   }
 
-  /* 下段カード：スマホ用に余白と文字を軽く */
   .genmai202603 .genmai202603__message{
-    padding: 16px !important;
-    font-size: 15px !important;
-    line-height: 1.8 !important;
-    margin-top: 16px !important;
-  }
+  padding: 20px 18px !important;   /* ← 少し余裕を持たせる */
+  font-size: 15px !important;
+  line-height: 1.9 !important;     /* ← わずかにゆったり */
+  margin-top: 18px !important;
+  max-width: 100% !important;      /* ← 念のため制限解除 */
+}
 
-  .genmai202603 .genmai202603__message-title{
-    font-size: 18px !important;
-    margin: 0 0 10px !important;
-  }
+.genmai202603 .genmai202603__message-title{
+  font-size: 19px !important;      /* ← 1pxだけ上げる */
+  margin: 0 0 14px !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0.02em !important;
+  white-space: nowrap !important;  /* ← 改行防止 */
+}
 
-  .genmai202603 .genmai202603__message-howto{
-    margin-top: 12px !important;
-    padding: 12px 12px !important;
-    border-radius: 12px !important;
-  }
+.genmai202603 .genmai202603__message-howto{
+  margin-top: 14px !important;
+  padding: 14px 14px !important;
+  border-radius: 12px !important;
+}
 }
