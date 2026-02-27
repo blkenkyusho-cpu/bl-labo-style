@@ -293,12 +293,15 @@
     flex: 0 0 auto !important;
     max-width: none !important;
     width: 100% !important;
+    margin-bottom: 6px !important;
   }
 
   .genmai202603 .genmai202603__img{
     width: 100% !important;
     height: auto !important;
     border-radius: 12px !important;
+    max-height: 320px !important;
+    object-fit: contain !important;
   }
 
   /* 本文ブロックもフル幅 */
