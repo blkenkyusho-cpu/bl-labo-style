@@ -339,31 +339,26 @@
   .genmai202603 .genmai202603__unit{ font-size: 16px !important; }
   .genmai202603 .genmai202603__rest{ font-size: 16px !important; margin-left: 10px !important; }
 
-  /* ボタン：フル幅化（※display:table で潰されるので上書き必須） */
+  /* ボタン：フル幅。中身は“純粋な中央寄せ”にする */
   .genmai202603 .genmai202603__btn{
-    display: flex !important;     /* ← PC側の display:table に勝つ */
+    display: block !important;
     width: 100% !important;
-    max-width: none !important;
+    margin: 0 auto !important;
+
     padding: 16px 12px !important;
     border-radius: 14px !important;
-    justify-content: center !important;
-    align-items: center !important;
+
     text-align: center !important;
+    text-decoration: none !important;
   }
 
+  /* テキスト：1行固定で中央。余計な箱を作らない */
   .genmai202603 .genmai202603__btnText{
-   display: inline-block !important;
-  max-width: 100% !important;
-
-  white-space: nowrap !important;      /* ← 1行固定 */
-  font-size: 15px !important;          /* ← 16だと厳しい端末が出やすい */
-  line-height: 1.2 !important;
-
-  text-align: center !important;
-  letter-spacing: 0 !important;
-
-  overflow: hidden !important;         /* ← はみ出し防止 */
-  text-overflow: ellipsis !important;  /* ← 入り切らない時は … にする */
+    display: inline !important;          /* ← blockにしない */
+    white-space: nowrap !important;      /* ← 1行固定 */
+    text-align: center !important;
+    font-size: 15px !important;          /* 16だと端末によって苦しい */
+    line-height: 1.2 !important;
   }
 
   /* 注意書き：左寄せ（既にPCでも左寄せだが念のため） */
