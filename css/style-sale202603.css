@@ -273,6 +273,10 @@
 ========================================= */
 @media screen and (max-width: 768px){
 
+  .genmai202603{
+    padding: 16px 12px !important; /* ← ここが効く（12〜14で調整） */
+  }
+  
   /* 2カラム → 縦積み（最重要） */
   .genmai202603 .genmai202603__inner{
     flex-direction: column !important;
