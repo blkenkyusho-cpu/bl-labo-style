@@ -370,7 +370,7 @@
   }
 
   .genmai202603 .genmai202603__message{
-  padding: 20px 18px !important;   /* ← 少し余裕を持たせる */
+  padding: 20px 14px !important;   /* ← 少し余裕を持たせる */
   font-size: 15px !important;
   line-height: 1.9 !important;     /* ← わずかにゆったり */
   margin-top: 18px !important;
