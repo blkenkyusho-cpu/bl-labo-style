@@ -131,7 +131,7 @@
 
 /* ===== LINEボタン ===== */
 
-.genmai202603 .genmai202603__btn{
+.{
   position: relative !important;
   overflow: hidden !important;
   isolation: isolate !important; /* ← 重なり事故防止 */
@@ -153,7 +153,7 @@
   letter-spacing: .02em !important;
 }
 
-.genmai202603 .genmai202603__btn::before{
+.::before{
   content: "" !important;
   position: absolute !important;
   top: -40% !important;
@@ -178,8 +178,8 @@
   animation: genmai202603_shine 2.6s ease-in-out infinite !important;
 }
 
-.genmai202603 .genmai202603__btnText,
-.genmai202603 .genmai202603__btnArrow{
+.Text,
+.Arrow{
   position: relative !important;
   z-index: 1 !important;          /* 文字は前面 */
 }
@@ -191,7 +191,7 @@
   100% { left: 120%; opacity: 0; }
 }
 
-.genmai202603 .genmai202603__btn:hover{
+.:hover{
   transform: translateY(-1px) !important;
 }
 
@@ -210,7 +210,7 @@
 
 .genmai202603 .genmai202603__ribbon,
 .genmai202603 .genmai202603__period,
-.genmai202603 .genmai202603__btn{
+.{
   display: table !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -354,10 +354,15 @@
     max-width: none !important;
     padding: 16px 12px !important;
     border-radius: 14px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
   }
 
   .genmai202603 .genmai202603__btnText{
     display: block !important;
+    width: 100% !important;
+    max-width: 18em !important;
     white-space: normal !important; /* ← これが本丸（折り返し許可） */
     text-align: center !important;
     line-height: 1.25 !important;
