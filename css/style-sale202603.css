@@ -401,3 +401,31 @@
   border-radius: 12px !important;
 }
 }
+
+/* =========================================
+   iPad mini等：中間幅(481〜768px)の見た目調整
+   ※スマホ(〜480)は今のまま
+========================================= */
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+  /* hr：中央に戻す（見た目の芯） */
+  .genmai202603 .genmai202603__hr{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* ボタン：フル幅をやめて“ほどよい幅”にする */
+  .genmai202603 .genmai202603__btn{
+    width: auto !important;
+    max-width: 520px !important;   /* 480〜560で好み調整 */
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* テキスト：1行固定は維持（必要なら） */
+  .genmai202603 .genmai202603__btnText{
+    white-space: nowrap !important;
+  }
+}
