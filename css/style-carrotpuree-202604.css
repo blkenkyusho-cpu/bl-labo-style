@@ -1,5 +1,10 @@
 /* ===== 黒人参のピューレ ===== */
 
+.carrotlp {
+  font-family: "Helvetica Neue", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  color: #3f3a39;
+}
+
 .carrotlp-sec01 {
   background: #ffffff;
   padding: 56px 20px 64px;
