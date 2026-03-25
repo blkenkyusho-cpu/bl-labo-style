@@ -159,6 +159,27 @@
 }
 
 /* =========================
+   区切り線
+========================= */
+
+.carrotlp-divider {
+  width: 56px;
+  height: 1px;
+  margin: 28px auto 32px;
+  background: rgba(90, 62, 107, 0.22);
+}
+
+.carrotlp-divider::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: -4px auto 0;
+  border-radius: 50%;
+  background: rgba(90, 62, 107, 0.18);
+}
+
+/* =========================
    セクション03（出会い）
 ========================= */
 .carrotlp-sec03 {
