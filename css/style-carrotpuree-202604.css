@@ -163,14 +163,15 @@
 ========================= */
 
 .carrotlp-divider {
-  width: 350px;
+  width: 160px;
   height: 1px;
-  margin: 28px auto 36px;
-  background: rgba(90, 62, 107, 0.14);
-}
-
-.carrotlp-divider::after {
-  content: none;
+  margin: 32px auto 36px;
+  background: linear-gradient(
+    to right,
+    rgba(90, 62, 107, 0),
+    rgba(90, 62, 107, 0.2),
+    rgba(90, 62, 107, 0)
+  );
 }
 
 /* =========================
