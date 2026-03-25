@@ -19,8 +19,8 @@
 .carrotlp-sec01__lead {
   margin: 0;
   color: #3f3a39;
-  font-size: 22px;
-  line-height: 2;
+  font-size: 20px;
+  line-height: 1.9;
   letter-spacing: 0.08em;
 }
 
@@ -50,13 +50,13 @@
 
 .carrotlp-sec01__title-top {
   display: block;
-  font-size: 44px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
 .carrotlp-sec01__title-main {
   display: block;
-  font-size: 72px;
+  font-size: 60px;
 }
 
 .carrotlp-sec01__text {
@@ -66,8 +66,8 @@
 .carrotlp-sec01__text p {
   margin: 0 0 28px;
   color: #3f3a39;
-  font-size: 24px;
-  line-height: 2;
+  font-size: 21px;
+  line-height: 1.9;
   letter-spacing: 0.06em;
 }
 
@@ -80,7 +80,7 @@
   padding: 28px 20px;
   max-width: 700px;
   color: #5a3e6b;
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 1.6;
   letter-spacing: 0.05em;
@@ -101,23 +101,23 @@
   }
 
   .carrotlp-sec01__lead {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .carrotlp-sec01__title-top {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   .carrotlp-sec01__title-main {
-    font-size: 60px;
+    font-size: 52px;
   }
 
   .carrotlp-sec01__text p {
-    font-size: 22px;
+    font-size: 19px;
   }
 
   .carrotlp-sec01__focus {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 
@@ -151,17 +151,17 @@
   }
 
   .carrotlp-sec01__title-top {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 6px;
   }
 
   .carrotlp-sec01__title-main {
-    font-size: 44px;
+    font-size: 38px;
   }
 
   .carrotlp-sec01__text p {
     margin-bottom: 22px;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 2;
     letter-spacing: 0.04em;
   }
@@ -169,7 +169,7 @@
   .carrotlp-sec01__focus {
     margin-top: 40px;
     padding: 20px 12px;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.7;
     letter-spacing: 0.04em;
   }
