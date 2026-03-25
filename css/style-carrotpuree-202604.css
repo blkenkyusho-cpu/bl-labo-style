@@ -157,3 +157,138 @@
   line-height: 1.8;
   letter-spacing: 0.05em;
 }
+
+/* =========================
+   セクション03（出会い）
+========================= */
+.carrotlp-sec03 {
+  padding: 72px 20px 80px;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #f6f1fa 40%,
+    #f3ecf8 100%
+  );
+}
+
+/* 内側 */
+.carrotlp-sec03__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+/* ほんのり光 */
+.carrotlp-sec03__inner::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 300px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(146, 104, 178, 0.08) 0%,
+    rgba(146, 104, 178, 0.03) 40%,
+    rgba(146, 104, 178, 0) 70%
+  );
+  z-index: 0;
+}
+
+.carrotlp-sec03__inner > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 導入 */
+.carrotlp-sec03__lead {
+  margin: 0 0 36px;
+  color: #3f3a39;
+  font-size: 20px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+
+/* 問い（少し強め） */
+.carrotlp-sec03__question {
+  margin: 0 0 40px;
+  color: #5a3e6b;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+/* 本文 */
+.carrotlp-sec03__text p {
+  margin: 0 0 26px;
+  color: #3f3a39;
+  font-size: 20px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+
+.carrotlp-sec03__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* 強調（黒人参） */
+.carrotlp-sec03__focus {
+  margin: 48px auto 0;
+  color: #5a3e6b;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+/* =========================
+   Tablet
+========================= */
+@media screen and (max-width: 1024px) {
+  .carrotlp-sec03 {
+    padding: 64px 20px 72px;
+  }
+
+  .carrotlp-sec03__lead,
+  .carrotlp-sec03__text p {
+    font-size: 18px;
+  }
+
+  .carrotlp-sec03__question {
+    font-size: 24px;
+  }
+
+  .carrotlp-sec03__focus {
+    font-size: 26px;
+  }
+}
+
+/* =========================
+   Smartphone
+========================= */
+@media screen and (max-width: 767px) {
+  .carrotlp-sec03 {
+    padding: 56px 18px 64px;
+  }
+
+  .carrotlp-sec03__lead,
+  .carrotlp-sec03__text p {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+  }
+
+  .carrotlp-sec03__question {
+    font-size: 22px;
+    line-height: 1.7;
+  }
+
+  .carrotlp-sec03__focus {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 1.7;
+  }
+}
