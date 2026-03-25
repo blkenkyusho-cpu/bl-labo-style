@@ -8,7 +8,7 @@
 /* =========================
    アニメーション定義
 ========================= */
-@keyframes carrotlp-sec01-fade {
+@keyframes carrotlp-fadeup {
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -19,6 +19,15 @@
   }
 }
 
+.carrotlp-fade {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.carrotlp-fade.is-visible {
+  animation: carrotlp-fadeup 0.8s ease-out forwards;
+}
+
 /* =========================
    セクション01
 ========================= */
@@ -26,8 +35,6 @@
 .carrotlp-sec01 {
   background: #ffffff;
   padding: 56px 20px 64px;
-  animation: carrotlp-sec01-fade 0.8s ease-out 0.2s;
-  animation-fill-mode: both;
 }
 
 .carrotlp-sec01__inner {
@@ -116,27 +123,11 @@
 }
 
 /* =========================
-   アニメーション定義
-========================= */
-@keyframes carrotlp-sec02-fade {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* =========================
    セクション02
 ========================= */
 .carrotlp-sec02 {
   background: #ffffff;
   padding: 12px 20px 64px;
-  animation: carrotlp-sec02-fade 0.8s ease-out 0.2s;
-  animation-fill-mode: both;
 }
 
 .carrotlp-sec02__inner {
