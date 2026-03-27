@@ -269,6 +269,38 @@
 }
 
 /* =========================
+   セクション04（信頼・理由）
+========================= */
+
+.carrotlp-sec04 {
+  background: #ffffff;
+  padding: 64px 20px 72px;
+}
+
+.carrotlp-sec04__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carrotlp-sec04__text p {
+  margin: 0 0 26px;
+  color: #3f3a39;
+  font-size: 20px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+
+.carrotlp-sec04__focus {
+  margin: 44px auto;
+  color: #5a3e6b;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+
+/* =========================
    Tablet
 ========================= */
 @media screen and (max-width: 1024px) {
