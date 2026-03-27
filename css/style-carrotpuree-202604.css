@@ -299,6 +299,35 @@
   line-height: 1.7;
 }
 
+/* =========================
+   セクション05（商品への橋渡し）
+========================= */
+
+.carrotlp-sec05 {
+  background: #ffffff;
+  padding: 64px 20px 80px;
+}
+
+.carrotlp-sec05__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carrotlp-sec05__text p {
+  margin: 0 0 26px;
+  color: #3f3a39;
+  font-size: 20px;
+  line-height: 1.9;
+}
+
+.carrotlp-sec05__focus {
+  margin: 48px auto;
+  color: #5a3e6b;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.6;
+}
 
 /* =========================
    Tablet
