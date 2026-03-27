@@ -165,13 +165,15 @@
 .carrotlp-divider {
   width: 160px;
   height: 5px;
-  margin: 32px auto 36px;
+  margin: 36px auto 40px;
+  border-radius: 10px;
   background: linear-gradient(
     to right,
     rgba(90, 62, 107, 0),
-    rgba(90, 62, 107, 0.2),
+    rgba(90, 62, 107, 0.25),
     rgba(90, 62, 107, 0)
   );
+  filter: blur(0.3px);
 }
 
 /* =========================
