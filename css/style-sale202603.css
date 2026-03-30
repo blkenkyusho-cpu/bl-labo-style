@@ -132,7 +132,7 @@
 .old-date{
   text-decoration: line-through;
   color: rgba(59,42,28,.45); /* ← 薄くするのが命 */
-  margin: 0 2px;
+  margin: 0 4px;
 }
 
 .genmai202603__extend{
