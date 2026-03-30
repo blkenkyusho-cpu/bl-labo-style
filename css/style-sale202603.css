@@ -129,12 +129,13 @@
   color: #3b2a1c !important;
 }
 
-.genmai202603__period-note{
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 6px;
-  color: rgba(59,42,28,.7);
+.genmai202603__extend{
+  margin: -4px 0 18px !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  text-align: center !important;
+  color: #8a5a2b !important;
+  letter-spacing: .03em !important;
 }
 
 /* ===== LINEボタン（正） ===== */
