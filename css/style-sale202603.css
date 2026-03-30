@@ -162,11 +162,11 @@
 .genmai202603__extend::before{
   content: "";
   position: absolute;
-  top: -6px;
+  top: -10px;
   left: 50%;
   transform: translateX(-50%);
 
-  border-width: 0 6px 6px 6px;
+  border-width: 0 10px 10px 10px;
   border-style: solid;
   border-color: transparent transparent rgba(247,178,90,.45) transparent;
 }
