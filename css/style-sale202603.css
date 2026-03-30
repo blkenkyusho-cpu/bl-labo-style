@@ -129,6 +129,12 @@
   color: #3b2a1c !important;
 }
 
+.old-date{
+  text-decoration: line-through;
+  color: rgba(59,42,28,.45); /* ← 薄くするのが命 */
+  margin: 0 2px;
+}
+
 .genmai202603__extend{
   display: table !important;
   margin: 0 auto 18px !important;
