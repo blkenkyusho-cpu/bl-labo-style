@@ -130,11 +130,15 @@
 }
 
 .genmai202603__extend{
-  margin: -4px 0 18px !important;
-  font-size: 16px !important;
+  display: table !important;
+  margin: -2px auto 18px !important;
+  padding: 6px 14px !important;
+  font-size: 15px !important;
   font-weight: 800 !important;
-  text-align: center !important;
-  color: #8a5a2b !important;
+  color: #7a4c20 !important;
+  background: rgba(226,138,31,.10) !important;
+  border: 1px solid rgba(226,138,31,.20) !important;
+  border-radius: 999px !important;
   letter-spacing: .03em !important;
 }
 
