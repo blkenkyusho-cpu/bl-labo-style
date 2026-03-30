@@ -133,13 +133,37 @@
   display: table !important;
   margin: -2px auto 18px !important;
   padding: 6px 14px !important;
+
   font-size: 15px !important;
   font-weight: 800 !important;
-  color: #7a4c20 !important;
-  background: rgba(226,138,31,.10) !important;
-  border: 1px solid rgba(226,138,31,.20) !important;
-  border-radius: 999px !important;
   letter-spacing: .03em !important;
+
+  color: #7a4c20 !important;
+
+  background: linear-gradient(
+    180deg,
+    rgba(247,178,90,.25),
+    rgba(226,138,31,.25)
+  ) !important;
+
+  border: 1px solid rgba(226,138,31,.35) !important;
+  border-radius: 999px !important;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,.08) !important;
+
+  position: relative !important;
+}
+
+.genmai202603__extend::before{
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-width: 0 6px 6px 6px;
+  border-style: solid;
+  border-color: transparent transparent rgba(226,138,31,.35) transparent;
 }
 
 /* ===== LINEボタン（正） ===== */
