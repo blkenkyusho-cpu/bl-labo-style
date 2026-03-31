@@ -330,6 +330,52 @@
 }
 
 /* =========================
+   セクション06（成分）
+========================= */
+.carrotlp-sec06 {
+  background: #ffffff;
+  padding: 72px 20px 80px;
+}
+
+.carrotlp-sec06__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carrotlp-sec06__text p {
+  margin: 0 0 26px;
+  font-size: 20px;
+  line-height: 1.9;
+}
+
+.carrotlp-sec06__focus {
+  margin: 42px auto;
+  font-size: 26px;
+  font-weight: 700;
+  color: #5a3e6b;
+  line-height: 1.7;
+}
+
+.carrotlp-sec06__highlight {
+  margin: 48px auto;
+  font-size: 28px;
+  font-weight: 700;
+  color: #5a3e6b;
+  line-height: 1.6;
+}
+
+.carrotlp-sec06__graph {
+  margin: 40px 0;
+}
+
+.carrotlp-sec06__note {
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+}
+
+/* =========================
    Tablet
 ========================= */
 @media screen and (max-width: 1024px) {
