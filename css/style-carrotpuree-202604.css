@@ -332,6 +332,32 @@
 /* =========================
    セクション06（成分）
 ========================= */
+.carrotlp-sec06__heading {
+  position: relative;
+  margin: 0 0 44px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  color: #5a3e6b;
+  text-align: center;
+}
+
+.carrotlp-sec06__heading::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 1px;
+  margin: 14px auto 0;
+  background: linear-gradient(
+    to right,
+    rgba(90, 62, 107, 0),
+    rgba(90, 62, 107, 0.35),
+    rgba(90, 62, 107, 0)
+  );
+}
+
 .carrotlp-sec06 {
   background: #ffffff;
   padding: 72px 20px 80px;
