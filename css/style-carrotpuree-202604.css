@@ -333,13 +333,15 @@
    セクション06（成分）
 ========================= */
 .carrotlp-sec06__heading {
-  margin: 0 0 28px;
+  margin: 0 0 32px;
   padding-bottom: 12px;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 700;
-  color: #5a3e6b;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #4d335e;
   text-align: left;
-  border-bottom: 2px solid rgba(90, 62, 107, 0.25);
+  border-bottom: 2px solid rgba(90, 62, 107, 0.22);
 }
 
 .carrotlp-sec06 {
