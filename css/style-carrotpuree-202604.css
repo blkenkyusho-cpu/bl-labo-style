@@ -393,6 +393,104 @@
 }
 
 /* =========================
+   セクション07（習慣設計）
+========================= */
+.carrotlp-sec07 {
+  background: #ffffff;
+  padding: 50px 20px 80px;
+}
+
+.carrotlp-sec07__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 見出し（フェードさせない） */
+.carrotlp-sec07__heading {
+  margin: 0 0 28px;
+  padding: 14px 18px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #4d335e;
+  text-align: left;
+  border-left: 5px solid #5a3e6b;
+  background: linear-gradient(
+    to right,
+    rgba(90, 62, 107, 0.10),
+    rgba(90, 62, 107, 0.03)
+  );
+}
+
+/* 導入一行 */
+.carrotlp-sec07__lead {
+  margin: 0 0 28px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #5a3e6b;
+}
+
+/* 本文 */
+.carrotlp-sec07__text p {
+  margin: 0 0 26px;
+  font-size: 20px;
+  line-height: 1.9;
+  color: #3f3a39;
+}
+
+/* 強調 */
+.carrotlp-sec07__focus {
+  margin: 40px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #5a3e6b;
+  line-height: 1.7;
+}
+
+/* 締め */
+.carrotlp-sec07__closing {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 1.9;
+  color: #3f3a39;
+}
+
+/* =========================
+   スマホ
+========================= */
+@media screen and (max-width: 767px) {
+
+  .carrotlp-sec07 {
+    padding: 40px 18px 60px;
+  }
+
+  .carrotlp-sec07__heading {
+    font-size: 22px;
+    padding: 12px 14px;
+    border-left-width: 4px;
+  }
+
+  .carrotlp-sec07__lead {
+    font-size: 20px;
+  }
+
+  .carrotlp-sec07__text p {
+    font-size: 17px;
+  }
+
+  .carrotlp-sec07__focus {
+    font-size: 20px;
+  }
+
+  .carrotlp-sec07__closing {
+    font-size: 17px;
+  }
+}
+
+
+/* =========================
    Tablet
 ========================= */
 @media screen and (max-width: 1024px) {
