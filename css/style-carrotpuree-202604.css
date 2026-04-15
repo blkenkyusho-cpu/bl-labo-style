@@ -489,6 +489,153 @@
   }
 }
 
+/* =========================
+   セクション08（比較カード）
+========================= */
+.carrotlp-sec08 {
+  background: #ffffff;
+  padding: 56px 20px 88px;
+}
+
+.carrotlp-sec08__inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* 見出し */
+.carrotlp-sec08__heading {
+  margin: 0 0 28px;
+  padding: 14px 18px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #4d335e;
+  border-left: 5px solid #5a3e6b;
+  background: linear-gradient(
+    to right,
+    rgba(90, 62, 107, 0.10),
+    rgba(90, 62, 107, 0.03)
+  );
+}
+
+/* リード */
+.carrotlp-sec08__lead {
+  margin: 0 0 34px;
+  text-align: center;
+  color: #3f3a39;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+/* カード全体 */
+.carrotlp-sec08__cards {
+  display: flex;
+  gap: 24px;
+}
+
+/* カード */
+.carrotlp-sec08__card {
+  flex: 1;
+  padding: 26px 20px;
+  border: 1px solid #e7e1ea;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+/* 主役カード */
+.carrotlp-sec08__card--main {
+  border: 2px solid #b992d2;
+  background: linear-gradient(
+    to bottom,
+    rgba(145,104,178,0.08),
+    rgba(145,104,178,0.03)
+  );
+  box-shadow: 0 12px 24px rgba(90,62,107,0.10);
+}
+
+/* 画像 */
+.carrotlp-sec08__img {
+  margin-bottom: 16px;
+}
+
+.carrotlp-sec08__img img {
+  width: 100%;
+  max-width: 140px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* 主役だけ少し大きく */
+.carrotlp-sec08__card--main .carrotlp-sec08__img img {
+  max-width: 160px;
+}
+
+/* 上テキスト */
+.carrotlp-sec08__card-top {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #7a7278;
+}
+
+/* タイトル */
+.carrotlp-sec08__card-title {
+  margin-bottom: 16px;
+  font-size: 26px;
+  color: #5a3e6b;
+  font-weight: 700;
+}
+
+/* 主役タイトル */
+.carrotlp-sec08__card--main .carrotlp-sec08__card-title {
+  font-size: 30px;
+}
+
+/* リスト */
+.carrotlp-sec08__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carrotlp-sec08__list li {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0edf2;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.carrotlp-sec08__list li:last-child {
+  border-bottom: none;
+}
+
+/* 主役リスト強調 */
+.carrotlp-sec08__card--main .carrotlp-sec08__list li {
+  font-weight: 700;
+}
+
+/* 下テキスト */
+.carrotlp-sec08__card-bottom {
+  margin-top: 16px;
+  font-weight: 700;
+  color: #5a3e6b;
+}
+
+/* 締め */
+.carrotlp-sec08__closing {
+  margin-top: 36px;
+  padding: 22px;
+  background: #5a3e6b;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 18px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
 
 /* =========================
    Tablet
