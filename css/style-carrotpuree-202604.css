@@ -532,17 +532,18 @@
 .carrotlp-sec08__cards {
   display: flex;
   gap: 24px;
+  align-items: stretch;
 }
 
 /* カード */
 .carrotlp-sec08__card {
   flex: 1;
-  padding: 26px 20px;
+  padding: 22px 18px 20px;
   border: 1px solid #e7e1ea;
   border-radius: 18px;
   background: #ffffff;
   box-shadow: 0 8px 18px rgba(0,0,0,0.04);
-  text-align: center;
+  text-align: left;
 }
 
 /* 主役カード */
@@ -558,39 +559,46 @@
 
 /* 画像 */
 .carrotlp-sec08__img {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+  text-align: center;
 }
 
 .carrotlp-sec08__img img {
   width: 100%;
-  max-width: 140px;
+  max-width: 120px;
+  height: auto;
   margin: 0 auto;
   display: block;
 }
 
 /* 主役だけ少し大きく */
 .carrotlp-sec08__card--main .carrotlp-sec08__img img {
-  max-width: 160px;
+  max-width: 136px;
 }
 
 /* 上テキスト */
 .carrotlp-sec08__card-top {
-  margin-bottom: 10px;
-  font-size: 14px;
+  margin-bottom: 8px;
+  font-size: 13px;
   color: #7a7278;
+  text-align: left;
+  line-height: 1.6;
 }
 
 /* タイトル */
 .carrotlp-sec08__card-title {
-  margin-bottom: 16px;
-  font-size: 26px;
+  margin-bottom: 14px;
+  font-size: 22px;
+  line-height: 1.5;
   color: #5a3e6b;
   font-weight: 700;
+  text-align: left;
+  letter-spacing: 0.02em;
 }
 
 /* 主役タイトル */
 .carrotlp-sec08__card--main .carrotlp-sec08__card-title {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 /* リスト */
@@ -601,15 +609,19 @@
 }
 
 .carrotlp-sec08__list li {
-  margin-bottom: 12px;
-  padding-bottom: 12px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #f0edf2;
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #3f3a39;
+  text-align: left;
 }
 
 .carrotlp-sec08__list li:last-child {
   border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* 主役リスト強調 */
@@ -619,9 +631,12 @@
 
 /* 下テキスト */
 .carrotlp-sec08__card-bottom {
-  margin-top: 16px;
+  margin-top: 14px;
   font-weight: 700;
   color: #5a3e6b;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: left;
 }
 
 /* 締め */
@@ -634,6 +649,7 @@
   border-radius: 18px;
   font-weight: 700;
   line-height: 1.8;
+  font-size: 17px;
 }
 
 
