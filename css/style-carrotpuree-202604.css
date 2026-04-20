@@ -640,15 +640,17 @@
 /* 下テキスト */
 .carrotlp-sec08__card-bottom {
   margin-top: 18px;
-  padding: 12px 14px;
+  padding: 12px 18px;
   font-weight: 700;
   color: #4d335e;
   font-size: 16px;
   line-height: 1.7;
   text-align: left;
+
   background: rgba(90, 62, 107, 0.08);
   border-left: 4px solid #8a63a6;
-  border-radius: 10px;
+
+  border-radius: 999px; /* ←ここがポイント */
 }
 
 /* 締め */
