@@ -640,14 +640,18 @@
 /* 下テキスト */
 .carrotlp-sec08__card-bottom {
   margin-top: 18px;
-  padding-left: 12px;
   font-weight: 800;
-  color: #7a2f58;
+  color: #8c2f5a;
   font-size: 18px;
   line-height: 1.7;
   text-align: left;
   letter-spacing: 0.01em;
-  border-left: 4px solid #b14b7a;
+
+  display: inline;
+  background: linear-gradient(
+    transparent 60%,
+    rgba(180, 120, 200, 0.35) 60%
+  );
 }
 
 /* 締め */
