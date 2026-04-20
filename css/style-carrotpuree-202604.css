@@ -583,15 +583,25 @@
 }
 
 /* 上テキスト */
-.carrotlp-sec08__card-top {
-  min-height: 42px;           /* 高さを揃える */
+/*.carrotlp-sec08__card-top {
+  min-height: 42px;           
   margin-bottom: 8px;
   font-size: 13px;
   color: #7a7278;
   text-align: left;
   line-height: 1.6;
   display: flex;
-  align-items: flex-end;      /* 下に揃える */
+  align-items: flex-end;      
+}*/
+
+.carrotlp-sec08__card-top {
+  min-height: 0;
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: #7a7278;
+  text-align: left;
+  line-height: 1.5;
+  display: block;
 }
 
 /* タイトル */
