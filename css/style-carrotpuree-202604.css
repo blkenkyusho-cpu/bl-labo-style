@@ -593,7 +593,7 @@
 
 /* タイトル */
 .carrotlp-sec08__card-title {
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   font-size: 22px;
   line-height: 1.5;
   color: #5a3e6b;
@@ -606,6 +606,7 @@
 .carrotlp-sec08__card--main .carrotlp-sec08__card-title {
   font-size: 25px;
   white-space: nowrap;
+  margin-bottom: 18px;
 }
 
 /* リスト */
