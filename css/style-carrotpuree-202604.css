@@ -531,7 +531,7 @@
 /* カード全体 */
 .carrotlp-sec08__cards {
   display: flex;
-  gap: 18px; /* 24→18に縮小 */
+  gap: 18px;
   align-items: stretch;
 }
 
@@ -559,10 +559,10 @@
 
 /* 画像エリア */
 .carrotlp-sec08__img {
-  height: 120px;              /* 高さ固定 */
-  margin-bottom: 14px;
+  height: 120px;
+  margin-bottom: 10px;
   display: flex;
-  align-items: center;        /* 中央揃え */
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -583,30 +583,17 @@
 }
 
 /* 上テキスト */
-/*.carrotlp-sec08__card-top {
-  min-height: 42px;           
-  margin-bottom: 8px;
-  font-size: 13px;
-  color: #7a7278;
-  text-align: left;
-  line-height: 1.6;
-  display: flex;
-  align-items: flex-end;      
-}*/
-
 .carrotlp-sec08__card-top {
-  min-height: 0;
   margin: 0 0 4px;
   font-size: 13px;
   color: #7a7278;
   text-align: left;
   line-height: 1.5;
-  display: block;
 }
 
 /* タイトル */
 .carrotlp-sec08__card-title {
-  margin-bottom: 14px;
+  margin: 0 0 12px;
   font-size: 22px;
   line-height: 1.5;
   color: #5a3e6b;
@@ -617,8 +604,8 @@
 
 /* 主役タイトル */
 .carrotlp-sec08__card--main .carrotlp-sec08__card-title {
-  font-size: 25px;            /* 26→25で少し抑える */
-  white-space: nowrap;        /* 改行させない */
+  font-size: 25px;
+  white-space: nowrap;
 }
 
 /* リスト */
