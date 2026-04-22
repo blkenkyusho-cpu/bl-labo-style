@@ -458,6 +458,64 @@
 }
 
 /* =========================
+   セクション09
+========================= */
+.carrotlp-sec09 {
+  padding: 60px 20px;
+  background: #f6efe6;
+}
+
+.carrotlp-sec09__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carrotlp-sec09__heading {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #4a2a5e;
+}
+
+.carrotlp-sec09__lead {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.carrotlp-sec09__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.carrotlp-sec09__item img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.carrotlp-sec09__title {
+  font-size: 15px;
+  color: #4a2a5e;
+  margin-bottom: 5px;
+}
+
+.carrotlp-sec09__text {
+  font-size: 13px;
+  color: #666;
+}
+
+.carrotlp-sec09__note {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #444;
+}
+
+
+
+/* =========================
    スマホ
 ========================= */
 @media screen and (max-width: 767px) {
