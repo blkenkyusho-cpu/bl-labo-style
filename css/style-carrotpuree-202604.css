@@ -931,35 +931,63 @@
   font-size: 16px;
 }
 
-.carrotlp-sec10__period {
-  display: inline-block;
-  margin-top: 6px;
-  font-size: 13px;
-  color: #7a6a5a;
+.carrotlp-sec10__campaign {
+  margin: 34px 0 0;
+  padding: 26px 22px 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(90, 62, 107, 0.10),
+    rgba(140, 47, 90, 0.08),
+    rgba(248, 243, 236, 0.95)
+  );
+  border: 1px solid rgba(140, 47, 90, 0.22);
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(90, 62, 107, 0.08);
 }
 
-/* スマホ調整 */
-@media (max-width: 640px) {
-  .carrotlp-sec10 {
-    padding: 42px 16px 52px;
-  }
+.carrotlp-sec10__campaign-label {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 5px 16px;
+  background: #5a3e6b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 999px;
+  letter-spacing: 0.06em;
+}
 
-  .carrotlp-sec10__heading {
-    font-size: 22px;
-  }
+.carrotlp-sec10__campaign-main {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #4d335e;
+  line-height: 1.6;
+}
 
-  .carrotlp-sec10__lead {
-    font-size: 16px;
-  }
+.carrotlp-sec10__campaign-main span {
+  color: #8c2f5a;
+  font-size: 26px;
+  font-weight: 900;
+}
 
-  .carrotlp-sec10__block {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
+.carrotlp-sec10__campaign-text {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #4a3f3a;
+  line-height: 1.8;
+}
 
-  .carrotlp-sec10__price {
-    font-size: 24px;
-  }
+.carrotlp-sec10__campaign-period {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #8c2f5a;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 999px;
 }
 
 /* =========================
