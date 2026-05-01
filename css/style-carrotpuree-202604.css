@@ -917,12 +917,18 @@
 
 .carrotlp-sec10__note {
   margin: 0;
-  padding: 18px 20px;
-  background: #f8f3ec;
+  padding: 20px 22px;
+  background: #f4ede4; /* 少し濃く */
   border-radius: 12px;
   font-size: 15px;
   color: #4a3f3a;
-  line-height: 1.8;
+  line-height: 1.9;
+}
+
+.carrotlp-sec10__highlight {
+  color: #8c2f5a;
+  font-weight: 800;
+  font-size: 16px;
 }
 
 .carrotlp-sec10__period {
