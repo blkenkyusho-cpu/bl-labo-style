@@ -458,74 +458,6 @@
 }
 
 /* =========================
-   セクション09
-========================= */
-.carrotlp-sec09 {
-  padding: 60px 20px;
-  background: #f6efe6;
-}
-
-.carrotlp-sec09__inner {
-  max-width: 760px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.carrotlp-sec09__heading {
-  margin: 0 0 28px;
-  padding: 14px 18px;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.06em;
-  color: #4d335e;
-  text-align: left;
-  border-left: 5px solid #5a3e6b;
-  background: linear-gradient(
-    to right,
-    rgba(90, 62, 107, 0.10),
-    rgba(90, 62, 107, 0.03)
-  );
-}
-
-.carrotlp-sec09__lead {
-  font-size: 15px;
-  color: #555;
-  margin-bottom: 40px;
-}
-
-.carrotlp-sec09__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.carrotlp-sec09__item img {
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.carrotlp-sec09__title {
-  font-size: 15px;
-  color: #4a2a5e;
-  margin-bottom: 5px;
-}
-
-.carrotlp-sec09__text {
-  font-size: 13px;
-  color: #666;
-}
-
-.carrotlp-sec09__note {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #444;
-}
-
-
-
-/* =========================
    スマホ
 ========================= */
 @media screen and (max-width: 767px) {
@@ -735,6 +667,93 @@
   line-height: 1.8;
   font-size: 19px;
 }
+
+/* =========================
+   セクション09（調整版）
+========================= */
+.carrotlp-sec09 {
+  padding: 50px 18px; /* 少し締める */
+  background: #f8f3ec; /* 少し明るく */
+}
+
+.carrotlp-sec09__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carrotlp-sec09__heading {
+  margin: 0 0 26px;
+  padding: 12px 16px;
+  font-size: 26px; /* 少しだけ落として上品に */
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #4d335e;
+  text-align: left;
+  border-left: 5px solid #5a3e6b;
+  background: linear-gradient(
+    to right,
+    rgba(90, 62, 107, 0.10),
+    rgba(90, 62, 107, 0.03)
+  );
+}
+
+.carrotlp-sec09__lead {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 30px; /* 少し詰める */
+  line-height: 1.7;
+}
+
+.carrotlp-sec09__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px; /* 少し詰める */
+}
+
+.carrotlp-sec09__item {
+  margin-bottom: 10px;
+}
+
+.carrotlp-sec09__item img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* ★ 一番重要：タイトル強化 */
+.carrotlp-sec09__title {
+  font-size: 17px; /* ←上げる */
+  font-weight: 600; /* ←強さ追加 */
+  color: #4a2a5e;
+  margin-bottom: 6px;
+  letter-spacing: 0.04em;
+}
+
+/* ★ 説明文も少し上げる */
+.carrotlp-sec09__text {
+  font-size: 14px; /* ←上げる */
+  color: #555;
+  line-height: 1.7;
+}
+
+/* 下部メッセージ */
+.carrotlp-sec09__note {
+  margin-top: 30px; /* 詰める */
+  font-size: 14px;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* 追加：広がりコピー（入れるなら） */
+.carrotlp-sec09__extra {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.7;
+}
+
 
 
 /* =========================
