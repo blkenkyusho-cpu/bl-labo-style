@@ -948,14 +948,15 @@
 
 .carrotlp-sec10__campaign-label {
   display: inline-block;
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   padding: 5px 16px;
   background: #5a3e6b;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   border-radius: 999px;
   letter-spacing: 0.06em;
+  transform: translateY(-4px);
 }
 
 .carrotlp-sec10__campaign-main {
