@@ -855,6 +855,11 @@
   line-height: 1.7;
 }
 
+.carrotlp-sec10__strong {
+  font-weight: 800;
+  color: #5a3e6b;
+}
+
 .carrotlp-sec10__price-old {
   margin: 0 0 6px;
   font-size: 14px;
