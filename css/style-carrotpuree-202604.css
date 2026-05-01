@@ -757,6 +757,166 @@
   margin-bottom: 0;
 }
 
+/* =========================
+   セクション10（商品選択・価格）
+========================= */
+
+.carrotlp-sec10 {
+  padding: 50px 18px 58px;
+  background: #ffffff;
+}
+
+.carrotlp-sec10__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carrotlp-sec10__heading {
+  margin: 0 0 24px;
+  padding: 12px 16px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #4d335e;
+  text-align: left;
+  border-left: 5px solid #5a3e6b;
+  background: linear-gradient(
+    to right,
+    rgba(90, 62, 107, 0.10),
+    rgba(90, 62, 107, 0.03)
+  );
+}
+
+.carrotlp-sec10__lead {
+  margin: 0 0 32px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #4a3f3a;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.carrotlp-sec10__block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.carrotlp-sec10__item {
+  position: relative;
+  padding: 24px 18px 22px;
+  background: #ffffff;
+  border: 1px solid #e8ded3;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+}
+
+.carrotlp-sec10__item--main {
+  border: 2px solid #8a63a6;
+  background: linear-gradient(
+    to bottom,
+    rgba(90, 62, 107, 0.08),
+    rgba(90, 62, 107, 0.02)
+  );
+  box-shadow: 0 10px 22px rgba(90,62,107,0.10);
+}
+
+.carrotlp-sec10__item--main::before {
+  content: "おすすめ";
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 14px;
+  background: #5a3e6b;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+}
+
+.carrotlp-sec10__title {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5a3e6b;
+  line-height: 1.6;
+}
+
+.carrotlp-sec10__name {
+  margin: 0 0 16px;
+  font-size: 15px;
+  color: #3f3a39;
+  line-height: 1.7;
+}
+
+.carrotlp-sec10__price-old {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #8a7f78;
+  line-height: 1.6;
+}
+
+.carrotlp-sec10__price {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+  color: #8c2f5a;
+  line-height: 1.6;
+}
+
+.carrotlp-sec10__sub {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: #5c4a3a;
+  line-height: 1.7;
+}
+
+.carrotlp-sec10__note {
+  margin: 30px 0 0;
+  padding: 18px 20px;
+  background: #f8f3ec;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #4a3f3a;
+  line-height: 1.8;
+}
+
+.carrotlp-sec10__period {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #7a6a5a;
+}
+
+/* スマホ調整 */
+@media (max-width: 640px) {
+  .carrotlp-sec10 {
+    padding: 42px 16px 52px;
+  }
+
+  .carrotlp-sec10__heading {
+    font-size: 22px;
+  }
+
+  .carrotlp-sec10__lead {
+    font-size: 16px;
+  }
+
+  .carrotlp-sec10__block {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .carrotlp-sec10__price {
+    font-size: 20px;
+  }
+}
 
 /* =========================
    Tablet
