@@ -790,7 +790,7 @@
 }
 
 .carrotlp-sec10__lead {
-  margin: 0 0 32px;
+  margin: 0 0 34px;
   font-size: 17px;
   font-weight: 500;
   color: #4a3f3a;
@@ -800,18 +800,22 @@
 
 .carrotlp-sec10__block {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
   align-items: stretch;
+  margin: 0 0 32px;
 }
 
 .carrotlp-sec10__item {
   position: relative;
-  padding: 24px 18px 22px;
+  width: auto;
+  margin: 0;
+  padding: 26px 18px 24px;
   background: #ffffff;
   border: 1px solid #e8ded3;
   border-radius: 14px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+  box-sizing: border-box;
 }
 
 .carrotlp-sec10__item--main {
@@ -848,6 +852,19 @@
   line-height: 1.6;
 }
 
+.carrotlp-sec10__set-label {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #8a63a6;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
 .carrotlp-sec10__name {
   margin: 0 0 16px;
   font-size: 15px;
@@ -861,18 +878,28 @@
 }
 
 .carrotlp-sec10__price-old {
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   font-size: 14px;
   color: #8a7f78;
   line-height: 1.6;
 }
 
+.carrotlp-sec10__sale-label {
+  margin: 12px 0 2px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #8c2f5a;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
 .carrotlp-sec10__price {
   margin: 0;
-  font-size: 19px;
+  font-size: 24px;
   font-weight: 800;
   color: #8c2f5a;
-  line-height: 1.6;
+  line-height: 1.4;
+  white-space: nowrap;
 }
 
 .carrotlp-sec10__sub {
@@ -883,7 +910,7 @@
 }
 
 .carrotlp-sec10__note {
-  margin: 30px 0 0;
+  margin: 0;
   padding: 18px 20px;
   background: #f8f3ec;
   border-radius: 12px;
@@ -919,7 +946,7 @@
   }
 
   .carrotlp-sec10__price {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
