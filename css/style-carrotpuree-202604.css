@@ -669,11 +669,12 @@
 }
 
 /* =========================
-   セクション09（調整版）
+   セクション09（使用イメージ）
 ========================= */
+
 .carrotlp-sec09 {
-  padding: 50px 18px; /* 少し締める */
-  background: #f8f3ec; /* 少し明るく */
+  padding: 34px 18px 46px;
+  background: #f8f3ec;
 }
 
 .carrotlp-sec09__inner {
@@ -683,9 +684,9 @@
 }
 
 .carrotlp-sec09__heading {
-  margin: 0 0 26px;
+  margin: 0 0 18px;
   padding: 12px 16px;
-  font-size: 26px; /* 少しだけ落として上品に */
+  font-size: 26px;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.05em;
@@ -700,60 +701,61 @@
 }
 
 .carrotlp-sec09__lead {
-  font-size: 15px;
-  color: #555;
-  margin-bottom: 30px; /* 少し詰める */
-  line-height: 1.7;
+  margin: 0 0 28px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #4a3f3a;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 
 .carrotlp-sec09__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px; /* 少し詰める */
+  gap: 26px 18px;
 }
 
 .carrotlp-sec09__item {
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .carrotlp-sec09__item img {
   width: 100%;
+  display: block;
   border-radius: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
-/* ★ 一番重要：タイトル強化 */
 .carrotlp-sec09__title {
-  font-size: 17px; /* ←上げる */
-  font-weight: 600; /* ←強さ追加 */
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 700;
   color: #4a2a5e;
-  margin-bottom: 6px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 }
 
-/* ★ 説明文も少し上げる */
 .carrotlp-sec09__text {
-  font-size: 14px; /* ←上げる */
-  color: #555;
+  margin: 0;
+  font-size: 14px;
+  color: #4f4a46;
   line-height: 1.7;
 }
 
-/* 下部メッセージ */
 .carrotlp-sec09__note {
-  margin-top: 30px; /* 詰める */
-  font-size: 14px;
+  margin-top: 32px;
+  font-size: 15px;
   color: #444;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
-/* 追加：広がりコピー（入れるなら） */
-.carrotlp-sec09__extra {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #666;
-  line-height: 1.7;
+.carrotlp-sec09__note p {
+  margin: 0 0 10px;
 }
 
+.carrotlp-sec09__note p:last-child {
+  margin-bottom: 0;
+}
 
 
 /* =========================
