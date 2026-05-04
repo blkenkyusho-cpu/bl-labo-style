@@ -1089,17 +1089,22 @@
   text-align: center;
 }
 
-.carrotlp-sec11__nutrition p {
-  margin: 0 0 7px;
+/* ★ここ追加（圧縮の本体） */
+.carrotlp-sec11__nutrition-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 24px;
+  margin: 0;
+}
+
+.carrotlp-sec11__nutrition-list p {
+  margin: 0;
   font-size: 14px;
   color: #4a3f3a;
   line-height: 1.7;
 }
 
-.carrotlp-sec11__nutrition p:last-child {
-  margin-bottom: 0;
-}
-
+/* ↓これは残す（※の部分用） */
 .carrotlp-sec11__nutrition-note {
   margin-top: 12px !important;
   padding-top: 10px;
@@ -1108,6 +1113,13 @@
   border-top: 1px solid #eee5dc;
 }
 
+/* スマホ */
+@media screen and (max-width: 640px) {
+  .carrotlp-sec11__nutrition-list {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
 
 /* =========================
    Tablet
