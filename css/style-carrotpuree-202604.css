@@ -782,11 +782,7 @@
   color: #4d335e;
   text-align: left;
   border-left: 5px solid #5a3e6b;
-  background: linear-gradient(
-    to right,
-    rgba(90, 62, 107, 0.10),
-    rgba(90, 62, 107, 0.03)
-  );
+  background: linear-gradient(to right, rgba(90, 62, 107, 0.10), rgba(90, 62, 107, 0.03));
 }
 
 .carrotlp-sec10__lead {
@@ -820,11 +816,7 @@
 
 .carrotlp-sec10__item--main {
   border: 2px solid #8a63a6;
-  background: linear-gradient(
-    to bottom,
-    rgba(90, 62, 107, 0.08),
-    rgba(90, 62, 107, 0.02)
-  );
+  background: linear-gradient(to bottom, rgba(90, 62, 107, 0.08), rgba(90, 62, 107, 0.02));
   box-shadow: 0 10px 22px rgba(90,62,107,0.10);
 }
 
@@ -915,29 +907,20 @@
   border-radius: 10px;
 }
 
-.carrotlp-sec10__note {
-  margin: 0;
-  padding: 20px 22px;
-  background: #f4ede4; /* 少し濃く */
-  border-radius: 12px;
-  font-size: 15px;
-  color: #4a3f3a;
-  line-height: 1.9;
-}
-
-.carrotlp-sec10__highlight {
-  color: #8c2f5a;
-  font-weight: 800;
-  font-size: 16px;
-}
-
 .carrotlp-sec10__link {
   display: block;
+  height: 100%;
   text-decoration: none;
   color: inherit;
 }
 
-.carrotlp-sec10__link:hover {
+.carrotlp-sec10__link .carrotlp-sec10__item {
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.carrotlp-sec10__link:hover .carrotlp-sec10__item {
   transform: translateY(-2px);
   box-shadow: 0 14px 28px rgba(90,62,107,0.18);
 }
@@ -945,12 +928,7 @@
 .carrotlp-sec10__campaign {
   margin: 34px 0 0;
   padding: 26px 22px 24px;
-  background: linear-gradient(
-    135deg,
-    rgba(90, 62, 107, 0.10),
-    rgba(140, 47, 90, 0.08),
-    rgba(248, 243, 236, 0.95)
-  );
+  background: linear-gradient(135deg, rgba(90, 62, 107, 0.10), rgba(140, 47, 90, 0.08), rgba(248, 243, 236, 0.95));
   border: 1px solid rgba(140, 47, 90, 0.22);
   border-radius: 16px;
   text-align: center;
@@ -993,10 +971,55 @@
 
 .carrotlp-sec10__campaign-deadline {
   margin: 0;
-  font-size: 18px;   /* ←大きくする */
+  font-size: 18px;
   font-weight: 800;
   color: #8c2f5a;
   letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 640px) {
+  .carrotlp-sec10 {
+    padding: 42px 14px 50px;
+  }
+
+  .carrotlp-sec10__heading {
+    font-size: 22px;
+    line-height: 1.55;
+  }
+
+  .carrotlp-sec10__lead {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  .carrotlp-sec10__block {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .carrotlp-sec10__item {
+    padding: 26px 16px 22px;
+  }
+
+  .carrotlp-sec10__price {
+    font-size: 22px;
+  }
+
+  .carrotlp-sec10__campaign {
+    padding: 24px 16px 22px;
+  }
+
+  .carrotlp-sec10__campaign-main {
+    font-size: 18px;
+  }
+
+  .carrotlp-sec10__campaign-main span {
+    font-size: 24px;
+  }
+
+  .carrotlp-sec10__campaign-deadline {
+    font-size: 16px;
+  }
 }
 
 /* =========================
