@@ -481,10 +481,8 @@
   color: #3f3a39;
   line-height: 1.8;
   letter-spacing: 0.03em;
-  background: linear-gradient(
-    transparent 65%,
-    rgba(140, 47, 90, 0.15) 65%
-  );
+  border-bottom: 1px dotted rgba(140, 47, 90, 0.35);
+  padding-bottom: 6px;
 }
 
 .carrotlp-sec06-2__list li:last-child {
