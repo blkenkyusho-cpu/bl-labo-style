@@ -1058,6 +1058,19 @@
   box-shadow: 0 6px 18px rgba(0,0,0,0.035);
 }
 
+.carrotlp-sec11__note-important {
+  display: inline-block;
+  margin: 0 0 10px !important;
+  padding: 6px 12px;
+  background: rgba(90, 62, 107, 0.08);
+  border-left: 4px solid #5a3e6b;
+  border-radius: 6px;
+  font-size: 14px !important;
+  font-weight: 700;
+  color: #4d335e !important;
+  line-height: 1.7;
+}
+
 .carrotlp-sec11__note p {
   margin: 0 0 8px;
   font-size: 14px;
