@@ -221,6 +221,15 @@
   position: relative;
 }
 
+.carrotlp-sec03__heading {
+  margin: 0 0 28px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #5a3e6b;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
 /* ほんのり光 */
 .carrotlp-sec03__inner::before {
   content: "";
