@@ -433,24 +433,29 @@
 ========================= */
 
 .carrotlp-sec06-2 {
-  margin: 48px auto 0;
+  margin: 58px auto 72px;
+}
+
+.carrotlp-sec06-2__box {
+  padding: 30px 34px 32px;
+  background: linear-gradient(
+    135deg,
+    rgba(90, 62, 107, 0.08),
+    rgba(140, 47, 90, 0.05),
+    rgba(248, 243, 236, 0.95)
+  );
+  border: 1px solid rgba(140, 47, 90, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(90, 62, 107, 0.08);
 }
 
 .carrotlp-sec06-2__title {
-  margin: 0 0 18px;
+  margin: 0 0 24px;
   font-size: 24px;
   font-weight: 700;
   color: #5a3e6b;
   text-align: center;
   letter-spacing: 0.05em;
-}
-
-.carrotlp-sec06-2__box {
-  padding: 26px 28px;
-  background: #f8f3ec;
-  border: 1px solid #eadfd5;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
 }
 
 .carrotlp-sec06-2__list {
@@ -461,7 +466,7 @@
 
 .carrotlp-sec06-2__list li {
   position: relative;
-  padding-left: 28px;
+  padding-left: 30px;
   margin-bottom: 14px;
   font-size: 18px;
   color: #3f3a39;
@@ -479,8 +484,8 @@
   left: 0;
   top: 0.05em;
   color: #8c2f5a;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
 }
 
 /* =========================
