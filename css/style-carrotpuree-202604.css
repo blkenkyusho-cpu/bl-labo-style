@@ -436,6 +436,7 @@
   margin: 58px auto 72px;
 }
 
+/* 枠 */
 .carrotlp-sec06-2__box {
   padding: 30px 34px 32px;
   background: linear-gradient(
@@ -447,21 +448,29 @@
   border: 1px solid rgba(140, 47, 90, 0.18);
   border-radius: 18px;
   box-shadow: 0 8px 22px rgba(90, 62, 107, 0.08);
-}
-
-.carrotlp-sec06-2__title {
-  margin: 0 0 24px;
-  font-size: 24px;
-  font-weight: 700;
-  color: #5a3e6b;
   text-align: center;
-  letter-spacing: 0.05em;
 }
 
+/* 見出し（ラベル化） */
+.carrotlp-sec06-2__title {
+  display: inline-block;
+  margin: 0 auto 24px;
+  padding: 7px 18px;
+  background: #5a3e6b;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+  border-radius: 999px;
+  letter-spacing: 0.06em;
+}
+
+/* リスト */
 .carrotlp-sec06-2__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
 .carrotlp-sec06-2__list li {
@@ -478,6 +487,7 @@
   margin-bottom: 0;
 }
 
+/* チェックマーク */
 .carrotlp-sec06-2__list li::before {
   content: "✓";
   position: absolute;
@@ -487,6 +497,7 @@
   font-size: 17px;
   font-weight: 800;
 }
+
 
 /* =========================
    セクション07（習慣設計）
