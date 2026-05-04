@@ -1059,16 +1059,13 @@
 }
 
 .carrotlp-sec11__note-important {
-  display: inline-block;
   margin: 0 0 10px !important;
-  padding: 6px 12px;
-  background: rgba(90, 62, 107, 0.08);
-  border-left: 4px solid #5a3e6b;
-  border-radius: 6px;
   font-size: 14px !important;
-  font-weight: 700;
+  font-weight: 600;
   color: #4d335e !important;
-  line-height: 1.7;
+  line-height: 1.8;
+  padding-left: 10px;
+  border-left: 3px solid #5a3e6b;
 }
 
 .carrotlp-sec11__note p {
