@@ -1092,7 +1092,7 @@
 .carrotlp-sec11__nutrition-list {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px 20px;
   margin: 0;
 }
