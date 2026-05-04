@@ -204,12 +204,12 @@
    セクション03（出会い）
 ========================= */
 .carrotlp-sec03 {
-  padding: 72px 20px 80px;
+  padding: 64px 20px 72px;
   background: linear-gradient(
     to bottom,
     #ffffff 0%,
-    #f6f1fa 40%,
-    #f3ecf8 100%
+    #fbf8fd 60%,
+    #f7f2fb 100%
   );
 }
 
@@ -221,8 +221,9 @@
   position: relative;
 }
 
+/* 見出し */
 .carrotlp-sec03__heading {
-  margin: 0 0 28px;
+  margin: 0 0 36px;
   padding: 14px 18px;
   font-size: 28px;
   font-weight: 700;
@@ -231,22 +232,26 @@
   color: #4d335e;
   text-align: left;
   border-left: 5px solid #5a3e6b;
-  background: linear-gradient(to right, rgba(90, 62, 107, 0.10), rgba(90, 62, 107, 0.03));
+  background: linear-gradient(
+    to right,
+    rgba(90, 62, 107, 0.10),
+    rgba(90, 62, 107, 0.03)
+  );
 }
 
-/* ほんのり光 */
+/* ほんのり光（弱め） */
 .carrotlp-sec03__inner::before {
   content: "";
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  height: 300px;
+  width: 70%;
+  height: 240px;
   background: radial-gradient(
     ellipse at center,
-    rgba(146, 104, 178, 0.08) 0%,
-    rgba(146, 104, 178, 0.03) 40%,
+    rgba(146, 104, 178, 0.05) 0%,
+    rgba(146, 104, 178, 0.02) 40%,
     rgba(146, 104, 178, 0) 70%
   );
   z-index: 0;
@@ -259,7 +264,7 @@
 
 /* 導入 */
 .carrotlp-sec03__lead {
-  margin: 0 0 36px;
+  margin: 6px 0 36px;
   color: #3f3a39;
   font-size: 20px;
   line-height: 1.9;
@@ -268,7 +273,7 @@
 
 /* 問い（少し強め） */
 .carrotlp-sec03__question {
-  margin: 0 0 40px;
+  margin: 0 0 36px;
   color: #5a3e6b;
   font-size: 26px;
   font-weight: 700;
@@ -278,7 +283,7 @@
 
 /* 本文 */
 .carrotlp-sec03__text p {
-  margin: 0 0 26px;
+  margin: 0 0 24px;
   color: #3f3a39;
   font-size: 20px;
   line-height: 1.9;
@@ -291,7 +296,7 @@
 
 /* 強調（黒人参） */
 .carrotlp-sec03__focus {
-  margin: 48px auto 0;
+  margin: 44px auto 0;
   color: #5a3e6b;
   font-size: 30px;
   font-weight: 700;
