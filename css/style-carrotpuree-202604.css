@@ -429,6 +429,97 @@
 }
 
 /* =========================
+   セクション06-2（おすすめ）
+========================= */
+
+.carrotlp-sec06-2 {
+  padding: 56px 20px 64px;
+  background: #ffffff;
+}
+
+.carrotlp-sec06-2__inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.carrotlp-sec06-2__heading {
+  margin: 0 0 24px;
+  padding: 14px 18px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #4d335e;
+  text-align: left;
+  border-left: 5px solid #5a3e6b;
+  background: linear-gradient(
+    to right,
+    rgba(90, 62, 107, 0.10),
+    rgba(90, 62, 107, 0.03)
+  );
+}
+
+/* 枠（ここがポイント） */
+.carrotlp-sec06-2__box {
+  padding: 26px 28px;
+  background: #f8f3ec;
+  border: 1px solid #eadfd5;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+/* リスト */
+.carrotlp-sec06-2__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carrotlp-sec06-2__list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  color: #3f3a39;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+.carrotlp-sec06-2__list li:last-child {
+  margin-bottom: 0;
+}
+
+.carrotlp-sec06-2__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: #8c2f5a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* スマホ */
+@media screen and (max-width: 640px) {
+  .carrotlp-sec06-2 {
+    padding: 44px 14px 52px;
+  }
+
+  .carrotlp-sec06-2__heading {
+    font-size: 22px;
+  }
+
+  .carrotlp-sec06-2__box {
+    padding: 22px 18px;
+  }
+
+  .carrotlp-sec06-2__list li {
+    font-size: 15px;
+    padding-left: 24px;
+  }
+}
+
+/* =========================
    セクション07（習慣設計）
 ========================= */
 .carrotlp-sec07 {
