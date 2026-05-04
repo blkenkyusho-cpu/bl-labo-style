@@ -1071,7 +1071,7 @@
 
 .carrotlp-sec11__nutrition {
   margin: 22px 0 0;
-  padding: 22px 24px;
+  padding: 20px 24px;
   background: #ffffff;
   border-radius: 14px;
   border: 1px solid #eadfd5;
@@ -1079,9 +1079,9 @@
 }
 
 .carrotlp-sec11__nutrition-title {
-  margin: 0 0 14px;
-  padding-bottom: 10px;
-  font-size: 17px;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  font-size: 16px;
   font-weight: 700;
   color: #4d335e;
   line-height: 1.6;
@@ -1089,35 +1089,44 @@
   text-align: center;
 }
 
-/* ★ここ追加（圧縮の本体） */
 .carrotlp-sec11__nutrition-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px 24px;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  gap: 10px 20px;
   margin: 0;
 }
 
 .carrotlp-sec11__nutrition-list p {
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   color: #4a3f3a;
-  line-height: 1.7;
+  line-height: 1.6;
+  white-space: nowrap;
 }
 
-/* ↓これは残す（※の部分用） */
 .carrotlp-sec11__nutrition-note {
   margin-top: 12px !important;
-  padding-top: 10px;
-  font-size: 13px !important;
+  padding-top: 8px;
+  font-size: 12px !important;
   color: #8a7f78 !important;
   border-top: 1px solid #eee5dc;
 }
 
-/* スマホ */
 @media screen and (max-width: 640px) {
+  .carrotlp-sec11__nutrition {
+    padding: 18px 16px;
+  }
+
   .carrotlp-sec11__nutrition-list {
-    grid-template-columns: 1fr;
-    gap: 6px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: stretch;
+    gap: 6px 14px;
+  }
+
+  .carrotlp-sec11__nutrition-list p {
+    font-size: 13px;
+    white-space: normal;
   }
 }
 
