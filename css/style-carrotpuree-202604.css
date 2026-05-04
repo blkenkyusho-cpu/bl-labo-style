@@ -914,6 +914,11 @@
   color: inherit;
 }
 
+.carrotlp-sec10__link,
+.carrotlp-sec10__link * {
+  text-decoration: none !important;
+}
+
 .carrotlp-sec10__link .carrotlp-sec10__item {
   height: 100%;
   cursor: pointer;
@@ -923,6 +928,11 @@
 .carrotlp-sec10__link:hover .carrotlp-sec10__item {
   transform: translateY(-2px);
   box-shadow: 0 14px 28px rgba(90,62,107,0.18);
+}
+
+.carrotlp-sec10__link:hover,
+.carrotlp-sec10__link:hover * {
+  text-decoration: none !important;
 }
 
 .carrotlp-sec10__campaign {
