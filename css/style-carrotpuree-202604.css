@@ -1462,5 +1462,37 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
   }
+}
+
+/* =========================
+   Smartphone セクション05
+========================= */
+@media screen and (max-width: 767px) {
+
+  .carrotlp-sec05 {
+    padding: 38px 5px 52px;
+  }
+
+  .carrotlp-sec05__inner {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .carrotlp-sec05__text p {
+    margin: 0 0 28px;
+    font-size: 18px;
+    line-height: 1.95;
+    letter-spacing: 0.04em;
+  }
+
+  .carrotlp-sec05__focus {
+    margin: 44px auto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.75;
+    letter-spacing: 0.03em;
+    color: #5a3e6b;
+  }
 
 }
