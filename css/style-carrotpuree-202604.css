@@ -1486,10 +1486,12 @@
     letter-spacing: 0.04em;
   }
 
-　.carrotlp-sec05__focus {
+  .carrotlp-sec05__focus {
     margin: 42px auto;
     font-size: 21px;
+    font-weight: 700;
     line-height: 1.7;
     letter-spacing: 0.03em;
-　}
+    color: #5a3e6b;
+  }
 }
