@@ -1500,3 +1500,64 @@
     color: #5a3e6b;
   }
 }
+
+/* =========================
+   Smartphone セクション06
+========================= */
+@media screen and (max-width: 767px) {
+
+  .carrotlp-sec06 {
+    padding: 38px 5px 52px;
+  }
+
+  .carrotlp-sec06__inner {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .carrotlp-sec06__heading {
+    margin: 0 0 34px;
+    padding: 12px 14px;
+    font-size: 23px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+
+  .carrotlp-sec06__text p {
+    margin: 0 0 28px;
+    font-size: 18px;
+    line-height: 1.95;
+    letter-spacing: 0.04em;
+  }
+
+  .carrotlp-sec06__focus {
+    margin: 42px auto;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: #5a3e6b;
+  }
+
+  .carrotlp-sec06__highlight {
+    margin: 44px auto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: #5a3e6b;
+  }
+
+  .carrotlp-sec06__graph {
+    margin: 36px auto;
+  }
+
+  .carrotlp-sec06__note {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #777;
+  }
+
+}
