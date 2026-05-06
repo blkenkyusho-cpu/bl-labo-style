@@ -1317,14 +1317,19 @@
   }
 
   .carrotlp-sec01__bridge {
-    margin: 26px 0 6px;
-    font-size: 16px;
+    margin: 28px 0 8px;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+    color: #3f3a39;
+    opacity: 1;
   }
 
   .carrotlp-sec01__focus {
-    margin: 12px auto 0;
-    font-size: 20px;
-    line-height: 1.65;
-    letter-spacing: 0.04em;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
   }
 }
