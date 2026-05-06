@@ -1370,7 +1370,7 @@
 @media screen and (max-width: 767px) {
 
   .carrotlp-sec03 {
-    padding: 38px 5px 52px;
+    padding: 38px 5px 20px;
   }
 
   .carrotlp-sec03__inner {
@@ -1418,6 +1418,5 @@
   display: block;
   width: 100%;
   height: auto;
-}
-
+　}
 }
