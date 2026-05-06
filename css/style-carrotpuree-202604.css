@@ -1487,11 +1487,9 @@
   }
 
 　.carrotlp-sec05__focus {
- 　 margin: 44px auto;
-  　font-size: 22px;
-  　font-weight: 700;
-  　line-height: 1.5;
-  　letter-spacing: 0.01em;
-  　color: #5a3e6b;
+    margin: 42px auto;
+    font-size: 21px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 　}
 }
