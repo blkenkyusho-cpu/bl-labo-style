@@ -1415,9 +1415,9 @@
   }
 
   .carrotlp-sec03__image img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 　}
 }
 
@@ -1427,7 +1427,7 @@
 @media screen and (max-width: 767px) {
 
   .carrotlp-sec04 {
-    padding: 38px 5px 52px;
+    padding: 38px 5px 30px;
   }
 
   .carrotlp-sec04__inner {
