@@ -62,7 +62,6 @@
 }
 
 .carrotlp-sec01__lead {
-  margin: 18px 0 0;
   margin: 0;
   color: #3f3a39;
   font-size: 20px;
@@ -139,6 +138,74 @@
   line-height: 1.6;
   letter-spacing: 0.05em;
   background: none;
+}
+
+/* =========================
+   Smartphone セクション01
+========================= */
+@media screen and (max-width: 767px) {
+  .carrotlp-sec01 {
+    padding: 38px 18px 52px;
+  }
+
+  .carrotlp-sec01__heading {
+    margin: 0 0 32px;
+    padding: 12px 14px;
+    font-size: 24px;
+    line-height: 1.55;
+    letter-spacing: 0.04em;
+    border-left-width: 4px;
+  }
+
+  .carrotlp-sec01__lead {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 0.05em;
+  }
+
+  .carrotlp-sec01__dots {
+    gap: 8px;
+    margin: 24px 0 28px;
+  }
+
+  .carrotlp-sec01__dots span {
+    width: 7px;
+    height: 7px;
+  }
+
+  .carrotlp-sec01__title {
+    margin: 0 0 30px;
+  }
+
+  .carrotlp-sec01__title-top {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .carrotlp-sec01__title-main {
+    font-size: 42px;
+    line-height: 1.35;
+  }
+
+  .carrotlp-sec01__text p {
+    margin: 0 0 24px;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+  }
+
+  .carrotlp-sec01__bridge {
+    margin: 26px 0 6px;
+    font-size: 16px;
+  }
+
+  .carrotlp-sec01__focus {
+    margin: 12px auto 0;
+    font-size: 24px;
+    line-height: 1.65;
+    letter-spacing: 0.04em;
+  }
 }
 
 /* =========================
