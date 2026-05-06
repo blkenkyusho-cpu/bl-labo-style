@@ -1448,6 +1448,14 @@
   font-weight: 700;
 　}
 
+  .carrotlp-sec04__bridge {
+  margin: 34px 0 12px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #6d5a72;
+  letter-spacing: 0.06em;
+　}
+
   .carrotlp-sec04__focus {
     margin: 42px auto;
     font-size: 21px;
