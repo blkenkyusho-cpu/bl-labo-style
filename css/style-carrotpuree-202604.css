@@ -1362,5 +1362,56 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
   }
+}
+
+/* =========================
+   Smartphone セクション03
+========================= */
+@media screen and (max-width: 767px) {
+
+  .carrotlp-sec03 {
+    padding: 38px 5px 52px;
+  }
+
+  .carrotlp-sec03__inner {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .carrotlp-sec03__heading {
+    margin: 0 0 34px;
+    padding: 12px 14px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .carrotlp-sec03__lead {
+    margin: 0 0 30px;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+  }
+
+  .carrotlp-sec03__question {
+    margin: 0 0 34px;
+    font-size: 22px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+
+  .carrotlp-sec03__text p {
+    margin: 0 0 24px;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+  }
+
+  .carrotlp-sec03__focus {
+    margin: 40px auto 0;
+    font-size: 24px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
 
 }
