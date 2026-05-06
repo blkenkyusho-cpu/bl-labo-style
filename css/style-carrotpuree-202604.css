@@ -1333,3 +1333,34 @@
     white-space: nowrap;
   }
 }
+
+/* =========================
+   Smartphone セクション02
+========================= */
+@media screen and (max-width: 767px) {
+
+  .carrotlp-sec02 {
+    padding: 38px 5px 52px;
+  }
+
+  .carrotlp-sec02__inner {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .carrotlp-sec02__text p {
+    margin: 0 0 24px;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+  }
+
+  .carrotlp-sec02__focus {
+    margin: 40px auto 0;
+    font-size: 22px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+
+}
