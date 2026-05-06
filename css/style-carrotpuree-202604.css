@@ -1305,6 +1305,10 @@
     white-space: nowrap;
   }
 
+  .carrotlp-sec01__text {
+  max-width: 100%;
+}
+  
   .carrotlp-sec01__text p {
     margin: 0 0 24px;
     font-size: 18px;
@@ -1319,7 +1323,7 @@
 
   .carrotlp-sec01__focus {
     margin: 12px auto 0;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.65;
     letter-spacing: 0.04em;
   }
