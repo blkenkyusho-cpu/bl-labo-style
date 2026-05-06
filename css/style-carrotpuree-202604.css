@@ -1414,4 +1414,10 @@
     letter-spacing: 0.03em;
   }
 
+  .carrotlp-sec03__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 }
