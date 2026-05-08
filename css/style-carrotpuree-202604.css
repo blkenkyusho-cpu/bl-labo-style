@@ -971,6 +971,11 @@
   white-space: nowrap;
 }
 
+.carrotlp-sec10__price small {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .carrotlp-sec10__sub {
   margin: 20px auto 0;
   padding: 10px 12px;
@@ -1977,9 +1982,15 @@
   }
 
   .carrotlp-sec10__price {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1.35;
     white-space: nowrap;
+  }
+
+  /* （税込）だけ小さく */
+  .carrotlp-sec10__price small {
+    font-size: 16px;
+    font-weight: 700;
   }
 
   .carrotlp-sec10__sub {
