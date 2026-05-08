@@ -1620,11 +1620,26 @@
     color: #5a3e6b;
   }
 
-  /* 締め */
-  .carrotlp-sec07__closing {
+  /* quote部分 */
+  .carrotlp-sec07__quote {
     margin-top: 42px;
+    text-align: left;
+  }
+
+  .carrotlp-sec07__quote p {
+    margin: 0 0 24px;
     font-size: 18px;
-    line-height: 2.05;
+    line-height: 1.95;
     letter-spacing: 0.04em;
+    color: #3f3a39;
+  }
+
+  /* closing */
+  .carrotlp-sec07__closing {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 1.95;
+    letter-spacing: 0.04em;
+    text-align: center;
   }
 }
