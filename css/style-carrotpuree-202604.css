@@ -566,38 +566,6 @@
 }
 
 /* =========================
-   スマホ
-========================= */
-@media screen and (max-width: 767px) {
-
-  .carrotlp-sec07 {
-    padding: 40px 18px 60px;
-  }
-
-  .carrotlp-sec07__heading {
-    font-size: 22px;
-    padding: 12px 14px;
-    border-left-width: 4px;
-  }
-
-  .carrotlp-sec07__lead {
-    font-size: 20px;
-  }
-
-  .carrotlp-sec07__text p {
-    font-size: 17px;
-  }
-
-  .carrotlp-sec07__focus {
-    font-size: 20px;
-  }
-
-  .carrotlp-sec07__closing {
-    font-size: 17px;
-  }
-}
-
-/* =========================
    セクション08（比較カード）
 ========================= */
 .carrotlp-sec08 {
