@@ -1559,5 +1559,43 @@
     line-height: 1.7;
     color: #777;
   }
+}
 
+/* =========================
+   Smartphone セクション06-2（おすすめ）
+========================= */
+@media screen and (max-width: 767px) {
+
+  .carrotlp-sec06-2 {
+    margin: 44px auto 56px;
+  }
+
+  .carrotlp-sec06-2__box {
+    padding: 26px 20px 28px;
+    border-radius: 16px;
+  }
+
+  .carrotlp-sec06-2__title {
+    margin: 0 auto 22px;
+    padding: 8px 20px;
+    font-size: 20px;
+    line-height: 1.45;
+    letter-spacing: 0.04em;
+  }
+
+  .carrotlp-sec06-2__list li {
+    padding-left: 26px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
+
+  .carrotlp-sec06-2__list li::before {
+    content: "✓";
+    left: 0;
+    top: 0.05em;
+    font-size: 17px;
+  }
 }
