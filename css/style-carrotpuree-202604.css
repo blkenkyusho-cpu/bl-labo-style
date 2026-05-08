@@ -1567,3 +1567,65 @@
     font-size: 17px;
   }
 }
+
+/* =========================
+   Smartphone セクション07
+========================= */
+@media screen and (max-width: 767px) {
+
+  .carrotlp-sec07 {
+    padding: 38px 5px 56px;
+  }
+
+  .carrotlp-sec07__inner {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* 見出し */
+  .carrotlp-sec07__heading {
+    margin: 0 0 34px;
+    padding: 12px 14px;
+    font-size: 23px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+
+  /* 導入 */
+  .carrotlp-sec07__lead {
+    margin: 0 0 34px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: #5a3e6b;
+  }
+
+  /* 本文 */
+  .carrotlp-sec07__text p {
+    margin: 0 0 28px;
+    font-size: 18px;
+    line-height: 1.95;
+    letter-spacing: 0.04em;
+  }
+
+  /* 強調 */
+  .carrotlp-sec07__focus {
+    margin: 42px auto;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: #5a3e6b;
+  }
+
+  /* 締め */
+  .carrotlp-sec07__closing {
+    margin-top: 42px;
+    font-size: 18px;
+    line-height: 1.95;
+    letter-spacing: 0.04em;
+  }
+
+}
