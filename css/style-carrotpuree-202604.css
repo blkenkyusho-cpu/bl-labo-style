@@ -1786,3 +1786,85 @@
     font-size: 16px;
   }
 }
+
+/* =========================
+   セクション09（アレンジ提案）
+========================= */
+
+.carrotlp-sec09 {
+  padding: 56px 20px 84px;
+  background: #ffffff;
+}
+
+.carrotlp-sec09__inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* 見出し */
+.carrotlp-sec09__heading {
+  margin: 0 0 30px;
+  padding: 14px 18px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: 0.04em;
+  color: #4d335e;
+  border-left: 5px solid #5a3e6b;
+  background: linear-gradient(
+    to right,
+    rgba(90, 62, 107, 0.10),
+    rgba(90, 62, 107, 0.03)
+  );
+}
+
+/* リード */
+.carrotlp-sec09__lead {
+  margin: 0 0 34px;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.95;
+  color: #3f3a39;
+}
+
+/* 全体ボックス */
+.carrotlp-sec09__box {
+  padding: 34px 24px 38px;
+  background: #f7f3ed;
+  border-radius: 18px;
+}
+
+/* グリッド */
+.carrotlp-sec09__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px 22px;
+}
+
+/* カード */
+.carrotlp-sec09__item {
+  text-align: center;
+}
+
+/* 画像 */
+.carrotlp-sec09__img img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* タイトル */
+.carrotlp-sec09__title {
+  margin: 16px 0 10px;
+  font-size: 24px;
+  line-height: 1.45;
+  font-weight: 700;
+  color: #5a3e6b;
+}
+
+/* 説明 */
+.carrotlp-sec09__text {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #3f3a39;
+}
