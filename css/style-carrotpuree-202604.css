@@ -1870,4 +1870,23 @@
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: #3f3a39;
+  text-align: left;
+}
+
+/* 下部テキスト */
+.carrotlp-sec09__note {
+  margin-top: 34px;
+}
+
+.carrotlp-sec09__note p {
+  margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.95;
+  letter-spacing: 0.03em;
+  color: #3f3a39;
+  text-align: left;
+}
+
+.carrotlp-sec09__note p:last-child {
+  margin-bottom: 0;
 }
