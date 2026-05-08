@@ -1890,3 +1890,131 @@
 .carrotlp-sec09__note p:last-child {
   margin-bottom: 0;
 }
+
+/* =========================
+   Smartphone セクション10
+========================= */
+@media screen and (max-width: 767px) {
+
+  .carrotlp-sec10 {
+    padding: 38px 5px 56px;
+  }
+
+  .carrotlp-sec10__inner {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .carrotlp-sec10__heading {
+    margin: 0 0 34px;
+    padding: 12px 14px;
+    font-size: 23px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+
+  .carrotlp-sec10__lead {
+    margin: 0 0 34px;
+    font-size: 18px;
+    line-height: 1.95;
+    letter-spacing: 0.04em;
+  }
+
+  .carrotlp-sec10__block {
+    display: block;
+    margin: 0 0 32px;
+  }
+
+  .carrotlp-sec10__item {
+    width: 100%;
+    margin: 0 0 28px;
+    padding: 26px 18px 24px;
+    box-sizing: border-box;
+    border-radius: 18px;
+  }
+
+  .carrotlp-sec10__link {
+    display: block;
+    height: auto;
+  }
+
+  .carrotlp-sec10__link .carrotlp-sec10__item {
+    height: auto;
+  }
+
+  .carrotlp-sec10__item--main {
+    margin-top: 8px;
+  }
+
+  .carrotlp-sec10__item--main::before {
+    top: -16px;
+    padding: 5px 18px;
+    font-size: 14px;
+  }
+
+  .carrotlp-sec10__title {
+    font-size: 19px;
+    line-height: 1.65;
+  }
+
+  .carrotlp-sec10__set-label {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .carrotlp-sec10__name {
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  .carrotlp-sec10__price-old {
+    font-size: 15px;
+  }
+
+  .carrotlp-sec10__sale-label {
+    font-size: 17px;
+  }
+
+  .carrotlp-sec10__price {
+    font-size: 34px;
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+
+  .carrotlp-sec10__sub {
+    margin-top: 20px;
+    padding: 13px 14px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .carrotlp-sec10__campaign {
+    margin: 36px 0 0;
+    padding: 26px 18px 24px;
+    border-radius: 18px;
+  }
+
+  .carrotlp-sec10__campaign-label {
+    font-size: 15px;
+  }
+
+  .carrotlp-sec10__campaign-main {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .carrotlp-sec10__campaign-main span {
+    font-size: 24px;
+  }
+
+  .carrotlp-sec10__campaign-text {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  .carrotlp-sec10__campaign-deadline {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}
