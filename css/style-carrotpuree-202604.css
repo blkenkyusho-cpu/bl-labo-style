@@ -732,7 +732,7 @@
 }
 
 /* 締め */
-.carrotlp-sec08__closing {
+. {
   margin-top: 36px;
   padding: 22px;
   background: #5a3e6b;
@@ -1781,14 +1781,14 @@
 
   .carrotlp-sec08__closing {
     margin-top: 26px;
-    padding: 22px 18px;
+    padding: 20px 16px;
     background: #5a3e6b;
     color: #ffffff;
     text-align: center;
     border-radius: 18px;
     font-weight: 600;
     line-height: 1.75;
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
