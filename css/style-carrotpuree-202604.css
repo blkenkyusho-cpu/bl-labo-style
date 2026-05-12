@@ -1995,8 +1995,8 @@
 
 .carrotlp-sec10__sub {
   margin-top: 20px;
-  padding: 14px 12px; /* 横paddingを少し減らす */
-  font-size: 14px;    /* 15→14 */
+  padding: 14px 10px; /* ←左右を狭く */
+  font-size: 14px;
   line-height: 1.8;
   font-weight: 700;
   color: #5a3e6b;
