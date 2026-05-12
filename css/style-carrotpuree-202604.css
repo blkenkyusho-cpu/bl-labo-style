@@ -2023,22 +2023,25 @@
   }
 
   .carrotlp-sec10__campaign-main {
-    font-size: 15px;
-    line-height: 1.65;
-    letter-spacing: 0.01em;
+    font-size: 18px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
   }
 
   .carrotlp-sec10__campaign-main span {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 900;
   }
 
   .carrotlp-sec10__campaign-text {
     font-size: 15px;
     line-height: 1.85;
+    letter-spacing: 0.02em;
   }
 
   .carrotlp-sec10__campaign-deadline {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.7;
+    font-weight: 800;
   }
 }
