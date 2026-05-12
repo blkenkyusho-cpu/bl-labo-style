@@ -1995,9 +1995,13 @@
 
   .carrotlp-sec10__sub {
     margin-top: 20px;
-    padding: 13px 14px;
+    padding: 14px 16px;
     font-size: 15px;
     line-height: 1.8;
+    font-weight: 700;
+    color: #5a3e6b;
+    background: rgba(90, 62, 107, 0.08);
+    border-radius: 12px;
   }
 
   .carrotlp-sec10__campaign {
