@@ -1994,14 +1994,23 @@
   }
 
 .carrotlp-sec10__sub {
-  margin-top: 20px;
-  padding: 14px 10px; /* ←左右を狭く */
+  width: 100%;
+  box-sizing: border-box;
+
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+
+  padding: 14px 10px;
+
   font-size: 14px;
   line-height: 1.8;
   font-weight: 700;
   color: #5a3e6b;
+
   background: rgba(90, 62, 107, 0.08);
   border-radius: 12px;
+
   text-align: left;
 }
 
