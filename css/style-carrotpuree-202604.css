@@ -816,6 +816,7 @@
   font-size: 14px;
   color: #4f4a46;
   line-height: 1.7;
+  text-align: center !important;
 }
 
 .carrotlp-sec09__note {
