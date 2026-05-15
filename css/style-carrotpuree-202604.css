@@ -1843,7 +1843,7 @@
 .carrotlp-sec09__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px 18px;
+  gap: 30px 14px;
 }
 
 /* カード */
@@ -1861,11 +1861,12 @@
 /* タイトル */
 .carrotlp-sec09__title {
   margin: 14px 0 8px;
-  font-size: 17px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.45;
   font-weight: 700;
   letter-spacing: 0.02em;
   color: #5a3e6b;
+  white-space: nowrap;
 }
 
 /* 説明 */
