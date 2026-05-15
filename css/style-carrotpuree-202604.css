@@ -824,10 +824,10 @@
   color: #444;
   line-height: 1.9;
   text-align: center;
-}
+  }
 
 .carrotlp-sec09__note p {
-  margin: 0 0 10px;
+  margin: 0 auto 10px;
 }
 
 .carrotlp-sec09__note p:last-child {
