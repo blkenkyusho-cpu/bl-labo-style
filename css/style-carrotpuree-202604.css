@@ -1996,14 +1996,14 @@
 
 .carrotlp-sec10__sub {
   max-width: none;
-  width: calc(100% - 20px);
+  width: 100%;
   box-sizing: border-box;
 
   margin: 18px auto 0;
-  padding: 14px 12px;
+  padding: 14px 8px;
 
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.6;
   font-weight: 700;
   color: #5a3e6b;
 
@@ -2011,6 +2011,7 @@
   border-radius: 12px;
 
   text-align: center;
+  white-space: nowrap;
 }
 
   .carrotlp-sec10__campaign {
