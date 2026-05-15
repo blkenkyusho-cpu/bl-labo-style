@@ -823,11 +823,12 @@
   font-size: 15px;
   color: #444;
   line-height: 1.9;
-  text-align: center;
+  text-align: center !important;
   }
 
 .carrotlp-sec09__note p {
   margin: 0 auto 10px;
+  text-align: center !important;
 }
 
 .carrotlp-sec09__note p:last-child {
