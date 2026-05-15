@@ -719,10 +719,10 @@
 }
 
 .carrotlp-sec08__card-bottom {
-  display: inline-block;
+  display: inline;
   font-weight: 700;
   color: #8c2f5a;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.8;
   letter-spacing: 0.01em;
   background: linear-gradient(
