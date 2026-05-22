@@ -1,55 +1,60 @@
 /* じゅくすいシート 2026 セールブロック */
-.juku2026-sale {
-  margin: 28px auto;
-  padding: 0 12px;
+.juku2026-sale,
+.juku2026-links {
   font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
+  color: #2d2924;
+}
+
+.juku2026-sale {
+  margin: 28px auto 18px;
+  padding: 0 12px;
 }
 
 .juku2026-sale__inner {
   max-width: 720px;
   margin: 0 auto;
-  padding: 24px 18px 22px;
+  padding: 26px 18px 24px;
   background: #fffdf8;
   border: 2px solid #d9c8a8;
   border-radius: 18px;
   box-shadow: 0 8px 22px rgba(60, 45, 25, 0.08);
-  color: #2d2924;
   text-align: center;
 }
 
 .juku2026-sale__label {
   display: inline-block;
-  padding: 7px 18px;
+  padding: 8px 20px;
   background: #2f3548;
   color: #fff;
   border-radius: 999px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.04em;
   margin-bottom: 14px;
 }
 
 .juku2026-sale__title {
   margin: 0 0 12px;
-  font-size: 28px;
+  font-size: 29px;
   line-height: 1.35;
-  font-weight: 800;
-  color: #2a2630;
+  font-weight: 850;
+  color: #272531;
 }
 
 .juku2026-sale__lead {
   margin: 0 0 18px;
   font-size: 16px;
-  line-height: 1.85;
+  line-height: 1.9;
   color: #4d443b;
 }
 
 .juku2026-sale__price {
   margin: 18px auto;
-  padding: 16px 12px;
+  padding: 17px 12px 14px;
   background: #fff;
   border: 1px solid #eadfc9;
   border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(80, 60, 35, 0.04);
 }
 
 .juku2026-sale__old {
@@ -61,81 +66,112 @@
   margin: 4px 0;
   font-size: 20px;
   color: #9a6a28;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .juku2026-sale__new {
-  font-size: 32px;
+  font-size: 33px;
   line-height: 1.25;
   font-weight: 900;
   color: #b45b1f;
+  letter-spacing: 0.02em;
+}
+
+.juku2026-sale__period {
+  margin-top: 9px;
+  font-size: 13.5px;
+  color: #6d6258;
+  line-height: 1.6;
 }
 
 .juku2026-sale__text {
   margin: 16px 0 0;
   font-size: 16px;
-  line-height: 1.85;
+  line-height: 1.9;
   color: #3e372f;
 }
 
-.juku2026-sale__links {
-  margin-top: 22px;
-  padding-top: 18px;
-  border-top: 1px dashed #d8c7a8;
+/* 下部リンクブロック */
+.juku2026-links {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  padding: 0 12px;
 }
 
-.juku2026-sale__links-title {
+.juku2026-links__title {
   margin: 0 0 12px;
-  font-size: 15px;
-  font-weight: 700;
-  color: #5a4b38;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: center;
+  color: #443a31;
 }
 
-.juku2026-sale__link {
+.juku2026-links__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.juku2026-links__card {
   display: block;
-  margin: 10px auto 0;
-  padding: 13px 14px;
-  background: #f7f1e7;
-  border: 1px solid #e0cfb3;
-  border-radius: 12px;
-  color: #332b24;
+  padding: 15px 14px 14px;
+  background: #f8f3eb;
+  border: 1px solid #dfcfb7;
+  border-radius: 14px;
   text-decoration: none;
-  text-align: left;
+  color: #2f2a25;
+  box-shadow: 0 4px 14px rgba(60, 45, 25, 0.05);
 }
 
-.juku2026-sale__link span {
+.juku2026-links__card--accent {
+  background: #f5f1eb;
+  border-color: #cdbb9e;
+}
+
+.juku2026-links__catch {
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
   font-size: 13px;
   color: #7a6957;
-}
-
-.juku2026-sale__link strong {
-  display: block;
-  font-size: 15px;
   line-height: 1.5;
-  color: #2f2a25;
 }
 
-.juku2026-sale__link:hover {
-  background: #f2eadc;
+.juku2026-links__card strong {
+  display: block;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 800;
+  color: #2e2a25;
 }
 
-/* スマホ調整 */
+.juku2026-links__card em {
+  display: block;
+  margin-top: 7px;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #6c5e50;
+}
+
+.juku2026-links__card:hover {
+  background: #f1e8da;
+}
+
+/* スマホ */
 @media (max-width: 480px) {
   .juku2026-sale {
-    margin: 24px auto;
+    margin: 24px auto 18px;
     padding: 0 10px;
   }
 
   .juku2026-sale__inner {
-    padding: 22px 15px 20px;
+    padding: 23px 15px 22px;
     border-radius: 16px;
   }
 
   .juku2026-sale__label {
     font-size: 14px;
-    padding: 7px 16px;
+    padding: 7px 17px;
   }
 
   .juku2026-sale__title {
@@ -148,6 +184,23 @@
   }
 
   .juku2026-sale__new {
-    font-size: 30px;
+    font-size: 31px;
+  }
+
+  .juku2026-sale__period {
+    font-size: 13px;
+  }
+
+  .juku2026-links {
+    padding: 0 10px;
+  }
+
+  .juku2026-links__grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .juku2026-links__card {
+    padding: 14px 13px;
   }
 }
