@@ -5,6 +5,7 @@
   color: #252330;
 }
 
+/* セールブロック */
 .juku2026-sale {
   margin: 28px auto 18px;
   padding: 0 12px;
@@ -34,7 +35,7 @@
 }
 
 .juku2026-sale__title {
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   font-size: 30px;
   line-height: 1.35;
   font-weight: 850;
@@ -49,10 +50,15 @@
 }
 
 .juku2026-sale__price {
-  margin: 18px auto 12px;
-  padding: 18px 12px 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 18px auto 14px;
+  padding: 17px 12px;
   background: #fff;
-  border: 2px solid #ead0b7;
+  border: 2px dashed #ead0b7;
   border-radius: 14px;
   box-shadow: 0 4px 14px rgba(176, 91, 31, 0.08);
 }
@@ -60,21 +66,22 @@
 .juku2026-sale__old {
   font-size: 15px;
   color: #7b7166;
+  white-space: nowrap;
 }
 
 .juku2026-sale__arrow {
-  margin: 4px 0;
-  font-size: 21px;
+  font-size: 20px;
   color: #b45b1f;
   font-weight: 900;
 }
 
 .juku2026-sale__new {
-  font-size: 36px;
+  font-size: 34px;
   line-height: 1.2;
   font-weight: 900;
   color: #b45b1f;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .juku2026-sale__tax {
@@ -86,14 +93,14 @@
 
 .juku2026-sale__off {
   display: inline-block;
-  margin-top: 9px;
-  padding: 5px 17px;
+  padding: 5px 15px;
   background: #b45b1f;
   color: #fff;
   border-radius: 999px;
   font-size: 15px;
   font-weight: 850;
   letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
 .juku2026-sale__period {
@@ -137,9 +144,10 @@
   gap: 13px;
 }
 
-.juku2026-links__card {
+.juku2026-links__card,
+.juku2026-links__card--accent {
   display: block;
-  padding: 15px 14px 16px;
+  padding: 16px 14px 17px;
   background: #fffdf8;
   border: 1.5px solid #d7c2aa;
   border-radius: 15px;
@@ -149,15 +157,10 @@
   box-shadow: 0 5px 16px rgba(60, 45, 25, 0.06);
 }
 
-.juku2026-links__card--accent {
-  border-color: #b45b1f;
-  background: #fff9f1;
-}
-
 .juku2026-links__img {
-  width: 118px;
-  height: 86px;
-  margin: 0 auto 10px;
+  width: 170px;
+  height: 118px;
+  margin: 0 auto 11px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,8 +231,26 @@
     font-size: 15.5px;
   }
 
+  .juku2026-sale__price {
+    gap: 8px;
+    padding: 15px 10px;
+  }
+
+  .juku2026-sale__old {
+    font-size: 14px;
+  }
+
+  .juku2026-sale__arrow {
+    font-size: 18px;
+  }
+
   .juku2026-sale__new {
-    font-size: 33px;
+    font-size: 30px;
+  }
+
+  .juku2026-sale__off {
+    font-size: 13px;
+    padding: 4px 12px;
   }
 
   .juku2026-sale__period {
@@ -246,13 +267,14 @@
     gap: 10px;
   }
 
-  .juku2026-links__card {
-    padding: 13px 10px 14px;
+  .juku2026-links__card,
+  .juku2026-links__card--accent {
+    padding: 13px 9px 14px;
   }
 
   .juku2026-links__img {
-    width: 112px;
-    height: 82px;
+    width: 145px;
+    height: 104px;
   }
 
   .juku2026-links__card strong {
