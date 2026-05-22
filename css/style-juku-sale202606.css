@@ -2,7 +2,7 @@
 .juku2026-sale,
 .juku2026-links {
   font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
-  color: #2d2924;
+  color: #252330;
 }
 
 .juku2026-sale {
@@ -13,48 +13,48 @@
 .juku2026-sale__inner {
   max-width: 720px;
   margin: 0 auto;
-  padding: 26px 18px 24px;
+  padding: 27px 18px 25px;
   background: #fffdf8;
-  border: 2px solid #d9c8a8;
+  border: 2px solid #263047;
   border-radius: 18px;
-  box-shadow: 0 8px 22px rgba(60, 45, 25, 0.08);
+  box-shadow: 0 10px 24px rgba(38, 48, 71, 0.12);
   text-align: center;
 }
 
 .juku2026-sale__label {
   display: inline-block;
-  padding: 8px 20px;
-  background: #2f3548;
+  padding: 8px 22px;
+  background: #263047;
   color: #fff;
   border-radius: 999px;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 850;
   letter-spacing: 0.04em;
   margin-bottom: 14px;
 }
 
 .juku2026-sale__title {
   margin: 0 0 12px;
-  font-size: 29px;
+  font-size: 30px;
   line-height: 1.35;
   font-weight: 850;
-  color: #272531;
+  color: #252330;
 }
 
 .juku2026-sale__lead {
   margin: 0 0 18px;
   font-size: 16px;
   line-height: 1.9;
-  color: #4d443b;
+  color: #4a4350;
 }
 
 .juku2026-sale__price {
   margin: 18px auto 12px;
-  padding: 17px 12px 15px;
+  padding: 18px 12px 16px;
   background: #fff;
-  border: 1px solid #eadfc9;
+  border: 2px solid #ead0b7;
   border-radius: 14px;
-  box-shadow: 0 3px 12px rgba(80, 60, 35, 0.04);
+  box-shadow: 0 4px 14px rgba(176, 91, 31, 0.08);
 }
 
 .juku2026-sale__old {
@@ -64,49 +64,49 @@
 
 .juku2026-sale__arrow {
   margin: 4px 0;
-  font-size: 20px;
-  color: #9a6a28;
-  font-weight: 800;
+  font-size: 21px;
+  color: #b45b1f;
+  font-weight: 900;
 }
 
 .juku2026-sale__new {
-  font-size: 33px;
-  line-height: 1.25;
+  font-size: 36px;
+  line-height: 1.2;
   font-weight: 900;
   color: #b45b1f;
   letter-spacing: 0.02em;
 }
 
 .juku2026-sale__tax {
-  font-size: 0.55em;
-  font-weight: 600;
+  font-size: 0.52em;
+  font-weight: 650;
   margin-left: 4px;
-  color: #7a6a5a;
+  color: #6f6259;
 }
 
 .juku2026-sale__off {
   display: inline-block;
-  margin-top: 8px;
-  padding: 4px 14px;
+  margin-top: 9px;
+  padding: 5px 17px;
   background: #b45b1f;
   color: #fff;
   border-radius: 999px;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 0.03em;
+  font-size: 15px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
 }
 
 .juku2026-sale__period {
   max-width: 520px;
   margin: 14px auto 18px;
-  padding: 11px 12px;
-  background: #f3eadb;
-  border: 1px solid #dbc7a7;
+  padding: 12px;
+  background: #263047;
   border-radius: 12px;
-  color: #5a4735;
+  color: #fff;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 850;
   line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(38, 48, 71, 0.12);
 }
 
 .juku2026-sale__text {
@@ -124,62 +124,58 @@
 }
 
 .juku2026-links__title {
-  margin: 0 0 12px;
+  margin: 0 0 13px;
   font-size: 17px;
-  font-weight: 800;
+  font-weight: 850;
   text-align: center;
-  color: #443a31;
+  color: #252330;
 }
 
 .juku2026-links__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 13px;
 }
 
 .juku2026-links__card {
   display: block;
-  padding: 13px;
-  background: #f8f3eb;
-  border: 1px solid #dfcfb7;
-  border-radius: 14px;
+  padding: 15px 14px 16px;
+  background: #fffdf8;
+  border: 1.5px solid #d7c2aa;
+  border-radius: 15px;
   text-decoration: none;
   color: #2f2a25;
-  box-shadow: 0 4px 14px rgba(60, 45, 25, 0.05);
+  text-align: center;
+  box-shadow: 0 5px 16px rgba(60, 45, 25, 0.06);
 }
 
 .juku2026-links__card--accent {
-  background: #f5f1eb;
-  border-color: #cdbb9e;
-}
-
-.juku2026-links__item {
-  display: flex;
-  align-items: center;
-  gap: 11px;
+  border-color: #b45b1f;
+  background: #fff9f1;
 }
 
 .juku2026-links__img {
-  width: 66px;
-  flex-shrink: 0;
+  width: 118px;
+  height: 86px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .juku2026-links__img img {
   display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 9px;
-  background: #fff;
-}
-
-.juku2026-links__content {
-  flex: 1;
-  min-width: 0;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .juku2026-links__catch {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   font-size: 13px;
   color: #7a6957;
   line-height: 1.5;
@@ -187,25 +183,26 @@
 
 .juku2026-links__card strong {
   display: block;
-  font-size: 15.5px;
+  font-size: 16px;
   line-height: 1.5;
-  font-weight: 800;
-  color: #2e2a25;
+  font-weight: 850;
+  color: #252330;
 }
 
 .juku2026-links__card em {
   display: block;
-  margin-top: 6px;
+  margin-top: 7px;
   font-style: normal;
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.55;
   color: #6c5e50;
 }
 
 .juku2026-links__card:hover {
-  background: #f1e8da;
+  background: #f7efe4;
 }
 
+/* スマホ */
 @media (max-width: 480px) {
   .juku2026-sale {
     margin: 24px auto 18px;
@@ -219,7 +216,7 @@
 
   .juku2026-sale__label {
     font-size: 14px;
-    padding: 7px 17px;
+    padding: 7px 18px;
   }
 
   .juku2026-sale__title {
@@ -232,7 +229,7 @@
   }
 
   .juku2026-sale__new {
-    font-size: 31px;
+    font-size: 33px;
   }
 
   .juku2026-sale__period {
@@ -245,15 +242,25 @@
   }
 
   .juku2026-links__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
   .juku2026-links__card {
-    padding: 13px;
+    padding: 13px 10px 14px;
   }
 
   .juku2026-links__img {
-    width: 62px;
+    width: 112px;
+    height: 82px;
+  }
+
+  .juku2026-links__card strong {
+    font-size: 15px;
+  }
+
+  .juku2026-links__catch,
+  .juku2026-links__card em {
+    font-size: 12.5px;
   }
 }
