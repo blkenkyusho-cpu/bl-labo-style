@@ -49,8 +49,8 @@
 }
 
 .juku2026-sale__price {
-  margin: 18px auto;
-  padding: 17px 12px 14px;
+  margin: 18px auto 12px;
+  padding: 17px 12px 15px;
   background: #fff;
   border: 1px solid #eadfc9;
   border-radius: 14px;
@@ -77,21 +77,38 @@
   letter-spacing: 0.02em;
 }
 
+.juku2026-sale__off {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 14px;
+  background: #b45b1f;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
 .juku2026-sale__period {
-  margin-top: 9px;
-  font-size: 13.5px;
-  color: #6d6258;
+  max-width: 520px;
+  margin: 14px auto 18px;
+  padding: 11px 12px;
+  background: #f3eadb;
+  border: 1px solid #dbc7a7;
+  border-radius: 12px;
+  color: #5a4735;
+  font-size: 16px;
+  font-weight: 800;
   line-height: 1.6;
 }
 
 .juku2026-sale__text {
-  margin: 16px 0 0;
+  margin: 0;
   font-size: 16px;
   line-height: 1.9;
   color: #3e372f;
 }
 
-/* 下部リンクブロック */
 .juku2026-links {
   max-width: 720px;
   margin: 0 auto 30px;
@@ -157,7 +174,6 @@
   background: #f1e8da;
 }
 
-/* スマホ */
 @media (max-width: 480px) {
   .juku2026-sale {
     margin: 24px auto 18px;
@@ -188,7 +204,8 @@
   }
 
   .juku2026-sale__period {
-    font-size: 13px;
+    font-size: 15px;
+    margin: 13px auto 17px;
   }
 
   .juku2026-links {
