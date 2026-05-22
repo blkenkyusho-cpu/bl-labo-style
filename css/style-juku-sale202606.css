@@ -77,6 +77,13 @@
   letter-spacing: 0.02em;
 }
 
+.juku2026-sale__tax {
+  font-size: 0.55em;
+  font-weight: 600;
+  margin-left: 4px;
+  color: #7a6a5a;
+}
+
 .juku2026-sale__off {
   display: inline-block;
   margin-top: 8px;
@@ -109,6 +116,7 @@
   color: #3e372f;
 }
 
+/* リンクブロック */
 .juku2026-links {
   max-width: 720px;
   margin: 0 auto 30px;
@@ -131,7 +139,7 @@
 
 .juku2026-links__card {
   display: block;
-  padding: 15px 14px 14px;
+  padding: 13px;
   background: #f8f3eb;
   border: 1px solid #dfcfb7;
   border-radius: 14px;
@@ -145,9 +153,33 @@
   border-color: #cdbb9e;
 }
 
+.juku2026-links__item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.juku2026-links__img {
+  width: 66px;
+  flex-shrink: 0;
+}
+
+.juku2026-links__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+  background: #fff;
+}
+
+.juku2026-links__content {
+  flex: 1;
+  min-width: 0;
+}
+
 .juku2026-links__catch {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-size: 13px;
   color: #7a6957;
   line-height: 1.5;
@@ -155,18 +187,18 @@
 
 .juku2026-links__card strong {
   display: block;
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: 15.5px;
+  line-height: 1.5;
   font-weight: 800;
   color: #2e2a25;
 }
 
 .juku2026-links__card em {
   display: block;
-  margin-top: 7px;
+  margin-top: 6px;
   font-style: normal;
   font-size: 13px;
-  line-height: 1.55;
+  line-height: 1.5;
   color: #6c5e50;
 }
 
@@ -218,6 +250,10 @@
   }
 
   .juku2026-links__card {
-    padding: 14px 13px;
+    padding: 13px;
+  }
+
+  .juku2026-links__img {
+    width: 62px;
   }
 }
