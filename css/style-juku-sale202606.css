@@ -104,14 +104,14 @@
 }
 
 .juku2026-sale__period {
-  max-width: 520px;
+  max-width: 600px;
   margin: 14px auto 18px;
   padding: 12px;
   background: #263047;
   border-radius: 12px;
   color: #fff;
-  font-size: 18px;
-  font-weight: 850;
+  font-size: 20px;
+  font-weight: 750;
   letter-spacing: 0.04em;
   line-height: 1.6;
   box-shadow: 0 4px 12px rgba(38, 48, 71, 0.12);
