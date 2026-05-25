@@ -34,7 +34,7 @@
 .juku2026-sale__label {
   display: inline-block;
   padding: 7px 18px;
-  background: #b45b1f;
+  background: #e6761f;
   color: #fff;
   border-radius: 999px;
   font-size: 14px;
@@ -81,7 +81,7 @@
 
 .juku2026-sale__arrow {
   font-size: 20px;
-  color: #b45b1f;
+  color: #e6761f;
   font-weight: 900;
 }
 
@@ -89,7 +89,7 @@
   font-size: 34px;
   line-height: 1.2;
   font-weight: 900;
-  color: #b45b1f;
+  color: #e6761f;
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
@@ -104,7 +104,7 @@
 .juku2026-sale__off {
   display: inline-block;
   padding: 5px 15px;
-  background: #b45b1f;
+  background: #e6761f;
   color: #fff;
   border-radius: 999px;
   font-size: 15px;
@@ -117,7 +117,7 @@
   max-width: 600px;
   margin: 14px auto 18px;
   padding: 12px;
-  background: #b45b1f;
+  background: #e6761f;
   border-radius: 12px;
   color: #fff;
   font-size: 20px;
@@ -242,7 +242,7 @@
   display: table;
   margin: 0 auto 18px;
   padding: 8px 22px;
-  background: #b45b1f;
+  background: #e6761f;
   color: #fff;
   border-radius: 999px;
   font-size: 18px;
@@ -273,7 +273,7 @@
   position: absolute;
   left: 8px;
   top: 11px;
-  color: #b45b1f;
+  color: #e6761f;
   font-weight: 900;
   font-size: 17px;
 }
@@ -282,7 +282,7 @@
   margin: 18px auto 0;
   padding: 12px 14px;
   max-width: 560px;
-  background: #b45b1f;
+  background: #e6761f;
   color: #fff;
   border-radius: 12px;
   font-size: 16px;
