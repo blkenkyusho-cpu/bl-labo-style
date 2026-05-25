@@ -228,6 +228,7 @@
 
 /* 悩み・おすすめブロック */
 .juku2026-recommend {
+  font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
   max-width: 720px;
   margin: 26px auto 30px;
   padding: 24px 24px 22px;
@@ -252,17 +253,18 @@
 }
 
 .juku2026-recommend__list {
+  max-width: 620px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .juku2026-recommend__list li {
   position: relative;
-  padding: 11px 8px 11px 34px;
+  padding: 12px 10px 12px 34px;
   border-bottom: 1px dashed #d9c8ad;
-  font-size: 15.5px;
-  line-height: 1.75;
+  font-size: 16px;
+  line-height: 1.8;
   color: #3e372f;
 }
 
