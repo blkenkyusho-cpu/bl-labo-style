@@ -16,9 +16,9 @@
   margin: 0 auto;
   padding: 27px 18px 25px;
   background: #fffdf8;
-  border: none;
+  border: 1.5px solid #e4b98f;
   border-radius: 18px;
-  box-shadow: 0 10px 24px rgba(180, 91, 31, 0.12);
+  box-shadow: 0 8px 20px rgba(180, 91, 31, 0.08);
   text-align: center;
 }
 
