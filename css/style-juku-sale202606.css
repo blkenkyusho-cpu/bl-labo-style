@@ -226,6 +226,70 @@
   color: #6c5e50;
 }
 
+/* おすすめブロック */
+.juku2026-recommend {
+  max-width: 720px;
+  margin: 24px auto 28px;
+  padding: 18px 16px 20px;
+  background: #fffdf8;
+  border: 1.5px solid #e3d6c3;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(60, 45, 25, 0.06);
+}
+
+.juku2026-recommend__title {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 850;
+  text-align: center;
+  color: #252330;
+}
+
+.juku2026-recommend__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+}
+
+.juku2026-recommend__list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #3e372f;
+}
+
+.juku2026-recommend__list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #b45b1f;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.juku2026-recommend__lead {
+  margin: 10px 0 0;
+  font-size: 15.5px;
+  line-height: 1.8;
+  font-weight: 700;
+  color: #2f2a25;
+  text-align: center;
+}
+
+/* 注釈 */
+.juku2026-note {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #7a6a5a;
+  text-align: center;
+}
+
+
+
 /* スマホ */
 @media (max-width: 480px) {
   .juku2026-sale {
