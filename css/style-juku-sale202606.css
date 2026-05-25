@@ -245,8 +245,8 @@
   background: #e6761f;
   color: #fff;
   border-radius: 999px;
-  font-size: 18px;
-  font-weight: 850;
+  font-size: 20px;
+  font-weight: 750;
   line-height: 1.45;
   text-align: center;
   letter-spacing: 0.03em;
@@ -263,7 +263,7 @@
   position: relative;
   padding: 12px 10px 12px 34px;
   border-bottom: 1px dashed #d9c8ad;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8;
   color: #3e372f;
 }
@@ -275,7 +275,7 @@
   top: 11px;
   color: #e6761f;
   font-weight: 900;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .juku2026-recommend__lead {
@@ -285,9 +285,9 @@
   background: #e6761f;
   color: #fff;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
 }
 
