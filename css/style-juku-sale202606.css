@@ -229,17 +229,17 @@
 /* おすすめブロック */
 .juku2026-recommend {
   max-width: 720px;
-  margin: 24px auto 28px;
-  padding: 18px 16px 20px;
+  margin: 26px auto 30px;
+  padding: 22px 20px 20px;
   background: #fffdf8;
-  border: 1.5px solid #e3d6c3;
-  border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(60, 45, 25, 0.06);
+  border: 2px solid #e4d2b8;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(60, 45, 25, 0.07);
 }
 
 .juku2026-recommend__title {
-  margin: 0 0 14px;
-  font-size: 18px;
+  margin: 0 0 18px;
+  font-size: 20px;
   font-weight: 850;
   text-align: center;
   color: #252330;
@@ -248,46 +248,54 @@
 .juku2026-recommend__list {
   list-style: none;
   padding: 0;
-  margin: 0 0 14px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
 }
 
 .juku2026-recommend__list li {
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 10px;
-  font-size: 15.5px;
-  line-height: 1.7;
+  padding: 11px 12px 11px 34px;
+  background: #fff;
+  border: 1px solid #eadbc7;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.65;
   color: #3e372f;
+  box-shadow: 0 3px 10px rgba(60, 45, 25, 0.035);
 }
 
 .juku2026-recommend__list li::before {
-  content: "✔";
+  content: "✓";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 12px;
+  top: 11px;
   color: #b45b1f;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .juku2026-recommend__lead {
-  margin: 10px 0 0;
-  font-size: 15.5px;
-  line-height: 1.8;
-  font-weight: 700;
-  color: #2f2a25;
+  margin: 18px auto 0;
+  padding: 12px 14px;
+  background: #263047;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 800;
   text-align: center;
+  max-width: 560px;
 }
 
-/* 注釈 */
 .juku2026-note {
-  margin-top: 12px;
+  margin: 13px 0 0;
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #7a6a5a;
   text-align: center;
 }
-
 
 
 /* スマホ */
