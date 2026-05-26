@@ -472,6 +472,22 @@
     flex-shrink: 0;
     line-height: 1.7;
   }
+
+  /* CTA（オレンジ） */
+  .juku2026-recommend__lead {
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 14px 12px;
+    margin: 18px 0 14px;
+  }
+
+  /* 注意書き */
+  .juku2026-note {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #7a6f63; /* ←少し薄くする */
+    padding: 0 6px;
+  }
   
 }
 
