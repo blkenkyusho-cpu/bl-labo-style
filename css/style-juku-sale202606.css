@@ -367,57 +367,87 @@
 }
 
 @media (max-width: 480px) {
+
+  /* ===== 全体余白 ===== */
   .juku2026-sale {
     margin: 16px auto 12px;
     padding: 0 6px;
   }
 
   .juku2026-sale__inner {
-    padding: 20px 12px 20px;
+    padding: 20px 12px 18px;
     border-radius: 16px;
   }
 
+  /* ===== ヘッド（ラベル＋タイトル） ===== */
+  .juku2026-sale__head {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
   .juku2026-sale__label {
-    font-size: 14px;
-    padding: 7px 18px;
+    font-size: 12px;
+    padding: 5px 14px;
   }
 
   .juku2026-sale__title {
-    font-size: 25px;
+    font-size: 24px;
   }
 
-  .juku2026-sale__lead,
-  .juku2026-sale__text {
-    font-size: 15.5px;
+  /* ===== リード文 ===== */
+  .juku2026-sale__lead {
+    font-size: 14.5px;
+    line-height: 1.8;
+    margin-bottom: 14px;
   }
 
+  /* ===== 価格エリア（ここ重要） ===== */
   .juku2026-sale__price {
-    gap: 8px;
-    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 14px 10px;
   }
 
   .juku2026-sale__old {
-    font-size: 14px;
+    font-size: 13px;
+    white-space: normal; /* ←折り返し許可 */
   }
 
   .juku2026-sale__arrow {
-    display: none;
+    display: none; /* ←邪魔だから消す */
   }
 
   .juku2026-sale__new {
     font-size: 30px;
+    white-space: normal;
+  }
+
+  .juku2026-sale__tax {
+    font-size: 0.6em;
   }
 
   .juku2026-sale__off {
     font-size: 13px;
     padding: 4px 12px;
+    margin: 4px auto 0;
   }
 
+  /* ===== 期間 ===== */
   .juku2026-sale__period {
-    font-size: 16px;
-    margin: 13px auto 17px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 12px auto 14px;
   }
 
+  /* ===== テキスト ===== */
+  .juku2026-sale__text {
+    font-size: 14.5px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 480px) {
   .juku2026-links {
     padding: 0 10px;
   }
