@@ -299,6 +299,73 @@
   text-align: center;
 }
 
+/* 使い方ブロック */
+.juku2026-howto {
+  max-width: 720px;
+  margin: 30px auto 34px;
+  padding: 0 12px;
+  font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
+  color: #252330;
+}
+
+.juku2026-howto__inner {
+  padding: 24px 18px 24px;
+  background: linear-gradient(135deg, #fffdf8 0%, #fbf6ee 100%);
+  border: 1.5px solid #e4b98f;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(180, 91, 31, 0.08);
+  text-align: center;
+}
+
+.juku2026-howto__title {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 8px 22px;
+  background: #e6761f;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: 750;
+  line-height: 1.45;
+  letter-spacing: 0.03em;
+}
+
+.juku2026-howto__lead {
+  margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a4350;
+}
+
+.juku2026-howto__images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.juku2026-howto__images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid #eadbc7;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(60, 45, 25, 0.05);
+}
+
+.juku2026-howto__note {
+  margin: 18px auto 0;
+  padding: 12px 14px;
+  max-width: 560px;
+  background: #fff3e8;
+  border: 1px solid #f0c49f;
+  border-radius: 12px;
+  color: #5a3b24;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 700;
+}
+
 @media (max-width: 480px) {
   .juku2026-sale {
     margin: 24px auto 18px;
