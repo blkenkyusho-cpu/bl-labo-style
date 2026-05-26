@@ -447,12 +447,24 @@
     line-height: 1.8;
   }
 
+  .juku2026-recommend {
+    padding: 20px 0px 18px; /* ←今より少し詰める */
+  }
+
   .juku2026-recommend__title {
     font-size: 18px;
     padding: 10px 16px;
     line-height: 1.5;
     max-width: 90%;      /* ←これ効く */
     margin: 0 auto 16px; /* ←中央寄せ */
+  }
+
+  .juku2026-recommend__list li {
+    line-height: 1.7; /* ←今より少し詰める（たぶん今1.8〜1.9） */
+  }
+
+  .juku2026-recommend__list li::before {
+    top: 0.15em; /* ←ほんの少し下げる */
   }
 }
 
