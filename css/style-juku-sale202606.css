@@ -552,15 +552,18 @@
 
   .juku2026-howto__note {
   margin-top: 16px;
-  padding: 14px 12px;
+  padding: 14px 14px;
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.85;
   border-radius: 12px;
+  text-align: left;
 }
 
 .juku2026-howto__note span {
   display: block;
   margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #e3c9a7;
   font-size: 12.5px;
   line-height: 1.7;
   color: #6f6259;
