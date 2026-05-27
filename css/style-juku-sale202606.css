@@ -356,15 +356,30 @@
 
 .juku2026-howto__note {
   margin: 18px auto 0;
-  padding: 12px 14px;
+  padding: 16px 20px;
   max-width: 560px;
   background: #fff3e8;
   border: 1px solid #f0c49f;
   border-radius: 12px;
+
   color: #5a3b24;
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.9;
   font-weight: 700;
+
+  text-align: center;
+}
+
+.juku2026-howto__note span {
+  display: block;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #e7c8aa;
+
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 600;
+  color: #7a6757;
 }
 
 @media (max-width: 480px) {
