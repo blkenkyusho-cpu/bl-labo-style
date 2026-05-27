@@ -500,26 +500,32 @@
     padding: 0 14px;
     text-align: left; /* ←これが本質 */
   }
-  
-}
 
-@media (max-width: 480px) {
   .juku2026-links {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin: 24px auto 30px;
     padding: 0 10px;
   }
 
   .juku2026-links__grid {
+    box-sizing: border-box;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
   .juku2026-links__card,
   .juku2026-links__card--accent {
+    box-sizing: border-box;
+    width: 100%;
     padding: 13px 9px 14px;
   }
 
   .juku2026-links__img {
-    width: 145px;
+    width: 100%;
+    max-width: 145px;
     height: 104px;
   }
 
@@ -531,4 +537,7 @@
   .juku2026-links__card em {
     font-size: 12.5px;
   }
+
+  
 }
+
