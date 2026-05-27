@@ -478,15 +478,15 @@
   .juku2026-recommend__list li::after {
     content: "";
     position: absolute;
-    left: 10px;
-    right: 10px;
+    left: 15px;
+    right: 15px;
     bottom: 0;
     border-bottom: 1px dashed #d9c8ad;
   }
 
   /* CTA（オレンジ） */
   .juku2026-recommend__lead {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.7;
     padding: 14px 12px;
     margin: 18px 12px 14px;
@@ -497,7 +497,7 @@
     font-size: 14px;
     line-height: 1.7;
     color: #7a6f63; /* ←少し薄くする */
-    padding: 0 6px;
+    padding: 0 14px;
     text-align: left; /* ←これが本質 */
   }
   
