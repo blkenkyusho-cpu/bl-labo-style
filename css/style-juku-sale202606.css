@@ -546,6 +546,10 @@
     padding: 20px 10px 20px; /* ←18→10に削る */
   }
 
+  .juku2026-howto__title {
+    font-size: 18px;
+  }
+
   
 }
 
