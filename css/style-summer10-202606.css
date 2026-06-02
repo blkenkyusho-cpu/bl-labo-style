@@ -160,9 +160,14 @@
   opacity: 0.9;
 }
 
+.summer10-actions {
+  margin-top: 30px;
+  text-align: center;
+}
+
 .summer10-back {
-  margin-top: 24px;
-  text-align: right;
+  margin-top: 18px;
+  text-align: center;
   font-size: 14px;
 }
 
