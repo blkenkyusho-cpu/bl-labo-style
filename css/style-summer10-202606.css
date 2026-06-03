@@ -76,7 +76,8 @@
 .summer10-body {
   display: flex;
   gap: 34px;
-  align-items: center;
+  align-items: flex-start; 
+  /*align-items: center;*/
 }
 
 .summer10-imagebox {
