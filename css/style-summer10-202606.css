@@ -21,7 +21,30 @@
   height: auto;
 }
 
+.summer10-intro-title {
+  margin: 0 0 24px;
+  text-align: center;
 
+  font-size: 34px;
+  font-weight: bold;
+  color: #2f6f9f;
+
+  line-height: 1.4;
+
+  position: relative;
+}
+
+.summer10-intro-title::after {
+  content: "";
+  display: block;
+
+  width: 80px;
+  height: 3px;
+
+  background: #f0c54b;
+
+  margin: 12px auto 0;
+}
 
 
 
