@@ -22,14 +22,18 @@
 }
 
 .summer10-intro-title {
-  margin: 0 0 24px;
+  margin: 0 0 36px;
   text-align: center;
 
-  font-size: 34px;
-  font-weight: bold;
+  font-family: "Yu Mincho", "游明朝", "Hiragino Mincho ProN", serif;
+
+  font-size: 42px;
+  font-weight: 600;
+
   color: #2f6f9f;
 
-  line-height: 1.4;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
 
   position: relative;
 }
@@ -38,12 +42,12 @@
   content: "";
   display: block;
 
-  width: 80px;
-  height: 3px;
+  width: 120px;
+  height: 2px;
 
-  background: #f0c54b;
+  background: #8fb9d8;
 
-  margin: 12px auto 0;
+  margin: 18px auto 0;
 }
 
 
