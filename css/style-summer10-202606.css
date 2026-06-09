@@ -86,14 +86,14 @@
 .summer10-index {
   max-width: 800px;
   margin: 0 auto 64px;
-  padding: 30px 34px;
+  padding: 26px 34px 28px;
   background: #f5fbff;
   border: 1px solid #cfe5f5;
   border-radius: 10px;
 }
 
 .summer10-index-title {
-  margin: 0 0 22px;
+  margin: 0 0 20px;
   text-align: center;
   font-size: 28px;
   font-weight: bold;
@@ -101,7 +101,7 @@
 }
 
 .summer10-index-subtitle {
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -109,13 +109,13 @@
 }
 
 .summer10-index-plus {
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .summer10-index-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px 28px;
+  gap: 8px 28px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -129,7 +129,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 8px 12px;
+  padding: 7px 8px 9px;
   color: #333;
   text-decoration: none;
   border-bottom: 1px solid #dceef8;
@@ -149,11 +149,24 @@
   flex-shrink: 0;
 }
 
+.summer10-index-list a b {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.summer10-index-list a em {
+  margin-left: auto;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1;
+  color: #4b93cf;
+  font-weight: 700;
+}
+
 .summer10-index-list a:hover {
   color: #2f6f9f;
   background: #eaf6ff;
 }
-
 
 /* ========================================
    商品ブロック
