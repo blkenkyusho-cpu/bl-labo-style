@@ -50,6 +50,22 @@
   margin: 18px auto 0;
 }
 
+.summer10-intro-text {
+  max-width: 760px;
+  margin: 0 auto 56px;
+  color: #333;
+  font-size: 16px;
+  line-height: 2;
+  text-align: left;
+}
+
+.summer10-intro-text p {
+  margin: 0 0 18px;
+}
+
+.summer10-intro-text p:last-child {
+  margin-bottom: 0;
+}
 
 
 
