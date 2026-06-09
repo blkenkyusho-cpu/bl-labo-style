@@ -86,24 +86,36 @@
 .summer10-index {
   max-width: 800px;
   margin: 0 auto 64px;
-  padding: 28px 34px;
+  padding: 30px 34px;
   background: #f5fbff;
   border: 1px solid #cfe5f5;
   border-radius: 10px;
 }
 
 .summer10-index-title {
-  margin: 0 0 20px;
+  margin: 0 0 22px;
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
   color: #2f6f9f;
+}
+
+.summer10-index-subtitle {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2f6f9f;
+}
+
+.summer10-index-plus {
+  margin-top: 28px;
 }
 
 .summer10-index-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px 28px;
+  gap: 14px 28px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -114,12 +126,27 @@
 }
 
 .summer10-index-list a {
-  display: block;
-  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 8px 12px;
   color: #333;
   text-decoration: none;
   border-bottom: 1px solid #dceef8;
   transition: 0.2s;
+}
+
+.summer10-index-list a span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: #4b93cf;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  flex-shrink: 0;
 }
 
 .summer10-index-list a:hover {
