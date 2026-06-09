@@ -103,12 +103,12 @@
 .summer10-index-subtitle {
   display: inline-block;
 
-  padding: 10px 24px;
+  padding: 0 0 4px;
 
-  background: #4b93cf;
-  color: #fff;
+  background: none;
+  color: #2f6f9f;
 
-  border-radius: 4px;
+  border-bottom: 2px solid #4b93cf;
 
   font-size: 18px;
   font-weight: bold;
@@ -116,7 +116,7 @@
 
 .summer10-index-subtitle-wrap{
   text-align:center;
-  margin-bottom:18px;
+  margin-bottom:22px;
 }
 
 .summer10-index-plus {
