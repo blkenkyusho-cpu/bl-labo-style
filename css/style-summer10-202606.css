@@ -513,5 +513,18 @@
     line-height: 1.8 !important;
   } 
 
+  .summer10-index-list{
+    grid-template-columns: 1fr;
+    gap: 0;
+  } 
+
+  .summer10-index-list a{
+    padding: 12px 0;
+  }
+
+  .summer10-index-list a b{
+    font-size:18px;
+  } 
+
 }
 
