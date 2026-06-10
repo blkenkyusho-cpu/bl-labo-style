@@ -406,3 +406,68 @@
   color: #2f6f9f;
   font-weight: 700;
 }
+
+/* ========================================
+   追加ブロック
+======================================== */
+
+.summer10-related {
+  max-width: 900px;
+  margin: 80px auto 0;
+}
+
+.summer10-related-title {
+  margin: 0 0 28px;
+  padding: 0 0 12px;
+  border-bottom: 3px double #8fb9d8;
+  color: #2f6f9f;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.summer10-related-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.summer10-related-card {
+  display: block;
+  background: #fff;
+  border: 1px solid #d6e6f2;
+  color: #333;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.summer10-related-card:hover {
+  box-shadow: 0 8px 18px rgba(47, 111, 159, 0.18);
+  transform: translateY(-2px);
+}
+
+.summer10-related-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.summer10-related-body {
+  padding: 14px 16px 18px;
+}
+
+.summer10-related-card-title {
+  margin: 0 0 10px;
+  color: #222;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.summer10-related-text {
+  margin: 0;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
