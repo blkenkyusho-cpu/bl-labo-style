@@ -346,3 +346,35 @@
   color: #666;
   text-decoration: none;
 }
+
+/* ========================================
+   まとめブロック
+======================================== */
+
+.summer10-summary-title {
+  margin: 0 0 36px;
+  text-align: center;
+
+  font-family: "Yu Mincho", "游明朝", serif;
+  font-size: 38px;
+  font-weight: 600;
+
+  color: #2f6f9f;
+
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+
+  position: relative;
+}
+
+.summer10-summary-title::after {
+  content: "";
+  display: block;
+
+  width: 120px;
+  height: 2px;
+
+  background: #8fb9d8;
+
+  margin: 18px auto 0;
+}
