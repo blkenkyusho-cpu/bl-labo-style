@@ -518,12 +518,18 @@
     gap: 0;
   } 
 
-  .summer10-index-list a{
-    padding: 12px 0;
-  }
-
   .summer10-index-list a b{
     font-size:15px;
+  } 
+
+  .summer10-index-list a span{
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .summer10-index-list a{
+    padding: 8px 0;
   } 
 
 }
