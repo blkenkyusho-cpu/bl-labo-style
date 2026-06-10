@@ -497,7 +497,13 @@
   }
 
   .summer10-intro-text {
-    line-height: 2.2;
+    font-size: 18px;
+    line-height: 2.1;
+    padding: 0 6px;
+  }
+
+  .summer10-intro-text p {
+    margin-bottom: 24px;
   }
 
 }
