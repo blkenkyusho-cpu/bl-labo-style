@@ -351,11 +351,15 @@
    まとめブロック
 ======================================== */
 
+.summer10-summary {
+  margin: 72px auto 0;
+}
+
 .summer10-summary-title {
   margin: 0 0 36px;
   text-align: center;
 
-  font-family: "Yu Mincho", "游明朝", serif;
+  font-family: "Yu Mincho", "游明朝", "Hiragino Mincho ProN", serif;
   font-size: 38px;
   font-weight: 600;
 
@@ -377,4 +381,28 @@
   background: #8fb9d8;
 
   margin: 18px auto 0;
+}
+
+.summer10-summary-text {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+}
+
+.summer10-summary-text p {
+  margin: 0 0 18px;
+}
+
+.summer10-summary-text p:last-child {
+  margin-bottom: 0;
+}
+
+.summer10-summary-last {
+  margin-top: 28px;
+  text-align: center;
+  color: #2f6f9f;
+  font-weight: 700;
 }
