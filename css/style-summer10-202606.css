@@ -488,7 +488,12 @@
 @media screen and (max-width: 768px) {
 
   .summer10-intro-title {
+    margin: 35px 0 24px;
     font-size: 28px;
+  }
+   
+  .summer10-intro-title {
+    font-size: 24px;
   }
 
 }
