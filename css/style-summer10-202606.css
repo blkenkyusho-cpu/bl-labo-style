@@ -506,5 +506,12 @@
     margin-bottom: 24px;
   }
 
+  .summer10-intro-last {
+    margin-top: 36px !important;
+    padding-top: 22px;
+    border-top: 1px solid #cfe5f5;
+    line-height: 1.8 !important;
+  } 
+
 }
 
