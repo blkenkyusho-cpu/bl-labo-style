@@ -545,33 +545,38 @@
     margin: 18px 0 10px;
   } 
 
-   /*商品ブロック*/
+  /*商品ブロック*/
    
-   .summer10-body{
+  .summer10-body{
     display: block;
   }
 
-   .summer10-imagebox{
+  .summer10-imagebox{
     max-width: 100%;
     aspect-ratio: 4 / 3;
     margin: 0 auto 22px;
   }
 
-   .summer10-item{
+  .summer10-item{
     padding: 28px 18px 22px;
   }
 
-   .summer10-num{
-    width: 48px;
-    height: 54px;
-    font-size: 20px;
+  .summer10-num{
+    width: 40px;
+    height: 46px;
+    font-size: 18px;
   }
 
   .summer10-name{
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  .summer10-catch {
+    font-size: 20px;
   }
 
    .summer10-content p{
+    font-size: 18px;  
     line-height: 1.75;
   }
 
