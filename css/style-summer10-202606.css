@@ -572,10 +572,11 @@
   }
 
   .summer10-catch {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .summer10-content p{
+    font-size:15px; 
     line-height: 1.75;
   }
 
