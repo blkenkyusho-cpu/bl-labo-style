@@ -545,6 +545,8 @@
     margin: 18px 0 10px;
   } 
 
+   /*商品ブロック*/
+   
    .summer10-body{
     display: block;
   }
@@ -554,6 +556,34 @@
     max-width: 320px;
     margin: 0 auto 24px;
   }
+
+   .summer10-item{
+    padding: 28px 18px 22px;
+  }
+
+   .summer10-num{
+    width: 48px;
+    height: 54px;
+    font-size: 20px;
+  }
+
+  .summer10-name{
+    font-size: 24px;
+  }
+
+   .summer10-content p{
+    line-height: 1.75;
+  }
+
+   .summer10-review-head{
+    display: block;
+  }
+
+  .summer10-review-title{
+    font-size: 17px;
+    margin-top: 4px;
+  }
+
    
 }
 
