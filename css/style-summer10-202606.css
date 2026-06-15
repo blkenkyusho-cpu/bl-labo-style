@@ -575,11 +575,11 @@
     font-size: 20px;
   }
 
-   .summer10-content p{
+  .summer10-content p{
     line-height: 1.75;
   }
 
-   .summer10-review-head{
+  .summer10-review-head{
     display: block;
   }
 
@@ -588,7 +588,8 @@
     margin-top: 4px;
   }
 
-   .summer10-review{
+  .summer10-review{
+    margin: 16px 0;
     padding: 14px 16px;
   }
 
@@ -596,7 +597,7 @@
     line-height: 1.65;
   }
 
-     .summer10-button{
+  .summer10-button{
     width: 100%;
     min-width: 0;
     padding: 11px 20px;
