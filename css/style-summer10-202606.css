@@ -551,10 +551,10 @@
     display: block;
   }
 
-  .summer10-imagebox{
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto 24px;
+   .summer10-imagebox{
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto 22px;
   }
 
    .summer10-item{
@@ -582,6 +582,21 @@
   .summer10-review-title{
     font-size: 17px;
     margin-top: 4px;
+  }
+
+   .summer10-review{
+    padding: 14px 16px;
+  }
+
+  .summer10-review p{
+    line-height: 1.65;
+  }
+
+     .summer10-button{
+    width: 100%;
+    min-width: 0;
+    padding: 11px 20px;
+    font-size: 16px;
   }
 
    
