@@ -646,6 +646,37 @@
     text-align:left; 
   }
 
+   /* 誘導ブロック */
+
+  .summer10-related-cards{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .summer10-related-card{
+    display: flex;
+    align-items: center;
+  }
+
+  .summer10-related-image{
+    width: 36%;
+    aspect-ratio: 4 / 3;
+    flex-shrink: 0;
+  }
+
+  .summer10-related-body{
+    padding: 12px 14px;
+  }
+
+  .summer10-related-card-title{
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .summer10-related-text{
+    font-size: 13px;
+    line-height: 1.6;
+  }
    
 }
 
