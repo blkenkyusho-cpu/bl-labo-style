@@ -648,6 +648,10 @@
 
    /* 誘導ブロック */
 
+  .summer10-related{
+  margin-bottom: 70px;
+  }
+   
   .summer10-related-cards{
     grid-template-columns: 1fr;
     gap: 18px;
@@ -656,6 +660,8 @@
   .summer10-related-card{
     display: flex;
     align-items: center;
+    padding: 10px;
+  　gap: 14px; 
   }
 
   .summer10-related-image{
@@ -665,7 +671,8 @@
   }
 
   .summer10-related-body{
-    padding: 12px 14px;
+    /*padding: 12px 14px;*/
+    padding: 0; 
   }
 
   .summer10-related-card-title{
