@@ -249,6 +249,12 @@
   height: 100%;
   object-fit: cover;
   display: block;
+
+  transition: transform .25s ease;
+}
+
+.summer10-imagebox a:hover img {
+  transform: scale(1.03);
 }
 
 .summer10-content {
