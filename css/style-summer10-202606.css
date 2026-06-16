@@ -621,6 +621,30 @@
     box-shadow: 0 4px 12px rgba(77,166,255,.25); 
   }
 
+   /* まとめブロック */
+
+  .summer10-summary-title{
+    font-size: 26px;
+    margin: 35px 0 24px;
+  }
+
+  .summer10-summary-text,
+  .summer10-summary-text p{
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .summer10-summary-text p{
+    margin-bottom: 24px;
+  }
+
+  .summer10-summary-last{
+    margin-top: 36px !important;
+    padding-top: 22px;
+    border-top: 1px solid #cfe5f5;
+    line-height: 1.8 !important;
+  }
+
    
 }
 
