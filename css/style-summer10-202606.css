@@ -327,6 +327,7 @@
   border-radius: 999px;
   text-align: center;
   transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(77,166,255,.25); 
 }
 
 .summer10-button:hover {
