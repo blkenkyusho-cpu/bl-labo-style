@@ -315,7 +315,7 @@
   color: #555;
 }
 
-.summer10-button {
+. {
   display: inline-block;
   padding: 12px 48px;
   min-width: 320px;
@@ -598,10 +598,14 @@
   }
 
   .summer10-button{
-    width: 100%;
-    min-width: 0;
-    padding: 11px 20px;
-    font-size: 16px;
+    display:block;
+    width:100%;
+    max-width:320px;
+    margin:0 auto;
+    min-width:0;
+
+    padding:11px 20px;
+    font-size:16px;
   }
 
    
