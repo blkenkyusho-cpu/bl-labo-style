@@ -598,14 +598,19 @@
   }
 
   .summer10-button{
-    display:block;
-    width:100%;
-    max-width:320px;
-    margin:0 auto;
-    min-width:0;
+    display: inline-block;
+    width: auto;
+    min-width: 260px;
+    max-width: 320px;
 
-    padding:11px 20px;
-    font-size:16px;
+    padding: 11px 36px;
+    background: #4da6ff;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 999px;
+    text-align: center;
   }
 
    
