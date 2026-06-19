@@ -434,6 +434,12 @@
   font-size: .92em;
 }
 
+.stocknotice-202606__subhead {
+  margin: 0 0 .35em;
+  font-weight: 700;
+  color: #333;
+}
+
 .stocknotice-202606__divider {
   margin: 1em 0 .9em;
   border-top: 1px dashed var(--line);
