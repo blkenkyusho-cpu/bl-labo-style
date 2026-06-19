@@ -685,8 +685,86 @@
     font-size: .95em;
     line-height: 1.65;
   }
-   
-
-  
 }
 
+/* 代替品「足楽」10%OFFセクション */
+
+.ashiraku-sale202606 {
+  font-family: "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
+  color: #2f2a25;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.ashiraku-sale202606__block {
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 22px 20px 20px;
+  background: #fffdf8;
+  border: 1.5px solid #e4b98f;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(180, 91, 31, 0.08);
+  text-align: center;
+}
+
+.ashiraku-sale202606__eyecatch {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 18px;
+  background: #e6761f;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ashiraku-sale202606__title {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 850;
+  line-height: 1.4;
+  color: #252330;
+}
+
+.ashiraku-sale202606__lead {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #5a3b24;
+}
+
+.ashiraku-sale202606__text {
+  margin: 0;
+  font-size: 15.5px;
+  color: #4a4035;
+}
+
+/* スマホ */
+@media (max-width: 480px) {
+  .ashiraku-sale202606 {
+    font-size: 14.5px;
+  }
+
+  .ashiraku-sale202606__block {
+    margin: 18px 6px;
+    padding: 20px 14px 18px;
+  }
+
+  .ashiraku-sale202606__eyecatch {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  .ashiraku-sale202606__title {
+    font-size: 24px;
+  }
+
+  .ashiraku-sale202606__lead {
+    font-size: 15.5px;
+  }
+
+  .ashiraku-sale202606__text {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+}
