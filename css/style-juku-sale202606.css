@@ -382,6 +382,74 @@
   color: #7a6757;
 }
 
+/* ── 欠品お詫びブロック ── */
+.stocknotice-202606 {
+  font-family: "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
+
+  --ink: #222;
+  --muted: #666;
+  --block-bg: #f7f7f8;
+  --block-stroke: #d9d9de;
+  --line: #c9cbd2;
+  --link: #0b53b7;
+
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.stocknotice-202606__block {
+  background: var(--block-bg);
+  border: 1px solid var(--block-stroke);
+  border-radius: 12px;
+  padding: 18px 18px 16px;
+}
+
+.stocknotice-202606__eyecatch {
+  display: inline-block;
+  font-size: .88em;
+  letter-spacing: .02em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #bfc3cb;
+  color: #444;
+  background: #fff;
+}
+
+.stocknotice-202606__title {
+  margin: .7em 0 .45em;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #222;
+}
+
+.stocknotice-202606__text {
+  margin: .35em 0;
+  color: #333;
+}
+
+.stocknotice-202606__note {
+  margin: .55em 0 0;
+  color: var(--muted);
+  font-size: .92em;
+}
+
+.stocknotice-202606__divider {
+  margin: 1em 0 .9em;
+  border-top: 1px dashed var(--line);
+}
+
+.stocknotice-202606__link {
+  color: var(--link);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.stocknotice-202606__link:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 480px) {
 
   /* ===== 全体余白 ===== */
@@ -583,6 +651,34 @@
   line-height: 1.7;
   color: #6f6259;
 }
+
+  /* 欠品お詫びブロック */
+  .stocknotice-202606 {
+    font-size: 14.5px;
+  }
+
+  .stocknotice-202606__block {
+    padding: 14px 12px 12px;
+  }
+
+  .stocknotice-202606__eyecatch {
+    font-size: 1em;
+    padding: 3px 8px;
+  }
+
+  .stocknotice-202606__title {
+    font-size: 1.15em;
+  }
+
+  .stocknotice-202606__text {
+    line-height: 1.7;
+  }
+
+  .stocknotice-202606__note {
+    font-size: .95em;
+    line-height: 1.65;
+  }
+   
 
   
 }
