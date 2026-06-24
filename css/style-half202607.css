@@ -158,16 +158,18 @@
 }
 
 .half202607-empathy-message-main{
-  position:relative;
-  z-index:2;
-  margin:0;
   color:#52646f;
-  font-size:30px;
+  font-size:28px;
   font-weight:500;
   line-height:1.8;
-  letter-spacing:0.08em;
-  text-shadow:
-    0 1px 1px rgba(255,255,255,0.7);
+  letter-spacing:0.05em;
+  white-space:nowrap;
+}
+
+.half202607-empathy-message-main span{
+  color:#6f8f9f;
+  font-size:1.08em;
+  font-weight:600;
 }
 
 /* ==========================
@@ -250,6 +252,8 @@
 
   .half202607-empathy-message-main{
     font-size:22px;
+    white-space:normal;
+    text-align:center;
   }
 
   .half202607-empathy-closing-title{
