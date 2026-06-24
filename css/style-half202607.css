@@ -1,0 +1,96 @@
+/* 7号食ハーフLP 2026年7月：共感ブロック */
+.half202607-empathy {
+  background: #faf8f3;
+  padding: 90px 20px;
+}
+
+.half202607-empathy-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.half202607-empathy-title {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  color: #4f5b4a;
+  margin: 0 0 55px;
+  letter-spacing: 0.06em;
+}
+
+.half202607-empathy-text {
+  font-size: 18px;
+  line-height: 2.25;
+  color: #555;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.half202607-empathy-text p {
+  margin: 0 0 34px;
+}
+
+.half202607-empathy-voice {
+  margin: 64px 0 56px;
+  color: #666;
+}
+
+.half202607-empathy-voice p {
+  margin-bottom: 26px;
+}
+
+.half202607-empathy-message {
+  display: inline-block;
+  font-size: 26px;
+  line-height: 1.8;
+  color: #7a8b72;
+  font-weight: 600;
+  margin: 28px 0 48px !important;
+  padding: 22px 34px;
+  border-top: 1px solid #c9c1aa;
+  border-bottom: 1px solid #c9c1aa;
+}
+
+.half202607-empathy-key {
+  font-size: 30px;
+  line-height: 1.7;
+  color: #4f5b4a;
+  font-weight: 500;
+  margin: 72px 0 38px !important;
+  letter-spacing: 0.08em;
+}
+
+@media screen and (max-width: 640px) {
+  .half202607-empathy {
+    padding: 64px 18px;
+  }
+
+  .half202607-empathy-title {
+    font-size: 27px;
+    margin-bottom: 42px;
+  }
+
+  .half202607-empathy-text {
+    font-size: 16px;
+    line-height: 2.15;
+  }
+
+  .half202607-empathy-text p {
+    margin-bottom: 28px;
+  }
+
+  .half202607-empathy-voice {
+    margin: 52px 0 46px;
+  }
+
+  .half202607-empathy-message {
+    font-size: 21px;
+    padding: 18px 22px;
+  }
+
+  .half202607-empathy-key {
+    font-size: 24px;
+    margin-top: 58px !important;
+  }
+}
