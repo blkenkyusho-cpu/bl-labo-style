@@ -1,96 +1,168 @@
-/* 7号食ハーフLP 2026年7月：共感ブロック */
+/* ==========================
+   共感ブロック
+========================== */
+
 .half202607-empathy {
-  background: #faf8f3;
-  padding: 90px 20px;
+  padding: 80px 20px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #faf8f2 100%
+  );
 }
 
 .half202607-empathy-inner {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .half202607-empathy-title {
-  font-size: 34px;
+  margin: 0 0 35px;
+  color: #4f5b4a;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.6;
-  text-align: center;
-  color: #4f5b4a;
-  margin: 0 0 55px;
-  letter-spacing: 0.06em;
-}
-
-.half202607-empathy-text {
-  font-size: 18px;
-  line-height: 2.25;
-  color: #555;
-  text-align: center;
-  letter-spacing: 0.04em;
-}
-
-.half202607-empathy-text p {
-  margin: 0 0 34px;
-}
-
-.half202607-empathy-voice {
-  margin: 64px 0 56px;
-  color: #666;
-}
-
-.half202607-empathy-voice p {
-  margin-bottom: 26px;
-}
-
-.half202607-empathy-message {
-  display: inline-block;
-  font-size: 26px;
-  line-height: 1.8;
-  color: #7a8b72;
-  font-weight: 600;
-  margin: 28px 0 48px !important;
-  padding: 22px 34px;
-  border-top: 1px solid #c9c1aa;
-  border-bottom: 1px solid #c9c1aa;
-}
-
-.half202607-empathy-key {
-  font-size: 30px;
-  line-height: 1.7;
-  color: #4f5b4a;
-  font-weight: 500;
-  margin: 72px 0 38px !important;
   letter-spacing: 0.08em;
 }
 
-@media screen and (max-width: 640px) {
+.half202607-empathy-lead {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  color: #5a5146;
+  font-size: 22px;
+  line-height: 2;
+}
+
+.half202607-empathy-text {
+  max-width: 620px;
+  margin: 0 auto 32px;
+  color: #5f5a52;
+  font-size: 17px;
+  line-height: 2.1;
+}
+
+.half202607-empathy-card {
+  max-width: 600px;
+  margin: 55px auto;
+  padding: 30px 35px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid #ece3d2;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.half202607-empathy-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.half202607-empathy-list li {
+  position: relative;
+  padding: 16px 0 16px 35px;
+  border-top: 1px solid #eee6d6;
+  text-align: left;
+  color: #5f5a52;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.half202607-empathy-list li:first-child {
+  border-top: none;
+}
+
+.half202607-empathy-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 5px;
+  top: 16px;
+  color: #91a171;
+  font-weight: bold;
+}
+
+.half202607-empathy-message {
+  max-width: 560px;
+  margin: 55px auto;
+  padding: 32px 25px;
+  background: #eef3e8;
+  border-radius: 24px;
+}
+
+.half202607-empathy-message-small {
+  margin: 0 0 10px;
+  color: #738065;
+  font-size: 16px;
+}
+
+.half202607-empathy-message-main {
+  margin: 0;
+  color: #4f6b43;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+.half202607-empathy-closing {
+  margin-top: 70px;
+  padding-top: 35px;
+  border-top: 1px solid #ddd2bc;
+}
+
+.half202607-empathy-closing-title {
+  margin: 0 0 30px;
+  color: #4f5b4a;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+
+/* ==========================
+   スマホ
+========================== */
+
+@media screen and (max-width: 767px) {
+
   .half202607-empathy {
-    padding: 64px 18px;
+    padding: 60px 18px;
   }
 
   .half202607-empathy-title {
-    font-size: 27px;
-    margin-bottom: 42px;
+    font-size: 28px;
+  }
+
+  .half202607-empathy-lead {
+    font-size: 18px;
+    line-height: 1.9;
   }
 
   .half202607-empathy-text {
     font-size: 16px;
-    line-height: 2.15;
+    line-height: 2;
   }
 
-  .half202607-empathy-text p {
-    margin-bottom: 28px;
+  .half202607-empathy-card {
+    padding: 26px 22px;
+    margin: 45px auto;
   }
 
-  .half202607-empathy-voice {
-    margin: 52px 0 46px;
+  .half202607-empathy-list li {
+    font-size: 15px;
+    padding-left: 30px;
   }
 
   .half202607-empathy-message {
-    font-size: 21px;
-    padding: 18px 22px;
+    padding: 28px 20px;
   }
 
-  .half202607-empathy-key {
-    font-size: 24px;
-    margin-top: 58px !important;
+  .half202607-empathy-message-main {
+    font-size: 22px;
   }
+
+  .half202607-empathy-closing-title {
+    font-size: 24px;
+  }
+
 }
