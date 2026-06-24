@@ -7,7 +7,7 @@
   background:linear-gradient(
     180deg,
     #ffffff 0%,
-    #f6fafc 100%
+    #eef8fd 100%
   );
 }
 
@@ -26,10 +26,24 @@
   letter-spacing:0.08em;
 }
 
+.half202607-empathy-title:after{
+  content:"";
+  display:block;
+  width:90px;
+  height:2px;
+  margin:28px auto 0;
+  background:linear-gradient(
+    90deg,
+    #b8d6e5,
+    #dbe7c8
+  );
+  border-radius:999px;
+}
+
 .half202607-empathy-lead{
   max-width:620px;
   margin:0 auto 30px;
-  color:#5a5146;
+  color:#4c5964;
   font-size:22px;
   line-height:2;
 }
@@ -42,65 +56,106 @@
   line-height:2.1;
 }
 
-/* つぶやき */
+/* ==========================
+   不安のつぶやき
+========================== */
 
 .half202607-empathy-voices{
-  max-width:520px;
-  margin:55px auto;
+  max-width:620px;
+  margin:60px auto;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
 }
 
 .half202607-empathy-voice{
-  position:relative;
-  margin-bottom:18px;
-  padding:18px 24px;
-  background:#ffffff;
-  border:1px solid #e9e4d9;
-  border-radius:18px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.04);
+  width:170px;
+  height:170px;
+  padding:22px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(255,255,255,0.9);
+  border:1px solid #e5eef2;
+  border-radius:50%;
+  box-shadow:
+    0 10px 30px rgba(111,144,165,0.10);
   color:#6a655c;
-  font-size:17px;
+  font-size:16px;
   line-height:1.8;
+  text-align:center;
 }
 
-.half202607-empathy-voice:last-child{
-  margin-bottom:0;
+.half202607-empathy-voice:nth-child(2){
+  margin-top:24px;
 }
 
-/* 前向きメッセージ */
+.half202607-empathy-voice:nth-child(3){
+  margin-top:6px;
+}
+
+/* ==========================
+   前向きな気持ち
+========================== */
 
 .half202607-empathy-message{
+  position:relative;
+  overflow:hidden;
   max-width:560px;
-  margin:55px auto;
-  padding:35px 30px;
+  margin:60px auto;
+  padding:40px 30px;
   background:linear-gradient(
     135deg,
-    #eef7fa 0%,
-    #f3f7eb 100%
+    #eaf7fd 0%,
+    #f3f8ec 100%
   );
-  border-radius:24px;
+  border-radius:30px;
+  box-shadow:
+    0 15px 40px rgba(116,156,178,0.12);
+}
+
+.half202607-empathy-message:before{
+  content:"";
+  position:absolute;
+  top:-60px;
+  left:-60px;
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.25);
 }
 
 .half202607-empathy-message-small{
+  position:relative;
+  z-index:2;
   margin:0 0 12px;
   color:#6f7d67;
   font-size:16px;
 }
 
 .half202607-empathy-message-main{
+  position:relative;
+  z-index:2;
   margin:0;
-  color:#4f6b43;
-  font-size:28px;
+  color:#55714d;
+  font-size:30px;
   font-weight:500;
   line-height:1.8;
-  letter-spacing:0.05em;
+  letter-spacing:0.08em;
+  text-shadow:
+    0 1px 1px rgba(255,255,255,0.7);
 }
 
-/* クロージング */
+/* ==========================
+   クロージング
+========================== */
 
 .half202607-empathy-closing{
   margin-top:70px;
   padding-top:35px;
-  border-top:1px solid #dcd5c8;
+  border-top:1px solid #d7e6ed;
 }
 
 .half202607-empathy-closing-title{
@@ -126,6 +181,11 @@
     font-size:28px;
   }
 
+  .half202607-empathy-title:after{
+    width:70px;
+    margin-top:22px;
+  }
+
   .half202607-empathy-lead{
     font-size:18px;
     line-height:1.9;
@@ -137,16 +197,27 @@
   }
 
   .half202607-empathy-voices{
+    max-width:340px;
+    gap:12px;
     margin:45px auto;
   }
 
   .half202607-empathy-voice{
-    padding:16px 20px;
-    font-size:15px;
+    width:145px;
+    height:145px;
+    padding:18px;
+    font-size:14px;
+    line-height:1.7;
+  }
+
+  .half202607-empathy-voice:nth-child(2),
+  .half202607-empathy-voice:nth-child(3){
+    margin-top:0;
   }
 
   .half202607-empathy-message{
-    padding:28px 20px;
+    padding:32px 22px;
+    margin:50px auto;
   }
 
   .half202607-empathy-message-main{
