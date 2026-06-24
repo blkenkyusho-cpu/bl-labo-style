@@ -3,7 +3,7 @@
 ========================== */
 
 .half202607-empathy{
-  padding:80px 20px;
+  padding:70px 20px 62px;
   background:linear-gradient(
     180deg,
     #ffffff 0%,
@@ -18,11 +18,11 @@
 }
 
 .half202607-empathy-title{
-  margin:0 0 35px;
+  margin:0 0 30px;
   color:#4f5b4a;
   font-size:36px;
   font-weight:500;
-  line-height:1.6;
+  line-height:1.45;
   letter-spacing:0.08em;
 }
 
@@ -31,7 +31,7 @@
   display:block;
   width:90px;
   height:2px;
-  margin:28px auto 0;
+  margin:24px auto 0;
   background:linear-gradient(
     90deg,
     #b8d6e5,
@@ -42,20 +42,20 @@
 
 .half202607-empathy-lead{
   max-width:640px;
-  margin:0 auto 30px;
+  margin:0 auto 24px;
   color:#47545e;
   font-size:22px;
   font-weight:500;
-  line-height:2;
+  line-height:1.85;
 }
 
 .half202607-empathy-text{
   max-width:640px;
-  margin:0 auto 32px;
+  margin:0 auto 24px;
   color:#555;
   font-size:17px;
   font-weight:500;
-  line-height:2.1;
+  line-height:1.9;
 }
 
 /* ==========================
@@ -64,7 +64,7 @@
 
 .half202607-empathy-voices{
   max-width:760px;
-  margin:62px auto;
+  margin:52px auto 46px;
   display:flex;
   justify-content:center;
   gap:42px;
@@ -87,7 +87,7 @@
   color:#5d5851;
   font-size:16px;
   font-weight:500;
-  line-height:1.8;
+  line-height:1.75;
   text-align:center;
   animation:half202607-float 6s ease-in-out infinite;
 }
@@ -123,8 +123,8 @@
   position:relative;
   overflow:hidden;
   max-width:580px;
-  margin:62px auto;
-  padding:42px 32px;
+  margin:46px auto 42px;
+  padding:34px 32px;
   background:linear-gradient(
     135deg,
     #eaf7fd 0%,
@@ -151,19 +151,24 @@
 .half202607-empathy-message-small{
   position:relative;
   z-index:2;
-  margin:0 0 12px;
+  margin:0 0 10px;
   color:#647760;
   font-size:16px;
   font-weight:500;
 }
 
 .half202607-empathy-message-main{
+  position:relative;
+  z-index:2;
+  margin:0;
   color:#52646f;
-  font-size:28px;
+  font-size:29px;
   font-weight:500;
-  line-height:1.8;
+  line-height:1.65;
   letter-spacing:0.05em;
   white-space:nowrap;
+  text-shadow:
+    0 1px 1px rgba(255,255,255,0.7);
 }
 
 .half202607-empathy-message-main span{
@@ -177,18 +182,26 @@
 ========================== */
 
 .half202607-empathy-closing{
-  margin-top:72px;
-  padding-top:36px;
+  margin-top:50px;
+  padding-top:32px;
   border-top:1px solid #d7e6ed;
 }
 
 .half202607-empathy-closing-title{
-  margin:0 0 30px;
+  margin:0 0 22px;
   color:#4f5b4a;
   font-size:30px;
   font-weight:500;
-  line-height:1.7;
+  line-height:1.5;
   letter-spacing:0.08em;
+}
+
+.half202607-empathy-closing .half202607-empathy-text{
+  margin-bottom:20px;
+}
+
+.half202607-empathy-closing .half202607-empathy-text:last-child{
+  margin-bottom:0;
 }
 
 /* ==========================
@@ -198,7 +211,7 @@
 @media screen and (max-width:767px){
 
   .half202607-empathy{
-    padding:60px 18px;
+    padding:56px 18px 50px;
   }
 
   .half202607-empathy-inner{
@@ -207,27 +220,30 @@
 
   .half202607-empathy-title{
     font-size:28px;
+    margin-bottom:26px;
   }
 
   .half202607-empathy-title:after{
     width:70px;
-    margin-top:22px;
+    margin-top:20px;
   }
 
   .half202607-empathy-lead{
     font-size:18px;
-    line-height:1.9;
+    line-height:1.8;
+    margin-bottom:22px;
   }
 
   .half202607-empathy-text{
     font-size:16px;
-    line-height:2;
+    line-height:1.85;
+    margin-bottom:22px;
   }
 
   .half202607-empathy-voices{
     max-width:360px;
     gap:14px;
-    margin:45px auto;
+    margin:40px auto 36px;
   }
 
   .half202607-empathy-voice{
@@ -235,7 +251,7 @@
     height:150px;
     padding:18px;
     font-size:14px;
-    line-height:1.7;
+    line-height:1.65;
     animation:none;
   }
 
@@ -246,18 +262,26 @@
   }
 
   .half202607-empathy-message{
-    padding:32px 22px;
-    margin:50px auto;
+    padding:28px 20px;
+    margin:40px auto 36px;
+    border-radius:34px 20px 34px 20px;
   }
 
   .half202607-empathy-message-main{
     font-size:22px;
+    line-height:1.7;
     white-space:normal;
     text-align:center;
   }
 
+  .half202607-empathy-closing{
+    margin-top:42px;
+    padding-top:28px;
+  }
+
   .half202607-empathy-closing-title{
     font-size:24px;
+    margin-bottom:20px;
   }
 
 }
