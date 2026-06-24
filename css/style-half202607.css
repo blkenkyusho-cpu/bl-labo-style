@@ -130,9 +130,11 @@
     #eaf7fd 0%,
     #f3f8ec 100%
   );
+  border:1px solid rgba(137, 181, 199, 0.45);
   border-radius:30px;
   box-shadow:
-    0 20px 50px rgba(116,156,178,0.16);
+    0 18px 45px rgba(87,137,160,0.18),
+    0 0 0 8px rgba(255,255,255,0.55);
 }
 
 .half202607-empathy-message:before{
