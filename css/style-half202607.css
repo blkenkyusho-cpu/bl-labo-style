@@ -379,7 +379,11 @@
 .half202607-review-card{
   margin:0 auto 34px;
   padding:34px 38px;
-  background:rgba(255,255,255,0.92);
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,0.96) 0%,
+    rgba(246,251,253,0.96) 100%
+  );
   border:1px solid #d7eaf1;
   border-radius:28px;
   box-shadow:0 14px 38px rgba(94,136,153,0.10);
@@ -392,7 +396,7 @@
 .half202607-review-card-title{
   margin:0 0 24px;
   padding-bottom:16px;
-  border-bottom:1px solid #d7eaf1;
+  border-bottom:1px solid #c8e4ee;
   color:#52646f;
   font-size:24px;
   font-weight:600;
