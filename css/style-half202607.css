@@ -309,13 +309,13 @@
 
 .half202607-review-bubble{
   position:relative;
-  width:220px;
+  width:228px;
   min-height:108px;
-  padding:20px 18px;
+  padding:20px 24px;
   box-sizing:border-box;
   display:flex;
   align-items:center;
-  justify-content:center;
+  justify-content:flex-start;
   background:#ffffff;
   border:2px solid #c9e3ed;
   border-radius:42px 38px 46px 36px;
@@ -323,6 +323,7 @@
   font-size:16px;
   font-weight:600;
   line-height:1.65;
+  text-align:left;
   box-shadow:0 12px 30px rgba(94,136,153,0.11);
 }
 
@@ -344,7 +345,7 @@
 }
 
 .half202607-review-bubble:nth-child(2){
-  margin-top:16px;
+  margin-top:10px;
   border-color:#cfe3c2;
   color:#5f7c55;
 }
