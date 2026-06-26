@@ -372,11 +372,11 @@
 ========================== */
 
 .half202607-review-voices-head{
-  margin:54px auto 38px;
+  margin:48px auto 26px;
   text-align:center;
-  color:#6f8791;
-  font-size:18px;
-  font-weight:600;
+  color:#5f7f8d;
+  font-size:20px;
+  font-weight:700;
   letter-spacing:0.08em;
 }
 
@@ -384,7 +384,7 @@
 .half202607-review-voices-head:after{
   content:"";
   display:inline-block;
-  width:70px;
+  width:76px;
   height:1px;
   background:#bfd9e4;
   vertical-align:middle;
