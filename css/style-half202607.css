@@ -368,6 +368,108 @@
 }
 
 /* ==========================
+   レビューカード本編
+========================== */
+
+.half202607-review-cards{
+  max-width:820px;
+  margin:54px auto 0;
+}
+
+.half202607-review-card{
+  margin:0 auto 34px;
+  padding:34px 38px;
+  background:#ffffff;
+  border:1px solid #eadfc8;
+  border-radius:28px;
+  box-shadow:0 14px 38px rgba(135,111,69,0.08);
+}
+
+.half202607-review-card:last-child{
+  margin-bottom:0;
+}
+
+.half202607-review-card-title{
+  margin:0 0 24px;
+  padding-bottom:16px;
+  border-bottom:1px solid #eee5d4;
+  color:#4f5b4a;
+  font-size:24px;
+  font-weight:600;
+  line-height:1.6;
+  letter-spacing:0.06em;
+  text-align:center;
+}
+
+.half202607-review-card-body{
+  max-width:700px;
+  margin:0 auto;
+}
+
+.half202607-review-card-body p{
+  margin:0 0 18px;
+  color:#555;
+  font-size:17px;
+  font-weight:500;
+  line-height:1.95;
+  text-align:left;
+}
+
+.half202607-review-card-body p:last-child{
+  margin-bottom:0;
+}
+
+/* ==========================
+   一言レビュー
+========================== */
+
+.half202607-review-more{
+  max-width:760px;
+  margin:46px auto 0;
+  padding:32px 34px;
+  background:rgba(255,255,255,0.72);
+  border:1px solid #e5ead9;
+  border-radius:28px;
+}
+
+.half202607-review-more-title{
+  margin:0 0 24px;
+  color:#4f5b4a;
+  font-size:22px;
+  font-weight:600;
+  line-height:1.6;
+  letter-spacing:0.06em;
+  text-align:center;
+}
+
+.half202607-review-more-list{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:14px 22px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.half202607-review-more-list li{
+  position:relative;
+  padding-left:28px;
+  color:#555;
+  font-size:16px;
+  font-weight:500;
+  line-height:1.7;
+}
+
+.half202607-review-more-list li:before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:0;
+  color:#8fa36f;
+  font-weight:700;
+}
+
+/* ==========================
    スマホ
 ========================== */
 
