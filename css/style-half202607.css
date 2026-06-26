@@ -379,10 +379,10 @@
 .half202607-review-card{
   margin:0 auto 34px;
   padding:34px 38px;
-  background:#ffffff;
-  border:1px solid #eadfc8;
+  background:rgba(255,255,255,0.92);
+  border:1px solid #d7eaf1;
   border-radius:28px;
-  box-shadow:0 14px 38px rgba(135,111,69,0.08);
+  box-shadow:0 14px 38px rgba(94,136,153,0.10);
 }
 
 .half202607-review-card:last-child{
@@ -392,8 +392,8 @@
 .half202607-review-card-title{
   margin:0 0 24px;
   padding-bottom:16px;
-  border-bottom:1px solid #eee5d4;
-  color:#4f5b4a;
+  border-bottom:1px solid #d7eaf1;
+  color:#52646f;
   font-size:24px;
   font-weight:600;
   line-height:1.6;
@@ -408,7 +408,7 @@
 
 .half202607-review-card-body p{
   margin:0 0 18px;
-  color:#555;
+  color:#4f565c;
   font-size:17px;
   font-weight:500;
   line-height:1.95;
@@ -427,14 +427,15 @@
   max-width:760px;
   margin:46px auto 0;
   padding:32px 34px;
-  background:rgba(255,255,255,0.72);
-  border:1px solid #e5ead9;
+  background:rgba(255,255,255,0.80);
+  border:1px solid #d7eaf1;
   border-radius:28px;
+  box-shadow:0 12px 34px rgba(94,136,153,0.08);
 }
 
 .half202607-review-more-title{
   margin:0 0 24px;
-  color:#4f5b4a;
+  color:#52646f;
   font-size:22px;
   font-weight:600;
   line-height:1.6;
@@ -454,7 +455,7 @@
 .half202607-review-more-list li{
   position:relative;
   padding-left:28px;
-  color:#555;
+  color:#4f565c;
   font-size:16px;
   font-weight:500;
   line-height:1.7;
@@ -465,7 +466,7 @@
   position:absolute;
   left:0;
   top:0;
-  color:#8fa36f;
+  color:#7fa6b6;
   font-weight:700;
 }
 
