@@ -372,30 +372,30 @@
 ========================== */
 
 .half202607-review-voices-head{
-  margin:54px auto 30px;
+  margin:54px auto 38px;
   text-align:center;
   color:#6f8791;
-  font-size:15px;
+  font-size:18px;
   font-weight:600;
-  letter-spacing:0.12em;
+  letter-spacing:0.08em;
 }
 
 .half202607-review-voices-head:before,
 .half202607-review-voices-head:after{
   content:"";
   display:inline-block;
-  width:42px;
+  width:70px;
   height:1px;
   background:#bfd9e4;
   vertical-align:middle;
 }
 
 .half202607-review-voices-head:before{
-  margin-right:14px;
+  margin-right:18px;
 }
 
 .half202607-review-voices-head:after{
-  margin-left:14px;
+  margin-left:18px;
 }
 
 .half202607-review-cards{
