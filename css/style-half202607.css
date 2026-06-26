@@ -309,13 +309,13 @@
 
 .half202607-review-bubble{
   position:relative;
-  width:228px;
-  min-height:108px;
-  padding:20px 24px;
+  width:232px;
+  min-height:106px;
+  padding:20px 22px;
   box-sizing:border-box;
   display:flex;
   align-items:center;
-  justify-content:flex-start;
+  justify-content:center;
   background:#ffffff;
   border:2px solid #c9e3ed;
   border-radius:42px 38px 46px 36px;
@@ -323,7 +323,7 @@
   font-size:16px;
   font-weight:600;
   line-height:1.65;
-  text-align:left;
+  text-align:center;
   box-shadow:0 12px 30px rgba(94,136,153,0.11);
 }
 
