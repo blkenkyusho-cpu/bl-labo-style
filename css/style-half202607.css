@@ -227,7 +227,7 @@
 .half202607-review-photo{
   max-width:760px;
   height:270px;
-  margin:0 auto 32px;
+  margin:0 auto 24px;
   border-radius:34px;
   overflow:hidden;
   box-shadow:0 16px 42px rgba(104,128,101,0.14);
@@ -271,7 +271,7 @@
   font-size:50px;
   font-weight:600;
   line-height:1.25;
-  letter-spacing:0.12em;
+  letter-spacing:0.08em;
 }
 
 .half202607-review-title:after{
