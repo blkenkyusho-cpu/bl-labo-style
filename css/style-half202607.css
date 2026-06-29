@@ -539,23 +539,26 @@
 
 .half202607-review-more-close{
   margin:36px auto 0;
+  width:100%;
+  text-align:center;
+}
+
+.half202607-review-more-close p{
+  margin:0;
   color:#52646f;
   font-size:19px;
   font-weight:600;
   line-height:1.9;
   letter-spacing:0.04em;
-  text-align:center !important;
-  width:100%;
+  text-align:center;
 }
 
-.half202607-review-more-close br{
-  display:block;
-}
-
-.half202607-review-more-close span{
+.half202607-review-more-close .half202607-review-more-message{
+  margin-top:4px;
   color:#6d9ea9;
-  font-size:1.15em;
+  font-size:24px;
   font-weight:700;
+  line-height:1.6;
 }
 
 /* スマホ */
