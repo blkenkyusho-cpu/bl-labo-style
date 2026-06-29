@@ -486,13 +486,13 @@
 .half202607-review-more-grid{
   display:grid;
   grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:18px 26px;
+  gap:22px 20px;
 }
 
 .half202607-review-more-item{
   position:relative;
   min-height:82px;
-  padding:20px 18px 20px 58px;
+  padding:20px 16px 20px 56px;
   box-sizing:border-box;
   display:flex;
   align-items:center;
@@ -509,7 +509,7 @@
 .half202607-review-more-item:before{
   content:"\2713";
   position:absolute;
-  left:20px;
+  left:18px;
   top:50%;
   transform:translateY(-50%);
   width:30px;
