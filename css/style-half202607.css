@@ -530,6 +530,7 @@
 .half202607-review-more-item span{
   color:#d86c7d;
   font-weight:700;
+  white-space:nowrap; 
 }
 
 /* ==========================
@@ -559,6 +560,8 @@
     padding:20px 20px 20px 68px;
     font-size:17px;
     border-radius:999px;
+    word-break:normal;
+    overflow-wrap:normal; 
   }
 
   .half202607-review-more-item:before{
