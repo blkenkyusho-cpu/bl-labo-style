@@ -503,6 +503,17 @@
   box-shadow:0 10px 30px rgba(94,136,153,0.10);
 }
 
+.half202607-review-more-text{
+  display:block;
+}
+
+.half202607-review-more-text em{
+  color:#d86c7d;
+  font-style:normal;
+  font-weight:700;
+  white-space:nowrap;
+}
+
 /* チェック丸 */
 .half202607-review-more-item:before{
   content:"✓";
