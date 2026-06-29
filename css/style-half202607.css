@@ -474,80 +474,61 @@
   text-align:center;
 }
 
-/* 2カラム */
 .half202607-review-more-grid{
   display:grid;
   grid-template-columns:repeat(2, minmax(0, 1fr));
   gap:22px 26px;
 }
 
-/* カード */
 .half202607-review-more-item{
   position:relative;
-  min-width:0;
-  min-height:92px;
-  padding:24px 26px 24px 78px;
+  min-height:82px;
+  padding:22px 22px 22px 64px;
   box-sizing:border-box;
   display:flex;
   align-items:center;
-
   background:#ffffff;
   border:1px solid #d7eaf1;
   border-radius:999px;
-
   color:#4f565c;
-  font-size:18px;
+  font-size:16px;
   font-weight:600;
-  line-height:1.6;
-
+  line-height:1.55;
   box-shadow:0 10px 30px rgba(94,136,153,0.10);
+  word-break:keep-all;
+}
+
+.half202607-review-more-item:before{
+  content:"\2713";
+  position:absolute;
+  left:22px;
+  top:50%;
+  transform:translateY(-50%);
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eaf7fd;
+  color:#6c9eb4;
+  font-size:18px;
+  font-weight:700;
 }
 
 .half202607-review-more-text{
   display:block;
+  color:#4f565c;
+  white-space:nowrap;
 }
 
 .half202607-review-more-text em{
   color:#d86c7d;
   font-style:normal;
   font-weight:700;
-  white-space:nowrap;
 }
 
-/* チェック丸 */
-.half202607-review-more-item:before{
-  content:"✓";
-  position:absolute;
-  left:24px;
-  top:50%;
-  transform:translateY(-50%);
-
-  width:38px;
-  height:38px;
-  border-radius:50%;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  background:#eaf7fd;
-  color:#6c9eb4;
-
-  font-size:22px;
-  font-weight:700;
-}
-
-/* 強調文字 */
-.half202607-review-more-item span{
-  color:#d86c7d;
-  font-weight:700;
-  white-space:nowrap; 
-}
-
-/* ==========================
-   スマホ
-========================== */
-
+/* スマホ */
 @media screen and (max-width:767px){
 
   .half202607-review-more{
@@ -567,20 +548,15 @@
   }
 
   .half202607-review-more-item{
-    min-height:82px;
-    padding:20px 20px 20px 68px;
-    font-size:17px;
-    border-radius:999px;
-    word-break:normal;
-    overflow-wrap:normal; 
+    min-height:76px;
+    padding:20px 20px 20px 62px;
+    font-size:16px;
   }
 
-  .half202607-review-more-item:before{
-    left:20px;
-    width:34px;
-    height:34px;
-    font-size:20px;
+  .half202607-review-more-text{
+    white-space:normal;
   }
+
 }
 
 /* ==========================
