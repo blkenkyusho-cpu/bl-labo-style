@@ -455,50 +455,86 @@
 ========================== */
 
 .half202607-review-more{
-  max-width:760px;
-  margin:46px auto 0;
-  padding:32px 34px;
-  background:rgba(255,255,255,0.80);
+  max-width:820px;
+  margin:50px auto 0;
+  padding:36px 34px;
+  background:rgba(255,255,255,0.55);
   border:1px solid #d7eaf1;
-  border-radius:28px;
-  box-shadow:0 12px 34px rgba(94,136,153,0.08);
+  border-radius:30px;
 }
 
 .half202607-review-more-title{
-  margin:0 0 24px;
+  margin:0 0 28px;
   color:#52646f;
-  font-size:22px;
-  font-weight:600;
+  font-size:24px;
+  font-weight:700;
   line-height:1.6;
   letter-spacing:0.06em;
   text-align:center;
 }
 
-.half202607-review-more-list{
+.half202607-review-more-grid{
   display:grid;
   grid-template-columns:repeat(2, 1fr);
-  gap:14px 22px;
-  margin:0;
-  padding:0;
-  list-style:none;
+  gap:18px 22px;
 }
 
-.half202607-review-more-list li{
+.half202607-review-more-item{
   position:relative;
-  padding-left:28px;
+  padding:20px 24px 20px 58px;
+  background:#ffffff;
+  border:1px solid #d7eaf1;
+  border-radius:999px;
   color:#4f565c;
-  font-size:16px;
-  font-weight:500;
-  line-height:1.7;
+  font-size:17px;
+  font-weight:600;
+  line-height:1.6;
+  box-shadow:0 10px 26px rgba(94,136,153,0.08);
 }
 
-.half202607-review-more-list li:before{
+.half202607-review-more-item:before{
   content:"✓";
   position:absolute;
-  left:0;
-  top:0;
-  color:#7fa6b6;
+  left:22px;
+  top:50%;
+  width:26px;
+  height:26px;
+  transform:translateY(-50%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eaf7fd;
+  border-radius:50%;
+  color:#5d7f8f;
+  font-size:16px;
   font-weight:700;
+}
+
+/* スマホ */
+@media screen and (max-width:767px){
+
+  .half202607-review-more{
+    margin-top:40px;
+    padding:30px 20px;
+    border-radius:24px;
+  }
+
+  .half202607-review-more-title{
+    font-size:21px;
+    margin-bottom:24px;
+  }
+
+  .half202607-review-more-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .half202607-review-more-item{
+    padding:18px 20px 18px 54px;
+    font-size:16px;
+    border-radius:28px;
+  }
+
 }
 
 /* ==========================
