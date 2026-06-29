@@ -455,12 +455,13 @@
 ========================== */
 
 .half202607-review-more{
-  max-width:820px;
-  margin:50px auto 0;
-  padding:36px 34px;
-  background:rgba(255,255,255,0.55);
-  border:1px solid #d7eaf1;
-  border-radius:30px;
+  max-width:860px;
+  margin:54px auto 0;
+  padding:44px 42px;
+  background:rgba(245,251,253,0.92);
+  border:1px solid #cfe5ee;
+  border-radius:34px;
+  box-shadow:0 16px 44px rgba(94,136,153,0.08);
 }
 
 .half202607-review-more-title{
@@ -474,39 +475,34 @@
 }
 
 .half202607-review-more-grid{
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  gap:18px 22px;
+  gap:22px 26px;
 }
 
 .half202607-review-more-item{
-  position:relative;
-  padding:20px 24px 20px 58px;
+  padding:22px 26px 22px 70px;
+  min-height:74px;
+  display:flex;
+  align-items:center;
   background:#ffffff;
   border:1px solid #d7eaf1;
   border-radius:999px;
-  color:#4f565c;
-  font-size:17px;
+  font-size:18px;
   font-weight:600;
-  line-height:1.6;
-  box-shadow:0 10px 26px rgba(94,136,153,0.08);
+  box-shadow:0 12px 30px rgba(94,136,153,0.10);
 }
 
 .half202607-review-more-item:before{
-  content:"✓";
-  position:absolute;
-  left:22px;
-  top:50%;
-  width:26px;
-  height:26px;
-  transform:translateY(-50%);
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  left:24px;
+  width:34px;
+  height:34px;
   background:#eaf7fd;
-  border-radius:50%;
-  color:#5d7f8f;
-  font-size:16px;
+  color:#5d8aa0;
+  font-size:20px;
+}
+
+.half202607-review-more-item span{
+  color:#d96373;
+  font-size:1.15em;
   font-weight:700;
 }
 
