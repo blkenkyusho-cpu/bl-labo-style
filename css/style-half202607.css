@@ -455,7 +455,7 @@
 ========================== */
 
 .half202607-review-more{
-  max-width:860px;
+  max-width:900px;
   margin:50px auto 0;
   padding:36px 40px 34px;
   background:rgba(245,251,253,0.92);
@@ -492,7 +492,7 @@
 .half202607-review-more-item{
   position:relative;
   min-height:82px;
-  padding:22px 22px 22px 64px;
+  padding:20px 18px 20px 58px;
   box-sizing:border-box;
   display:flex;
   align-items:center;
@@ -500,7 +500,7 @@
   border:1px solid #d7eaf1;
   border-radius:999px;
   color:#4f565c;
-  font-size:16px;
+  font-size:15.5px;
   font-weight:600;
   line-height:1.55;
   box-shadow:0 10px 30px rgba(94,136,153,0.10);
@@ -509,11 +509,11 @@
 .half202607-review-more-item:before{
   content:"\2713";
   position:absolute;
-  left:22px;
+  left:20px;
   top:50%;
   transform:translateY(-50%);
-  width:32px;
-  height:32px;
+  width:30px;
+  height:30px;
   border-radius:50%;
   display:flex;
   align-items:center;
