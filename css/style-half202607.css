@@ -467,7 +467,7 @@
 .half202607-review-more-title{
   margin:0 0 34px;
   color:#52646f;
-  font-size:32px;
+  font-size:26px;
   font-weight:700;
   line-height:1.5;
   letter-spacing:0.06em;
@@ -544,11 +544,18 @@
   font-weight:600;
   line-height:1.9;
   letter-spacing:0.04em;
-  text-align:center;
+  text-align:center !important;
+  width:100%;
 }
 
 .half202607-review-more-close br{
   display:block;
+}
+
+.half202607-review-more-close span{
+  color:#6d9ea9;
+  font-size:1.15em;
+  font-weight:700;
 }
 
 /* スマホ */
