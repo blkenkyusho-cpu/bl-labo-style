@@ -596,7 +596,7 @@
 }
 
 .half202607-cta-photo{
-  height:285px;
+  height:320px;
   overflow:hidden;
   border-radius:20px;
   box-shadow:0 12px 28px rgba(94,136,153,0.12);
@@ -702,21 +702,21 @@
 }
 
 .half202607-cta-product{
-  margin:0 0 4px;
-  color:#5f6b72;
-  font-size:15px;
-  font-weight:600;
+  margin:0 0 8px;
+  color:#4f565c;
+  font-size:18px;
+  font-weight:700;
 }
 
 .half202607-cta-period{
   display:inline-block;
   margin:0;
-  padding:5px 14px;
+  padding:7px 18px;
   background:#ffffff;
   border:1px solid #b8d6e5;
   border-radius:999px;
   color:#5d8aa0;
-  font-size:16px;
+  font-size:18px;
   font-weight:700;
 }
 
