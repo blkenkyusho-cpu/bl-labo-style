@@ -567,16 +567,16 @@
 
 .half202607-cta{
   padding:32px 0 46px;
-  background:#ffffff;
+  background:linear-gradient(180deg,#f4fbfd 0%,#eef8fd 100%);
 }
 
 .half202607-cta-inner{
   max-width:1080px;
   margin:0 auto;
-  padding:38px 42px;
+  padding:34px 36px;
   display:grid;
-  grid-template-columns:42% 58%;
-  gap:42px;
+  grid-template-columns:40% 60%;
+  gap:34px;
   align-items:center;
   background:#ffffff;
   border:1px solid #d7eaf1;
@@ -592,7 +592,7 @@
 }
 
 .half202607-cta-photo{
-  height:300px;
+  height:285px;
   overflow:hidden;
   border-radius:22px;
   box-shadow:0 12px 28px rgba(94,136,153,0.12);
@@ -635,6 +635,7 @@
 }
 
 .half202607-cta-text{
+  width:78%; 
   margin:0 0 20px;
   padding-top:16px;
   border-top:2px dotted #b8d6e5;
@@ -648,22 +649,23 @@
   margin:0;
   padding:17px 20px;
   text-align:center;
-  background:#fffdf8;
-  border:1px solid #f0cf9b;
+  background:#f08a25;
+  border:none;
+  color:#fff; 
   border-radius:18px;
   box-sizing:border-box;
 }
 
 .half202607-cta-coupon-small{
   margin:0 0 4px;
-  color:#18964f;
+  color:#fff;
   font-size:16px;
   font-weight:700;
 }
 
 .half202607-cta-coupon-main{
   margin:0;
-  color:#f08a25;
+  color:#fff;
   font-size:34px;
   font-weight:700;
   line-height:1.15;
@@ -671,13 +673,15 @@
 
 .half202607-cta-coupon-sub{
   margin:4px 0 0;
-  color:#4f4038;
+  color:#fff;
   font-size:17px;
   font-weight:700;
 }
 
 .half202607-cta-button{
-  display:block;
+  display:inline-block;
+  max-width:360px; 
+  width:100%; 
   padding:17px 22px;
   background:#06c755;
   color:#ffffff !important;
@@ -691,7 +695,7 @@
 }
 
 .half202607-cta-button:before{
-  content:"LINE";
+  content:none;
   display:inline-block;
   margin-right:10px;
   padding:4px 8px;
