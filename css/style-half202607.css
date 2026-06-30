@@ -671,6 +671,11 @@
   line-height:1.15;
 }
 
+.half202607-cta-coupon-main span{
+  font-size:0.7em;
+  letter-spacing:0.02em;
+}
+
 .half202607-cta-coupon-sub{
   margin:4px 0 0;
   color:#ffffff;
