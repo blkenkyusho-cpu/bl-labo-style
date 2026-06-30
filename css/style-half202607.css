@@ -722,19 +722,19 @@
 
 .half202607-cta-button{
   display:block;
-  width:82%;
-  max-width:360px;
+  width:88%;
+  max-width:390px;
   margin:0 auto;
-  padding:14px 18px;
+  padding:16px 20px;
   background:#06c755;
   color:#ffffff !important;
-  border-radius:13px;
+  border-radius:14px;
   text-align:center;
   text-decoration:none !important;
-  font-size:18px;
+  font-size:19px;
   font-weight:700;
   line-height:1.4;
-  box-shadow:0 10px 24px rgba(6,199,85,0.22);
+  box-shadow:0 12px 28px rgba(6,199,85,0.26);
   box-sizing:border-box;
 }
 
