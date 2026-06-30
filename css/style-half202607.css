@@ -566,12 +566,8 @@
 ========================== */
 
 .half202607-cta{
-  padding:54px 20px 70px;
-  background:linear-gradient(
-    180deg,
-    #f8fcfb 0%,
-    #eef8fd 100%
-  );
+  padding:42px 20px 56px;
+  background:#ffffff;
 }
 
 .half202607-cta-inner{
@@ -589,7 +585,7 @@
 
 .half202607-cta-photo{
   height:100%;
-  min-height:520px;
+  min-height:420px;
   overflow:hidden;
 }
 
@@ -598,7 +594,7 @@
   width:100%;
   height:100%;
   object-fit:cover;
-  object-position:center center;
+  object-position:center 45%;
 }
 
 .half202607-cta-content{
