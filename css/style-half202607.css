@@ -575,8 +575,8 @@
   margin:0 auto;
   padding:34px 36px;
   display:grid;
-  grid-template-columns:42% 58%;
-  gap:22px;
+  grid-template-columns:43% 57%;
+  gap:20px;
   align-items:center;
   background:linear-gradient(
     180deg,
