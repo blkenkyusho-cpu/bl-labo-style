@@ -684,8 +684,8 @@
 }
 
 .half202607-cta-content{
-  max-width:560px;
-  padding:0 18px;
+  max-width:none;
+  padding:0 10px;
   text-align:center;
   background:none;
   border:none;
@@ -723,6 +723,7 @@
 
 .half202607-cta-text{
   display:inline-block;
+  width:78%;
   margin:0 0 16px;
   padding-top:13px;
   border-top:2px dotted #b8d6e5;
@@ -730,6 +731,7 @@
   font-size:16px;
   font-weight:600;
   line-height:1.7;
+  box-sizing:border-box;
 }
 
 .half202607-cta-meta{
@@ -747,19 +749,19 @@
 .half202607-cta-period{
   display:inline-block;
   margin:0;
-  padding:7px 18px;
+  padding:8px 22px;
   background:#ffffff;
   border:1px solid #b8d6e5;
   border-radius:999px;
   color:#5d8aa0;
-  font-size:19px;
+  font-size:20px;
   font-weight:700;
 }
 
 .half202607-cta-button{
   display:block;
-  width:88%;
-  max-width:390px;
+  width:92%;
+  max-width:430px;
   margin:0 auto;
   padding:16px 20px;
   background:#06c755;
@@ -813,7 +815,7 @@
   }
 
   .half202607-cta-coupon{
-    padding:17px 18px;
+    padding:18px 18px;
   }
 
   .half202607-cta-coupon-main{
@@ -822,9 +824,8 @@
 
   .half202607-cta-content{
     max-width:none;
-    padding:24px 16px;
+    padding:0;
     text-align:center;
-    border-radius:18px;
   }
 
   .half202607-cta-sub{
@@ -841,12 +842,18 @@
 
   .half202607-cta-text{
     display:inline-block;
+    width:100%;
     font-size:15px;
     text-align:center;
   }
 
-  .half202607-cta-meta{
-    font-size:13px;
+  .half202607-cta-product{
+    font-size:16px;
+  }
+
+  .half202607-cta-period{
+    padding:7px 16px;
+    font-size:16px;
   }
 
   .half202607-cta-button{
@@ -857,10 +864,12 @@
   }
 
   .half202607-cta-note{
+    width:100%;
     text-align:left;
     font-size:11px;
   }
 }
+
 /* スマホ */
 @media screen and (max-width: 768px){
 
