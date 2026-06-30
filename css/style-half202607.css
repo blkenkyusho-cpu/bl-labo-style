@@ -723,7 +723,8 @@
 
 .half202607-cta-text{
   display:inline-block;
-  width:78%;
+  width:auto;
+  max-width:none;
   margin:0 0 16px;
   padding-top:13px;
   border-top:2px dotted #b8d6e5;
