@@ -573,20 +573,29 @@
 .half202607-cta-inner{
   max-width:1080px;
   margin:0 auto;
+  padding:38px 42px;
   display:grid;
   grid-template-columns:42% 58%;
+  gap:42px;
   align-items:center;
   background:#ffffff;
   border:1px solid #d7eaf1;
   border-radius:28px;
-  overflow:hidden;
   box-shadow:0 14px 38px rgba(94,136,153,0.10);
+  box-sizing:border-box;
+}
+
+.half202607-cta-left{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
 }
 
 .half202607-cta-photo{
-  height:360px;
-  min-height:0;
+  height:300px;
   overflow:hidden;
+  border-radius:22px;
+  box-shadow:0 12px 28px rgba(94,136,153,0.12);
 }
 
 .half202607-cta-photo img{
@@ -598,7 +607,7 @@
 }
 
 .half202607-cta-content{
-  padding:34px 42px;
+  padding:0;
   text-align:left;
 }
 
@@ -636,12 +645,13 @@
 }
 
 .half202607-cta-coupon{
-  margin:0 0 18px;
-  padding:16px 22px;
+  margin:0;
+  padding:17px 20px;
   text-align:center;
   background:#fffdf8;
   border:1px solid #f0cf9b;
   border-radius:18px;
+  box-sizing:border-box;
 }
 
 .half202607-cta-coupon-small{
@@ -700,63 +710,61 @@
 }
 
 /* スマホ */
-@media screen and (max-width:767px){
+@media screen and (max-width: 768px){
 
   .half202607-cta{
-    padding:42px 18px 54px;
+    padding:26px 0 40px;
   }
 
   .half202607-cta-inner{
+    width:calc(100% - 28px);
+    padding:24px 18px 26px;
     display:block;
-    border-radius:26px;
+    border-radius:22px;
+  }
+
+  .half202607-cta-left{
+    gap:14px;
+    margin-bottom:26px;
   }
 
   .half202607-cta-photo{
-    height:240px;
-    min-height:0;
-  }
-
-  .half202607-cta-photo img{
-    object-position:center center;
+    height:230px;
+    border-radius:18px;
   }
 
   .half202607-cta-content{
-    padding:34px 22px 30px;
     text-align:center;
   }
 
   .half202607-cta-sub{
-    font-size:16px;
+    font-size:14px;
   }
 
   .half202607-cta-title{
-    font-size:30px;
+    font-size:26px;
     line-height:1.45;
   }
 
   .half202607-cta-text{
-    font-size:16px;
-  }
-
-  .half202607-cta-coupon{
-    padding:20px 18px;
+    font-size:15px;
+    text-align:center;
   }
 
   .half202607-cta-coupon-main{
-    font-size:36px;
-  }
-
-  .half202607-cta-coupon-sub{
-    font-size:17px;
+    font-size:30px;
   }
 
   .half202607-cta-button{
-    font-size:18px;
-    padding:18px 16px;
+    font-size:17px;
+    padding:15px 14px;
   }
 
+  .half202607-cta-note{
+    text-align:left;
+    font-size:11px;
+  }
 }
-
 
 /* スマホ */
 @media screen and (max-width:767px){
