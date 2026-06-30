@@ -684,8 +684,8 @@
 }
 
 .half202607-cta-content{
-  max-width:500px;
-  padding:0 30px;
+  max-width:560px;
+  padding:0 18px;
   text-align:center;
   background:none;
   border:none;
@@ -779,8 +779,8 @@
 }
 
 .half202607-cta-note{
-  margin:12px auto 0;
-  width:95%;
+  margin:12px 0 0;
+  width:100%;
   color:#777;
   font-size:12px;
   line-height:1.7;
