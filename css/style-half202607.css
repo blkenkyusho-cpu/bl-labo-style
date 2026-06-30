@@ -613,7 +613,7 @@
 .half202607-cta-content{
   max-width:500px;
   padding:0 18px 0 0;
-  text-align:left;
+  text-align:center;
   box-sizing:border-box;
 }
 
@@ -645,10 +645,7 @@
   margin:0 0 20px;
   padding-top:12px;
   border-top:2px dotted #b8d6e5;
-  color:#4f565c;
-  font-size:16px;
-  font-weight:600;
-  line-height:1.7;
+  text-align:center;
 }
 
 .half202607-cta-coupon{
