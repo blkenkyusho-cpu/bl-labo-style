@@ -821,19 +821,21 @@
     margin:40px auto 36px;
   }
 
-  .half202607-empathy-voice{
-    width:150px;
-    height:150px;
-    padding:18px;
-    font-size:14px;
-    animation:none;
-  }
+.half202607-empathy-voice{
+  width:150px;
+  height:150px;
+  padding:18px;
+  font-size:14px;
+  animation:half202607-float 7s ease-in-out infinite;
+}
 
-  .half202607-empathy-voice:nth-child(1),
-  .half202607-empathy-voice:nth-child(2),
-  .half202607-empathy-voice:nth-child(3){
-    margin-top:0;
-  }
+.half202607-empathy-voice:nth-child(2){
+  animation-delay:1.5s;
+}
+
+.half202607-empathy-voice:nth-child(3){
+  animation-delay:3s;
+}
 
   .half202607-empathy-message{
     padding:28px 20px;
