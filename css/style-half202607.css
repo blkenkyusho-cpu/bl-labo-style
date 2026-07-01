@@ -900,15 +900,25 @@
     margin-bottom:0;
   }
 
-  .half202607-review-voices-head{
-    margin:40px auto 24px;
-    font-size:17px;
-  }
+.half202607-review-voices-head{
+  margin:40px auto 24px;
+  font-size:17px;
+  letter-spacing:0.03em;
+  white-space:nowrap;
+}
 
-  .half202607-review-voices-head:before,
-  .half202607-review-voices-head:after{
-    width:34px;
-  }
+.half202607-review-voices-head:before,
+.half202607-review-voices-head:after{
+  width:24px;
+}
+
+.half202607-review-voices-head:before{
+  margin-right:10px;
+}
+
+.half202607-review-voices-head:after{
+  margin-left:10px;
+}
 
   .half202607-review-cards{
     margin:36px auto 0;
