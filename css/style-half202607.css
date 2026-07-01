@@ -901,23 +901,29 @@
   }
 
 .half202607-review-voices-head{
-  margin:40px auto 24px;
-  font-size:17px;
-  letter-spacing:0.03em;
-  white-space:nowrap;
-}
-
-.half202607-review-voices-head:before,
-.half202607-review-voices-head:after{
-  width:24px;
+  position:relative;
+  margin:40px auto 30px;
+  padding-bottom:14px;
+  text-align:center;
+  color:#5f7f8d;
+  font-size:18px;
+  font-weight:700;
+  line-height:1.45;
+  letter-spacing:0.04em;
 }
 
 .half202607-review-voices-head:before{
-  margin-right:10px;
+  display:none;
 }
 
 .half202607-review-voices-head:after{
-  margin-left:10px;
+  content:"";
+  display:block;
+  width:120px;
+  height:2px;
+  margin:12px auto 0;
+  background:#bfd9e4;
+  border-radius:999px;
 }
 
   .half202607-review-cards{
