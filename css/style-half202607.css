@@ -926,15 +926,18 @@
   border-radius:999px;
 }
 
-  .half202607-review-cards{
-    margin:36px auto 0;
-  }
+.half202607-review-cards{
+  width:100%;
+  max-width:none;
+  margin:36px auto 0;
+}
 
-  .half202607-review-card{
-    padding:24px 16px;
-    margin-bottom:24px;
-    border-radius:22px;
-  }
+.half202607-review-card{
+  width:100%;
+  box-sizing:border-box;
+  padding:24px 16px;
+  margin-bottom:24px;
+}
 
   .half202607-review-card-title{
     font-size:20px;
