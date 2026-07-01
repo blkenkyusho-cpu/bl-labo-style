@@ -1042,7 +1042,7 @@
    小さいスマホ用（360px以下）
 ========================== */
 
-@media screen and (max-width:360px){
+@media screen and (max-width:400px){
 
   .half202607-empathy-voices{
     max-width:290px;
