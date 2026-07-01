@@ -1047,21 +1047,21 @@
 @media screen and (max-width:430px){
 
   .half202607-empathy-voices{
-    max-width:320px;
+    max-width:280px;
     width:100%;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:12px 10px;
+    gap:12px 8px;
     margin:36px auto 32px;
   }
 
   .half202607-empathy-voice{
-    width:138px;
-    height:138px;
-    padding:14px;
-    font-size:13px;
-    line-height:1.55;
+    width:126px;
+    height:126px;
+    padding:12px;
+    font-size:12.5px;
+    line-height:1.5;
     box-sizing:border-box;
   }
 
