@@ -111,7 +111,7 @@
     transform:translateY(0);
   }
   50%{
-    transform:translateY(-6px);
+    transform:translateY(-8px);
   }
 }
 
@@ -826,15 +826,15 @@
   height:150px;
   padding:18px;
   font-size:14px;
-  animation:half202607-float 5s ease-in-out infinite;
+  animation:half202607-float 4.8s ease-in-out infinite;
 }
 
 .half202607-empathy-voice:nth-child(2){
-  animation-delay:1.5s;
+  animation-duration:5.6s;
 }
 
 .half202607-empathy-voice:nth-child(3){
-  animation-delay:3s;
+  animation-duration:6.4s;
 }
 
   .half202607-empathy-message{
