@@ -1037,3 +1037,32 @@
   }
 
 }
+
+/* ==========================
+   小さいスマホ用（360px以下）
+========================== */
+
+@media screen and (max-width:360px){
+
+  .half202607-empathy-voices{
+    max-width:290px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin:36px auto 32px;
+  }
+
+  .half202607-empathy-voice{
+    width:138px;
+    height:138px;
+    padding:16px;
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .half202607-empathy-voice:nth-child(3){
+    margin-top:0;
+  }
+
+}
