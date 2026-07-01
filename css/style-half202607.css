@@ -998,204 +998,86 @@
   }
    
 /* ==========================
-   CTAブロック：スマホ用
+   CTAブロック（スマホ）
 ========================== */
 
-.half202607-cta-sp{
-  padding:20px 0 38px;
-  background:#ffffff;
+.half202607-cta{
+  padding:20px 0 36px;
 }
 
 .half202607-cta-sp-inner{
-  width:calc(100% - 28px);
+  width:calc(100% - 16px);
   margin:0 auto;
-  padding:22px 16px 24px;
-  background:linear-gradient(
-    180deg,
-    #f8fcfd 0%,
-    #eef8fd 100%
-  );
-  border:1px solid #d7eaf1;
+  padding:20px 12px 22px;
   border-radius:22px;
-  box-shadow:0 12px 30px rgba(94,136,153,0.10);
   box-sizing:border-box;
-  text-align:center;
 }
 
+/* ---------- 順番 ---------- */
+
 .half202607-cta-sp-sub{
-  display:inline-block;
-  margin:0 0 12px;
+  margin-bottom:14px;
   padding:7px 14px;
-  background:#7fb6d6;
-  color:#ffffff;
-  border-radius:999px;
   font-size:14px;
-  font-weight:700;
-  line-height:1.4;
   letter-spacing:0.04em;
 }
 
 .half202607-cta-sp-title{
-  margin:0 0 12px;
-  color:#4d4038;
-  font-size:24px;
-  font-weight:500;
-  line-height:1.42;
-  letter-spacing:0.05em;
-}
-
-.half202607-cta-sp-title span{
-  color:#5d8aa0;
-  font-size:1.08em;
-  font-weight:700;
+  margin-bottom:12px;
+  font-size:25px;
+  line-height:1.45;
 }
 
 .half202607-cta-sp-text{
-  display:inline-block;
-  margin:0 0 16px;
-  padding-top:11px;
-  border-top:2px dotted #b8d6e5;
-  color:#4f565c;
+  margin-bottom:20px;
   font-size:15px;
-  font-weight:600;
-  line-height:1.65;
+  line-height:1.8;
 }
 
 .half202607-cta-sp-photo{
-  height:200px;
-  margin:0 0 10px;
-  overflow:hidden;
+  order:4;
+  height:210px;
+  margin-bottom:16px;
   border-radius:18px;
-  box-shadow:0 10px 24px rgba(94,136,153,0.12);
-}
-
-.half202607-cta-sp-photo img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center 42%;
 }
 
 .half202607-cta-sp-coupon{
-  position:relative;
-  margin:0 0 18px;
-  padding:14px 16px;
-  text-align:center;
-  background:linear-gradient(
-    135deg,
-    #ffb23f 0%,
-    #f28a22 55%,
-    #e97818 100%
-  );
-  border:2px solid rgba(255,255,255,0.75);
-  border-radius:18px;
-  box-shadow:
-    0 10px 22px rgba(240,138,37,0.22),
-    inset 0 1px 0 rgba(255,255,255,0.35);
-  box-sizing:border-box;
-  overflow:hidden;
-}
-
-.half202607-cta-sp-coupon:before{
-  content:"";
-  position:absolute;
-  inset:9px;
-  border:1px dashed rgba(255,255,255,0.55);
-  border-radius:13px;
-  pointer-events:none;
-}
-
-.half202607-cta-sp-coupon:after{
-  content:"";
-  position:absolute;
-  top:-45%;
-  left:-25%;
-  width:55%;
-  height:180%;
-  background:linear-gradient(
-    90deg,
-    rgba(255,255,255,0) 0%,
-    rgba(255,255,255,0.22) 50%,
-    rgba(255,255,255,0) 100%
-  );
-  transform:rotate(18deg);
-  pointer-events:none;
-}
-
-.half202607-cta-sp-coupon-small{
-  margin:0 0 3px;
-  color:#ffffff;
-  font-size:14px;
-  font-weight:700;
+  order:5;
+  padding:18px;
+  margin-bottom:18px;
 }
 
 .half202607-cta-sp-coupon-main{
-  margin:0;
-  color:#ffffff;
   font-size:30px;
-  font-weight:700;
-  line-height:1.12;
-}
-
-.half202607-cta-sp-coupon-main span{
-  font-size:0.7em;
-  letter-spacing:0.02em;
-}
-
-.half202607-cta-sp-coupon-sub{
-  margin:3px 0 0;
-  color:#ffffff;
-  font-size:15px;
-  font-weight:700;
 }
 
 .half202607-cta-sp-meta{
-  margin:0 0 18px;
-  line-height:1.55;
+  order:6;
+  margin-bottom:16px;
 }
 
 .half202607-cta-sp-product{
-  margin:0 0 7px;
-  color:#4f565c;
   font-size:16px;
-  font-weight:700;
 }
 
 .half202607-cta-sp-period{
-  display:inline-block;
-  margin:0;
   padding:7px 16px;
-  background:#ffffff;
-  border:1px solid #b8d6e5;
-  border-radius:999px;
-  color:#5d8aa0;
   font-size:16px;
-  font-weight:700;
 }
 
 .half202607-cta-sp-button{
-  display:block;
+  order:7;
   width:100%;
-  margin:0 auto;
-  padding:15px 14px;
-  background:#06c755;
-  color:#ffffff !important;
-  border-radius:14px;
-  text-align:center;
-  text-decoration:none !important;
   font-size:17px;
-  font-weight:700;
-  line-height:1.4;
-  box-shadow:0 12px 28px rgba(6,199,85,0.26);
-  box-sizing:border-box;
+  padding:15px 14px;
+  margin-bottom:14px;
 }
 
 .half202607-cta-sp-note{
-  margin:11px 0 0;
-  color:#777;
+  order:8;
+  width:100%;
   font-size:11px;
-  line-height:1.65;
+  line-height:1.8;
   text-align:left;
 }
 }   
