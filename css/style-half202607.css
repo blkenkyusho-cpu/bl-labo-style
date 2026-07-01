@@ -1007,9 +1007,9 @@
 }
 
 .half202607-cta-sp-inner{
-  width:calc(100% - 16px);
+  width:calc(100% - 8px);
   margin:0 auto;
-  padding:20px 12px 22px;
+  padding:20px 10px 22px;
   background:linear-gradient(180deg,#f8fcfd 0%,#eef8fd 100%);
   border:1px solid #d7eaf1;
   border-radius:22px;
