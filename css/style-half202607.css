@@ -1160,7 +1160,20 @@
   line-height:1.4;
   box-shadow:0 12px 28px rgba(6,199,85,0.26);
   box-sizing:border-box;
+  animation:half202607-line-pulse 2.6s ease-in-out infinite; 
 }
+
+@keyframes half202607-line-pulse{
+  0%,100%{
+    background:#06c755;
+    box-shadow:0 12px 28px rgba(6,199,85,0.26);
+  }
+
+  50%{
+    background:#08d85f;
+    box-shadow:0 14px 34px rgba(6,199,85,0.42);
+  }
+}   
 
 .half202607-cta-sp-note{
   margin:11px 0 0;
