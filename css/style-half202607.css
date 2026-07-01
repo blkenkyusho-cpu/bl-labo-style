@@ -1045,20 +1045,24 @@
 @media screen and (max-width:400px){
 
   .half202607-empathy-voices{
-    max-width:290px;
+    max-width:320px;
+    width:100%;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:12px;
+    gap:12px 10px;
     margin:36px auto 32px;
   }
 
   .half202607-empathy-voice{
-    width:138px;
-    height:138px;
-    padding:16px;
-    font-size:14px;
-    line-height:1.5;
+    width:46%;
+    max-width:138px;
+    aspect-ratio:1 / 1;
+    height:auto;
+    padding:14px;
+    font-size:13px;
+    line-height:1.55;
+    box-sizing:border-box;
   }
 
   .half202607-empathy-voice:nth-child(3){
