@@ -973,14 +973,14 @@
   .half202607-review-more-item{
     min-height:58px;
     padding:14px 14px 14px 50px;
-    font-size:15px;
+    font-size:14.7px;
     line-height:1.45;
   }
 
   .half202607-review-more-item:before{
-    left:15px;
-    width:26px;
-    height:26px;
+    left:14px;
+    width:24px;
+    height:24px;
     font-size:16px;
   }
 
