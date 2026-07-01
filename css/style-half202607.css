@@ -790,12 +790,182 @@
   text-align:left;
 }
 
-/* スマホ */
-@media screen and (max-width: 768px){
+/* ==========================
+   スマホ
+========================== */
+
+@media screen and (max-width:767px){
+
+  .half202607-empathy{
+    padding:56px 18px 50px;
+  }
+
+  .half202607-empathy-title{
+    font-size:28px;
+    margin-bottom:26px;
+  }
+
+  .half202607-empathy-lead{
+    font-size:18px;
+    line-height:1.8;
+  }
+
+  .half202607-empathy-text{
+    font-size:16px;
+    line-height:1.85;
+  }
+
+  .half202607-empathy-voices{
+    max-width:360px;
+    gap:14px;
+    margin:40px auto 36px;
+  }
+
+  .half202607-empathy-voice{
+    width:150px;
+    height:150px;
+    padding:18px;
+    font-size:14px;
+    animation:none;
+  }
+
+  .half202607-empathy-voice:nth-child(1),
+  .half202607-empathy-voice:nth-child(2),
+  .half202607-empathy-voice:nth-child(3){
+    margin-top:0;
+  }
+
+  .half202607-empathy-message{
+    padding:28px 20px;
+    margin:40px auto 36px;
+    border-radius:34px 20px;
+  }
+
+  .half202607-empathy-message-main{
+    font-size:22px;
+    white-space:normal;
+  }
+
+  .half202607-empathy-closing-title{
+    font-size:24px;
+  }
+
+  .half202607-review{
+    padding:46px 18px 34px;
+  }
+
+  .half202607-review-photo{
+    height:210px;
+    margin-bottom:36px;
+    border-radius:24px;
+  }
+
+  .half202607-review-title span{
+    font-size:22px;
+  }
+
+  .half202607-review-title strong{
+    font-size:36px;
+  }
+
+  .half202607-review-text{
+    font-size:16px;
+    line-height:1.85;
+    margin-bottom:18px;
+  }
+
+  .half202607-review-bubbles{
+    display:block;
+    max-width:320px;
+    margin:36px auto 34px;
+  }
+
+  .half202607-review-bubble{
+    width:100%;
+    min-height:auto;
+    padding:22px 20px;
+    margin:0 auto 24px;
+    font-size:16px;
+  }
+
+  .half202607-review-bubble:nth-child(1),
+  .half202607-review-bubble:nth-child(2),
+  .half202607-review-bubble:nth-child(3){
+    margin-top:0;
+  }
+
+  .half202607-review-bubble:last-child{
+    margin-bottom:0;
+  }
+
+  .half202607-review-voices-head{
+    margin:40px auto 24px;
+    font-size:17px;
+  }
+
+  .half202607-review-voices-head:before,
+  .half202607-review-voices-head:after{
+    width:34px;
+  }
+
+  .half202607-review-cards{
+    margin:36px auto 0;
+  }
+
+  .half202607-review-card{
+    padding:26px 22px;
+    margin-bottom:28px;
+    border-radius:22px;
+  }
+
+  .half202607-review-card-title{
+    font-size:20px;
+  }
+
+  .half202607-review-card-body p{
+    font-size:16px;
+    line-height:1.9;
+  }
+
+  .half202607-review-more{
+    margin-top:34px;
+    padding:30px 18px 28px;
+    border-radius:26px;
+  }
+
+  .half202607-review-more-title{
+    font-size:23px;
+  }
+
+  .half202607-review-more-title:after{
+    width:220px;
+  }
+
+  .half202607-review-more-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .half202607-review-more-item{
+    min-height:76px;
+    padding:20px 18px 20px 58px;
+    font-size:15.5px;
+  }
+
+  .half202607-review-more-close{
+    margin-top:28px;
+  }
+
+  .half202607-review-more-close p{
+    font-size:16px;
+  }
+
+  .half202607-review-more-close .half202607-review-more-message{
+    font-size:22px;
+  }
 
   .half202607-cta{
-    padding:26px 0 40px;
-    background:#ffffff;
+    padding:24px 0 42px;
   }
 
   .half202607-cta-inner{
@@ -807,7 +977,7 @@
 
   .half202607-cta-left{
     gap:14px;
-    margin-bottom:24px;
+    margin-bottom:26px;
   }
 
   .half202607-cta-photo{
@@ -824,7 +994,6 @@
   }
 
   .half202607-cta-content{
-    max-width:none;
     padding:0;
     text-align:center;
   }
@@ -842,10 +1011,7 @@
   }
 
   .half202607-cta-text{
-    display:inline-block;
-    width:100%;
     font-size:15px;
-    text-align:center;
   }
 
   .half202607-cta-product{
@@ -866,314 +1032,8 @@
 
   .half202607-cta-note{
     width:100%;
-    text-align:left;
     font-size:11px;
-  }
-}
-
-/* スマホ */
-@media screen and (max-width: 768px){
-
-  .half202607-cta{
-    padding:26px 0 40px;
-  }
-
-  .half202607-cta-inner{
-    width:calc(100% - 28px);
-    padding:24px 18px 26px;
-    display:block;
-    border-radius:22px;
-  }
-
-  .half202607-cta-left{
-    gap:14px;
-    margin-bottom:26px;
-  }
-
-  .half202607-cta-photo{
-    height:230px;
-    border-radius:18px;
-  }
-
-  .half202607-cta-content{
-    text-align:center;
-  }
-
-  .half202607-cta-sub{
-    font-size:14px;
-  }
-
-  .half202607-cta-title{
-    font-size:26px;
-    line-height:1.45;
-  }
-
-  .half202607-cta-text{
-    font-size:15px;
-    text-align:center;
-  }
-
-  .half202607-cta-coupon-main{
-    font-size:30px;
-  }
-
-  .half202607-cta-button{
-    font-size:17px;
-    padding:15px 14px;
-  }
-
-  .half202607-cta-note{
     text-align:left;
-    font-size:11px;
-  }
-}
-
-/* スマホ */
-@media screen and (max-width:767px){
-
-  .half202607-review-more{
-    margin-top:40px;
-    padding:32px 20px 34px;
-    border-radius:26px;
-  }
-
-  .half202607-review-more-title{
-    margin-bottom:28px;
-    font-size:26px;
-  }
-
-  .half202607-review-more-title:after{
-    width:240px;
-    margin-top:12px;
-  }
-
-  .half202607-review-more-grid{
-    grid-template-columns:1fr;
-    gap:16px;
-  }
-
-  .half202607-review-more-item{
-    min-height:76px;
-    padding:20px 20px 20px 62px;
-    font-size:16px;
-  }
-
-  .half202607-review-more-close{
-    margin-top:30px;
-    font-size:17px;
-  }
-
-}
-
-/* ==========================
-   スマホ
-========================== */
-
-@media screen and (max-width:767px){
-
-  .half202607-review{
-    padding:34px 18px 34px;
-  }
-
-  .half202607-review-photo{
-    height:210px;
-    margin-bottom:30px;
-    border-radius:24px;
-  }
-
-  .half202607-review-photo img{
-    object-position:center 40%;
-  }
-
-  .half202607-review-title{
-    margin-bottom:24px;
-  }
-
-  .half202607-review-title span{
-    font-size:21px;
-  }
-
-  .half202607-review-title strong{
-    font-size:36px;
-    letter-spacing:0.08em;
-  }
-
-  .half202607-review-title:after{
-    width:76px;
-    margin-top:18px;
-  }
-
-  .half202607-review-text{
-    font-size:16px;
-    line-height:1.75;
-    margin-bottom:16px;
-  }
-
-  .half202607-review-bubbles{
-    display:block;
-    max-width:320px;
-    margin:32px auto 30px;
-  }
-
-  .half202607-review-bubble{
-    width:100%;
-    min-height:auto;
-    padding:20px 18px;
-    margin:0 auto 22px;
-    font-size:16px;
-    border-radius:34px 30px 38px 30px;
-  }
-
-  .half202607-review-bubble:nth-child(1),
-  .half202607-review-bubble:nth-child(2),
-  .half202607-review-bubble:nth-child(3){
-    margin-top:0;
-  }
-
-  .half202607-review-bubble:last-child{
-    margin-bottom:0;
-  }
-
-}
-
-
-@media screen and (max-width:767px){
-
-  .half202607-review{
-    padding:58px 18px 36px;
-  }
-
-  .half202607-review-photo{
-    margin-bottom:42px;
-    border-radius:24px;
-  }
-
-  .half202607-review-title{
-    margin-bottom:28px;
-  }
-
-  .half202607-review-title span{
-    font-size:22px;
-  }
-
-  .half202607-review-title strong{
-    font-size:36px;
-  }
-
-  .half202607-review-title:after{
-    width:76px;
-    margin-top:22px;
-  }
-
-  .half202607-review-text{
-    font-size:16px;
-    line-height:1.85;
-    margin-bottom:20px;
-  }
-
-  .half202607-review-bubbles{
-    display:block;
-    max-width:320px;
-    margin:38px auto 36px;
-  }
-
-  .half202607-review-bubble{
-    width:100%;
-    min-height:auto;
-    padding:22px 20px;
-    margin:0 auto 24px;
-    font-size:17px;
-    border-radius:34px 30px 38px 30px;
-  }
-
-  .half202607-review-bubble:nth-child(2){
-    margin-top:0;
-  }
-
-  .half202607-review-bubble:last-child{
-    margin-bottom:0;
-  }
-
-}
-
-/* ==========================
-   スマホ
-========================== */
-
-@media screen and (max-width:767px){
-
-  .half202607-empathy{
-    padding:56px 18px 50px;
-  }
-
-  .half202607-empathy-inner{
-    max-width:100%;
-  }
-
-  .half202607-empathy-title{
-    font-size:28px;
-    margin-bottom:26px;
-  }
-
-  .half202607-empathy-title:after{
-    width:70px;
-    margin-top:20px;
-  }
-
-  .half202607-empathy-lead{
-    font-size:18px;
-    line-height:1.8;
-    margin-bottom:22px;
-  }
-
-  .half202607-empathy-text{
-    font-size:16px;
-    line-height:1.85;
-    margin-bottom:22px;
-  }
-
-  .half202607-empathy-voices{
-    max-width:360px;
-    gap:14px;
-    margin:40px auto 36px;
-  }
-
-  .half202607-empathy-voice{
-    width:150px;
-    height:150px;
-    padding:18px;
-    font-size:14px;
-    line-height:1.65;
-    animation:none;
-  }
-
-  .half202607-empathy-voice:nth-child(1),
-  .half202607-empathy-voice:nth-child(2),
-  .half202607-empathy-voice:nth-child(3){
-    margin-top:0;
-  }
-
-  .half202607-empathy-message{
-    padding:28px 20px;
-    margin:40px auto 36px;
-    border-radius:34px 20px 34px 20px;
-  }
-
-  .half202607-empathy-message-main{
-    font-size:22px;
-    line-height:1.7;
-    white-space:normal;
-    text-align:center;
-  }
-
-  .half202607-empathy-closing{
-    margin-top:42px;
-    padding-top:28px;
-  }
-
-  .half202607-empathy-closing-title{
-    font-size:24px;
-    margin-bottom:20px;
   }
 
 }
