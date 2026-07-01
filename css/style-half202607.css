@@ -967,21 +967,21 @@
 
   .half202607-review-more-grid{
     grid-template-columns:1fr;
-    gap:12px;
+    gap:8px;
   }
 
   .half202607-review-more-item{
-    min-height:64px;
-    padding:16px 16px 16px 52px;
+    min-height:58px;
+    padding:14px 14px 14px 50px;
     font-size:15px;
-    line-height:1.5;
+    line-height:1.45;
   }
 
   .half202607-review-more-item:before{
-    left:16px;
-    width:28px;
-    height:28px;
-    font-size:17px;
+    left:15px;
+    width:26px;
+    height:26px;
+    font-size:16px;
   }
 
   .half202607-review-more-close{
