@@ -1041,10 +1041,10 @@
 }
 
 /* ==========================
-   小さいスマホ用（360px以下）
+   小型スマホ用（430px以下）
 ========================== */
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
 
   .half202607-empathy-voices{
     max-width:320px;
