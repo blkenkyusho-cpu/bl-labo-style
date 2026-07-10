@@ -126,7 +126,7 @@ PC・スマホは別テンプレートで読み込み。
 ======================================== */
 
 .g7-rule-section{
-  margin:0 0 38px;
+  margin:0 0 30px;
 }
 
 .g7-rule-section:last-child{
@@ -140,7 +140,7 @@ PC・スマホは別テンプレートで読み込み。
   display:flex;
   align-items:center;
   gap:10px;
-  margin:0 0 20px;
+  margin:0 0 14px;
   padding:0;
   color:#315766;
   font-size:24px;
@@ -175,10 +175,12 @@ PC・スマホは別テンプレートで読み込み。
   list-style:none;
 }
 
+/* ルールカード全体 */
+
 .g7-rule-list > li{
   position:relative;
-  margin:0 0 16px;
-  padding:20px 22px 20px 68px;
+  margin:0 0 12px;
+  padding:16px 20px 16px 66px;
   background:#f7fcfe;
   border:1px solid #cfe9f1;
   border-radius:12px;
@@ -189,11 +191,14 @@ PC・スマホは別テンプレートで読み込み。
   margin-bottom:0;
 }
 
+
+/* カード内の番号 */
+
 .g7-rule-list > li::before{
   counter-increment:g7RuleCounter;
   content:counter(g7RuleCounter);
   position:absolute;
-  top:20px;
+  top:17px;
   left:20px;
   display:flex;
   align-items:center;
@@ -208,19 +213,25 @@ PC・スマホは別テンプレートで読み込み。
   line-height:1;
 }
 
+
+/* カード内の見出し */
+
 .g7-rule-item-title{
-  margin:0 0 6px !important;
+  margin:0 0 4px !important;
   color:#315766;
   font-size:19px;
   font-weight:700;
-  line-height:1.6;
+  line-height:1.5;
 }
+
+
+/* カード内の説明文 */
 
 .g7-rule-item-text{
   margin:0 !important;
   color:#4d4d4d;
   font-size:17px;
-  line-height:1.85;
+  line-height:1.7;
 }
 
 
