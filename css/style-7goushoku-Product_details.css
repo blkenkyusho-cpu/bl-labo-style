@@ -180,7 +180,7 @@ PC・スマホは別テンプレートで読み込み。
 .g7-rule-list > li{
   position:relative;
   margin:0 0 12px;
-  padding:16px 20px 16px 66px;
+  padding:14px 16px 14px 60px;
   background:#f7fcfe;
   border:1px solid #cfe9f1;
   border-radius:12px;
@@ -198,8 +198,8 @@ PC・スマホは別テンプレートで読み込み。
   counter-increment:g7RuleCounter;
   content:counter(g7RuleCounter);
   position:absolute;
-  top:17px;
-  left:20px;
+  top:15px;
+  left:16px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -219,9 +219,9 @@ PC・スマホは別テンプレートで読み込み。
 .g7-rule-item-title{
   margin:0 0 4px !important;
   color:#315766;
-  font-size:19px;
+  font-size:18px;
   font-weight:700;
-  line-height:1.5;
+  line-height:1.45;
 }
 
 
@@ -230,8 +230,8 @@ PC・スマホは別テンプレートで読み込み。
 .g7-rule-item-text{
   margin:0 !important;
   color:#4d4d4d;
-  font-size:17px;
-  line-height:1.7;
+  font-size:16px;
+  line-height:1.6;
 }
 
 
