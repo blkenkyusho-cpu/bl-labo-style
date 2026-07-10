@@ -166,19 +166,19 @@ PC・スマホは別テンプレートで読み込み。
 }
 
 .g7-rule-title-a .g7-rule-title-number{
-  background:linear-gradient(135deg,#65bdd3,#58c3b3);
+  background:linear-gradient(135deg,#66b89c,#5fc3b2);
 }
 
 .g7-rule-title-b .g7-rule-title-number{
-  background:linear-gradient(135deg,#6fc3d6,#6ecf9a);
+  background:linear-gradient(135deg,#63b6d9,#4fb6c8);
 }
 
 .g7-rule-title-c .g7-rule-title-number{
-  background:linear-gradient(135deg,#7bbfd7,#7ab6e6);
+  background:linear-gradient(135deg,#7aaed6,#6fb9cf);
 }
 
 .g7-rule-title-d .g7-rule-title-number{
-  background:linear-gradient(135deg,#b9b089,#9dc29a);
+  background:linear-gradient(135deg,#a8b89a,#b8b07f);
 }
 
 /* 基本ルール・追加ルール */
