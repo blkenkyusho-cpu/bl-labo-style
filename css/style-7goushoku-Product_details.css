@@ -1,0 +1,333 @@
+/*７号食セットページ用*/
+
+.g7-section-heading{
+  position:relative;
+  margin:42px 0 24px;
+  padding:14px 20px 14px 26px;
+  background:linear-gradient(135deg,#eef8fd,#dff1fb);
+  border-radius:10px;
+  color:#2d4d5a;
+  font-size:34px;
+  font-weight:700;
+  line-height:1.4;
+  letter-spacing:.03em;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+
+.g7-section-heading::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:10px;
+  height:100%;
+  border-radius:10px 0 0 10px;
+
+  background:linear-gradient(
+    to bottom,
+    #63b6d9 0%,
+    #4fc3c7 45%,
+    #63c76a 70%,
+    #4fc3c7 85%,
+    #63b6d9 100%
+  );
+
+  background-size:100% 250%;
+  animation:g7HeadingLineFlow 4.8s ease-in-out infinite;
+}
+
+@keyframes g7HeadingLineFlow{
+
+  0%,100%{
+    background-position:0 0%;
+  }
+
+  50%{
+    background-position:0 100%;
+  }
+}
+
+.g7-section-body{
+  margin:0 0 40px;
+  color:#444;
+  font-size:18px;
+  line-height:1.95;
+  letter-spacing:0.02em;
+}
+
+.g7-section-body p{
+  margin:0 0 22px;
+}
+
+.g7-section-body p:last-child{
+  margin-bottom:0;
+}
+
+.g7-highlight{
+  font-weight:700;
+  color:#24516a;
+  background:linear-gradient(
+    transparent 58%,
+    rgba(123, 209, 240, 0.45) 58%
+  );
+  padding:0 .1em;
+}
+
+.g7-result-list{
+  margin:24px 0 28px;
+  padding:22px 24px;
+  background:#f4fbfe;
+  border:1px solid #c9e8f3;
+  border-radius:14px;
+  list-style:none;
+  box-shadow:0 8px 20px rgba(95,150,170,.10);
+}
+
+.g7-result-list li{
+  position:relative;
+  padding:0 0 0 30px;
+  margin:0 0 14px;
+  font-size:18px;
+  line-height:1.7;
+  color:#444;
+}
+
+.g7-result-list li:last-child{
+  margin-bottom:0;
+}
+
+.g7-result-list li:before{
+  content:"●";
+  position:absolute;
+  left:0;
+  top:0;
+  color:#4fb6c8;
+  font-weight:700;
+}
+
+/* ========================================
+   トミタ式7号食のルール
+======================================== */
+
+.g7-rule-section{
+  margin:0 0 38px;
+}
+
+.g7-rule-section:last-child{
+  margin-bottom:0;
+}
+
+
+/* 小見出し */
+
+.g7-rule-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 20px;
+  padding:0;
+  color:#315766;
+  font-size:24px;
+  font-weight:700;
+  line-height:1.5;
+  letter-spacing:.02em;
+}
+
+.g7-rule-title-number{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#65bdd3,#58c3b3);
+  color:#fff;
+  font-size:20px;
+  font-weight:700;
+  line-height:1;
+  box-shadow:0 4px 10px rgba(75,160,175,.20);
+}
+
+
+/* 基本ルール・追加ルール */
+
+.g7-rule-list{
+  counter-reset:g7RuleCounter;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.g7-rule-list > li{
+  position:relative;
+  margin:0 0 16px;
+  padding:20px 22px 20px 68px;
+  background:#f7fcfe;
+  border:1px solid #cfe9f1;
+  border-radius:12px;
+  box-sizing:border-box;
+}
+
+.g7-rule-list > li:last-child{
+  margin-bottom:0;
+}
+
+.g7-rule-list > li::before{
+  counter-increment:g7RuleCounter;
+  content:counter(g7RuleCounter);
+  position:absolute;
+  top:20px;
+  left:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:#65b9cd;
+  color:#fff;
+  font-size:16px;
+  font-weight:700;
+  line-height:1;
+}
+
+.g7-rule-item-title{
+  margin:0 0 6px !important;
+  color:#315766;
+  font-size:19px;
+  font-weight:700;
+  line-height:1.6;
+}
+
+.g7-rule-item-text{
+  margin:0 !important;
+  color:#4d4d4d;
+  font-size:17px;
+  line-height:1.85;
+}
+
+
+/* 5日間の締め */
+
+.g7-rule-period{
+  position:relative;
+  margin:20px 0 0 !important;
+  padding:15px 18px 15px 46px;
+  background:#edf9f2;
+  border:1px solid #c9e7d3;
+  border-radius:10px;
+  color:#315b47;
+  font-size:18px;
+  font-weight:700;
+  line-height:1.7;
+}
+
+.g7-rule-period::before{
+  content:"●";
+  position:absolute;
+  top:18px;
+  left:20px;
+  color:#62b77a;
+  font-size:12px;
+  line-height:1;
+}
+
+
+/* 7日間を通して意識すること */
+
+.g7-rule-point-list{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.g7-rule-point-list > li{
+  position:relative;
+  margin:0 0 14px;
+  padding:18px 20px 18px 54px;
+  background:#f4fbfe;
+  border:1px solid #d1eaf2;
+  border-radius:12px;
+  box-sizing:border-box;
+}
+
+.g7-rule-point-list > li:last-child{
+  margin-bottom:0;
+}
+
+.g7-rule-point-list > li::before{
+  content:"●";
+  position:absolute;
+  top:27px;
+  left:24px;
+  color:#55b8c4;
+  font-size:13px;
+  line-height:1;
+}
+
+
+/* 補足事項 */
+
+.g7-rule-supplement{
+  padding:24px;
+  background:#faf8f3;
+  border:1px solid #e5ded0;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(120,105,80,.06);
+}
+
+.g7-rule-supplement-item{
+  margin:0 0 22px;
+  padding:0 0 22px;
+  border-bottom:1px solid #e4ddd0;
+}
+
+.g7-rule-supplement-item:last-child{
+  margin-bottom:0;
+  padding-bottom:0;
+  border-bottom:none;
+}
+
+.g7-rule-supplement-title{
+  position:relative;
+  margin:0 0 10px;
+  padding:0 0 0 18px;
+  color:#665b49;
+  font-size:19px;
+  font-weight:700;
+  line-height:1.6;
+}
+
+.g7-rule-supplement-title::before{
+  content:"";
+  position:absolute;
+  top:.55em;
+  left:0;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#7fb9a3;
+}
+
+.g7-rule-supplement-item p{
+  margin:0 0 10px !important;
+  color:#555;
+  font-size:17px;
+  line-height:1.85;
+}
+
+.g7-rule-supplement-item p:last-child{
+  margin-bottom:0 !important;
+}
+
+.g7-rule-supplement-item a{
+  color:#278ca5;
+  font-weight:700;
+  text-decoration:underline;
+}
+
+.g7-rule-supplement-item a:hover{
+  text-decoration:none;
+}
