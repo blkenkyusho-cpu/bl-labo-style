@@ -157,6 +157,7 @@ PC・スマホは別テンプレートで読み込み。
   width:42px;
   height:42px;
   border-radius:50%;
+  background:linear-gradient(135deg,#329e7c,#55b991);
   color:#fff;
   font-size:20px;
   font-weight:700;
@@ -164,21 +165,6 @@ PC・スマホは別テンプレートで読み込み。
   box-shadow:none;
 }
 
-.g7-rule-title-a .g7-rule-title-number{
-  background:linear-gradient(135deg,#329e7c,#55b991);
-}
-
-.g7-rule-title-b .g7-rule-title-number{
-  background:linear-gradient(135deg,#63b6d9,#4fb6c8);
-}
-
-.g7-rule-title-c .g7-rule-title-number{
-  background:linear-gradient(135deg,#7aaed6,#6fb9cf);
-}
-
-.g7-rule-title-d .g7-rule-title-number{
-  background:linear-gradient(135deg,#a8b89a,#b8b07f);
-}
 
 /* 基本ルール・追加ルール */
 
