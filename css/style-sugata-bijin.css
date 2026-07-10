@@ -1,0 +1,144 @@
+/*姿美人　通常ＬＰ用　カラーミーテンプレートから移動（2026/07）*/
+/*姿美人タイプ・カラー・素材*/
+
+.mobile-insole-section {
+  max-width: 100%;
+  margin: 0 auto;
+  /*padding: 5px;*/
+  font-family: 'Arial', sans-serif;
+}
+
+.mobile-insole-heading {
+  font-size: 1.1em;
+  color: #2c3e50;
+  margin: 18px 0 10px;
+}
+
+.mobile-insole-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mobile-insole-card {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+
+.mobile-insole-card:active {
+  transform: scale(0.97);
+}
+
+/* 色別クラス */
+.color-black {
+  background: #2b2b2b;
+  color: #fff;
+}
+
+.color-brown {
+  background: #4a2f1d;
+  color: #fff;
+}
+
+.color-gold {
+  background: #f4f1da;
+  color: #333;
+}
+
+/* 注意書き */
+.mobile-insole-note {
+  font-size: 0.75em;
+  color: #444;
+  background: #fef6e5;
+  padding: 12px;
+  border-left: 4px solid #f3c26c;
+  border-radius: 6px;
+}
+
+/* バッジ付きカードの共通設定 */
+/* バッジ付きカード */
+.mobile-insole-card.recommend-badge {
+  position: relative;
+  /* padding-top 削除で高さ統一 */
+}
+
+.mobile-insole-card.popular-badge {
+  position: relative;
+}
+
+/* バッジのスタイル */
+/* オススメバッジ */
+.recommend-badge::before {
+  content: 'オススメ';
+  position: absolute;
+  top: -6px;   /* 少し外に出す */
+  left: -6px;  /* 左上に浮かせる */
+  font-size: 0.6em;
+  padding: 2px 6px;
+  background-color: #27ae60;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+  z-index: 1;
+}
+.popular-badge::before {
+  content: '一番人気';
+  position: absolute;
+  top: -6px;   /* カードの外に浮かせる */
+  left: -6px;
+  font-size: 0.6em;
+  padding: 2px 6px;
+  background-color: #d35400; /* オレンジ */
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* オススメバッジ */
+.recommend-badge::before {
+  content: 'オススメ';
+  background-color: #27ae60; /* グリーン */
+}
+
+/* 一番人気バッジ */
+.popular-badge::before {
+  content: '一番人気';
+  background-color: #d35400; /* オレンジ */
+}
+
+/* 取り消し線を自前描画（端末差ほぼゼロ） */
+.mobile-insole-card.off{
+  position: relative;                /* 線を重ねるため */
+  text-decoration: none;             /* 純正の線は消す */
+  opacity:.55;
+}
+.mobile-insole-card.off::after{
+  content:"";
+  position:absolute;
+  left:10px;                         /* カードの左右余白に合わせて調整 */
+  right:10px;
+  top:50%;
+  height:.18em;                      /* 太さ。例: .14em～.22emで調整 */
+  background: rgba(44,62,80,.85);
+  transform: translateY(-50%);
+  border-radius: 3px;
+  pointer-events:none;
+}
