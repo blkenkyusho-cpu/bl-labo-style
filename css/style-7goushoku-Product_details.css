@@ -139,9 +139,12 @@ PC・スマホは別テンプレートで読み込み。
 .g7-rule-title{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:14px;
   margin:0 0 20px;
-  padding:0;
+  padding:14px 18px;
+  background:#eef9f4;
+  border-left:6px solid #4fb58f;
+  border-radius:10px;
   color:#315766;
   font-size:24px;
   font-weight:700;
@@ -154,19 +157,18 @@ PC・スマホは別テンプレートで読み込み。
   align-items:center;
   justify-content:center;
   flex-shrink:0;
-  width:34px;
-  height:34px;
+  width:44px;
+  height:44px;
   border-radius:50%;
-  background:linear-gradient(135deg,#65bdd3,#58c3b3);
   color:#fff;
-  font-size:17px;
+  font-size:21px;
   font-weight:700;
   line-height:1;
-  box-shadow:0 3px 8px rgba(75,160,175,.18);
+  box-shadow:0 5px 12px rgba(50,130,105,.24);
 }
 
 .g7-rule-title-a .g7-rule-title-number{
-  background:linear-gradient(135deg,#66b89c,#5fc3b2);
+  background:linear-gradient(135deg,#2f9d79,#58c394);
 }
 
 .g7-rule-title-b .g7-rule-title-number{
