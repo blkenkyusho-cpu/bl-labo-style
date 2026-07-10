@@ -293,11 +293,10 @@ PC・スマホは別テンプレートで読み込み。
   line-height:1;
 }
 
-
 /* 補足事項 */
 
 .g7-rule-supplement{
-  padding:24px;
+  padding:18px 20px;
   background:#faf8f3;
   border:1px solid #e5ded0;
   border-radius:14px;
@@ -305,8 +304,8 @@ PC・スマホは別テンプレートで読み込み。
 }
 
 .g7-rule-supplement-item{
-  margin:0 0 22px;
-  padding:0 0 22px;
+  margin:0 0 16px;
+  padding:0 0 16px;
   border-bottom:1px solid #e4ddd0;
 }
 
@@ -318,12 +317,12 @@ PC・スマホは別テンプレートで読み込み。
 
 .g7-rule-supplement-title{
   position:relative;
-  margin:0 0 10px;
-  padding:0 0 0 18px;
+  margin:0 0 6px;
+  padding:0 0 0 17px;
   color:#665b49;
-  font-size:19px;
+  font-size:18px;
   font-weight:700;
-  line-height:1.6;
+  line-height:1.5;
 }
 
 .g7-rule-supplement-title::before{
@@ -331,21 +330,17 @@ PC・スマホは別テンプレートで読み込み。
   position:absolute;
   top:.55em;
   left:0;
-  width:8px;
-  height:8px;
+  width:7px;
+  height:7px;
   border-radius:50%;
   background:#7fb9a3;
 }
 
 .g7-rule-supplement-item p{
-  margin:0 0 10px !important;
+  margin:0 !important;
   color:#555;
-  font-size:17px;
-  line-height:1.85;
-}
-
-.g7-rule-supplement-item p:last-child{
-  margin-bottom:0 !important;
+  font-size:16px;
+  line-height:1.7;
 }
 
 .g7-rule-supplement-item a{
