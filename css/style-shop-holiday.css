@@ -1,0 +1,386 @@
+/*******************
+　長期休暇CSS
+*******************/
+
+.shop-holiday-page {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  color: #24364b;
+  font-family:
+    "Helvetica Neue",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    Meiryo,
+    sans-serif;
+  line-height: 1.8;
+  box-sizing: border-box;
+}
+
+.shop-holiday-page *,
+.shop-holiday-page *::before,
+.shop-holiday-page *::after {
+  box-sizing: border-box;
+}
+
+.shop-holiday-heading {
+  margin: 0 0 24px;
+  padding: 14px 20px;
+  border-left: 7px solid #1874bd;
+  background: #f1f8fd;
+  color: #124d82;
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+.shop-holiday-main-image {
+  margin-bottom: 28px;
+}
+
+.shop-holiday-main-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shop-holiday-content {
+  padding: 0 28px 48px;
+  font-size: 18px;
+}
+
+.shop-holiday-intro {
+  margin-bottom: 28px;
+}
+
+.shop-holiday-intro p {
+  margin: 0 0 8px;
+}
+
+.shop-holiday-period-box {
+  margin: 28px 0 20px;
+  padding: 26px 20px;
+  border: 2px solid #e65252;
+  border-radius: 14px;
+  background: #fff8f8;
+  text-align: center;
+}
+
+.shop-holiday-label {
+  margin: 0 0 8px;
+  color: #b23232;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.shop-holiday-period {
+  margin: 0;
+  color: #d93535;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.shop-holiday-order-note {
+  margin: 0 0 38px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  background: #edf7ff;
+  color: #075897;
+  font-weight: 700;
+  text-align: center;
+}
+
+.shop-holiday-section {
+  margin-top: 44px;
+}
+
+.shop-holiday-title {
+  margin: 0 0 20px;
+  padding: 10px 14px;
+  border-bottom: 3px solid #84bddf;
+  color: #164f7b;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* 重要日カード */
+
+.shop-holiday-key-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.shop-holiday-key-card {
+  padding: 22px 14px;
+  border: 1px solid #bed8e8;
+  border-radius: 12px;
+  background: #f5fbff;
+  text-align: center;
+}
+
+.shop-holiday-key-date {
+  margin: 0 0 10px;
+  color: #125d93;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.shop-holiday-key-text {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/* 休業日チップ */
+
+.shop-holiday-days-box {
+  padding: 26px 22px;
+  border: 2px solid #efb3b3;
+  border-radius: 14px;
+  background: #fff8f8;
+}
+
+.shop-holiday-days-lead {
+  margin: 0 0 20px;
+  color: #a92e2e;
+  font-weight: 700;
+  text-align: center;
+}
+
+.shop-holiday-days-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.shop-holiday-day {
+  padding: 16px 6px;
+  border-radius: 10px;
+  background: #e95151;
+  color: #ffffff;
+  text-align: center;
+}
+
+.shop-holiday-day span {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.shop-holiday-day small {
+  display: block;
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.shop-holiday-days-note {
+  margin: 22px 0 0;
+  color: #a92e2e;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 決済方法 */
+
+.shop-holiday-payment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.shop-holiday-payment-card {
+  padding: 22px;
+  border: 1px solid #efc47b;
+  border-radius: 12px;
+  background: #fffaf1;
+}
+
+.shop-holiday-payment-card h3 {
+  margin: 0 0 14px;
+  color: #80501e;
+  font-size: 19px;
+}
+
+.shop-holiday-payment-card p {
+  margin: 0 0 8px;
+}
+
+.shop-holiday-payment-card p:last-child {
+  margin-bottom: 0;
+}
+
+.shop-holiday-deadline {
+  color: #d93636;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.shop-holiday-important {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff0f0;
+  color: #a52929;
+  text-align: center;
+}
+
+.shop-holiday-important strong {
+  font-size: 21px;
+}
+
+.shop-holiday-warning {
+  padding: 20px 22px;
+  border-left: 6px solid #e3a12f;
+  background: #fff9ed;
+}
+
+.shop-holiday-warning p {
+  margin: 0 0 10px;
+}
+
+.shop-holiday-warning p:last-child {
+  margin-bottom: 0;
+}
+
+.shop-holiday-info-box {
+  padding: 22px;
+  border: 2px dotted #efb35f;
+  border-radius: 12px;
+  background: #fffaf2;
+}
+
+.shop-holiday-info-box p {
+  margin: 0 0 12px;
+}
+
+.shop-holiday-info-box p:last-child {
+  margin-bottom: 0;
+}
+
+.shop-holiday-closing {
+  margin: 44px 0 30px;
+}
+
+.shop-holiday-signature {
+  text-align: right;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* スマートフォン */
+
+@media screen and (max-width: 767px) {
+
+  .shop-holiday-heading {
+    margin-bottom: 16px;
+    padding: 11px 14px;
+    border-left-width: 5px;
+    font-size: 24px;
+  }
+
+  .shop-holiday-main-image {
+    margin-bottom: 20px;
+  }
+
+  .shop-holiday-content {
+    padding: 0 14px 36px;
+    font-size: 16px;
+  }
+
+  .shop-holiday-period-box {
+    margin: 22px 0 16px;
+    padding: 20px 10px;
+  }
+
+  .shop-holiday-label {
+    font-size: 16px;
+  }
+
+  .shop-holiday-period {
+    font-size: 22px;
+  }
+
+  .shop-holiday-order-note {
+    margin-bottom: 30px;
+    padding: 12px;
+  }
+
+  .shop-holiday-section {
+    margin-top: 34px;
+  }
+
+  .shop-holiday-title {
+    margin-bottom: 16px;
+    padding: 8px 10px;
+    font-size: 20px;
+  }
+
+  .shop-holiday-key-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .shop-holiday-key-card {
+    padding: 17px 12px;
+  }
+
+  .shop-holiday-key-date {
+    font-size: 20px;
+  }
+
+  .shop-holiday-key-text br {
+    display: none;
+  }
+
+  .shop-holiday-days-box {
+    padding: 20px 14px;
+  }
+
+  .shop-holiday-days-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .shop-holiday-day {
+    padding: 15px 6px;
+  }
+
+  .shop-holiday-day span {
+    font-size: 24px;
+  }
+
+  .shop-holiday-day small {
+    font-size: 14px;
+  }
+
+  .shop-holiday-payment-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .shop-holiday-payment-card {
+    padding: 17px;
+  }
+
+  .shop-holiday-payment-card h3 {
+    font-size: 18px;
+  }
+
+  .shop-holiday-deadline,
+  .shop-holiday-important strong {
+    font-size: 18px;
+  }
+
+  .shop-holiday-important,
+  .shop-holiday-warning,
+  .shop-holiday-info-box {
+    padding: 17px;
+  }
+
+  .shop-holiday-signature {
+    font-size: 17px;
+  }
+}
