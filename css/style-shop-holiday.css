@@ -87,6 +87,7 @@
   background: #edf7ff;
   color: #075897;
   font-weight: 700;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -306,6 +307,7 @@
   .shop-holiday-order-note {
     margin-bottom: 30px;
     padding: 12px;
+    font-size: 18px;
   }
 
   .shop-holiday-section {
