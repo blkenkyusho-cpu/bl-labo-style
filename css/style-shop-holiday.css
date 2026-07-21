@@ -68,7 +68,7 @@
 .shop-holiday-label {
   margin: 0 0 8px;
   color: #b23232;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -349,11 +349,11 @@
   }
 
   .shop-holiday-day span {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .shop-holiday-day small {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .shop-holiday-payment-grid {
