@@ -355,21 +355,25 @@
   }
 
   .shop-holiday-day {
-    padding: 10px 6px;
-    min-height: 96px;
+    padding: 12px 6px;
+    min-height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+    gap: 4px;
+    white-space: nowrap;
   }
 
-
   .shop-holiday-day span {
+    display: inline;
     font-size: 26px;
     line-height: 1.15;
   }
 
   .shop-holiday-day small {
-    margin-top: 4px;
+    display: inline;
+    margin-top: 0;
     font-size: 16px;
     line-height: 1.2;
   }
