@@ -303,13 +303,13 @@
   }
 
   .shop-holiday-period {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .shop-holiday-order-note {
     margin-bottom: 30px;
     padding: 12px;
-    font-size: 18px;
+    font-size: 16.5px;
   }
 
   .shop-holiday-section {
@@ -340,24 +340,44 @@
   }
 
   .shop-holiday-days-box {
-    padding: 20px 14px;
+    padding: 18px 12px;
+  }
+
+  .shop-holiday-days-lead {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 1.5;
   }
 
   .shop-holiday-days-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    gap: 8px 10px;
   }
 
   .shop-holiday-day {
-    padding: 15px 6px;
+    padding: 10px 6px;
+    min-height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
+
   .shop-holiday-day span {
-    font-size: 28px;
+    font-size: 26px;
+    line-height: 1.15;
   }
 
   .shop-holiday-day small {
-    font-size: 18px;
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .shop-holiday-days-note {
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 1.5;
   }
 
   .shop-holiday-payment-grid {
