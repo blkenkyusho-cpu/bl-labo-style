@@ -307,13 +307,19 @@
   }
 
   .shop-holiday-period {
-    font-size: 20px;
+    font-size: clamp(16px, 4.3vw, 20px);
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
   }
 
   .shop-holiday-order-note {
     margin-bottom: 30px;
-    padding: 12px;
-    font-size: 16px;
+    padding: 12px 8px;
+    font-size: clamp(15px, 3.9vw, 16px);
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
   }
 
   .shop-holiday-section {
