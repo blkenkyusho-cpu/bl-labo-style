@@ -1,0 +1,491 @@
+/* --------------------------------
+   不思議シートセールCSS
+-------------------------------- */
+
+.fushigi-sale {
+  --bg: #fffefe;
+  --panel: #ffffff;
+  --border: #f1d5da;
+
+  --ink: #191214;
+  --muted: #5a4a4d;
+
+  --accent: #d73a3a;
+  --price-new: #b81414;
+  --arrow: #c12a2a;
+
+  --note-bg: #d73a3a;
+  --note-border: #c42f2f;
+
+  font-family:
+    "Hiragino Kaku Gothic ProN",
+    "Helvetica Neue",
+    sans-serif;
+
+  margin: 22px 0;
+  padding: 22px 22px 18px;
+
+  color: var(--ink);
+  background: var(--bg);
+
+  border: 5px solid var(--border);
+  border-radius: 16px;
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+}
+
+.fushigi-sale__content {
+  text-align: center;
+}
+
+
+/* --------------------------------
+   期間限定ラベル
+-------------------------------- */
+
+.fushigi-sale__label {
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  width: fit-content;
+  margin: 0 0 5px 18px;
+  padding: 11px 19px;
+
+  color: #ffffff;
+  background: var(--accent);
+
+  border: 1px solid #e05f12;
+  border-radius: 999px;
+
+  font-size: clamp(20px, 2.8vw, 23px);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+
+  animation: fushigiSalePulse 3.2s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+.fushigi-sale__label::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.40) 50%,
+    rgba(255, 255, 255, 0) 75%
+  );
+
+  border-radius: inherit;
+
+  transform: translateX(-120%);
+  animation: fushigiSaleShine 2s ease-in-out infinite;
+
+  pointer-events: none;
+}
+
+@keyframes fushigiSalePulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+  }
+
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.14);
+  }
+}
+
+@keyframes fushigiSaleShine {
+  0%,
+  15% {
+    transform: translateX(-120%);
+  }
+
+  45% {
+    transform: translateX(120%);
+  }
+
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+
+/* --------------------------------
+   タイトル・サブタイトル
+-------------------------------- */
+
+.fushigi-sale__title {
+  margin: 2px 0 6px;
+
+  color: var(--ink);
+
+  font-size: clamp(26px, 3.8vw, 34px);
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.fushigi-sale__subtitle {
+  margin: 0 0 6px;
+
+  color: var(--muted);
+
+  font-size: clamp(16px, 2.6vw, 18px);
+  line-height: 1.8;
+}
+
+
+/* --------------------------------
+   価格
+-------------------------------- */
+
+.fushigi-sale__price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin: 8px 0 15px;
+  padding: 12px 16px;
+
+  text-align: center;
+
+  background: var(--panel);
+
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.fushigi-sale__old {
+  color: #7f736a;
+  font-size: clamp(16px, 2.4vw, 18px);
+}
+
+.fushigi-sale__arrow {
+  color: var(--arrow);
+
+  font-size: clamp(18px, 3vw, 20px);
+  font-weight: 900;
+}
+
+.fushigi-sale__new {
+  color: var(--price-new);
+
+  font-size: clamp(22px, 4.6vw, 30px);
+  font-weight: 900;
+}
+
+.fushigi-sale__tax {
+  color: #6b6b6b;
+  font-size: 0.9em;
+}
+
+.fushigi-sale__offnote {
+  display: inline-block;
+
+  margin: 0 0 0 6px;
+  padding: 3px 11px 4px;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff5a5a, #d72626);
+
+  border-radius: 999px;
+
+  font-size: clamp(18px, 2.6vw, 20px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  vertical-align: middle;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+  transform: translateY(-1px);
+}
+
+
+/* --------------------------------
+   商品説明
+-------------------------------- */
+
+.fushigi-sale__points-wrapper {
+  padding: 0 0 6px;
+
+  text-align: center;
+
+  background: #fff0ea;
+  border-radius: 10px;
+}
+
+.fushigi-sale__points {
+  display: inline-block;
+
+  margin: 0;
+  padding: 20px;
+
+  color: var(--ink);
+
+  font-size: clamp(14px, 2.6vw, 17px);
+  line-height: 1.95;
+  text-align: left;
+}
+
+
+/* --------------------------------
+   セール期間
+-------------------------------- */
+
+.fushigi-sale__note {
+  margin: 16px 0 10px;
+  padding: 12px 14px;
+
+  color: #ffffff;
+  background: var(--note-bg);
+
+  border: 1px solid var(--note-border);
+  border-radius: 10px;
+
+  font-size: clamp(21px, 2.7vw, 23px);
+  font-weight: 700;
+  line-height: 1.8;
+  text-align: center;
+
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.fushigi-sale__note p {
+  margin: 0;
+}
+
+
+/* --------------------------------
+   改善事例
+-------------------------------- */
+
+.fushigi-sale__recommend {
+  margin-top: 16px;
+  padding: 14px;
+
+  text-align: left;
+
+  background: #fffaf0;
+
+  border: 1px solid #f3ce86;
+  border-radius: 10px;
+}
+
+.fushigi-sale__recommend-title {
+  margin: 0 0 8px;
+  padding-left: 20px;
+
+  color: #8a4a12;
+
+  font-size: clamp(18px, 2.8vw, 21px);
+  font-weight: 800;
+}
+
+.fushigi-sale .fushigi-sale__recommend-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 10px 28px;
+
+  max-width: 95%;
+  margin: 10px auto 0;
+  padding-left: 10px;
+
+  list-style: none;
+  text-align: left;
+}
+
+.fushigi-sale .fushigi-sale__recommend-list li {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 6px;
+
+  padding-bottom: 4px;
+
+  color: var(--ink);
+
+  border-bottom: 1px solid #f1d5d5;
+
+  font-size: clamp(15px, 2.6vw, 17px);
+  line-height: 1.9;
+}
+
+.fushigi-sale .fushigi-sale__recommend-list li > span {
+  flex-shrink: 0;
+
+  margin-top: 0.1em;
+
+  color: #f39c12;
+  font-weight: 800;
+}
+
+
+/* --------------------------------
+   モーション軽減
+-------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .fushigi-sale * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .fushigi-sale__label::after {
+    animation: none !important;
+  }
+}
+
+
+/* --------------------------------
+   スマートフォン
+-------------------------------- */
+
+@media (max-width: 480px) {
+
+  .fushigi-sale {
+    padding: 18px 14px;
+
+    border-radius: 14px;
+  }
+
+  .fushigi-sale__label {
+    padding: 9px 14px;
+
+    font-size: 18px;
+  }
+
+  .fushigi-sale__title {
+    font-size: clamp(24px, 7vw, 29px);
+  }
+
+  .fushigi-sale__subtitle {
+    font-size: 16px;
+  }
+
+
+  /* 価格 */
+
+  .fushigi-sale__price {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 8px auto 15px;
+    padding: 10px 12px;
+
+    text-align: center;
+  }
+
+  .fushigi-sale__old,
+  .fushigi-sale__arrow {
+    white-space: nowrap;
+  }
+
+  .fushigi-sale__old {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .fushigi-sale__new {
+    font-size: 1.55rem;
+  }
+
+  .fushigi-sale__offnote {
+    margin-left: 5px;
+  }
+
+
+  /* 説明文 */
+
+  .fushigi-sale__points-wrapper {
+    padding: 5px;
+  }
+
+  .fushigi-sale__points {
+    padding: 15px;
+
+    font-size: 16px;
+  }
+
+
+  /* セール期間 */
+
+  .fushigi-sale__note {
+    padding: 10px 8px;
+
+    line-height: 1.9;
+    text-align: center;
+  }
+
+  .fushigi-sale__note strong {
+    display: inline-block;
+
+    margin: 0 auto;
+
+    font-size: clamp(16px, 3.6vw, 18px);
+    font-weight: 800;
+    line-height: 1.9;
+    text-align: left;
+    white-space: normal;
+  }
+
+
+  /* 改善事例 */
+
+  .fushigi-sale__recommend-title {
+    margin: 0 0 8px 15px;
+    padding-left: 0;
+
+    font-size: clamp(18px, 3.4vw, 20px);
+  }
+
+  .fushigi-sale .fushigi-sale__recommend-list {
+    grid-template-columns: 1fr;
+
+    gap: 4px 0;
+
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 18px;
+  }
+
+  .fushigi-sale .fushigi-sale__recommend-list li {
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 0;
+    padding: 0;
+
+    border-bottom: none;
+
+    font-size: 0.97rem;
+    line-height: 1.55;
+  }
+
+  .fushigi-sale .fushigi-sale__recommend-list li > span {
+    display: inline;
+
+    margin-right: 8px;
+
+    color: #f39c12;
+
+    font-size: 1.15em;
+  }
+}
