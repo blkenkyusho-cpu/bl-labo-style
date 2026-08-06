@@ -550,6 +550,14 @@
   line-height: 1.6;
 }
 
+.fushigi-compare__note--sale {
+  color: #ffffff;
+  background: #d73a3a;
+
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
 .fushigi-compare__regular {
   white-space: nowrap;
 }
