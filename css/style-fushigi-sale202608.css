@@ -551,11 +551,23 @@
 }
 
 .fushigi-compare__note--sale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 0 20px;
+  padding: 10px 12px;
+
   color: #ffffff;
   background: #d73a3a;
 
-  font-weight: 800;
-  letter-spacing: 0.03em;
+  border-radius: 9px;
+
+  font-size: clamp(12px, 1.8vw, 14px);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .fushigi-compare__regular {
