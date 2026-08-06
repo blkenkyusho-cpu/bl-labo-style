@@ -774,7 +774,6 @@
   }
 }
 
-
 /* ==================================================
    スマートフォン
    比較リンクブロック
@@ -786,10 +785,17 @@
 @media (max-width: 480px) and (hover: none) and (pointer: coarse) {
 
   .fushigi-compare {
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
     margin: 20px 0;
   }
 
   .fushigi-compare__inner {
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+
     padding: 22px 14px 18px;
 
     border-radius: 12px;
@@ -810,17 +816,28 @@
   }
 
   .fushigi-compare .fushigi-compare__grid {
+    display: flex !important;
     flex-direction: column !important;
     flex-wrap: nowrap !important;
+
+    align-items: stretch;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
 
     gap: 28px;
   }
 
   .fushigi-compare .fushigi-compare__card {
-    flex: none;
+    flex: 0 0 auto !important;
 
     width: 100% !important;
     max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
 
     padding: 25px 17px 18px;
 
