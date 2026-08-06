@@ -144,6 +144,10 @@
   line-height: 1.8;
 }
 
+.fushigi-sale__discount {
+  color: #d73a3a;
+  font-weight: 800;
+}
 
 /* 価格 */
 
