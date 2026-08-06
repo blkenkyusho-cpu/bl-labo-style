@@ -785,23 +785,36 @@
 @media (max-width: 480px) and (hover: none) and (pointer: coarse) {
 
   .fushigi-compare {
+    display: block !important;
+
     width: 100%;
     height: auto !important;
     min-height: 0 !important;
-    margin: 20px 0;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+
+    margin: 20px 0 !important;
+    padding: 0 !important;
   }
 
   .fushigi-compare__inner {
+    display: block !important;
+
     width: 100%;
     height: auto !important;
     min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
 
-    padding: 22px 14px 18px;
+    margin: 0 !important;
+    padding: 22px 14px 18px !important;
 
     border-radius: 12px;
   }
 
   .fushigi-compare__title {
+    margin-bottom: 8px;
+
     font-size: 22px;
   }
 
@@ -820,17 +833,25 @@
     flex-direction: column !important;
     flex-wrap: nowrap !important;
 
-    align-items: stretch;
-    justify-content: flex-start;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
 
-    width: 100%;
+    width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
 
     gap: 28px;
   }
 
   .fushigi-compare .fushigi-compare__card {
+    display: flex !important;
+    flex-direction: column !important;
+
     flex: 0 0 auto !important;
 
     width: 100% !important;
@@ -838,7 +859,10 @@
 
     height: auto !important;
     min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
 
+    margin: 0 !important;
     padding: 25px 17px 18px;
 
     border-radius: 12px;
