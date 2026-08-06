@@ -347,12 +347,22 @@
     "Helvetica Neue",
     sans-serif;
 
+  width: 100%;
   margin: 24px 0;
 
   color: var(--compare-ink);
+
+  box-sizing: border-box;
+}
+
+.fushigi-compare *,
+.fushigi-compare *::before,
+.fushigi-compare *::after {
+  box-sizing: border-box;
 }
 
 .fushigi-compare__inner {
+  width: 100%;
   padding: 24px 20px 22px;
 
   background: var(--compare-bg);
@@ -389,23 +399,34 @@
 }
 
 
-/* 比較カード */
+/* ==================================================
+   比較カード
+   PCでは必ず横2列
+================================================== */
 
-.fushigi-compare__grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.fushigi-compare .fushigi-compare__grid {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
 
-  gap: 20px;
   align-items: stretch;
+  justify-content: center;
+
+  width: 100%;
+  gap: 20px;
 }
 
-.fushigi-compare__card {
+.fushigi-compare .fushigi-compare__card {
   position: relative;
 
-  display: flex;
+  display: flex !important;
   flex-direction: column;
 
+  flex: 1 1 0;
+  width: calc(50% - 10px) !important;
+  max-width: calc(50% - 10px) !important;
   min-width: 0;
+
   padding: 28px 22px 22px;
 
   color: var(--compare-ink);
@@ -439,13 +460,15 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.fushigi-compare__card--large {
+.fushigi-compare .fushigi-compare__card--large {
   background: var(--large-bg);
   border-color: var(--large-border);
 }
 
 
-/* おすすめラベル */
+/* ==================================================
+   おすすめラベル
+================================================== */
 
 .fushigi-compare__badge {
   position: absolute;
@@ -471,7 +494,9 @@
 }
 
 
-/* 比較カード内テキスト */
+/* ==================================================
+   比較カード内テキスト
+================================================== */
 
 .fushigi-compare__catch {
   margin: 0 0 12px;
@@ -530,7 +555,9 @@
 }
 
 
-/* リンクボタン */
+/* ==================================================
+   リンクボタン
+================================================== */
 
 .fushigi-compare__button {
   display: flex;
@@ -539,6 +566,7 @@
 
   gap: 10px;
 
+  width: 100%;
   margin-top: auto;
   padding: 12px 18px;
 
@@ -559,6 +587,8 @@
 }
 
 .fushigi-compare__button-arrow {
+  display: inline-block;
+
   font-size: 1.5em;
   font-weight: 400;
   line-height: 1;
@@ -588,11 +618,10 @@
 
 /* ==================================================
    スマートフォン
+   セールブロック
 ================================================== */
 
 @media (max-width: 480px) {
-
-  /* セールブロック */
 
   .fushigi-sale {
     padding: 18px 14px;
@@ -634,6 +663,7 @@
 
   .fushigi-sale__old {
     margin-left: 10px;
+
     font-size: 15px;
   }
 
@@ -713,9 +743,18 @@
 
     font-size: 1.15em;
   }
+}
 
 
-  /* 比較リンクブロック */
+/* ==================================================
+   スマートフォン
+   比較リンクブロック
+
+   PCブラウザの表示幅が狭い場合に誤作動しないよう、
+   タッチ端末の場合だけ縦並びにする
+================================================== */
+
+@media (max-width: 480px) and (hover: none) and (pointer: coarse) {
 
   .fushigi-compare {
     margin: 20px 0;
@@ -741,19 +780,25 @@
     display: block;
   }
 
-  .fushigi-compare__grid {
-    grid-template-columns: 1fr;
+  .fushigi-compare .fushigi-compare__grid {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
 
     gap: 28px;
   }
 
-  .fushigi-compare__card {
+  .fushigi-compare .fushigi-compare__card {
+    flex: none;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
     padding: 25px 17px 18px;
 
     border-radius: 12px;
   }
 
-  .fushigi-compare__card--large {
+  .fushigi-compare .fushigi-compare__card--large {
     order: -1;
   }
 
