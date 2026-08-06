@@ -1,6 +1,13 @@
-/* --------------------------------
-   不思議シートセールCSS
--------------------------------- */
+/* ==================================================
+   不思議シート共通CSS
+   ・セールブロック
+   ・ミニ／大 比較リンクブロック
+================================================== */
+
+
+/* ==================================================
+   セールブロック
+================================================== */
 
 .fushigi-sale {
   --bg: #fffefe;
@@ -39,9 +46,7 @@
 }
 
 
-/* --------------------------------
-   期間限定ラベル
--------------------------------- */
+/* 期間限定ラベル */
 
 .fushigi-sale__label {
   display: block;
@@ -118,9 +123,7 @@
 }
 
 
-/* --------------------------------
-   タイトル・サブタイトル
--------------------------------- */
+/* タイトル・サブタイトル */
 
 .fushigi-sale__title {
   margin: 2px 0 6px;
@@ -142,9 +145,7 @@
 }
 
 
-/* --------------------------------
-   価格
--------------------------------- */
+/* 価格 */
 
 .fushigi-sale__price {
   display: flex;
@@ -215,9 +216,7 @@
 }
 
 
-/* --------------------------------
-   商品説明
--------------------------------- */
+/* 商品説明 */
 
 .fushigi-sale__points-wrapper {
   padding: 0 0 6px;
@@ -242,9 +241,7 @@
 }
 
 
-/* --------------------------------
-   セール期間
--------------------------------- */
+/* セール期間 */
 
 .fushigi-sale__note {
   margin: 16px 0 10px;
@@ -269,9 +266,7 @@
 }
 
 
-/* --------------------------------
-   改善事例
--------------------------------- */
+/* 改善事例 */
 
 .fushigi-sale__recommend {
   margin-top: 16px;
@@ -327,20 +322,256 @@
 
 .fushigi-sale .fushigi-sale__recommend-list li > span {
   flex-shrink: 0;
-
   margin-top: 0.1em;
-
-  color: #f39c12;
-  font-weight: 800;
 }
 
 
-/* --------------------------------
+/* ==================================================
+   比較リンクブロック
+================================================== */
+
+.fushigi-compare {
+  --compare-bg: #fffefe;
+  --compare-ink: #2d2527;
+  --compare-muted: #6d6063;
+
+  --mini-border: #e8ddd8;
+  --mini-accent: #8b776e;
+
+  --large-border: #8a5a97;
+  --large-accent: #764587;
+  --large-bg: #fdfaff;
+
+  font-family:
+    "Hiragino Kaku Gothic ProN",
+    "Helvetica Neue",
+    sans-serif;
+
+  margin: 24px 0;
+
+  color: var(--compare-ink);
+}
+
+.fushigi-compare__inner {
+  padding: 24px 20px 22px;
+
+  background: var(--compare-bg);
+
+  border: 1px solid #eee2de;
+  border-radius: 14px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+}
+
+.fushigi-compare__title {
+  margin: 0 0 8px;
+
+  color: var(--compare-ink);
+
+  font-size: clamp(22px, 3.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.fushigi-compare__lead {
+  margin: 0 0 24px;
+
+  color: var(--compare-muted);
+
+  font-size: clamp(15px, 2.4vw, 17px);
+  line-height: 1.8;
+  text-align: center;
+}
+
+.fushigi-compare__sp-only {
+  display: none;
+}
+
+
+/* 比較カード */
+
+.fushigi-compare__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+  align-items: stretch;
+}
+
+.fushigi-compare__card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  padding: 28px 22px 22px;
+
+  color: var(--compare-ink);
+  text-align: center;
+  text-decoration: none;
+
+  background: #ffffff;
+
+  border: 2px solid var(--mini-border);
+  border-radius: 14px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.fushigi-compare__card:link,
+.fushigi-compare__card:visited,
+.fushigi-compare__card:hover,
+.fushigi-compare__card:active {
+  color: var(--compare-ink);
+  text-decoration: none;
+}
+
+.fushigi-compare__card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.fushigi-compare__card--large {
+  background: var(--large-bg);
+  border-color: var(--large-border);
+}
+
+
+/* おすすめラベル */
+
+.fushigi-compare__badge {
+  position: absolute;
+  top: -17px;
+  left: 50%;
+
+  padding: 7px 22px;
+
+  color: #ffffff;
+  background: var(--large-accent);
+
+  border-radius: 999px;
+
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+
+  white-space: nowrap;
+
+  transform: translateX(-50%);
+
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.10);
+}
+
+
+/* 比較カード内テキスト */
+
+.fushigi-compare__catch {
+  margin: 0 0 12px;
+
+  color: #70566f;
+
+  font-size: clamp(16px, 2.4vw, 18px);
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.fushigi-compare__name {
+  margin: 0 0 12px;
+
+  color: var(--compare-ink);
+
+  font-size: clamp(21px, 3vw, 27px);
+  font-weight: 850;
+  line-height: 1.5;
+}
+
+.fushigi-compare__price {
+  margin: 0 0 14px;
+
+  color: #a33758;
+
+  font-size: clamp(26px, 4vw, 34px);
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.fushigi-compare__price--sale {
+  color: #b81414;
+}
+
+.fushigi-compare__tax {
+  font-size: 0.55em;
+  font-weight: 700;
+}
+
+.fushigi-compare__note {
+  margin: 0 0 20px;
+  padding: 9px 12px;
+
+  color: #6d6063;
+  background: #faf6f2;
+
+  border-radius: 9px;
+
+  font-size: clamp(13px, 2vw, 15px);
+  line-height: 1.6;
+}
+
+.fushigi-compare__regular {
+  white-space: nowrap;
+}
+
+
+/* リンクボタン */
+
+.fushigi-compare__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: auto;
+  padding: 12px 18px;
+
+  color: var(--mini-accent);
+  background: #ffffff;
+
+  border: 2px solid #b29d91;
+  border-radius: 999px;
+
+  font-size: clamp(15px, 2.2vw, 17px);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.fushigi-compare__button--large {
+  color: var(--large-accent);
+  border-color: var(--large-accent);
+}
+
+.fushigi-compare__button-arrow {
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+
+/* ==================================================
    モーション軽減
--------------------------------- */
+================================================== */
 
 @media (prefers-reduced-motion: reduce) {
-  .fushigi-sale * {
+  .fushigi-sale *,
+  .fushigi-compare * {
     animation: none !important;
     transition: none !important;
   }
@@ -348,14 +579,20 @@
   .fushigi-sale__label::after {
     animation: none !important;
   }
+
+  .fushigi-compare__card:hover {
+    transform: none;
+  }
 }
 
 
-/* --------------------------------
+/* ==================================================
    スマートフォン
--------------------------------- */
+================================================== */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+
+  /* セールブロック */
 
   .fushigi-sale {
     padding: 18px 14px;
@@ -376,9 +613,6 @@
   .fushigi-sale__subtitle {
     font-size: 16px;
   }
-
-
-  /* 価格 */
 
   .fushigi-sale__price {
     display: inline-flex;
@@ -411,9 +645,6 @@
     margin-left: 5px;
   }
 
-
-  /* 説明文 */
-
   .fushigi-sale__points-wrapper {
     padding: 5px;
   }
@@ -423,9 +654,6 @@
 
     font-size: 16px;
   }
-
-
-  /* セール期間 */
 
   .fushigi-sale__note {
     padding: 10px 8px;
@@ -445,9 +673,6 @@
     text-align: left;
     white-space: normal;
   }
-
-
-  /* 改善事例 */
 
   .fushigi-sale__recommend-title {
     margin: 0 0 8px 15px;
@@ -487,5 +712,86 @@
     color: #f39c12;
 
     font-size: 1.15em;
+  }
+
+
+  /* 比較リンクブロック */
+
+  .fushigi-compare {
+    margin: 20px 0;
+  }
+
+  .fushigi-compare__inner {
+    padding: 22px 14px 18px;
+
+    border-radius: 12px;
+  }
+
+  .fushigi-compare__title {
+    font-size: 22px;
+  }
+
+  .fushigi-compare__lead {
+    margin-bottom: 22px;
+
+    font-size: 15px;
+  }
+
+  .fushigi-compare__sp-only {
+    display: block;
+  }
+
+  .fushigi-compare__grid {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+  .fushigi-compare__card {
+    padding: 25px 17px 18px;
+
+    border-radius: 12px;
+  }
+
+  .fushigi-compare__card--large {
+    order: -1;
+  }
+
+  .fushigi-compare__badge {
+    top: -15px;
+
+    padding: 6px 20px;
+
+    font-size: 15px;
+  }
+
+  .fushigi-compare__catch {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+  }
+
+  .fushigi-compare__name {
+    margin-bottom: 8px;
+
+    font-size: 22px;
+  }
+
+  .fushigi-compare__price {
+    margin-bottom: 12px;
+
+    font-size: 29px;
+  }
+
+  .fushigi-compare__note {
+    margin-bottom: 15px;
+
+    font-size: 14px;
+  }
+
+  .fushigi-compare__button {
+    padding: 11px 16px;
+
+    font-size: 16px;
   }
 }
