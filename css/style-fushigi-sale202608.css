@@ -338,9 +338,9 @@
   --mini-border: #e8ddd8;
   --mini-accent: #8b776e;
 
-  --large-border: #8a5a97;
-  --large-accent: #764587;
-  --large-bg: #fdfaff;
+  --large-border: #d75b62;
+  --large-accent: #d73a3a;
+  --large-bg: #fff8f8;
 
   font-family:
     "Hiragino Kaku Gothic ProN",
@@ -560,15 +560,13 @@
 ================================================== */
 
 .fushigi-compare__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 
-  gap: 10px;
+  display: block;
 
   width: 100%;
   margin-top: auto;
-  padding: 12px 18px;
+  padding: 12px 42px 12px 18px;
 
   color: var(--mini-accent);
   background: #ffffff;
@@ -579,6 +577,7 @@
   font-size: clamp(15px, 2.2vw, 17px);
   font-weight: 800;
   line-height: 1.4;
+  text-align: center;
 }
 
 .fushigi-compare__button--large {
@@ -587,11 +586,17 @@
 }
 
 .fushigi-compare__button-arrow {
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 18px;
 
-  font-size: 1.5em;
+  display: block;
+
+  font-size: 1.35em;
   font-weight: 400;
   line-height: 1;
+
+  transform: translateY(-52%);
 }
 
 
