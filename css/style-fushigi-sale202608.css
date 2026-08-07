@@ -388,7 +388,7 @@
   text-align: center;
 }
 
-.fushigi-compare__lead {
+. {
   margin: 0 0 24px;
 
   color: var(--compare-muted);
@@ -819,9 +819,12 @@
   }
 
   .fushigi-compare__lead {
-    margin-bottom: 22px;
+    max-width: 92%;
+    margin: 0 auto 22px;
 
     font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
   }
 
   .fushigi-compare__sp-only {
