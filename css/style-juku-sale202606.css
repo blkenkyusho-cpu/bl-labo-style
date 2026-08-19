@@ -1,3 +1,90 @@
+/* 再入荷お知らせブロック */
+.juku2026-restock {
+  max-width: 720px;
+  margin: 26px auto 18px;
+  padding: 0 12px;
+  font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
+  color: #252330;
+  box-sizing: border-box;
+}
+
+.juku2026-restock__inner {
+  padding: 22px 20px 20px;
+  background: linear-gradient(135deg, #fffdf8 0%, #fff7ed 100%);
+  border: 1.5px solid #e4b98f;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(180, 91, 31, 0.08);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.juku2026-restock__label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 18px;
+  background: #e6761f;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+}
+
+.juku2026-restock__title {
+  margin: 0 0 14px;
+  font-size: 24px;
+  line-height: 1.55;
+  font-weight: 850;
+  color: #252330;
+}
+
+.juku2026-restock__text {
+  margin: 6px 0;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #4a4035;
+}
+
+.juku2026-restock__text strong {
+  color: #e6761f;
+  font-weight: 850;
+}
+
+@media (max-width: 480px) {
+  .juku2026-restock {
+    margin: 16px auto 12px;
+    padding: 0 6px;
+  }
+
+  .juku2026-restock__inner {
+    padding: 19px 13px 18px;
+    border-radius: 16px;
+  }
+
+  .juku2026-restock__label {
+    margin-bottom: 9px;
+    padding: 5px 14px;
+    font-size: 13px;
+  }
+
+  .juku2026-restock__title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.55;
+  }
+
+  .juku2026-restock__text {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: left;
+  }
+
+  .juku2026-restock__pc {
+    display: none;
+  }
+}
+
 /* じゅくすいシート 2026 セールブロック */
 .juku2026-sale,
 .juku2026-links {
