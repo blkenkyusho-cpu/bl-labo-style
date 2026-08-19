@@ -21,11 +21,11 @@
 .juku2026-restock__label {
   display: inline-block;
   margin-bottom: 10px;
-  padding: 6px 18px;
+  padding: 7px 20px;
   background: #e6761f;
   color: #fff;
   border-radius: 999px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 850;
   letter-spacing: 0.04em;
 }
@@ -63,8 +63,8 @@
 
   .juku2026-restock__label {
     margin-bottom: 9px;
-    padding: 5px 14px;
-    font-size: 13px;
+    padding: 6px 16px;
+    font-size: 15px;
   }
 
   .juku2026-restock__title {
