@@ -2,7 +2,7 @@
 .juku2026-restock {
   max-width: 720px;
   margin: 26px auto 18px;
-  padding: 0 12px;
+  padding: 0;
   font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
   color: #252330;
   box-sizing: border-box;
@@ -53,7 +53,7 @@
 @media (max-width: 480px) {
   .juku2026-restock {
     margin: 16px auto 12px;
-    padding: 0 6px;
+    padding: 0;
   }
 
   .juku2026-restock__inner {
