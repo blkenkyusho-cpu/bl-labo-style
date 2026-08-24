@@ -277,6 +277,17 @@
   display: none;
 }
 
+.shop-holiday-move-link{
+  color:#2f6f8f;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  font-weight:600;
+}
+
+.shop-holiday-move-link:hover{
+  color:#1f4f68;
+}
+
 /* スマートフォン */
 
 @media screen and (max-width: 767px) {
