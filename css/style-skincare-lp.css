@@ -1,0 +1,794 @@
+/* =========================================================
+   スキンケア商品 共通CSS
+   style-skincare-lp.css
+========================================================= */
+
+
+/* =========================================================
+   1. 基本レイアウト
+========================================================= */
+
+.kayo_body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #f3e3d8;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 600px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+
+.section h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--main-color);
+}
+
+.section h2 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 1.4rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   2. お悩みブロック
+========================================================= */
+
+.worries-section {
+  margin-bottom: 40px;
+}
+
+.worries-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.worries-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.worries-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  max-width: 500px;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.worries-list li::before {
+  content: '';
+  width: 10px;
+  height: 5px;
+  border-left: 3px solid #50e34d;
+  border-bottom: 3px solid #50e34d;
+  transform: rotate(-45deg);
+  font-size: 1.4em;
+  display: inline-block;
+}
+
+.worries-message {
+  max-width: 620px;
+  margin: 26px auto 0;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #444;
+}
+
+
+/* 優肌クリーム専用 */
+.worries-list.yuki-theme li {
+  max-width: 620px;
+  justify-content: flex-start;
+}
+
+.yuki-theme .worries-message {
+  max-width: 550px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+/* =========================================================
+   3. 成分カード 共通
+========================================================= */
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 0 10px;
+  gap: 10px;
+}
+
+.feature-item {
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.feature-item:hover {
+  box-shadow: 0 8px 16px rgb(217, 142, 4);
+}
+
+.feature-item a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.feature-item h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--main-color);
+}
+
+.feature-item h2 {
+  color: var(--main-color);
+  font-size: 1.4rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  color: #d98e04;
+}
+
+.feature-item h3.feature-title-long {
+  font-size: 1.15rem;
+  white-space: nowrap;
+}
+
+.feature-item p {
+  margin: 2px 0 0;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #3c8c78;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.feature-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+
+
+/* =========================================================
+   4. ローション 成分カード
+========================================================= */
+
+.lotion-features .feature-item:hover {
+  box-shadow: 0 8px 16px rgba(40, 160, 130, 0.7);
+}
+
+.lotion-features .feature-item h3 {
+  margin: 6px 0 0;
+  color: #3c8c78;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.lotion-features .feature-item h3 + p.feature-caption {
+  margin: 2px 0 0;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #3c8c78;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+/* =========================================================
+   5. 優肌クリーム 成分カード
+========================================================= */
+
+.yuki-features {
+  width: 100%;
+}
+
+.yuki-main-feature {
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.yuki-main-feature .feature-item {
+  width: 290px;
+}
+
+.yuki-sub-features {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.yuki-features .feature-item h3 {
+  margin: 6px 0 0;
+  color: #b9828d;
+}
+
+.yuki-features .feature-item h3 + p.feature-caption {
+  margin: 2px 0 0;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #b9828d;
+}
+
+.yuki-features .feature-item:hover {
+  box-shadow: 0 8px 16px rgba(185, 130, 141, 0.55);
+}
+
+
+/* =========================================================
+   6. 下向き矢印
+========================================================= */
+
+.container-arrow {
+  text-align: center;
+}
+
+.arrow-down {
+  position: relative;
+  display: inline-block;
+  width: 62px;
+  height: 33px;
+}
+
+.arrow-down::before,
+.arrow-down::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 2.5px);
+  width: 5px;
+  height: 45px;
+  border-radius: 9999px;
+  background-color: #585858;
+  transform-origin: 50% calc(100% - 2.5px);
+}
+
+.arrow-down::before {
+  transform: rotate(45deg);
+}
+
+.arrow-down::after {
+  transform: rotate(-45deg);
+}
+
+
+/* =========================================================
+   7. 成分詳細
+========================================================= */
+
+/* ジェルクリーム：ビワ葉 */
+#feature-loquat {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff8f2;
+  border: 1px solid #f3e3d8;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+
+#feature-loquat h2 {
+  color: #d67229;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+#feature-loquat li {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  text-decoration-color: silver;
+  text-underline-offset: 5px;
+}
+
+#feature-loquat p {
+  font-size: 1rem;
+}
+
+
+/* ローション：ビワ葉 */
+#feature-loquat2 {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f1faf7;
+  border: 1px solid #cce7df;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+
+#feature-loquat2 h2 {
+  color: #3a9e87;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+#feature-loquat2 li {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  text-decoration-color: silver;
+  text-underline-offset: 5px;
+}
+
+#feature-loquat2 p {
+  font-size: 1rem;
+}
+
+
+/* ジェルクリーム：オウバク */
+#feature-obaku {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff8f2;
+  border: 1px solid #f3e3d8;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+
+#feature-obaku h2 {
+  color: #d67229;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+#feature-obaku li {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  text-decoration-color: silver;
+  text-underline-offset: 5px;
+}
+
+#feature-obaku p {
+  font-size: 1rem;
+}
+
+
+/* ジェルクリーム：クチナシ */
+#feature-kuchinashi {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff8f2;
+  border: 1px solid #f3e3d8;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+
+#feature-kuchinashi h2 {
+  color: #d67229;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+#feature-kuchinashi li {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  text-decoration-color: silver;
+  text-underline-offset: 5px;
+}
+
+#feature-kuchinashi p {
+  font-size: 1rem;
+}
+
+
+/* ローション／エッセンス共通の成分詳細 */
+.feature-detail {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f1faf7;
+  border: 1px solid #cce7df;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+
+.feature-detail h2 {
+  color: #3a9e87;
+  font-size: 1.4rem;
+  margin-top: 0;
+  text-align: left;
+}
+
+.feature-detail li {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  text-decoration-color: silver;
+  text-underline-offset: 5px;
+}
+
+.feature-detail p {
+  font-size: 1rem;
+}
+
+
+/* =========================================================
+   8. 使い方
+========================================================= */
+
+.how-to-use-section {
+  max-width: 760px;
+  margin: 20px auto;
+  padding: 0 0 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  clear: both;
+  width: 100%;
+}
+
+.section-title {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.usage-steps {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.kayo_step {
+  width: 240px;
+  background: #fdfaf6;
+  border: 1px solid #f0e5dc;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.kayo_step h3 {
+  font-size: 0.95rem;
+  margin: 0 0 12px;
+  color: #d9782d;
+}
+
+.kayo_step p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  text-align: left;
+}
+
+
+/* ローション用 */
+.lotion-usage .kayo_step {
+  background: #f1faf7;
+  border: 1px solid #cce7df;
+}
+
+.lotion-usage .kayo_step h3 {
+  color: #3a9e87;
+}
+
+
+/* =========================================================
+   9. 小見出し・おすすめ使用シーン
+========================================================= */
+
+.usage-subtitle {
+  margin: 32px 0 16px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+.usage-subtitle::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #3a9e87;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.usage-scenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px 20px;
+  margin: 0 auto 24px;
+  padding: 0;
+  max-width: 700px;
+  list-style: none;
+}
+
+.usage-scenes li {
+  background: #f1faf7;
+  border: 1px solid #cce7df;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  color: #444;
+  position: relative;
+}
+
+.usage-scenes li::before {
+  content: "\2714";
+  color: #3a9e87;
+  margin-right: 6px;
+}
+
+
+/* =========================================================
+   10. FAQ
+========================================================= */
+
+.faq {
+  margin-top: 1.5rem;
+}
+
+.faq summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--main-color);
+  font-size: 1.2rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.faq details {
+  margin-bottom: 1.2rem;
+  margin-left: 30px;
+}
+
+.faq details p {
+  font-size: 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.faq_flame {
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+
+/* =========================================================
+   11. 開発ストーリー・プロフィール
+========================================================= */
+
+.development-story {
+  background-color: #fffaf4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  padding: 10px 20px;
+}
+
+.story-box {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+.story-box p {
+  font-family: "游明朝";
+  margin-bottom: 0.85rem;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px dashed #e0cdbc;
+  flex-direction: row-reverse;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-text {
+  flex: 1;
+  text-align: right;
+  padding-right: 40px;
+}
+
+.profile-name {
+  font-family: 'Shippori Mincho B1', serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 0.4em;
+}
+
+.profile-title {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.profile-description {
+  max-width: 700px;
+  margin: 10px auto 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+
+/* =========================================================
+   12. 商品詳細アコーディオン
+========================================================= */
+
+.product-accordion-section {
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.product-details-heading {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  border-left: 5px solid #bbb;
+  padding-left: 12px;
+  color: #333;
+}
+
+.accordion-item {
+  margin: 0;
+}
+
+.accordion-item summary {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f8f8f8;
+  padding: 12px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  position: relative;
+}
+
+.accordion-item summary::after {
+  content: '＋';
+  font-weight: bold;
+  position: absolute;
+  right: 16px;
+}
+
+.accordion-item[open] summary::after {
+  content: '－';
+}
+
+.accordion-content {
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 15px 16px;
+  padding-left: 30px;
+  background-color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+/* =========================================================
+   13. かよこエッセンス専用カラー
+========================================================= */
+
+.essence-theme .worries-list li::before {
+  border-color: #4f7f95;
+}
+
+.essence-theme .lotion-features .feature-item:hover {
+  box-shadow: 0 8px 16px rgba(79, 127, 149, 0.55);
+}
+
+.essence-theme .lotion-features .feature-item h3,
+.essence-theme .lotion-features .feature-item h3 + p.feature-caption {
+  color: #4f7f95;
+}
+
+.essence-theme .feature-detail {
+  background-color: #edf5f8;
+  border-color: #bdd5df;
+}
+
+.essence-theme .feature-detail h2 {
+  color: #4f7f95;
+}
+
+/* ビワ葉のみID指定が強いため個別上書き */
+.essence-theme #feature-loquat2 {
+  background-color: #edf5f8;
+  border-color: #bdd5df;
+}
+
+.essence-theme #feature-loquat2 h2 {
+  color: #4f7f95;
+}
+
+.essence-theme .lotion-usage .kayo_step {
+  background-color: #edf5f8;
+  border-color: #bdd5df;
+}
+
+.essence-theme .lotion-usage .kayo_step h3 {
+  color: #4f7f95;
+}
+
+.essence-theme .usage-subtitle::after {
+  background: #4f7f95;
+}
+
+.essence-theme .usage-scenes li {
+  background: #edf5f8;
+  border-color: #bdd5df;
+}
+
+.essence-theme .usage-scenes li::before {
+  color: #4f7f95;
+}
+
+
+/* =========================================================
+   14. スマホ対応
+========================================================= */
+
+@media screen and (max-width: 600px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 90%;
+  }
+}
