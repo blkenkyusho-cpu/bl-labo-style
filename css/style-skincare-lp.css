@@ -237,14 +237,14 @@
 
 .yuki-features .feature-item h3 {
   margin: 6px 0 0;
-  color: #a46b78;
+  color: #965d6a;
 }
 
 .yuki-features .feature-item h3 + p.feature-caption {
   margin: 2px 0 0;
   font-size: 0.8rem;
   line-height: 1.2;
-  color: #a46b78;
+  color: #965d6a;
 }
 
 .yuki-features .feature-item:hover {
