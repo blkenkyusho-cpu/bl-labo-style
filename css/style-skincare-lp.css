@@ -438,6 +438,15 @@
   font-size: 1rem;
 }
 
+/* 優肌クリームの成分詳細 */
+.yuki-theme .feature-detail {
+  background-color: #fbf4f6;
+  border-color: #e4c7cf;
+}
+
+.yuki-theme .feature-detail h2 {
+  color: #965d6a;
+}
 
 /* =========================================================
    8. 使い方
