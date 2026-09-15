@@ -896,30 +896,105 @@
    1. 基本レイアウト（スマホ）
 ========================================================= */
 
+.yuki-theme {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.yuki-theme .section1 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.yuki-theme .section1 h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.yuki-theme .section1-message {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.yuki-theme .section-divider {
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+}
 
 
 /* =========================================================
-   2. お悩みブロック（スマホ）
+   2. お悩みブロック
 ========================================================= */
+
+.yuki-theme .worries-section {
+  width: 100%;
+  box-sizing: border-box;
+}
 
 .yuki-theme .worries-title {
   font-size: 1.7rem;
   line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
+
+.yuki-theme .worries-list {
+  list-style: none;
+  padding: 0 12px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
 }
 
 .yuki-theme .worries-list li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.7em;
+  width: 100%;
+  max-width: none;
   margin-bottom: 18px;
+  font-size: 1.1rem;
   line-height: 1.8;
+  box-sizing: border-box;
 }
 
 .yuki-theme .worries-list li::before {
-  color: #965d6a;
+  content: "";
+  width: 10px;
+  height: 5px;
+  margin-top: 0.65em;
+  border-left: 3px solid #965d6a;
+  border-bottom: 3px solid #965d6a;
+  transform: rotate(-45deg);
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 .yuki-theme .worries-message {
-  margin-top: 32px;
+  width: 100%;
+  max-width: none;
+  margin: 28px auto 0;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
-
 
 
 /* =========================================================
