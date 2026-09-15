@@ -438,6 +438,33 @@
   font-size: 1rem;
 }
 
+/* =========================================================
+   優肌クリーム 成分詳細リスト
+========================================================= */
+
+.yuki-theme .feature-detail ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 20px 0;
+}
+
+.yuki-theme .feature-detail li {
+  position: relative;
+  margin-bottom: 8px;
+  padding: 8px 12px 8px 30px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.yuki-theme .feature-detail li::before {
+  content: "●";
+  position: absolute;
+  left: 12px;
+  color: #965d6a;
+  font-size: 0.7rem;
+}
+
 /* 優肌クリームの成分詳細 */
 .yuki-theme .feature-detail {
   background-color: #fbf4f6;
