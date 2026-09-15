@@ -503,13 +503,13 @@
 
 .feature-detail-tags span {
   display: inline-block;
-  padding: 3px 10px;
-  font-size: 0.75rem;
+  padding: 4px 11px;
+  font-size: 0.82rem;
   font-weight: 700;
   line-height: 1.4;
-  color: var(--feature-accent, #666);
-  background: var(--feature-tag-bg, #f5f5f5);
-  border: 1px solid var(--feature-border, #ddd);
+  color: #7f4f5a;
+  background: #edd9df;
+  border: 1px solid #cfaab4;
   border-radius: 999px;
 }
 
