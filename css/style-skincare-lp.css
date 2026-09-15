@@ -896,35 +896,45 @@
    1. 基本レイアウト（スマホ）
 ========================================================= */
 
-.yuki-theme {
+.kayo_body.yuki-theme {
   width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
   box-sizing: border-box;
 }
 
-.yuki-theme .section1 {
+.kayo_body.yuki-theme .section1 {
   width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
   box-sizing: border-box;
 }
 
-.yuki-theme .section1 h1 {
+.kayo_body.yuki-theme .section1 h1 {
   text-align: center;
   font-size: 1.6rem;
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
 
-.yuki-theme .section1-message {
-  width: 100%;
+.kayo_body.yuki-theme .section1-message {
+  width: auto;
   max-width: none;
-  margin: 0 auto;
-  padding-left: 12px;
-  padding-right: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
   box-sizing: border-box;
   font-size: 1.1rem;
   line-height: 1.8;
 }
 
-.yuki-theme .section-divider {
+.kayo_body.yuki-theme .section-divider {
   width: 80%;
   max-width: 600px;
   margin: 40px auto;
