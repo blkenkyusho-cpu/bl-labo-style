@@ -449,6 +449,49 @@
 }
 
 /* =========================================================
+   成分詳細ヘッダー 共通
+========================================================= */
+
+.feature-detail-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--feature-border, #ddd);
+}
+
+.feature-detail-head h2 {
+  margin: 0;
+  color: var(--feature-accent, #666);
+}
+
+.feature-detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.feature-detail-tags span {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--feature-accent, #666);
+  background: var(--feature-tag-bg, #f5f5f5);
+  border: 1px solid var(--feature-border, #ddd);
+  border-radius: 999px;
+}
+
+.yuki-theme {
+  --feature-accent: #965d6a;
+  --feature-border: #e4c7cf;
+  --feature-tag-bg: #f3e4e8;
+}
+
+/* =========================================================
    8. 使い方
 ========================================================= */
 
