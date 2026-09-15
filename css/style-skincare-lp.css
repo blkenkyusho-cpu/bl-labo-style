@@ -590,6 +590,30 @@
   color: #3a9e87;
 }
 
+/* =========================================================
+   優肌クリーム 使い方
+========================================================= */
+
+.yuki-theme .how-to-use-section {
+  max-width: 820px;
+}
+
+.yuki-theme .kayo_step {
+  width: 255px;
+  background: #fbf4f6;
+  border-color: #e4c7cf;
+  padding: 18px 16px;
+}
+
+.yuki-theme .kayo_step h3 {
+  color: #965d6a;
+  font-size: 1rem;
+}
+
+.yuki-theme .kayo_step p {
+  line-height: 1.7;
+}
+
 
 /* =========================================================
    9. 小見出し・おすすめ使用シーン
