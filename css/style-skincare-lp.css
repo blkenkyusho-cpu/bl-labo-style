@@ -1082,16 +1082,19 @@
 /* 優肌クリーム */
 
 .yuki-theme .kayo_step {
+  width: 100%;
   background: #fbf4f6;
   border-color: #e4c7cf;
+  padding: 10px 20px 20px;
 }
 
 .yuki-theme .kayo_step h3 {
   color: #965d6a;
+  font-size: 1rem;
 }
 
 .yuki-theme .kayo_step p {
   line-height: 1.5;
-}   
+}
    
 }
