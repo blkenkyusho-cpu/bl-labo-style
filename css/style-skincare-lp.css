@@ -916,4 +916,9 @@
   outline: 3px solid orange;
 }
 
+/* kayo_body の親要素の、さらに親 */
+*:has(> * > .kayo_body) {
+  outline: 3px solid purple;
+}
+
 }
