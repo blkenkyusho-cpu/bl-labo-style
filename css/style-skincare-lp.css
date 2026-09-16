@@ -892,4 +892,47 @@
 
 @media screen and (max-width: 768px) {
 
+/* =========================================================
+   1. 基本レイアウト（スマホ）
+========================================================= */
+
+.kayo_body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.section1 {
+  /* 必要になった場合のみ余白を追加 */
+}
+
+.section1 h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--main-color);
+}
+
+.section1 h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--main-color);
+}
+
+.section1-message {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.section-divider {
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  border: none;
+  border-top: 2px solid #f3e3d8;
+}   
+
 }
