@@ -927,6 +927,14 @@
 /* kayo_body の親要素の、さらに親 */
 *:has(> * > .kayo_body) {
   outline: 3px solid purple;
+
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
 }
 
 }
