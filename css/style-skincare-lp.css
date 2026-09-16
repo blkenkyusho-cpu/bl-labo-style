@@ -24,24 +24,24 @@
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-.section {
+.kayo_body .section {
   padding: 2rem 1rem;
 }
 
-.section h1 {
+.kayo_body .section h1 {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   color: var(--main-color);
 }
 
-.section h2 {
+.kayo_body .section h2 {
   text-align: center;
   color: var(--main-color);
   font-size: 1.4rem;
 }
 
-.section p {
+.kayo_body .section p {
   font-size: 1.1rem;
 }
 
