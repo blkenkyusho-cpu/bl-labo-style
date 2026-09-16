@@ -1102,6 +1102,53 @@
    10. FAQ
 ========================================================= */
 
+.faq {
+  margin-top: 1.5rem;
+}
+
+.faq summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--main-color);
+  font-size: 1.2rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  outline: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #3a9e87;
+  transition: transform 0.2s ease;
+}
+
+.faq details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.faq details {
+  margin: 0 12px 1.2rem;
+}
+
+.faq details p {
+  font-size: 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin-top: 0.6em;
+  line-height: 1.6;
+}
+
 .faq_flame {
   border: 2px solid #ccc;
   padding: 10px;
@@ -1109,6 +1156,6 @@
   border-radius: 20px;
   max-width: 500px;
   box-sizing: border-box;
-}   
+}
    
 }
