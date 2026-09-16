@@ -1022,5 +1022,76 @@
 .yuki-theme .feature-summary {
   border-left-color: #965d6a;
 }
+
+/* =========================================================
+   5. 使い方
+========================================================= */
+
+.how-to-use-section {
+  font-family: 'Helvetica Neue', sans-serif;
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.usage-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.kayo_step {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fdfaf6;
+  border: 1px solid #f0e5dc;
+  border-radius: 10px;
+  padding: 10px 20px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.kayo_step h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #d9782d;
+}
+
+.kayo_step p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  text-align: left;
+}
+
+
+/* 優肌クリーム */
+
+.yuki-theme .kayo_step {
+  width: 100%;
+  background: #fbf4f6;
+  border-color: #e4c7cf;
+  padding: 10px 20px 20px;
+}
+
+.yuki-theme .kayo_step h3 {
+  color: #965d6a;
+  font-size: 1rem;
+}
+
+.yuki-theme .kayo_step p {
+  line-height: 1.5;
+}   
    
 }
