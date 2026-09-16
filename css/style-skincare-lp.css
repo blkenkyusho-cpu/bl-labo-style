@@ -1250,6 +1250,19 @@
    12. 商品詳細
 ========================================================= */
 
+.product-accordion-section {
+  padding: 10px;
+}
+
+.product-details-heading {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  border-left: 4px solid #bbb;
+  padding-left: 10px;
+  color: #333;
+}
+
 .accordion-item {
   margin-bottom: 8px;
   border-bottom: 1px solid #eee;
