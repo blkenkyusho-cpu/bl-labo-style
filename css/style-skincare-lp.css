@@ -1000,5 +1000,27 @@
   padding-right: 0;
   box-sizing: border-box;
 }
+
+/* =========================================================
+   4. 成分詳細
+========================================================= */
+
+/* 優肌クリーム */
+.yuki-theme .feature-detail {
+  background-color: #fbf4f6;
+  border-color: #e4c7cf;
+}
+
+.yuki-theme .feature-detail h2 {
+  color: #965d6a;
+}
+
+.yuki-theme .feature-detail-head {
+  border-bottom-color: #e4c7cf;
+}
+
+.yuki-theme .feature-summary {
+  border-left-color: #965d6a;
+}
    
 }
