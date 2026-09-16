@@ -893,48 +893,44 @@
 @media screen and (max-width: 768px) {
 
 /* =========================================================
-   1. 基本レイアウト（スマホ・デバッグ確認用）
+   1. 基本レイアウト（スマホ）
 ========================================================= */
 
-/* kayo_body 本体 */
 .kayo_body {
-  outline: 3px solid red;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.7;
+
+  /* カラーミー側 .section__inner の左右20pxを打ち消す */
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
-/* section1 */
-.section1 {
-  outline: 3px solid blue;
+.section1 h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--main-color);
 }
 
-/* 本文 */
+.section1 h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--main-color);
+}
+
 .section1-message {
-  outline: 3px solid green;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
-/* kayo_body の直接の親要素 */
-*:has(> .kayo_body) {
-  outline: 3px solid orange;
-
-  width: 100%;
-  max-width: none;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  box-sizing: border-box;
-}
-
-/* kayo_body の親要素の、さらに親 */
-*:has(> * > .kayo_body) {
-  outline: 3px solid purple;
-
-  width: 100%;
-  max-width: none;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  box-sizing: border-box;
+.section-divider {
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  border: none;
+  border-top: 2px solid #f3e3d8;
 }
 
 }
