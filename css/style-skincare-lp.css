@@ -940,10 +940,11 @@
 }
 
 .worries-title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .worries-list {
@@ -962,6 +963,7 @@
   max-width: 500px;
   width: 100%;
   font-size: 1.1rem;
+  line-height: 1.7;
 }
 
 .worries-list li::before {
@@ -984,9 +986,19 @@
 
 
 /* 優肌クリーム */
+
 .yuki-theme .worries-list li::before {
   border-left-color: #965d6a;
   border-bottom-color: #965d6a;
-}   
+}
 
+.yuki-theme .worries-message {
+  width: 100%;
+  max-width: none;
+  margin: 28px auto 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+   
 }
