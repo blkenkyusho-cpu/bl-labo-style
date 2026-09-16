@@ -897,54 +897,15 @@
 ========================================================= */
 
 .kayo_body {
-  font-family: 'Helvetica Neue', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.7;
+  outline: 3px solid red;
 }
 
-.kayo_body .section1 {
-  width: 100%;
-  max-width: none;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  box-sizing: border-box;
+.section1 {
+  outline: 3px solid blue;
 }
 
-.kayo_body .section1 h1 {
-  text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-  color: var(--main-color);
-}
-
-.kayo_body .section1 h2 {
-  text-align: center;
-  font-size: 1.3rem;
-  color: var(--main-color);
-}
-
-.kayo_body .section1-message {
-  display: block;
-  width: 100%;
-  max-width: none;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  box-sizing: border-box;
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-.kayo_body .section-divider {
-  width: 80%;
-  max-width: 600px;
-  margin: 40px auto;
-  border: none;
-  border-top: 2px solid #f3e3d8;
+.section1-message {
+  outline: 3px solid green;
 }
 
 }
