@@ -893,19 +893,27 @@
 @media screen and (max-width: 768px) {
 
 /* =========================================================
-   1. 基本レイアウト（スマホ）
+   1. 基本レイアウト（スマホ・デバッグ確認用）
 ========================================================= */
 
+/* kayo_body 本体 */
 .kayo_body {
   outline: 3px solid red;
 }
 
+/* section1 */
 .section1 {
   outline: 3px solid blue;
 }
 
+/* 本文 */
 .section1-message {
   outline: 3px solid green;
+}
+
+/* kayo_body の直接の親要素 */
+*:has(> .kayo_body) {
+  outline: 3px solid orange;
 }
 
 }
