@@ -930,10 +930,15 @@
 }
 
 .sale202610-product-name {
-  font-size: 1.35rem;
+  display: inline-block;
+  padding: 5px 16px;
+  margin: 0 0 0.75em;
+  background: #fff;
+  border: 1px solid #d9b38c;
+  border-radius: 999px;
+  font-size: 1.4rem;
   font-weight: bold;
-  color: #5c4033;
-  margin: 0 0 0.65em;
+  color: #8b4513;
   line-height: 1.4;
 }
 
