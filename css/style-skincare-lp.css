@@ -925,22 +925,48 @@
   font-size: 1.8rem;
   font-weight: bold;
   color: #8b4513;
-  margin: 0.3em 0 0.45em;
+  margin: 0.3em 0 0.6em;
   line-height: 1.4;
 }
 
-.sale202610-product-name {
-  display: inline-block;
-  padding: 5px 16px;
-  margin: 0 0 0.75em;
-  background: #fff;
-  border: 1px solid #d9b38c;
-  border-radius: 999px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #8b4513;
-  line-height: 1.4;
+
+/* =========================================================
+   対象商品
+========================================================= */
+
+.sale202610-product-box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 220px;
+  margin: 0 auto 1em;
+  padding: 8px 22px 9px;
+  background: rgba(255, 255, 255, 0.62);
+  border-top: 1px solid #d9b38c;
+  border-bottom: 1px solid #d9b38c;
 }
+
+.sale202610-product-label {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.78rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  color: #a16b42;
+}
+
+.sale202610-product-name {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.35;
+  color: #6b4226;
+}
+
+
+/* =========================================================
+   割引
+========================================================= */
 
 .sale202610-discount {
   font-size: 1.35rem;
@@ -962,6 +988,11 @@
   line-height: 1.2;
   transform: rotate(-2deg);
 }
+
+
+/* =========================================================
+   価格
+========================================================= */
 
 .sale202610-price {
   margin: 0.5em 0 1em;
@@ -986,6 +1017,11 @@
 .sale202610-discounted-price strong {
   font-size: 1.8rem;
 }
+
+
+/* =========================================================
+   セール期間
+========================================================= */
 
 .sale202610-period {
   display: inline-block;
