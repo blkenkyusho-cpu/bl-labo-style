@@ -1580,35 +1580,35 @@
     font-size: 1.55rem;
   }
 
-  .sale202610-period {
-  display: inline-flex;
+ .sale202610-period {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.2em auto 0.7em;
-  padding: 8px 14px;
+  width: 88%;
+  max-width: 360px;
+  box-sizing: border-box;
+  margin: 0.35em auto 0.9em;
+  padding: 12px 14px;
   background-color: rgba(217, 123, 62, 0.10);
   border: 1px solid rgba(217, 123, 62, 0.35);
-  border-radius: 14px;
+  border-radius: 16px;
   color: #5c4033;
 }
 
 .sale202610-period-label {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 2px;
+  line-height: 1.4;
+  margin-bottom: 4px;
 }
 
 .sale202610-period-date {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   line-height: 1.4;
+  white-space: nowrap;
 }
    
-   .sale202610-period {
-    font-size: 0.95rem;
-    padding: 6px 10px;
-  }
-
   .sale202610-subtext {
     font-size: 0.95rem;
   }
