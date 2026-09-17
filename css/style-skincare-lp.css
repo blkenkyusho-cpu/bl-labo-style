@@ -1617,9 +1617,12 @@
     white-space: nowrap;
   }
   
-  .sale202610-subtext {
-    font-size: 0.95rem;
-  }
+.sale202610-subtext {
+  margin: 0.2em 0 0;
+  font-size: clamp(0.78rem, 2.8vw, 0.9rem);
+  line-height: 1.6;
+  white-space: nowrap;
+}
 
    
 }
