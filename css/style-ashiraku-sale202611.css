@@ -93,6 +93,13 @@
   font-size: 18px;
   white-space: nowrap;
 }
+/* 旧価格・SALE価格の税込表記 */
+.ashiraku-sale__tax {
+  color: #6b6b6b;
+  font-size: 0.58em;
+  font-weight: 500;
+  white-space: nowrap;
+}
 .ashiraku-sale__arrow {
   color: #c12a2a;
   font-size: 22px;
