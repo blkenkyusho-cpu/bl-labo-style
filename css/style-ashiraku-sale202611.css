@@ -156,3 +156,93 @@
   .ashiraku-sale__label,
   .ashiraku-sale__label::after { animation: none; }
 }
+
+/* ==========================================================
+   ② 足楽です輪～ 商品紹介ブロック
+   SALE終了後も使える独立デザイン（PC優先）
+   ========================================================== */
+.ashiraku-intro {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 28px 0;
+  padding: 28px 32px 30px;
+  border: 1px solid #d8e6dc;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #26342b;
+  font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
+  box-shadow: 0 5px 18px rgba(30,70,40,.035);
+}
+.ashiraku-intro *,
+.ashiraku-intro *::before,
+.ashiraku-intro *::after {
+  box-sizing: border-box;
+}
+.ashiraku-intro__title {
+  margin: 0 0 19px;
+  padding: 0 0 12px 16px;
+  border-left: 5px solid #729b7f;
+  border-bottom: 1px solid #e4ece6;
+  color: #315e42;
+  font-size: clamp(21px, 2.5vw, 26px);
+  font-weight: 800;
+  line-height: 1.5;
+}
+.ashiraku-intro__description {
+  font-size: 16px;
+  line-height: 1.95;
+  color: #303a32;
+}
+.ashiraku-intro__description p {
+  margin: 0 0 11px;
+}
+.ashiraku-intro__description p:last-child {
+  margin-bottom: 0;
+}
+.ashiraku-intro__features {
+  margin-top: 22px;
+  padding: 18px 22px 20px;
+  border-radius: 11px;
+  background: #f1f7f2;
+}
+.ashiraku-intro__features-title {
+  margin: 0 0 13px;
+  color: #315e42;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.ashiraku-intro__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+.ashiraku-intro__list li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 31px;
+  color: #26342b;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+.ashiraku-intro__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #568762;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 1.35;
+}
+@media (max-width: 480px) {
+  .ashiraku-intro { margin: 22px 0; padding: 20px 16px 22px; }
+  .ashiraku-intro__title { font-size: 21px; padding-left: 12px; }
+  .ashiraku-intro__description { font-size: 15px; line-height: 1.85; }
+  .ashiraku-intro__features { padding: 16px 14px 18px; }
+  .ashiraku-intro__features-title { font-size: 18px; }
+  .ashiraku-intro__list li { font-size: 15px; }
+}
