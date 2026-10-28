@@ -1,1 +1,151 @@
+/* 足楽です輪～ 2026年11月SALE / ①SALE告知ブロック
+   PC版を基準に制作。商品紹介・レビュー用CSSは後日追加。
+   HTML: .ashiraku-sale
+*/
+.ashiraku-sale {
+  --ashiraku-ink: #191214;
+  --ashiraku-muted: #5a4a4d;
+  --ashiraku-accent: #d73a3a;
+  --ashiraku-red: #b81414;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 22px 0;
+  padding: 22px 24px 24px;
+  border: 5px solid #f1d5da;
+  border-radius: 16px;
+  background: #fffefe;
+  box-shadow: 0 10px 28px rgba(0,0,0,.05);
+  color: var(--ashiraku-ink);
+  font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+.ashiraku-sale *,
+.ashiraku-sale *::before,
+.ashiraku-sale *::after {
+  box-sizing: border-box;
+}
 
+/* 期間限定：昨年同様、呼吸＋シャイン */
+.ashiraku-sale__label {
+  position: relative;
+  display: table;
+  overflow: hidden;
+  width: auto;
+  margin: 0 0 10px 18px;
+  padding: 10px 20px;
+  border: 1px solid #e05f12;
+  border-radius: 999px;
+  background: var(--ashiraku-accent);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .03em;
+  animation: ashirakuPulse 3.2s ease-in-out infinite;
+}
+.ashiraku-sale__label::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(115deg, transparent 25%, rgba(255,255,255,.4) 50%, transparent 75%);
+  transform: translateX(-120%);
+  animation: ashirakuShine 2.6s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes ashirakuPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 3px 8px rgba(0,0,0,.10); }
+  50% { transform: scale(1.1); box-shadow: 0 5px 14px rgba(0,0,0,.14); }
+}
+@keyframes ashirakuShine {
+  0%, 15% { transform: translateX(-120%); }
+  45%, 100% { transform: translateX(120%); }
+}
+
+.ashiraku-sale__title {
+  margin: 4px 0 6px;
+  color: var(--ashiraku-ink);
+  font-size: clamp(27px, 3.8vw, 34px);
+  font-weight: 800;
+  line-height: 1.35;
+}
+.ashiraku-sale__subtitle {
+  margin: 0 0 16px;
+  color: var(--ashiraku-muted);
+  font-size: clamp(16px, 2.2vw, 18px);
+  line-height: 1.65;
+}
+
+/* 価格：旧価格・矢印・新価格・OFF表示 */
+.ashiraku-sale__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 16px;
+  margin: 0 0 18px;
+  padding: 16px 14px;
+  border: 1px dashed #f1d5da;
+  border-radius: 10px;
+  background: #fff;
+}
+.ashiraku-sale__old {
+  color: #7f736a;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.ashiraku-sale__arrow {
+  color: #c12a2a;
+  font-size: 22px;
+  font-weight: 900;
+}
+.ashiraku-sale__new {
+  color: var(--ashiraku-red);
+  font-size: clamp(25px, 3.5vw, 32px);
+  font-weight: 900;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+.ashiraku-sale__offnote {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff5a5a, #d72626);
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  color: #fff;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+/* 開催期間：昨年の赤帯を継承 */
+.ashiraku-sale__period {
+  margin: 0;
+  padding: 12px 10px;
+  border: 1px solid #c42f2f;
+  border-radius: 10px;
+  background: var(--ashiraku-accent);
+  color: #fff;
+  font-size: clamp(18px, 2.5vw, 23px);
+  font-weight: 800;
+  line-height: 1.65;
+  text-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* スマホ版はPC表示を確認後に本調整する */
+@media (max-width: 480px) {
+  .ashiraku-sale { padding: 18px 14px; border-radius: 14px; }
+  .ashiraku-sale__label { margin-left: 12px; padding: 9px 15px; font-size: 18px; }
+  .ashiraku-sale__title { font-size: 28px; }
+  .ashiraku-sale__subtitle { font-size: 16px; }
+  .ashiraku-sale__price { gap: 8px 10px; padding: 12px 8px; }
+  .ashiraku-sale__old { font-size: 15px; }
+  .ashiraku-sale__arrow { font-size: 18px; }
+  .ashiraku-sale__new { font-size: 26px; }
+  .ashiraku-sale__offnote { font-size: 17px; }
+  .ashiraku-sale__period { font-size: 16px; padding: 10px 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ashiraku-sale__label,
+  .ashiraku-sale__label::after { animation: none; }
+}
