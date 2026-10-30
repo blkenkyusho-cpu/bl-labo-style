@@ -186,3 +186,152 @@
   .sugata26-sale__new { font-size: clamp(21px, 6.3vw, 26px); }
   .sugata26-sale__offnote { font-size: 16px; }
 }
+
+/* ==========================================================
+   ② 姿美人 商品紹介ブロック
+   SALE終了後も使える独立デザイン（PC優先）
+   ========================================================== */
+.sugata26-intro {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 28px 0;
+  padding: 28px 32px 30px;
+  border: 5px solid #E7BDC6;
+  border-radius: 16px;
+  background: #FFFCF8;
+  color: #392F34;
+  font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
+  box-shadow: 0 10px 28px rgba(0,0,0,.05);
+}
+.sugata26-intro *,
+.sugata26-intro *::before,
+.sugata26-intro *::after {
+  box-sizing: border-box;
+}
+.sugata26-intro__title {
+  margin: 0 0 19px;
+  padding: 0 0 12px 16px;
+  border-left: 5px solid #884052;
+  border-bottom: 1px solid #EBDDE0;
+  color: #884052;
+  font-size: clamp(21px, 2.5vw, 26px);
+  font-weight: 800;
+  line-height: 1.5;
+}
+.sugata26-intro__description {
+  font-size: 16px;
+  line-height: 1.95;
+  color: #473C41;
+}
+.sugata26-intro__description p {
+  margin: 0 0 11px;
+}
+.sugata26-intro__description p:last-child {
+  margin-bottom: 0;
+}
+.sugata26-intro__features {
+  margin-top: 22px;
+  padding: 18px 22px 20px;
+  border-radius: 11px;
+  background: #FCE7EB;
+}
+.sugata26-intro__features-title {
+  margin: 0 0 13px;
+  text-align: center;
+  color: #884052;
+  font-size: 22px;
+  font-weight: 800;
+  position: relative;
+  padding-bottom: 13px;
+  line-height: 1.5;
+}
+.sugata26-intro__features-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 54px;
+  height: 3px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: #C5788C;
+}
+.sugata26-intro__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+.sugata26-intro__list li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 31px;
+  color: #392F34;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+.sugata26-intro__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #884052;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 1.35;
+}
+@media (max-width: 480px) {
+  .sugata26-intro { margin: 22px 0; padding: 20px 16px 22px; }
+  .sugata26-intro__title { font-size: 19px; padding-left: 12px; }
+  .sugata26-intro__description { font-size: 15px; line-height: 1.7; }
+  .sugata26-intro__features { padding: 16px 14px 18px; }
+  .sugata26-intro__features-title { font-size: 20px; }
+  .sugata26-intro__list li { font-size: 15px; }
+}
+
+
+
+/* ご注文前後のご相談について */
+.sugata26-intro__support {
+  margin-top: 20px;
+  padding: 18px 22px;
+  border: 1px solid #E7BDC6;
+  border-radius: 11px;
+  background: #FFFFFF;
+}
+.sugata26-intro__support-title {
+  position: relative;
+  margin: 0 0 12px;
+  padding-left: 28px;
+  color: #884052;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.sugata26-intro__support-title::before {
+  content: "✉";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #884052;
+  font-size: 20px;
+}
+.sugata26-intro__support p {
+  margin: 0 0 10px;
+  color: #473C41;
+  font-size: 15px;
+  line-height: 1.85;
+}
+.sugata26-intro__support p:last-child { margin-bottom: 0; }
+@media (max-width: 480px) {
+  .sugata26-intro__support { margin-top: 16px; padding: 15px 14px; }
+  .sugata26-intro__support-title { font-size: 17px; padding-left: 24px; }
+  .sugata26-intro__support-title::before { font-size: 17px; }
+  .sugata26-intro__support p { font-size: 14px; line-height: 1.75; }
+}
