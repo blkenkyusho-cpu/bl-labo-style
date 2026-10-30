@@ -150,7 +150,24 @@
   .ashiraku-sale__arrow { font-size: 18px; }
   .ashiraku-sale__new { font-size: 26px; }
   .ashiraku-sale__offnote { font-size: 17px; }
-  .ashiraku-sale__period { font-size: 16px; padding: 10px 6px; }
+  .ashiraku-sale__period {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 6px;
+    line-height: 1.45;
+  }
+  .ashiraku-sale__period-label {
+    display: block;
+    font-size: 14px;
+  }
+  .ashiraku-sale__period-date {
+    display: block;
+    max-width: 100%;
+    font-size: clamp(12px, 3.7vw, 18px);
+    white-space: nowrap;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .ashiraku-sale__label,
