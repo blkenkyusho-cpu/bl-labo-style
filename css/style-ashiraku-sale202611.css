@@ -398,11 +398,13 @@
   .ashiraku-review__button--pc { display: none; }
   .ashiraku-review__button--sp { display: inline-block; }
 }
-/* Keep the intro heading on one line when the available width allows it. */
-@media (min-width: 390px) and (max-width: 480px) {
+/* Intro heading: preserve desktop single line; use deliberate mobile line break. */
+.ashiraku-intro__break { display: none; }
+@media (max-width: 480px) {
   .ashiraku-intro__title {
-    font-size: 14px;
-    letter-spacing: -0.035em;
-    white-space: nowrap;
+    font-size: 21px;
+    letter-spacing: normal;
+    white-space: normal;
   }
+  .ashiraku-intro__break { display: block; }
 }
