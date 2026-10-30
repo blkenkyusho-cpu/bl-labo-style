@@ -1,0 +1,188 @@
+/* 姿美人 2026年11月SALE / ①SALE告知ブロック
+   足楽です輪～の完成済みデザインを元に作成
+   合皮・キャンブレル両ページで共通使用
+   HTML: .sugata26-sale
+*/
+.sugata26-sale {
+  --sugata26-ink: #191214;
+  --sugata26-muted: #5a4a4d;
+  --sugata26-accent: #d73a3a;
+  --sugata26-red: #b81414;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 22px 0;
+  padding: 22px 24px 24px;
+  border: 5px solid #f1d5da;
+  border-radius: 16px;
+  background: #fffefe;
+  box-shadow: 0 10px 28px rgba(0,0,0,.05);
+  color: var(--sugata26-ink);
+  font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+.sugata26-sale *,
+.sugata26-sale *::before,
+.sugata26-sale *::after {
+  box-sizing: border-box;
+}
+
+/* 期間限定：昨年同様、呼吸＋シャイン */
+.sugata26-sale__label {
+  position: relative;
+  display: table;
+  overflow: hidden;
+  width: auto;
+  margin: 0 0 10px 18px;
+  padding: 10px 20px;
+  border: 1px solid #e05f12;
+  border-radius: 999px;
+  background: var(--sugata26-accent);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .03em;
+  animation: sugata26Pulse 3.2s ease-in-out infinite;
+}
+.sugata26-sale__label::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(115deg, transparent 25%, rgba(255,255,255,.4) 50%, transparent 75%);
+  transform: translateX(-120%);
+  animation: sugata26Shine 2.6s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes sugata26Pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 3px 8px rgba(0,0,0,.10); }
+  50% { transform: scale(1.1); box-shadow: 0 5px 14px rgba(0,0,0,.14); }
+}
+@keyframes sugata26Shine {
+  0%, 15% { transform: translateX(-120%); }
+  45%, 100% { transform: translateX(120%); }
+}
+
+.sugata26-sale__title {
+  margin: 4px 0 6px;
+  color: var(--sugata26-ink);
+  font-size: clamp(27px, 3.8vw, 34px);
+  font-weight: 800;
+  line-height: 1.35;
+}
+.sugata26-sale__subtitle {
+  margin: 0 0 16px;
+  color: var(--sugata26-muted);
+  font-size: clamp(16px, 2.2vw, 18px);
+  line-height: 1.65;
+}
+
+/* 価格：旧価格・矢印・新価格・OFF表示 */
+.sugata26-sale__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 16px;
+  margin: 0 0 18px;
+  padding: 16px 14px;
+  border: 1px dashed #f1d5da;
+  border-radius: 10px;
+  background: #fff;
+}
+.sugata26-sale__old {
+  color: #7f736a;
+  font-size: 18px;
+  white-space: nowrap;
+}
+/* 旧価格・SALE価格の税込表記 */
+.sugata26-sale__tax {
+  color: #6b6b6b;
+  font-size: 0.58em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.sugata26-sale__arrow {
+  color: #c12a2a;
+  font-size: 22px;
+  font-weight: 900;
+}
+.sugata26-sale__new {
+  color: var(--sugata26-red);
+  font-size: clamp(25px, 3.5vw, 32px);
+  font-weight: 900;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+.sugata26-sale__offnote {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff5a5a, #d72626);
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  color: #fff;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+/* 開催期間：昨年の赤帯を継承 */
+.sugata26-sale__period {
+  margin: 0;
+  padding: 12px 10px;
+  border: 1px solid #c42f2f;
+  border-radius: 10px;
+  background: var(--sugata26-accent);
+  color: #fff;
+  font-size: clamp(18px, 2.5vw, 23px);
+  font-weight: 800;
+  line-height: 1.65;
+  text-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* スマホ版はPC表示を確認後に本調整する */
+@media (max-width: 480px) {
+  .sugata26-sale { padding: 18px 14px; border-radius: 14px; }
+  .sugata26-sale__label { margin-left: 12px; padding: 8px 13px; font-size: 16px; }
+  .sugata26-sale__title { font-size: 28px; }
+  .sugata26-sale__subtitle { font-size: 16px; }
+  .sugata26-sale__price { gap: 7px 6px; padding: 10px 5px; }
+  .sugata26-sale__old { font-size: 15px; }
+  .sugata26-sale__arrow { font-size: 18px; }
+  .sugata26-sale__new { font-size: 26px; }
+  .sugata26-sale__offnote { font-size: 17px; }
+  .sugata26-sale__period {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 6px;
+    line-height: 1.45;
+  }
+  .sugata26-sale__period-label {
+    display: block;
+    font-size: 14px;
+  }
+  .sugata26-sale__period-date {
+    display: block;
+    max-width: 100%;
+    font-size: clamp(14px, 4.5vw, 20px);
+    white-space: nowrap;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sugata26-sale__label,
+  .sugata26-sale__label::after { animation: none; }
+}
+
+
+/* 姿美人：高額商品でも価格が読みやすいように折り返し対応 */
+.sugata26-sale__price { gap: 12px 14px; }
+.sugata26-sale__old, .sugata26-sale__new { white-space: nowrap; }
+.sugata26-sale__offnote { white-space: nowrap; }
+@media (max-width: 480px) {
+  .sugata26-sale__price { gap: 8px 9px; }
+  .sugata26-sale__old { font-size: 14px; }
+  .sugata26-sale__new { font-size: clamp(21px, 6.3vw, 26px); }
+  .sugata26-sale__offnote { font-size: 16px; }
+}
