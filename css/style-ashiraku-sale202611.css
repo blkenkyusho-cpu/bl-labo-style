@@ -312,11 +312,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 6px 16px;
+  justify-content: flex-start;
+  gap: 6px 14px;
   margin-bottom: 12px;
 }
 .ashiraku-review__item-title {
+  order: 2;
   margin: 0;
   color: #884052;
   font-size: 19px;
@@ -324,6 +325,7 @@
   line-height: 1.55;
 }
 .ashiraku-review__stars {
+  order: 1;
   color: #C18B26;
   font-size: 18px;
   font-weight: 700;
