@@ -142,10 +142,10 @@
 /* スマホ版はPC表示を確認後に本調整する */
 @media (max-width: 480px) {
   .ashiraku-sale { padding: 18px 14px; border-radius: 14px; }
-  .ashiraku-sale__label { margin-left: 12px; padding: 9px 15px; font-size: 18px; }
+  .ashiraku-sale__label { margin-left: 12px; padding: 8px 13px; font-size: 16px; }
   .ashiraku-sale__title { font-size: 28px; }
   .ashiraku-sale__subtitle { font-size: 16px; }
-  .ashiraku-sale__price { gap: 8px 10px; padding: 12px 8px; }
+  .ashiraku-sale__price { gap: 7px 6px; padding: 10px 5px; }
   .ashiraku-sale__old { font-size: 15px; }
   .ashiraku-sale__arrow { font-size: 18px; }
   .ashiraku-sale__new { font-size: 26px; }
@@ -258,8 +258,8 @@
 }
 @media (max-width: 480px) {
   .ashiraku-intro { margin: 22px 0; padding: 20px 16px 22px; }
-  .ashiraku-intro__title { font-size: 21px; padding-left: 12px; }
-  .ashiraku-intro__description { font-size: 15px; line-height: 1.85; }
+  .ashiraku-intro__title { font-size: 19px; padding-left: 12px; }
+  .ashiraku-intro__description { font-size: 15px; line-height: 1.7; }
   .ashiraku-intro__features { padding: 16px 14px 18px; }
   .ashiraku-intro__features-title { font-size: 20px; }
   .ashiraku-intro__list li { font-size: 15px; }
@@ -381,11 +381,28 @@
   .ashiraku-review { margin: 22px 0; padding: 20px 16px 22px; }
   .ashiraku-review__title { font-size: 21px; padding-left: 12px; margin-bottom: 18px; }
   .ashiraku-review__list { gap: 12px; }
-  .ashiraku-review__item { padding: 16px 15px; }
+  .ashiraku-review__item { padding: 12px 15px; }
   .ashiraku-review__item-title { font-size: 17px; }
   .ashiraku-review__stars { font-size: 16px; }
   .ashiraku-review__body { font-size: 15px; line-height: 1.8; }
   .ashiraku-review__author { font-size: 13px; }
   .ashiraku-review__note { font-size: 14px; }
+  .ashiraku-review__button--pc { display: none; }
+  .ashiraku-review__button--sp { display: inline-block; }
   .ashiraku-review__button { font-size: 15px; padding: 11px 22px; }
+}
+
+/* Smartphone: switch review links; desktop retains the in-page anchor. */
+.ashiraku-review__button--sp { display: none; }
+@media (max-width: 480px) {
+  .ashiraku-review__button--pc { display: none; }
+  .ashiraku-review__button--sp { display: inline-block; }
+}
+/* Keep the intro heading on one line when the available width allows it. */
+@media (min-width: 390px) and (max-width: 480px) {
+  .ashiraku-intro__title {
+    font-size: 14px;
+    letter-spacing: -0.035em;
+    white-space: nowrap;
+  }
 }
