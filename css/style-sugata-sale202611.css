@@ -487,3 +487,9 @@
   .sugata26-review__button--sp { display: inline-block; }
   .sugata26-review__body p { margin-bottom: 8px; }
 }
+
+/* サブタイトル：PCでは1行、スマホのみ指定位置で改行 */
+.sugata26-sale__sp-break { display: none; }
+@media (max-width: 480px) {
+  .sugata26-sale__sp-break { display: inline; }
+}
