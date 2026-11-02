@@ -493,3 +493,23 @@
 @media (max-width: 480px) {
   .sugata26-sale__sp-break { display: inline; }
 }
+
+/* スマホ価格表示：旧価格→SALE価格を同一行、OFFラベルは下段 */
+@media (max-width: 480px) {
+  .sugata26-sale__price {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+    row-gap: 9px;
+    padding: 12px 4px;
+  }
+  .sugata26-sale__old { font-size: 12px; }
+  .sugata26-sale__arrow { font-size: 15px; }
+  .sugata26-sale__new { font-size: clamp(18px, 5.5vw, 22px); }
+  .sugata26-sale__offnote {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
