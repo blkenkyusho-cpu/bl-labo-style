@@ -525,3 +525,13 @@
 @media (max-width: 480px) {
   .sugata26-intro__support-sp-break { display: inline; }
 }
+
+/* キャンブレルタイプ：PCでは商品名を1行、スマホではタイプ名を2段目に */
+.sugata26-sale__type { display: inline; }
+@media (max-width: 480px) {
+  .sugata26-sale__type {
+    display: block;
+    font-size: 0.72em;
+    line-height: 1.5;
+  }
+}
