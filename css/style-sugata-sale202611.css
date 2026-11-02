@@ -513,3 +513,9 @@
     justify-self: center;
   }
 }
+
+/* ②商品紹介の見出し：PCでは改行せず、スマホのみ指定位置で改行 */
+.sugata26-intro__sp-break { display: none; }
+@media (max-width: 480px) {
+  .sugata26-intro__sp-break { display: inline; }
+}
