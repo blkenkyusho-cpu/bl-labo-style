@@ -519,3 +519,9 @@
 @media (max-width: 480px) {
   .sugata26-intro__sp-break { display: inline; }
 }
+
+/* ②相談案内の見出し：スマホのみ「ご心配な方は、」の後で改行 */
+.sugata26-intro__support-sp-break { display: none; }
+@media (max-width: 480px) {
+  .sugata26-intro__support-sp-break { display: inline; }
+}
