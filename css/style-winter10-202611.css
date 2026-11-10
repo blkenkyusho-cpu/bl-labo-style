@@ -53,7 +53,7 @@
   font-size: 42px;
   font-weight: 600;
 
-  color: #B9473E;
+  color: #376782;
 
   letter-spacing: 0.05em;
   line-height: 1.5;
@@ -91,12 +91,12 @@
 }
 
 .winter10-intro-point {
-  color: #B9473E;
+  color: #C65D37;
   font-weight: 700;
 }
 
 .winter10-intro-last {
-  color: #B9473E;
+  color: #C65D37;
   font-weight: 700;
   text-align: center;
   margin-top: 26px;
@@ -740,7 +740,6 @@
 .winter10-button {
   color: #FFFFFF;
 }
-.winter10-intro-title,
 .winter10-summary-title {
   color: #B9473E;
 }
