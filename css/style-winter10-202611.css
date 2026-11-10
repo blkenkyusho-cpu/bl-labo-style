@@ -10,8 +10,24 @@
   color: #333;
   line-height: 1.8;
   box-sizing: border-box;
-  background: #EAF5FC;
+  position: relative;
+  isolation: isolate;
+  background: transparent;
   padding-bottom: 32px;
+}
+
+/* 背景だけを画面の左右いっぱいに。本文は最大1000pxのまま */
+.winter10-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background: #EAF5FC;
+  z-index: -1;
+  pointer-events: none;
 }
 
 
