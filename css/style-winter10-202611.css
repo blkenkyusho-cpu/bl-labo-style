@@ -357,7 +357,7 @@
   display: inline-block;
   padding: 12px 48px;
   min-width: 320px;
-  background: #CB5D22;
+  background: #F28C28;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -365,13 +365,13 @@
   border-radius: 999px;
   text-align: center;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 12px rgba(203,93,34,.22); 
+  box-shadow: 0 4px 12px rgba(242,140,40,.24); 
 }
 
 .winter10-button:hover {
-  background: #AD4717;
+  background: #D97316;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(173,71,23,.25);
+  box-shadow: 0 6px 16px rgba(217,115,22,.30);
 }
 
 .winter10-actions {
@@ -640,14 +640,14 @@
     max-width: 320px;
 
     padding: 11px 36px;
-    background: #CB5D22;
+    background: #F28C28;
     color: #fff !important;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     border-radius: 999px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(203,93,34,.22); 
+    box-shadow: 0 4px 12px rgba(242,140,40,.24); 
   }
 
    /* まとめブロック */
