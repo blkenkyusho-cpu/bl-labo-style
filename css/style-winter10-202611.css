@@ -1,0 +1,750 @@
+/* ============================================================
+   冬のおすすめ10選
+   ============================================================ */
+
+.winter10-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+  line-height: 1.8;
+  box-sizing: border-box;
+  background: #EAF5FC;
+  padding-bottom: 32px;
+}
+
+
+.winter10-wrap * {
+  box-sizing: border-box;
+}
+
+.winter10-wrap img {
+  max-width: 100%;
+  height: auto;
+}
+
+.winter10-main-banner {
+  margin-top: 30px;
+}
+
+.winter10-intro-title {
+  margin: 60px 0 36px;
+  text-align: center;
+
+  font-family: "Yu Mincho", "游明朝", "Hiragino Mincho ProN", serif;
+
+  font-size: 42px;
+  font-weight: 600;
+
+  color: #B9473E;
+
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+
+  position: relative;
+}
+
+.winter10-intro-title::after {
+  content: "";
+  display: block;
+
+  width: 120px;
+  height: 2px;
+
+  background: #EF7163;
+
+  margin: 18px auto 0;
+}
+
+.winter10-intro-text {
+  max-width: 800px;
+  margin: 0 auto 56px;
+  color: #333;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+}
+
+.winter10-intro-text p {
+  margin: 0 0 18px;
+}
+
+.winter10-intro-text p:last-child {
+  margin-bottom: 0;
+}
+
+.winter10-intro-point {
+  color: #B9473E;
+  font-weight: 700;
+}
+
+.winter10-intro-last {
+  color: #B9473E;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 26px;
+}
+
+/* ========================================
+   目次ブロック
+======================================== */
+
+.winter10-index {
+  max-width: 800px;
+  margin: 0 auto 64px;
+  padding: 26px 34px 28px;
+  background: #FFFFFF;
+  border: 1px solid #C6DFEF;
+  border-radius: 10px;
+}
+
+.winter10-index-title {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #B9473E;
+}
+
+.winter10-index-subtitle {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 4px;
+  background: none;
+  color: #B9473E;
+  border-bottom: 2px solid #F28C28;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.winter10-index-subtitle-wrap {
+  text-align: center;
+  margin: 10px 0 8px;
+}
+
+.winter10-index-plus {
+  margin-top: 5px;
+}
+
+.winter10-index-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.winter10-index-list li {
+  margin: 0;
+}
+
+.winter10-index-list a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 7px 8px 9px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #F6D4CE;
+  transition: 0.2s;
+}
+
+.winter10-index-list a span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: #F28C28;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.winter10-index-list a b {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.winter10-index-list a em {
+  margin-left: auto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+  color: #F28C28;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.winter10-index-list a:hover {
+  color: #B9473E;
+  background: #FFF0EA;
+}
+
+/* ========================================
+   商品ブロック
+======================================== */
+
+.winter10-item {
+  margin: 0 0 48px;
+  padding: 34px 36px 22px;
+  border: 1px solid #C6DFEF;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.winter10-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 26px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #EF7163;
+}
+
+.winter10-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 54px;
+  height: 64px;
+
+  background: #F28C28;
+  color: #fff;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  border-radius: 0;
+
+  flex-shrink: 0;
+}
+
+.winter10-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.3;
+}
+
+.winter10-body {
+  display: flex;
+  gap: 34px;
+  /*align-items: flex-start;*/ 
+  align-items: center;
+}
+
+.winter10-imagebox {
+  flex: 0 0 42%;
+  aspect-ratio: 1 / 1;
+
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.winter10-imagebox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  transition: transform .25s ease;
+}
+
+.winter10-imagebox a:hover img {
+  transform: scale(1.03);
+}
+
+.winter10-content {
+  flex: 1;
+}
+
+.winter10-catch {
+  margin: 0 0 18px;
+
+  font-size: 21px;
+  font-weight: bold;
+  color: #B9473E;
+
+  line-height: 1.5;
+}
+
+.winter10-content p {
+  line-height: 1.9;
+}
+
+.winter10-price {
+  margin: 18px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.winter10-review {
+  margin: 20px 0;
+  padding: 12px 20px;
+  background: #FFF6F3;
+  border-left: 4px solid #EF7163;
+  border-radius: 8px;
+}
+
+.winter10-review-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.winter10-review-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #B9473E;
+}
+
+.winter10-stars {
+  margin: 0;
+  color: #d6a51f;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.winter10-review p {
+  line-height: 1.75;
+}
+
+.winter10-reviewer {
+  margin: 10px 0 0;
+  text-align: right;
+  font-size: 13px;
+  color: #555;
+}
+
+.winter10-button {
+  display: inline-block;
+  padding: 12px 48px;
+  min-width: 320px;
+  background: #CB5D22;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 999px;
+  text-align: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(203,93,34,.22); 
+}
+
+.winter10-button:hover {
+  background: #AD4717;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(173,71,23,.25);
+}
+
+.winter10-actions {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.winter10-back {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.winter10-back a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* ========================================
+   まとめブロック
+======================================== */
+
+.winter10-summary {
+  margin: 72px auto 90px;
+}
+
+.winter10-summary-title {
+  margin: 0 0 36px;
+  text-align: center;
+
+  font-family: "Yu Mincho", "游明朝", "Hiragino Mincho ProN", serif;
+  font-size: 38px;
+  font-weight: 600;
+
+  color: #B9473E;
+
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+
+  position: relative;
+}
+
+.winter10-summary-title::after {
+  content: "";
+  display: block;
+
+  width: 120px;
+  height: 2px;
+
+  background: #EF7163;
+
+  margin: 18px auto 15px;
+}
+
+.winter10-summary-text {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+}
+
+.winter10-summary-text p {
+  margin: 0 0 18px;
+}
+
+.winter10-summary-text p:last-child {
+  margin-bottom: 0;
+}
+
+.winter10-summary-last {
+  margin-top: 28px;
+  text-align: center;
+  color: #B9473E;
+  font-weight: 700;
+}
+
+/* ========================================
+   導線ブロック
+======================================== */
+
+.winter10-related {
+  max-width: 900px;
+  margin: 160px auto 120px;
+}
+
+.winter10-related-title {
+  margin: 0 0 30px;
+  text-align: center;
+  color: #B9473E;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.winter10-related-title::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 2px;
+  background: #EF7163;
+  margin: 14px auto 0;
+}
+
+.winter10-related-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.winter10-related-card {
+  display: block;
+  background: #fff;
+  border: 1px solid #C6DFEF;
+  color: #333;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.winter10-related-card:hover {
+  box-shadow: 0 8px 18px rgba(77, 122, 151, 0.18);
+  transform: translateY(-2px);
+}
+
+.winter10-related-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.winter10-related-body {
+  padding: 14px 16px 18px;
+}
+
+.winter10-related-card-title {
+  margin: 0 0 10px;
+  color: #222;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.winter10-related-text {
+  margin: 0;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 768px) {
+
+  .winter10-intro-title {
+    margin: 35px 0 24px;
+    font-size: 28px;
+  }
+   
+  .winter10-intro-title {
+    font-size: 26px;
+  }
+
+  .winter10-intro-text,
+  .winter10-intro-text p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .winter10-intro-text p {
+    margin-bottom: 24px;
+  }
+
+  .winter10-intro-last {
+    margin-top: 36px !important;
+    padding-top: 22px;
+    border-top: 1px solid #C6DFEF;
+    line-height: 1.8 !important;
+  } 
+
+  .winter10-index {
+    padding: 22px 28px 24px;
+  }
+   
+  .winter10-index-title{
+    margin-bottom: 18px; 
+    font-size: 20px;
+  } 
+
+  .winter10-index-list{
+    grid-template-columns: 1fr;
+    gap: 0;
+  } 
+
+  .winter10-index-list a b{
+    font-size:14px;
+  } 
+
+  .winter10-index-list a span{
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .winter10-index-list a{
+    padding: 6px 0;
+  } 
+
+  .winter10-index-subtitle-wrap {
+    margin: 18px 0 10px;
+  } 
+
+  /*商品ブロック*/
+   
+  .winter10-body{
+    display: block;
+  }
+
+  .winter10-imagebox{
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto 22px;
+  }
+
+  .winter10-item{
+    padding: 28px 18px 22px;
+  }
+
+  .winter10-num{
+    width: 40px;
+    height: 46px;
+    font-size: 18px;
+  }
+
+  .winter10-name{
+    font-size: 22px;
+  }
+
+  .winter10-catch {
+    font-size: 19px;
+  }
+
+  .winter10-content p{
+     line-height: 1.75;
+  }
+
+  .winter10-review-head{
+    display: block;
+  }
+
+  .winter10-review-title{
+    font-size: 17px;
+    margin-top: 4px;
+  }
+
+  .winter10-review{
+    margin: 16px 0;
+    padding: 14px 16px;
+  }
+
+  .winter10-review p{
+    line-height: 1.65;
+  }
+
+  .winter10-button{
+    display: inline-block;
+    width: auto;
+    min-width: 260px;
+    max-width: 320px;
+
+    padding: 11px 36px;
+    background: #CB5D22;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 999px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(203,93,34,.22); 
+  }
+
+   /* まとめブロック */
+
+  .winter10-summary-title{
+    font-size: 22px;
+    margin: 30px 0 24px;
+  }
+
+  .winter10-summary-text,
+  .winter10-summary-text p{
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .winter10-summary-text p{
+    margin-bottom: 24px;
+  }
+
+  .winter10-summary-last{
+    margin-top: 24px !important;
+    padding-top: 0px;
+    /*border-top: 1px solid #C6DFEF;*/
+    line-height: 1.8 !important;
+    text-align:left; 
+  }
+
+   /* 誘導ブロック */
+
+  .winter10-related{
+  margin-bottom: 70px;
+  }
+   
+  .winter10-related-cards{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .winter10-related-card{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 15px; 
+  }
+
+  .winter10-related-image{
+    width: 32%;
+    aspect-ratio: 4 / 3;
+    flex-shrink: 0;
+  }
+
+  .winter10-related-body{
+    flex: 1;
+    padding-left: 0;
+  }
+
+  .winter10-related-card-title{
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .winter10-related-text{
+    font-size: 13px;
+    line-height: 1.6;
+  }
+     
+}
+
+
+/* ============================================================
+   冬版専用の配色・上部バナー調整
+   背景: アイスブルー / 装飾: オレンジ + コーラル
+   ============================================================ */
+.winter10-banner-phase1,
+.winter10-banner-phase2 {
+  margin-top: 30px;
+}
+.winter10-banner-phase1 img,
+.winter10-banner-phase2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.winter10-banner-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  padding: 24px;
+  background: #FFFFFF;
+  border: 1px dashed #A9CDDF;
+  color: #B9473E;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+.winter10-index-list a span,
+.winter10-num {
+  color: #38230F;
+}
+.winter10-button {
+  color: #FFFFFF;
+}
+.winter10-intro-title,
+.winter10-summary-title {
+  color: #B9473E;
+}
+@media screen and (max-width: 768px) {
+  .winter10-wrap {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .winter10-banner-placeholder {
+    min-height: 120px;
+    font-size: 20px;
+  }
+  .winter10-index {
+    padding: 22px 20px 24px;
+  }
+  .winter10-index-list a span,
+  .winter10-num {
+    color: #38230F;
+  }
+  .winter10-button {
+    color: #FFFFFF !important;
+  }
+}
