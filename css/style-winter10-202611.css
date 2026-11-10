@@ -123,7 +123,7 @@
   max-width: 800px;
   margin: 0 auto 64px;
   padding: 26px 34px 28px;
-  background: #FFFFFF;
+  background: #F6FBFE;
   border: 1px solid #C6DFEF;
   border-radius: 10px;
 }
@@ -133,7 +133,7 @@
   text-align: center;
   font-size: 28px;
   font-weight: bold;
-  color: #B9473E;
+  color: #28546C;
 }
 
 .winter10-index-subtitle {
@@ -176,7 +176,7 @@
   padding: 7px 8px 9px;
   color: #333;
   text-decoration: none;
-  border-bottom: 1px solid #F6D4CE;
+  border-bottom: 1px solid #D7E7F1;
   transition: 0.2s;
 }
 
@@ -203,14 +203,14 @@
   font-style: normal;
   font-size: 18px;
   line-height: 1;
-  color: #F28C28;
+  color: #7FA9BD;
   font-weight: 400;
   opacity: 0.6;
 }
 
 .winter10-index-list a:hover {
-  color: #B9473E;
-  background: #FFF0EA;
+  color: #28546C;
+  background: #EAF5FC;
 }
 
 /* ========================================
@@ -744,7 +744,9 @@
   font-weight: bold;
   text-align: center;
 }
-.winter10-index-list a span,
+.winter10-index-list a span {
+  color: #FFFFFF;
+}
 .winter10-num {
   color: #38230F;
 }
@@ -766,7 +768,9 @@
   .winter10-index {
     padding: 22px 20px 24px;
   }
-  .winter10-index-list a span,
+  .winter10-index-list a span {
+    color: #FFFFFF;
+  }
   .winter10-num {
     color: #38230F;
   }
