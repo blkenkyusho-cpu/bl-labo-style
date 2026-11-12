@@ -758,8 +758,8 @@
 }
 @media screen and (max-width: 768px) {
   .winter10-wrap {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .winter10-banner-placeholder {
     min-height: 120px;
