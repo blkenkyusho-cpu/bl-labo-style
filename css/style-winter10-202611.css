@@ -723,7 +723,9 @@
    ============================================================ */
 .winter10-banner-phase1,
 .winter10-banner-phase2 {
-  margin-top: 30px;
+  width: 100%;
+  max-width: 950px;
+  margin: 30px auto 0;
 }
 .winter10-banner-phase1 img,
 .winter10-banner-phase2 img {
