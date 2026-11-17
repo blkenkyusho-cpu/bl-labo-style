@@ -1,0 +1,14 @@
+/* 令和7年産 売り尽くしSALE（2026年11月）
+ * 昨年の実績あるデザインを引き継ぎ、割引表示だけを調整。
+ * 既存の style-sale202510.css は変更しない。
+ */
+@import url("./style-sale202510.css");
+
+/* 5kg「540円お得！」／840g×3袋「10%OFF！」共通 */
+.sale-simple-202510__deal strong {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #fff0de;
+  border: 1px solid #eeb58f;
+  border-radius: 999px;
+}
