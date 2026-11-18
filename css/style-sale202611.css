@@ -12,3 +12,13 @@
   border: 1px solid #eeb58f;
   border-radius: 999px;
 }
+
+/* 2026年SALE共通：スマホの注意書き枠を横幅いっぱいにする */
+@media (max-width: 480px) {
+  .sale-simple-202510__caution {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
