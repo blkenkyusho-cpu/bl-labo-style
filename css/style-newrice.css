@@ -41,3 +41,13 @@
     display: block;
   }
 }
+
+/* PCのみ：据え置き価格の説明と価格表示の間隔を詰める */
+@media screen and (min-width: 481px) {
+  .newrice-202511 .newrice-202511__sub {
+    margin-bottom: 4px;
+  }
+  .newrice-202511 .newrice-202511__pricebox {
+    margin-top: 0;
+  }
+}
