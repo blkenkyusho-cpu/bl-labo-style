@@ -1,0 +1,43 @@
+/* 新米販売ブロック共通CSS（2026年11月から使用）
+ * 毎年使い回し、年産・商品価格・文章は商品HTML側で変更する。
+ * 旧米SALEにも使われる2025年のCSSは変更しない。
+ */
+@import url("./style-sale202510.css?v=20251016v");
+
+/* PCでは強制改行なし。スマホだけ旧米との区別文を改行 */
+.newrice-202511 .newrice-mobile-br {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  /* タイトルの「た」だけが折り返されないよう調整 */
+  .newrice-202511 .newrice-202511__title {
+    font-size: 23px !important;
+    letter-spacing: 0 !important;
+    line-height: 1.5 !important;
+  }
+
+  /* 新米の取扱い：スマホで読みやすく */
+  .newrice-202511 .newrice-202511__notice {
+    padding: 15px !important;
+  }
+  .newrice-202511 .newrice-202511__notice h2 {
+    font-size: 17px !important;
+    letter-spacing: 0 !important;
+  }
+  .newrice-202511 .newrice-202511__notice li {
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+    letter-spacing: 0 !important;
+  }
+
+  /* 新米と旧米SALEの区別：文字を少し大きく */
+  .newrice-202511 .newrice-202511__diff {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0 !important;
+  }
+  .newrice-202511 .newrice-mobile-br {
+    display: block;
+  }
+}
